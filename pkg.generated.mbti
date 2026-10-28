@@ -130,6 +130,43 @@ pub fn Document::raw_network(Self) -> Network
 pub fn Document::single_ended_network(Self) -> Network raise
 pub fn Document::write(Self) -> String raise
 
+pub struct GroupDelayBandReport {
+  scope : String
+  estimator : String
+  status : String
+  start_hz : Double
+  end_hz : Double
+  input : Int
+  output : Int
+  reference_ohms : Array[Double]
+  minimum_seconds : Double?
+  maximum_seconds : Double?
+  sample_count : Int
+  failed_count : Int
+  below_minimum_count : Int
+  above_maximum_count : Int
+  range_covered : Bool
+  start_sampled : Bool
+  end_sampled : Bool
+  lowest : GroupDelaySample?
+  highest : GroupDelaySample?
+  samples : Array[GroupDelaySample]
+}
+pub fn GroupDelayBandReport::to_json(Self) -> Json
+pub impl ToJson for GroupDelayBandReport
+
+pub struct GroupDelaySample {
+  point : Int
+  frequency_hz : Double
+  delay_seconds : Double
+  aperture_start_hz : Double
+  aperture_end_hz : Double
+  below_minimum : Bool
+  above_maximum : Bool
+  status : String
+} derive(ToJson)
+pub fn GroupDelaySample::to_json(Self) -> Json
+
 pub(all) struct ModalMetric {
   frequency_hz : Double
   sdd : Complex
@@ -151,6 +188,7 @@ pub struct Network {
 }
 pub fn Network::cascade(Self, Self) -> Self raise
 pub fn Network::check_bands(Self, Array[BandLimit], max_details? : Int) -> BandReport raise
+pub fn Network::check_group_delay(Self, Double, Double, input~ : Int, output~ : Int, minimum_seconds? : Double, maximum_seconds? : Double) -> GroupDelayBandReport raise
 pub fn Network::check_ripple(Self, Double, Double, input~ : Int, output~ : Int, maximum_ripple_db~ : Double) -> RippleReport raise
 pub fn Network::convert(Self, String) -> Self raise
 pub fn Network::deembed(Self, Self, Self) -> Self raise

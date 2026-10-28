@@ -5,7 +5,7 @@ import {run} from '../_build/js/release/build/cmd/bridge/bridge.js';
 
 const usage = `Usage: node tools/touchstone.mjs COMMAND INPUT [OPTIONS-JSON] [OUTPUT]
 Commands: inspect validate dump normalize legacy convert renormalize select
-          interpolate cascade deembed diagnostics metrics delay band-check band-csv ripple-check
+          interpolate cascade deembed diagnostics metrics delay delay-check band-check band-csv ripple-check
           rf-convert mixed single modal modal-metrics terminate terminate-file stability noise transducer-gain
           transducer-gain-impedance
           gain-check gain-csv
@@ -19,11 +19,12 @@ Impedance gain: required source_ohms/load_ohms as [real,imag] in ohm.
 Terminate file: terminations as [original port,re,im], impedance false Gamma/true ohm;
                 writes single-ended S Touchstone with information; noisy input is rejected.
 Gain check: start_hz/end_hz, minimum_db/maximum_db, terminal_mode gamma/impedance.
+Delay check: start_hz/end_hz/input/output, minimum_seconds/maximum_seconds (at least one).
 Gain CSV: same query; every selected original sample with state and limit disposition.
 Gain record: same query options, output a byte-bound receipt; exits 0/3/4.
 Gain review: INPUT @RECEIPT [OUTPUT]; exits 0 reproduced, 5 mismatch, 2 error.
 OPTIONS-JSON may be @path/to/options.json (ASCII, <=1 MB).
-Band/gain-check exits: 0 sampled pass, 3 fail, 4 inconclusive; input/IO errors: 2.
+Sampled checks exit: 0 pass, 3 fail, 4 inconclusive; input/IO errors: 2.
 Output files are created exclusively: existing files are never overwritten.
 Reports print JSON; file transformations print Touchstone if OUTPUT is absent.`;
 
@@ -78,7 +79,7 @@ try {
     for (const side of ['left','right']) {
       // These commands have no fixture-file inputs; keep unknown options visible
       // to MoonBit validation instead of consuming and deleting them here.
-      if (command==='transducer-gain' || command==='transducer-gain-impedance' || command==='gain-check' || command==='gain-csv' || command==='gain-record' || command==='terminate-file') continue;
+      if (command==='transducer-gain' || command==='transducer-gain-impedance' || command==='gain-check' || command==='gain-csv' || command==='gain-record' || command==='terminate-file' || command==='delay-check') continue;
       const file=options[`${side}_file`];
       if (file!==undefined) {
         if (typeof file!=='string') throw new Error(`${side}_file must be a path`);
@@ -93,7 +94,7 @@ try {
     const content = result && typeof result.text==='string' ? result.text : JSON.stringify(result,null,2)+'\n';
     if (output!==undefined) fs.writeFileSync(output,content,{encoding:'utf8',flag:'wx'});
     else process.stdout.write(content);
-    if (command==='band-check' || command==='band-csv' || command==='ripple-check' || command==='gain-check' || command==='gain-csv' || command==='gain-record') {
+    if (command==='band-check' || command==='band-csv' || command==='ripple-check' || command==='gain-check' || command==='gain-csv' || command==='gain-record' || command==='delay-check') {
       const status=command==='gain-record' ? result.result.status : result.status;
       process.exitCode = status==='fail' ? 3 : status==='inconclusive' ? 4 : 0;
     }

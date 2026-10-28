@@ -678,6 +678,31 @@ fn execute(
       .network_only()
       .metrics(required_int(o, "output"), required_int(o, "input"))
       .to_json()
+    "delay-check" => {
+      for key in o.keys() {
+        if !(key == "command" ||
+          key == "ports" ||
+          key == "start_hz" ||
+          key == "end_hz" ||
+          key == "input" ||
+          key == "output" ||
+          key == "minimum_seconds" ||
+          key == "maximum_seconds") {
+          raise Failure("unknown delay-check option: " + key)
+        }
+      }
+      doc
+      .network_only()
+      .check_group_delay(
+        required(o, "start_hz"),
+        required(o, "end_hz"),
+        input=required_int(o, "input"),
+        output=required_int(o, "output"),
+        minimum_seconds?=bound(o, "minimum_seconds"),
+        maximum_seconds?=bound(o, "maximum_seconds"),
+      )
+      .to_json()
+    }
     "delay" =>
       doc
       .network_only()
