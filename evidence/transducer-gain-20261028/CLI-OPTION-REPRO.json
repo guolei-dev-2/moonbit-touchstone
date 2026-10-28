@@ -1,0 +1,8 @@
+{
+  "provenance": "observed console tool result before CLI correction",
+  "command": ["node", "tools/touchstone.mjs", "transducer-gain", "examples/power-gain.s2p", "{\"left_file\":\"examples/power-gain-options.json\"}"],
+  "exitCode": 0,
+  "observed": "Unknown left_file option silently consumed by generic fixture IO; matched report returned gains 4 and 2.25.",
+  "expected": "Reject unknown option with exit2.",
+  "correction": "Only the new command leaves fixture options for MoonBit strict validation; existing commands retain their IO routing."
+}

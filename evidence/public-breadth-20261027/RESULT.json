@@ -1,0 +1,130 @@
+{
+  "status": "passed-new-first-party-manufacturer-input",
+  "manufacturer": "NXP Semiconductors",
+  "device": "BFU530W",
+  "selectedMember": "BFU530W_03V3_001mA_SP.s2p",
+  "inputBytes": 9544,
+  "inputSHA256": "d4a56bc6b099544c63ddbe25e9a1366935daf1a76bf0e47b0b269bb600ff2a95",
+  "manufacturerSource": "https://www.nxp.com/downloads/en/s-parameters/BFU530W_Spar.zip",
+  "ports": 2,
+  "frequencyPoints": 98,
+  "frequencyRangeHz": [
+    40000000.0,
+    6000000000.0
+  ],
+  "format": "MHz S MA R50",
+  "referenceOhms": [
+    50,
+    50
+  ],
+  "checks": [
+    {
+      "name": "current CLI dump vs scikit-rf S",
+      "complexValuesCompared": 392,
+      "frequencyAndReferenceExactlyEqual": true,
+      "maxComplexAbsoluteError": 1.6165091241761062e-15,
+      "rtol": 3e-10,
+      "atol": 3e-12
+    },
+    {
+      "name": "current CLI S-to-Y vs scikit-rf Y",
+      "complexValuesCompared": 392,
+      "frequencyAndReferenceExactlyEqual": true,
+      "maxComplexAbsoluteError": 7.928654179053002e-17,
+      "rtol": 3e-10,
+      "atol": 3e-12,
+      "units": "siemens"
+    },
+    {
+      "name": "current CLI normalize output independently reread by scikit-rf",
+      "complexValuesCompared": 392,
+      "frequencyAndReferenceExactlyEqual": true,
+      "maxComplexAbsoluteError": 1.6165091241761062e-15,
+      "rtol": 3e-10,
+      "atol": 3e-12
+    }
+  ],
+  "actualCommands": [
+    {
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "dump",
+        "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027\\BFU530W_03V3_001mA_SP.s2p",
+        "{}"
+      ],
+      "cwd": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\projects\\moonbit-touchstone",
+      "pid": 35404,
+      "exitCode": 0,
+      "elapsedNs": 363441100,
+      "stdoutPrivatePath": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027\\new-input-validation\\dump.json",
+      "stderrPrivatePath": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027\\new-input-validation\\dump.json.stderr",
+      "stdoutSHA256": "8fe444c22bb97a325bf68dd95bca48854c5630c4373806e186228dec569d3652",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "rf-convert",
+        "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027\\BFU530W_03V3_001mA_SP.s2p",
+        "{\"parameter\":\"Y\"}"
+      ],
+      "cwd": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\projects\\moonbit-touchstone",
+      "pid": 37724,
+      "exitCode": 0,
+      "elapsedNs": 206943500,
+      "stdoutPrivatePath": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027\\new-input-validation\\y.json",
+      "stderrPrivatePath": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027\\new-input-validation\\y.json.stderr",
+      "stdoutSHA256": "071f8a5f234bbb9bbe4b0bfb5d31a34131ff0f06b4b973a509ea8b4f46bcd345",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "normalize",
+        "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027\\BFU530W_03V3_001mA_SP.s2p",
+        "{}"
+      ],
+      "cwd": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\projects\\moonbit-touchstone",
+      "pid": 42956,
+      "exitCode": 0,
+      "elapsedNs": 197914600,
+      "stdoutPrivatePath": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027\\new-input-validation\\normalized.s2p",
+      "stderrPrivatePath": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027\\new-input-validation\\normalized.s2p.stderr",
+      "stdoutSHA256": "19b37b5713d5aeee15797406f38606dcb4c93c6954914ea8ff9f5dd086ff5433",
+      "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "allExitCodesZero": true,
+  "referenceRuntime": {
+    "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "D:\\CodexLocal\\ban\\work\\touchstone-tcl-20261021\\rf-venv\\Scripts\\python.exe",
+    "scikitRF": "2.1.0",
+    "numpy": "2.5.3",
+    "skrfSourcePath": "D:\\CodexLocal\\ban\\work\\touchstone-tcl-20261021\\rf-venv\\Lib\\site-packages\\skrf\\__init__.py",
+    "skrfSourceSHA256": "950606d6238fa037694f1fc7d1d6e8644e57a75484cd8053e68ad15ce898737a",
+    "numpySourcePath": "D:\\CodexLocal\\ban\\work\\touchstone-tcl-20261021\\rf-venv\\Lib\\site-packages\\numpy\\__init__.py",
+    "numpySourceSHA256": "a6958cb364663b7acce81ccfd58eeb65a2b34d5376157f924777b97211a73be4"
+  },
+  "nodePath": "C:\\Program Files\\nodejs\\node.exe",
+  "nodeSHA256": "b7d912484d42e7a0d0cb5b26a86410ec973a79ece7d61ad535e2d1a97a9026e1",
+  "currentEnginePath": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+  "currentEngineSHA256": "70e384bb7e73e08c30715458d13d0c759e7b54546d471c02e6f264a4364f9da0",
+  "sourceInputsUnchanged": true,
+  "newManufacturers": 1,
+  "historicalManufacturer": "Johanson Technology",
+  "vendorCountInCombinedEvidence": 2,
+  "priorReferenceTestsRerun": 0,
+  "oldPublicSamplesRerun": 0,
+  "algorithmFilesChanged": 0,
+  "privateFullDataDirectory": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027",
+  "redistributionPermissionConfirmed": false,
+  "limits": [
+    "One selected manufacturer bias file, not all 36 archive files or all vendors.",
+    "Official manufacturer model data are real first-party data; not a newly performed VNA measurement.",
+    "Independent software numerical/format comparison, not device qualification or external adoption.",
+    "Original archive, S2P and full-value/rewritten outputs are private and excluded from distributed packages."
+  ]
+}

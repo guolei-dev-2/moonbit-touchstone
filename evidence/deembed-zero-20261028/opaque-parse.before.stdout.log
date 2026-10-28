@@ -1,0 +1,18 @@
+{
+  "ports": 2,
+  "parameter": "S",
+  "points": 1,
+  "frequency_hz": [
+    1000000000
+  ],
+  "reference_ohms": [
+    50,
+    50
+  ],
+  "noise": [],
+  "noise_reference_ohms": 50,
+  "mixed_mode_order": [],
+  "information": [
+    "Known fixture identity control"
+  ]
+}

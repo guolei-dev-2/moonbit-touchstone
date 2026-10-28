@@ -1,0 +1,162 @@
+[
+  {
+    "name": "fmt-before-oracle",
+    "command": [
+      "moon",
+      "fmt"
+    ],
+    "exitCode": 0,
+    "provenance": "completed console result before independent-first.json"
+  },
+  {
+    "name": "info-before-oracle",
+    "command": [
+      "moon",
+      "info"
+    ],
+    "exitCode": 0,
+    "provenance": "completed console result before independent-first.json"
+  },
+  {
+    "name": "release-before-oracle",
+    "command": [
+      "moon",
+      "build",
+      "--target",
+      "js",
+      "--release",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "provenance": "completed console result before independent-first.json"
+  },
+  {
+    "name": "independent-matching",
+    "command": [
+      "rf-venv/Scripts/python.exe",
+      "tools/verify-matching.py",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-09-max-20261028\\independent-first.json",
+      "--vendor-input",
+      "private-pinned-NXP-input"
+    ],
+    "exitCode": 0,
+    "receipt": "independent-first.json"
+  },
+  {
+    "name": "fmt-check",
+    "command": [
+      "moon",
+      "fmt",
+      "--check"
+    ],
+    "exitCode": 0,
+    "seconds": 2.330020900000818,
+    "stdout": "fmt-check.stdout.log",
+    "stderr": "fmt-check.stderr.log"
+  },
+  {
+    "name": "check-all",
+    "command": [
+      "moon",
+      "check",
+      "--target",
+      "all",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 3.9899338000104763,
+    "stdout": "check-all.stdout.log",
+    "stderr": "check-all.stderr.log"
+  },
+  {
+    "name": "matching_test.mbt-js",
+    "command": [
+      "moon",
+      "test",
+      "matching_test.mbt",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 3.502773799991701,
+    "stdout": "matching_test.mbt-js.stdout.log",
+    "stderr": "matching_test.mbt-js.stderr.log"
+  },
+  {
+    "name": "gain_test.mbt-js",
+    "command": [
+      "moon",
+      "test",
+      "gain_test.mbt",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 0.8524660999828484,
+    "stdout": "gain_test.mbt-js.stdout.log",
+    "stderr": "gain_test.mbt-js.stderr.log"
+  },
+  {
+    "name": "matching_test.mbt-wasm-gc",
+    "command": [
+      "moon",
+      "test",
+      "matching_test.mbt",
+      "--target",
+      "wasm-gc",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 5.191751599981217,
+    "stdout": "matching_test.mbt-wasm-gc.stdout.log",
+    "stderr": "matching_test.mbt-wasm-gc.stderr.log"
+  },
+  {
+    "name": "gain_test.mbt-wasm-gc",
+    "command": [
+      "moon",
+      "test",
+      "gain_test.mbt",
+      "--target",
+      "wasm-gc",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 0.5496370999899227,
+    "stdout": "gain_test.mbt-wasm-gc.stdout.log",
+    "stderr": "gain_test.mbt-wasm-gc.stderr.log"
+  },
+  {
+    "name": "matching_test.mbt-native",
+    "command": [
+      "moon",
+      "test",
+      "matching_test.mbt",
+      "--target",
+      "native",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 3.5210890999878757,
+    "stdout": "matching_test.mbt-native.stdout.log",
+    "stderr": "matching_test.mbt-native.stderr.log"
+  },
+  {
+    "name": "gain_test.mbt-native",
+    "command": [
+      "moon",
+      "test",
+      "gain_test.mbt",
+      "--target",
+      "native",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 1.0395366000011563,
+    "stdout": "gain_test.mbt-native.stdout.log",
+    "stderr": "gain_test.mbt-native.stderr.log"
+  }
+]

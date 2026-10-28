@@ -1,0 +1,10 @@
+{
+  "method": "Exact complete generated declaration blocks with multiplicity; existing non-root interfaces byte-identical",
+  "oldDeclarations": 98,
+  "newDeclarations": 99,
+  "removed": [],
+  "addedDeclarations": [
+    "pub fn transducer_gain_samples_csv(Array[TransducerGainPoint], Double, Double, minimum_db? : Double, maximum_db? : Double) -> String raise"
+  ],
+  "oldPublicSignaturesRetained": true
+}

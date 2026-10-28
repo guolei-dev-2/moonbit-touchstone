@@ -1,0 +1,193 @@
+{
+  "complete": true,
+  "date": "2026-10-22",
+  "checks": [
+    {
+      "name": "test-wasm-gc",
+      "command": [
+        "D:/CodexLocal/ban/work/acceptance-20260928/moon/bin/moon.exe",
+        "test",
+        "--target",
+        "wasm-gc",
+        "--deny-warn"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 2.527439832687378,
+      "log": "test-wasm-gc.log"
+    },
+    {
+      "name": "build-js",
+      "command": [
+        "D:/CodexLocal/ban/work/acceptance-20260928/moon/bin/moon.exe",
+        "build",
+        "--target",
+        "js",
+        "--release",
+        "--deny-warn"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.1667649745941162,
+      "log": "build-js.log"
+    },
+    {
+      "name": "example-js",
+      "command": [
+        "D:/CodexLocal/ban/work/acceptance-20260928/moon/bin/moon.exe",
+        "run",
+        "examples/rf_03",
+        "--target",
+        "js",
+        "--deny-warn"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.7942991256713867,
+      "log": "example-js.log"
+    },
+    {
+      "name": "example-wasm-gc",
+      "command": [
+        "D:/CodexLocal/ban/work/acceptance-20260928/moon/bin/moon.exe",
+        "run",
+        "examples/rf_03",
+        "--target",
+        "wasm-gc",
+        "--deny-warn"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.7520580291748047,
+      "log": "example-wasm-gc.log"
+    },
+    {
+      "name": "bands",
+      "command": [
+        "D:/CodexLocal/ban/work/touchstone-tcl-20261021/rf-venv/Scripts/python.exe",
+        "tools/verify-bands.py",
+        "--evidence",
+        "evidence/rf-20261021/bands.json"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 5.562286138534546,
+      "log": "bands.log"
+    },
+    {
+      "name": "ripple",
+      "command": [
+        "D:/CodexLocal/ban/work/touchstone-tcl-20261021/rf-venv/Scripts/python.exe",
+        "tools/verify-ripple.py",
+        "--evidence",
+        "evidence/rf-20261021/ripple.json"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 2.134610176086426,
+      "log": "ripple.log"
+    },
+    {
+      "name": "fmt",
+      "command": [
+        "D:/CodexLocal/ban/work/acceptance-20260928/moon/bin/moon.exe",
+        "fmt",
+        "--check"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.6489686965942383,
+      "log": "fmt.log",
+      "rerunReason": "CLI mixed/select now reject directional noise loss; source-bound receipts refreshed"
+    },
+    {
+      "name": "info",
+      "command": [
+        "D:/CodexLocal/ban/work/acceptance-20260928/moon/bin/moon.exe",
+        "info"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.5015401840209961,
+      "log": "info.log",
+      "rerunReason": "CLI mixed/select now reject directional noise loss; source-bound receipts refreshed"
+    },
+    {
+      "name": "check-all",
+      "command": [
+        "D:/CodexLocal/ban/work/acceptance-20260928/moon/bin/moon.exe",
+        "check",
+        "--target",
+        "all",
+        "--deny-warn"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.516777515411377,
+      "log": "check-all.log",
+      "rerunReason": "CLI mixed/select now reject directional noise loss; source-bound receipts refreshed"
+    },
+    {
+      "name": "test-js",
+      "command": [
+        "D:/CodexLocal/ban/work/acceptance-20260928/moon/bin/moon.exe",
+        "test",
+        "--target",
+        "js",
+        "--deny-warn"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 0.8709118366241455,
+      "log": "test-js.log",
+      "rerunReason": "CLI mixed/select now reject directional noise loss; source-bound receipts refreshed"
+    },
+    {
+      "name": "cli",
+      "command": [
+        "node",
+        "tools/check-cli.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 3.7652060985565186,
+      "log": "cli.log",
+      "rerunReason": "CLI mixed/select now reject directional noise loss; source-bound receipts refreshed"
+    },
+    {
+      "name": "rf-reference",
+      "command": [
+        "D:/CodexLocal/ban/work/touchstone-tcl-20261021/rf-venv/Scripts/python.exe",
+        "tools/verify-rf.py"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 2.9628756046295166,
+      "log": "rf-reference.log",
+      "rerunReason": "CLI mixed/select now reject directional noise loss; source-bound receipts refreshed"
+    },
+    {
+      "name": "legacy-reference",
+      "command": [
+        "D:/CodexLocal/ban/work/touchstone-tcl-20261021/rf-venv/Scripts/python.exe",
+        "tools/verify-reference.py",
+        "--evidence",
+        "evidence/rf-20261021/legacy-reference.json"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 3.6205224990844727,
+      "log": "legacy-reference.log",
+      "rerunReason": "CLI mixed/select now reject directional noise loss; source-bound receipts refreshed"
+    },
+    {
+      "name": "package",
+      "command": [
+        "D:/CodexLocal/ban/work/acceptance-20260928/moon/bin/moon.exe",
+        "package"
+      ],
+      "exitCode": 0,
+      "elapsedSeconds": 1.8636701107025146,
+      "log": "package.log"
+    }
+  ],
+  "packagePending": false,
+  "packageReceiptPolicy": "The final module archive hash is recorded outside the archive by the delivery sealer; no circular self-hash is embedded here.",
+  "sourceManifest": "SOURCE-MANIFEST.json",
+  "sourceTreeSha256": "85ed8a525f5deb7c61c607a90a0411c3202773f9204c878428d09d11464cdaff",
+  "materialChecks": {
+    "proposalCopiesIdentical": true,
+    "proposalLines": 30,
+    "newVersionPublishedByThisTask": false,
+    "formSubmittedByThisTask": false
+  },
+  "sourceIdentityPolicy": "UTF-8 text normalized CRLF to LF; other files binary. Evidence excluded to prevent circular self hashes.",
+  "deliveryPolicy": "Final source commit and archive hashes are recorded in the external delivery manifest, not self-referenced inside this source archive."
+}

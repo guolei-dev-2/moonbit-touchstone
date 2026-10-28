@@ -1,0 +1,15 @@
+[Version] 2.1
+# Hz S RI R 50
+[Number of Ports] 2
+[Two-Port Data Order] 12_21
+[Number of Frequencies] 3
+[Reference] 50 100
+[Begin Information]
+Zero forward DUT sweep
+Known independent fixture wave model
+[End Information]
+[Network Data]
+1000000000.0 0.1 0 0.0 0 0.0 0 0.16666666666666666 0
+2000000000.0 0.15263157894736842 0 0.0966702470461869 0 0.0 0 0.08095238095238096 0
+3000000000.0 0.14992500535676023 0 0.09642168416541676 0 0.11999142918362975 0 0.09197200199985715 0
+[End]

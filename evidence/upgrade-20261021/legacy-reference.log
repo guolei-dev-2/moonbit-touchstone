@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "cases": 538,
+  "checks": 1398,
+  "seed": 20260922,
+  "maximum_absolute_error": 5.21996785701851e-12,
+  "elapsed_seconds": 2.431446800008416,
+  "benchmark": {
+    "points": 2000,
+    "ports": 2,
+    "operation": "parse + full diagnostics + JSON IPC",
+    "seconds": 0.024032599991187453
+  },
+  "versions": {
+    "python": "3.14.4",
+    "numpy": "2.5.3",
+    "scikit_rf": "2.1.0",
+    "node": "v24.11.0",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "limits": [
+    "positive real references",
+    "well-conditioned randomized matrices",
+    "pointwise spectral diagnostics, not broadband causality",
+    "mixed-mode conversion is separately exercised by verify-rf.py"
+  ]
+}

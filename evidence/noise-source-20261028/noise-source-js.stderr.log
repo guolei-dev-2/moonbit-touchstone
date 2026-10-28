@@ -1,0 +1,6 @@
+error: the following required arguments were not provided:
+  --package <PACKAGE>...
+
+Usage: moon.exe test --package <PACKAGE>... --target <TARGET> --deny-warn [PATH]...
+
+For more information, try '--help'.

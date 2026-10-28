@@ -1,0 +1,18 @@
+{
+  "before": {
+    "provenance": "reconstructed now from immutable05 archive; not an initially observed binary",
+    "archive": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-05-20261028\\touchstone-0.3.0-deep-repair05-20261028-source.zip",
+    "archiveSHA256": "36106e3380592b9650c21a1c71334763065ee8ba73166b8b820e8e1cda7dce00",
+    "sourceManifestSHA256": "409ce6c1663a0200b659fa49dc5aa89d0eaf2d3635478fe60794938d111a5433",
+    "artifact": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-06-max-20261028\\baseline-before\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "8a11088f298555539849367e525168bbd5fb9c95ef76f56ae141024bb251c200"
+  },
+  "after": {
+    "artifact": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "be2d2daafa472a70a6c8ef3cf6b750fd58ff41249b6dd8467405c21e5ce8d079"
+  },
+  "intermediateAfter": {
+    "artifact": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "70ebe28e30f5dd13ffa4bafe5d01befa6ebd7431aeafdf4d9db102cfd7b05d58"
+  }
+}

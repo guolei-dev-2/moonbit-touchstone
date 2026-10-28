@@ -1,0 +1,143 @@
+[
+  {
+    "name": "info-before-physical-refinement",
+    "command": [
+      "moon",
+      "info"
+    ],
+    "exitCode": 0,
+    "provenance": "completed console result; sole public addition unchanged through private numerical refinement"
+  },
+  {
+    "name": "release-final-before-oracle",
+    "command": [
+      "moon",
+      "build",
+      "--target",
+      "js",
+      "--release",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "provenance": "completed console result before independent-final.json"
+  },
+  {
+    "name": "independent-final",
+    "command": [
+      "rf-venv/Scripts/python.exe",
+      "tools/verify-gain-impedance.py",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-10-max-20261028\\independent-final.json",
+      "--skip-gamma-controls",
+      "--vendor-input",
+      "private-pinned-NXP-input"
+    ],
+    "exitCode": 0,
+    "receipt": "independent-final.json"
+  },
+  {
+    "name": "initial-Gamma-routing-controls",
+    "exitCode": 0,
+    "receipt": "independent-first.json",
+    "scope": "four Gamma file controls only; relevant source identities retained; not reused as final physical oracle"
+  },
+  {
+    "name": "fmt-check",
+    "command": [
+      "moon",
+      "fmt",
+      "--check"
+    ],
+    "exitCode": 0,
+    "seconds": 1.3507249999966007,
+    "stdout": "fmt-check.stdout.log",
+    "stderr": "fmt-check.stderr.log"
+  },
+  {
+    "name": "check-all",
+    "command": [
+      "moon",
+      "check",
+      "--target",
+      "all",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 2.2526128999888897,
+    "stdout": "check-all.stdout.log",
+    "stderr": "check-all.stderr.log"
+  },
+  {
+    "name": "gain_impedance_test.mbt-js",
+    "command": [
+      "moon",
+      "test",
+      "gain_impedance_test.mbt",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 0.5893028000136837,
+    "stdout": "gain_impedance_test.mbt-js.stdout.log",
+    "stderr": "gain_impedance_test.mbt-js.stderr.log"
+  },
+  {
+    "name": "gain_impedance_test.mbt-wasm-gc",
+    "command": [
+      "moon",
+      "test",
+      "gain_impedance_test.mbt",
+      "--target",
+      "wasm-gc",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 1.526622600009432,
+    "stdout": "gain_impedance_test.mbt-wasm-gc.stdout.log",
+    "stderr": "gain_impedance_test.mbt-wasm-gc.stderr.log"
+  },
+  {
+    "name": "gain_impedance_test.mbt-native",
+    "command": [
+      "moon",
+      "test",
+      "gain_impedance_test.mbt",
+      "--target",
+      "native",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 2.270805400010431,
+    "stdout": "gain_impedance_test.mbt-native.stdout.log",
+    "stderr": "gain_impedance_test.mbt-native.stderr.log"
+  },
+  {
+    "name": "consumer-js",
+    "command": [
+      "moon",
+      "run",
+      "examples/power_gain_ohms",
+      "--target",
+      "js"
+    ],
+    "exitCode": 0,
+    "seconds": 1.015439399983734,
+    "stdout": "consumer-js.stdout.log",
+    "stderr": "consumer-js.stderr.log"
+  },
+  {
+    "name": "consumer-wasm-gc",
+    "command": [
+      "moon",
+      "run",
+      "examples/power_gain_ohms",
+      "--target",
+      "wasm-gc"
+    ],
+    "exitCode": 0,
+    "seconds": 0.9992079000221565,
+    "stdout": "consumer-wasm-gc.stdout.log",
+    "stderr": "consumer-wasm-gc.stderr.log"
+  }
+]

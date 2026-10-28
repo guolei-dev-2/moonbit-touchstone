@@ -1,0 +1,21 @@
+{
+  "ports": 2,
+  "parameter": "S",
+  "points": 3,
+  "frequency_hz": [
+    1000000000,
+    2000000000,
+    3000000000
+  ],
+  "reference_ohms": [
+    75,
+    60
+  ],
+  "noise": [],
+  "noise_reference_ohms": 75,
+  "mixed_mode_order": [],
+  "information": [
+    "Zero forward DUT sweep",
+    "Known independent fixture wave model"
+  ]
+}

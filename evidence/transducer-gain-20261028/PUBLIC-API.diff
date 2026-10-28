@@ -1,0 +1,25 @@
+--- round07/pkg.generated.mbti
++++ feature08/pkg.generated.mbti
+@@ -166,6 +166,7 @@
+ pub fn Network::stability_circles(Self, source? : Bool) -> Array[RfCircle] raise
+ pub fn Network::terminate_ports(Self, Array[(Int, Complex)], impedance? : Bool) -> Self raise
+ pub fn Network::to_mixed_mode(Self, Array[(Int, Int)]) -> Document raise
++pub fn Network::transducer_gain(Self, source? : Complex, load? : Complex) -> Array[TransducerGainPoint] raise
+ pub fn Network::write_legacy(Self, format? : String, unit? : String) -> String raise
+ 
+ pub(all) struct NoisePoint {
+@@ -233,6 +234,14 @@
+ } derive(ToJson)
+ pub fn StabilityPoint::to_json(Self) -> Json
+ 
++pub(all) struct TransducerGainPoint {
++  frequency_hz : Double
++  gain : Double?
++  gain_db : Double?
++  state : String
++} derive(ToJson)
++pub fn TransducerGainPoint::to_json(Self) -> Json
++
+ // Type aliases
+ 
+ // Traits

@@ -1,0 +1,1029 @@
+{
+  "complete": true,
+  "failure": null,
+  "CLIProcesses": 41,
+  "workflowChecks": 30,
+  "commands": [
+    {
+      "label": "record pass",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-record",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"minimum_db\": 3.0, \"maximum_db\": 7.0}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\pass.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "replay pass",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\pass.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "record fail",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-record",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"terminal_mode\": \"impedance\", \"source_ohms\": [100.0, 20.0], \"load_ohms\": [25.0, -10.0], \"minimum_db\": 4.0, \"maximum_db\": 7.0}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\fail.json"
+      ],
+      "exitCode": 3,
+      "expectedExitCode": 3,
+      "stderr": ""
+    },
+    {
+      "label": "replay fail",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\fail.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "record inconclusive",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-record",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 3000000000.0, \"minimum_db\": 3.0}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\inconclusive.json"
+      ],
+      "exitCode": 4,
+      "expectedExitCode": 4,
+      "stderr": ""
+    },
+    {
+      "label": "replay inconclusive",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\inconclusive.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "record zero-lower",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-record",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 1000000000.0, \"minimum_db\": 0.0, \"maximum_db\": 7.0}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\zero-lower.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "replay zero-lower",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\zero-lower.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "record zero-upper",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-record",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\zero.s2p",
+        "{\"start_hz\": 1.0, \"end_hz\": 2.0, \"maximum_db\": 0.0}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\zero-upper.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "replay zero upper",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\zero.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\zero-upper.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "record crlf",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-record",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\crlf.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"minimum_db\": 3.0, \"maximum_db\": 7.0}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\crlf.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "replay raw CRLF",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\crlf.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\crlf.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "line endings are byte identity",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\crlf.json"
+      ],
+      "exitCode": 5,
+      "expectedExitCode": 5,
+      "stderr": ""
+    },
+    {
+      "label": "record versioned",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-record",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\versioned.ts",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"minimum_db\": 3.0, \"maximum_db\": 7.0}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\versioned.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "replay versioned without hint",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\versioned.ts",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\versioned.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "recorded hint survives rename",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\renamed input.s8p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\pass.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "different same-size invalid model stops before parse",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\changed-invalid.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\fail.json"
+      ],
+      "exitCode": 5,
+      "expectedExitCode": 5,
+      "stderr": ""
+    },
+    {
+      "label": "changed source size and digest",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\changed-comment.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\fail.json"
+      ],
+      "exitCode": 5,
+      "expectedExitCode": 5,
+      "stderr": ""
+    },
+    {
+      "label": "JSON order and formatting ignored",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\reordered.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "hexadecimal case preserved semantically",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\uppercase-hash.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "changed status",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\result-mutant-0.json"
+      ],
+      "exitCode": 5,
+      "expectedExitCode": 5,
+      "stderr": ""
+    },
+    {
+      "label": "changed summary",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\result-mutant-1.json"
+      ],
+      "exitCode": 5,
+      "expectedExitCode": 5,
+      "stderr": ""
+    },
+    {
+      "label": "changed matching",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\result-mutant-2.json"
+      ],
+      "exitCode": 5,
+      "expectedExitCode": 5,
+      "stderr": ""
+    },
+    {
+      "label": "changed request",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\result-mutant-3.json"
+      ],
+      "exitCode": 5,
+      "expectedExitCode": 5,
+      "stderr": ""
+    },
+    {
+      "label": "recorded hash mismatch",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\wrong-hash.json"
+      ],
+      "exitCode": 5,
+      "expectedExitCode": 5,
+      "stderr": ""
+    },
+    {
+      "label": "recorded byte-count mismatch",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\wrong-size.json"
+      ],
+      "exitCode": 5,
+      "expectedExitCode": 5,
+      "stderr": ""
+    },
+    {
+      "label": "unsupported schema",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\invalid-0.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"unsupported gain receipt schema\")\n"
+    },
+    {
+      "label": "missing input identity",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\invalid-1.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"missing option: input\")\n"
+    },
+    {
+      "label": "invalid digest",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\invalid-2.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"receipt SHA256 must contain 64 hexadecimal digits\")\n"
+    },
+    {
+      "label": "invalid size",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\invalid-3.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"receipt input bytes outside 0..64000000\")\n"
+    },
+    {
+      "label": "arbitrary replay rejected",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\invalid-4.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"receipt may replay only gain-check\")\n"
+    },
+    {
+      "label": "unknown envelope field",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\invalid-5.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"unknown receipt field: note\")\n"
+    },
+    {
+      "label": "nested fixture path rejected",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\invalid-6.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"unknown gain check option: left_file\")\n"
+    },
+    {
+      "label": "legacy report has no identity",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\legacy-plain.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"plain gain-check report has no input identity; regenerate with gain-record\")\n"
+    },
+    {
+      "label": "non-object receipt rejected",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "[]"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: options must be an object\n"
+    },
+    {
+      "label": "record invalid query rejected",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-record",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"min_db\": 3.0}"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"unknown gain check option: min_db\")\n"
+    },
+    {
+      "label": "receipt exclusive output",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-record",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"minimum_db\": 3.0, \"maximum_db\": 7.0}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\pass.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: EEXIST: file already exists, open 'D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\pass.json'\n"
+    },
+    {
+      "label": "legacy gamma",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-check",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"minimum_db\": 3.0, \"maximum_db\": 7.0}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "legacy ohm",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-check",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"terminal_mode\": \"impedance\", \"source_ohms\": [100.0, 20.0], \"load_ohms\": [25.0, -10.0], \"minimum_db\": 4.0, \"maximum_db\": 7.0}"
+      ],
+      "exitCode": 3,
+      "expectedExitCode": 3,
+      "stderr": ""
+    },
+    {
+      "label": "record vendor-receipt",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-record",
+        "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027\\BFU530W_03V3_001mA_SP.s2p",
+        "{\"start_hz\": 40000000.0, \"end_hz\": 6000000000.0, \"minimum_db\": 2.0, \"maximum_db\": 30.0}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\vendor-receipt.json"
+      ],
+      "exitCode": 3,
+      "expectedExitCode": 3,
+      "stderr": ""
+    },
+    {
+      "label": "vendor identity and replay",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027\\BFU530W_03V3_001mA_SP.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\vendor-receipt.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    }
+  ],
+  "checks": [
+    {
+      "label": "record pass",
+      "inputSHA256": "64e7e670f508a1de2e3d56632610cc1ffed9a355ea12ba84f37a9e1907c11c6e",
+      "bytes": 139,
+      "analysisStatus": "pass",
+      "request": {
+        "command": "gain-check",
+        "terminal_mode": "gamma",
+        "start_hz": 1000000000,
+        "end_hz": 2000000000,
+        "source": [
+          0,
+          0
+        ],
+        "load": [
+          0,
+          0
+        ],
+        "minimum_db": 3,
+        "maximum_db": 7,
+        "ports": 2
+      }
+    },
+    {
+      "label": "replay pass",
+      "status": "reproduced",
+      "recordedStatus": "pass",
+      "currentStatus": "pass",
+      "changedSections": []
+    },
+    {
+      "label": "record fail",
+      "inputSHA256": "64e7e670f508a1de2e3d56632610cc1ffed9a355ea12ba84f37a9e1907c11c6e",
+      "bytes": 139,
+      "analysisStatus": "fail",
+      "request": {
+        "command": "gain-check",
+        "terminal_mode": "impedance",
+        "start_hz": 1000000000,
+        "end_hz": 2000000000,
+        "source_ohms": [
+          100,
+          20
+        ],
+        "load_ohms": [
+          25,
+          -10
+        ],
+        "minimum_db": 4,
+        "maximum_db": 7,
+        "ports": 2
+      }
+    },
+    {
+      "label": "replay fail",
+      "status": "reproduced",
+      "recordedStatus": "fail",
+      "currentStatus": "fail",
+      "changedSections": []
+    },
+    {
+      "label": "record inconclusive",
+      "inputSHA256": "64e7e670f508a1de2e3d56632610cc1ffed9a355ea12ba84f37a9e1907c11c6e",
+      "bytes": 139,
+      "analysisStatus": "inconclusive",
+      "request": {
+        "command": "gain-check",
+        "terminal_mode": "gamma",
+        "start_hz": 1000000000,
+        "end_hz": 3000000000,
+        "source": [
+          0,
+          0
+        ],
+        "load": [
+          0,
+          0
+        ],
+        "minimum_db": 3,
+        "ports": 2
+      }
+    },
+    {
+      "label": "replay inconclusive",
+      "status": "reproduced",
+      "recordedStatus": "inconclusive",
+      "currentStatus": "inconclusive",
+      "changedSections": []
+    },
+    {
+      "label": "record zero-lower",
+      "inputSHA256": "64e7e670f508a1de2e3d56632610cc1ffed9a355ea12ba84f37a9e1907c11c6e",
+      "bytes": 139,
+      "analysisStatus": "pass",
+      "request": {
+        "command": "gain-check",
+        "terminal_mode": "gamma",
+        "start_hz": 1000000000,
+        "end_hz": 1000000000,
+        "source": [
+          0,
+          0
+        ],
+        "load": [
+          0,
+          0
+        ],
+        "minimum_db": 0,
+        "maximum_db": 7,
+        "ports": 2
+      }
+    },
+    {
+      "label": "replay zero-lower",
+      "status": "reproduced",
+      "recordedStatus": "pass",
+      "currentStatus": "pass",
+      "changedSections": []
+    },
+    {
+      "label": "record zero-upper",
+      "inputSHA256": "a97dceb99557b7f5198884c6885e32f92e4cece02564c135ed77a5d028e938ca",
+      "bytes": 51,
+      "analysisStatus": "pass",
+      "request": {
+        "command": "gain-check",
+        "terminal_mode": "gamma",
+        "start_hz": 1,
+        "end_hz": 2,
+        "source": [
+          0,
+          0
+        ],
+        "load": [
+          0,
+          0
+        ],
+        "maximum_db": 0,
+        "ports": 2
+      }
+    },
+    {
+      "label": "replay zero upper",
+      "status": "reproduced",
+      "recordedStatus": "pass",
+      "currentStatus": "pass",
+      "changedSections": []
+    },
+    {
+      "label": "record crlf",
+      "inputSHA256": "b18063da28b7fbc40941cf17cad069ad602b0fa0d5ead831f94298b7556e9cdc",
+      "bytes": 143,
+      "analysisStatus": "pass",
+      "request": {
+        "command": "gain-check",
+        "terminal_mode": "gamma",
+        "start_hz": 1000000000,
+        "end_hz": 2000000000,
+        "source": [
+          0,
+          0
+        ],
+        "load": [
+          0,
+          0
+        ],
+        "minimum_db": 3,
+        "maximum_db": 7,
+        "ports": 2
+      }
+    },
+    {
+      "label": "replay raw CRLF",
+      "status": "reproduced",
+      "recordedStatus": "pass",
+      "currentStatus": "pass",
+      "changedSections": []
+    },
+    {
+      "label": "line endings are byte identity",
+      "status": "input_mismatch",
+      "recordedStatus": "pass",
+      "currentStatus": null,
+      "changedSections": []
+    },
+    {
+      "label": "record versioned",
+      "inputSHA256": "5f31564775b5ffb3aef6fae41549cefe896c17128189d7706c531e31f789f4ba",
+      "bytes": 192,
+      "analysisStatus": "pass",
+      "request": {
+        "command": "gain-check",
+        "terminal_mode": "gamma",
+        "start_hz": 1000000000,
+        "end_hz": 2000000000,
+        "source": [
+          0,
+          0
+        ],
+        "load": [
+          0,
+          0
+        ],
+        "minimum_db": 3,
+        "maximum_db": 7
+      }
+    },
+    {
+      "label": "replay versioned without hint",
+      "status": "reproduced",
+      "recordedStatus": "pass",
+      "currentStatus": "pass",
+      "changedSections": []
+    },
+    {
+      "label": "recorded hint survives rename",
+      "status": "reproduced",
+      "recordedStatus": "pass",
+      "currentStatus": "pass",
+      "changedSections": []
+    },
+    {
+      "label": "different same-size invalid model stops before parse",
+      "status": "input_mismatch",
+      "recordedStatus": "fail",
+      "currentStatus": null,
+      "changedSections": []
+    },
+    {
+      "label": "changed source size and digest",
+      "status": "input_mismatch",
+      "recordedStatus": "fail",
+      "currentStatus": null,
+      "changedSections": []
+    },
+    {
+      "label": "JSON order and formatting ignored",
+      "status": "reproduced",
+      "recordedStatus": "fail",
+      "currentStatus": "fail",
+      "changedSections": []
+    },
+    {
+      "label": "hexadecimal case preserved semantically",
+      "status": "reproduced",
+      "recordedStatus": "fail",
+      "currentStatus": "fail",
+      "changedSections": []
+    },
+    {
+      "label": "changed status",
+      "status": "result_mismatch",
+      "recordedStatus": "pass",
+      "currentStatus": "fail",
+      "changedSections": [
+        "status"
+      ]
+    },
+    {
+      "label": "changed summary",
+      "status": "result_mismatch",
+      "recordedStatus": "fail",
+      "currentStatus": "fail",
+      "changedSections": [
+        "report"
+      ]
+    },
+    {
+      "label": "changed matching",
+      "status": "result_mismatch",
+      "recordedStatus": "fail",
+      "currentStatus": "fail",
+      "changedSections": [
+        "matching"
+      ]
+    },
+    {
+      "label": "changed request",
+      "status": "result_mismatch",
+      "recordedStatus": "fail",
+      "currentStatus": "fail",
+      "changedSections": [
+        "report"
+      ]
+    },
+    {
+      "label": "recorded hash mismatch",
+      "status": "input_mismatch",
+      "recordedStatus": "fail",
+      "currentStatus": null,
+      "changedSections": []
+    },
+    {
+      "label": "recorded byte-count mismatch",
+      "status": "input_mismatch",
+      "recordedStatus": "fail",
+      "currentStatus": null,
+      "changedSections": []
+    },
+    {
+      "label": "legacy gamma",
+      "frozen11PayloadPreserved": true
+    },
+    {
+      "label": "legacy ohm",
+      "frozen11PayloadPreserved": true
+    },
+    {
+      "label": "record vendor-receipt",
+      "inputSHA256": "d4a56bc6b099544c63ddbe25e9a1366935daf1a76bf0e47b0b269bb600ff2a95",
+      "bytes": 9544,
+      "analysisStatus": "fail",
+      "request": {
+        "command": "gain-check",
+        "terminal_mode": "gamma",
+        "start_hz": 40000000,
+        "end_hz": 6000000000,
+        "source": [
+          0,
+          0
+        ],
+        "load": [
+          0,
+          0
+        ],
+        "minimum_db": 2,
+        "maximum_db": 30,
+        "ports": 2
+      }
+    },
+    {
+      "label": "vendor identity and replay",
+      "status": "reproduced",
+      "recordedStatus": "fail",
+      "currentStatus": "fail",
+      "changedSections": []
+    }
+  ],
+  "vendor": {
+    "sha256": "d4a56bc6b099544c63ddbe25e9a1366935daf1a76bf0e47b0b269bb600ff2a95",
+    "receiptInputBytes": 9544,
+    "analysisSamples": 98,
+    "newNumericComparisons": 0,
+    "scope": "Byte identity, normalized request and replay only; frozen11 aggregate expected status/counts reused."
+  },
+  "oracle": "Independent Python hashlib raw-byte identity, exact protocol assertions and mutation truth cases; frozen11 payloads reused, not RF oracle rerun.",
+  "caseDirectory": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases",
+  "artifacts": [
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\pass.json",
+      "sha256": "830a81a84da13d1a80411b22973c966d76ad2b4bd89eadd97acfe6b4ad0e1105"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\fail.json",
+      "sha256": "77fbc555aad99de8d844829ead44c5fc17eace4612f5b9e4dd4563f5227bf223"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\inconclusive.json",
+      "sha256": "7f61d33c130ac8502edc31bab54248ed812630d8a76b32883efc8212735efce9"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\zero-lower.json",
+      "sha256": "63cab8c90b717e88bb0156e0a638ac9fc1598556923d4a3df964c50668f3711b"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\zero.s2p",
+      "sha256": "a97dceb99557b7f5198884c6885e32f92e4cece02564c135ed77a5d028e938ca"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\zero-upper.json",
+      "sha256": "999547d5841925b0d8466d28ef340dc3e4a1e0567e492c0358c4b12c257c4a90"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\crlf.s2p",
+      "sha256": "b18063da28b7fbc40941cf17cad069ad602b0fa0d5ead831f94298b7556e9cdc"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\crlf.json",
+      "sha256": "3613c9dc69f352dc3946c7bbb3cf8d4878865dd5bf35f3a197ec8a13d04081c3"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\versioned.ts",
+      "sha256": "5f31564775b5ffb3aef6fae41549cefe896c17128189d7706c531e31f789f4ba"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\versioned.json",
+      "sha256": "71b70d45ee8c9c8aa2f12d72025b41fe1620af6960c8ebaf4e1cb1a24af0c6c6"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\renamed input.s8p",
+      "sha256": "64e7e670f508a1de2e3d56632610cc1ffed9a355ea12ba84f37a9e1907c11c6e"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\changed-invalid.s2p",
+      "sha256": "82fc9541765a224f4ca26af4c6dd3c760f72969f26b665e4485c55ea38b5cb03"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\changed-comment.s2p",
+      "sha256": "4a77bb368385362ec69b3ea100db45abc66277d4fd1d6da65c6a64fd847de1ea"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\reordered.json",
+      "sha256": "8e0f912c9b756dd432cf5ab05d9394a6f4ddeb2ff8bce711ed9b66bf1d426b49"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\uppercase-hash.json",
+      "sha256": "686f6d5f63ba203d9a8ec911410d51790ed6535570ade24613cafc3cfc49a0ab"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\result-mutant-0.json",
+      "sha256": "f2a146176a8fcf16d984aeb3fae4fba7e5712abdab3f47da51b78a34255d30fb"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\result-mutant-1.json",
+      "sha256": "e2a6d01318d5dff6c390cee29cfea04a912211d8124691389fded7306939d9e7"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\result-mutant-2.json",
+      "sha256": "3f6d53bd60d2b55e2e7e60a66bfccca3574d4609972a56fc69dc6b9fb3c0f1a4"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\result-mutant-3.json",
+      "sha256": "ea55a9a1efdec96b54b35640538f84bc6a4dbecde11ffca6befd45be7889fa6f"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\wrong-hash.json",
+      "sha256": "15acb28e15c740cf7027f1bed17abcd463393e5b456b9d8ed9f6a81024a8270b"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\wrong-size.json",
+      "sha256": "8c2730b85b646a42a6ea5cc623050893a75842e42393a8741d2e3555d03a0248"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\invalid-0.json",
+      "sha256": "03517cd740c1e8f9ea5b4298f3923ad7f8a30e3fe3752cb9967d8f4040e5d2e7"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\invalid-1.json",
+      "sha256": "882fb8c94330205481900c070f2c03bc1bab7f94daaac755b555dbec6452619e"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\invalid-2.json",
+      "sha256": "a31a8aee9f0167bdc3abbdbf9ea7a4eb9a040e514d90392f0604e9375949dfa1"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\invalid-3.json",
+      "sha256": "4699bae83ce494cb9296009caf4322e43a3f1c036640e4c5048ddd76e641b299"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\invalid-4.json",
+      "sha256": "caa54b08714eb6b33b6184df222d01e844d62176059ca75513f06a6a9f86653b"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\invalid-5.json",
+      "sha256": "ee9bf0a788c2462989ebc224030fffc28426dab26220dce216bf959cd2d07282"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\invalid-6.json",
+      "sha256": "bdcfc70011682e63912762b0e527c2c5edb6b0f234583ffbf82f6323f94fcce2"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\legacy-plain.json",
+      "sha256": "0938683ad60c0835fc53e69ea04847d46059e2ef72525436319dd869dae2e47e"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\vendor-receipt.json",
+      "sha256": "f52afdd8c068e805d3272405a994dc8dc147529560a097d33ba3601b72cd4b0f"
+    }
+  ],
+  "sourceSHA256": {
+    "cmd/bridge/main.mbt": "56c3f1d1a54ca8f518ebe167abca2b1dc914196e5f102f7e0231fbd5165f2109",
+    "tools/touchstone.mjs": "72ef7b916ff69aa51322a77cc523e2c75705ab9cf6f8ea0f342d757d3b8870c3",
+    "examples/gain_receipt_demo.mjs": "1be6cde05ddbc7dbfc3a43960c8d327514d1cb60db090cc71d876758b9d18357",
+    "tools/verify-gain-receipt.py": "460f87a11199a24cfdc7239dcf8a97704741ff7961e200ee0cf165cc0cf1be01",
+    "gain.mbt": "f0ab0b6522ba1a372d3c2ede72b0d76f6e655e0cfb1f8e42af1ce27781e5284a",
+    "gain_impedance.mbt": "70166a5f530805e1ca1b7b74ba096d00e4f9512b5e741e06d3c9a55ca317f662",
+    "gain_band.mbt": "ff2e678edfb400fbae34643fede9f735aa6fccb84a232ddcbe70e98d8d0453a3"
+  }
+}

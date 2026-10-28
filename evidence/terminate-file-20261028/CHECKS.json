@@ -1,0 +1,86 @@
+[
+  {
+    "name": "initial-fmt",
+    "command": [
+      "moon",
+      "fmt"
+    ],
+    "exitCode": 0,
+    "provenance": "Successful initial console build sequence"
+  },
+  {
+    "name": "release-js",
+    "command": [
+      "moon",
+      "build",
+      "--target",
+      "js",
+      "--release",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "provenance": "Successful initial console build sequence; bridge source unchanged since execution"
+  },
+  {
+    "name": "completed-consumer",
+    "command": [
+      "python",
+      "complete-consumer.py"
+    ],
+    "exitCode": 0,
+    "receipt": "independent-complete.json",
+    "acceptedCLIProcesses": 27,
+    "consumerChecks": 19,
+    "independentGTPointComparisons": 6,
+    "assembly": "24 accepted prefix cases plus3 tail cases; no accepted prefix reexecution after noisy fixture correction"
+  },
+  {
+    "name": "actual-demo",
+    "command": [
+      "node",
+      "examples/terminate_file_demo.mjs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\demo-first"
+    ],
+    "exitCode": 0,
+    "seconds": 2.102526200003922,
+    "stdout": "actual-demo.stdout.log",
+    "stderr": "actual-demo.stderr.log"
+  },
+  {
+    "name": "info",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "info"
+    ],
+    "exitCode": 0,
+    "seconds": 3.0606890999770258,
+    "stdout": "info.stdout.log",
+    "stderr": "info.stderr.log"
+  },
+  {
+    "name": "check-all",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "check",
+      "--target",
+      "all",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 3.6519695000024512,
+    "stdout": "check-all.stdout.log",
+    "stderr": "check-all.stderr.log"
+  },
+  {
+    "name": "fmt-check",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "fmt",
+      "--check"
+    ],
+    "exitCode": 0,
+    "seconds": 4.926290200004587,
+    "stdout": "fmt-check.stdout.log",
+    "stderr": "fmt-check.stderr.log"
+  }
+]

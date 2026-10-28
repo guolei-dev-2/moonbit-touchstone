@@ -1,0 +1,252 @@
+{
+  "complete": true,
+  "failure": null,
+  "sourceSHA256": {
+    "mixed_mode.mbt": "6f5686d5014238898999234c86f3d3bab609c85dd00c84d8cb2170f765b66b15",
+    "modal_scale_test.mbt": "6d5b38c1eaa123c82a3a84cdb22e56252781791a88e91006dfc94de44d91131f",
+    "gain.mbt": "f0ab0b6522ba1a372d3c2ede72b0d76f6e655e0cfb1f8e42af1ce27781e5284a",
+    "noise.mbt": "2bc44c55b92f9c5923d89e03ab7f8a009792c05eae570a2f9de7f4b6dc00e4e1",
+    "cmd/bridge/main.mbt": "f1041a83ed8830974a24b5f05afbe9f38e483bf203b33d3f850b3f3f35dddf93",
+    "tools/touchstone.mjs": "2ead8ae7d516ccdc6e92c9f2b08b8df4662fe505342cebaea263aa313ad852b6",
+    "tools/verify-modal-scale.py": "4c2a781f826a0ecf2db519312dad3fcf338c2f96870727f1ec3ad33d64505fe1",
+    "examples/modal-scale.s4p": "3ead5e5423e78eec3d6b90ae59d6cbdf529c6cb3fa953d57c9ac39d16625a5fe",
+    "examples/modal-scale-options.json": "3e7162ed13e94c7e644e37ee8f810f8c458de822e435dd9fd96024c321d88999"
+  },
+  "bridgeSHA256": "fd62a50ff38a0718bbb86f8056fc23d1be22839ddb2e732c1fc4baff23b7c576",
+  "oracle": "Decimal100 direct squared norms: loss=-10log10(re^2+im^2), CMRR=10log10(norm_desired/norm_denominator); exact zeros classify separately",
+  "absoluteToleranceDb": 2e-10,
+  "commands": [
+    {
+      "name": "large",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "modal-metrics",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\large.s4p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\large.options.json"
+      ],
+      "exitCode": 0,
+      "inputSHA256": "3ead5e5423e78eec3d6b90ae59d6cbdf529c6cb3fa953d57c9ac39d16625a5fe",
+      "expected": {
+        "losses": {
+          "differential_insertion_loss_db": "-6166.532125137753436889126104132470939294735565129278510512893368557149201001989247924579470656963902",
+          "differential_return_loss_db": null,
+          "dc_conversion_loss_db": null,
+          "cd_conversion_loss_db": null
+        },
+        "cmrr_state": "finite",
+        "cmrr_db": "0"
+      },
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\large.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\large.stderr.log"
+    },
+    {
+      "name": "ordinary",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "modal-metrics",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\ordinary.s4p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\ordinary.options.json"
+      ],
+      "exitCode": 0,
+      "inputSHA256": "cda2ffc3724a5c68993bdf445502d8117065099f59c53286e2da4f7ecf6704e0",
+      "expected": {
+        "losses": {
+          "differential_insertion_loss_db": "3.010299956639811952137388947244930267681898814621085413104274611271081892744245094869272521181861720",
+          "differential_return_loss_db": null,
+          "dc_conversion_loss_db": null,
+          "cd_conversion_loss_db": null
+        },
+        "cmrr_state": "finite",
+        "cmrr_db": "0"
+      },
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\ordinary.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\ordinary.stderr.log"
+    },
+    {
+      "name": "all-large-balanced",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "modal-metrics",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\all-large-balanced.s4p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\all-large-balanced.options.json"
+      ],
+      "exitCode": 0,
+      "inputSHA256": "ad93cb8e9902aed4c45c98e3f2af7c590fd69d1c61f31c7f3d86426f3d122d36",
+      "expected": {
+        "losses": {
+          "differential_insertion_loss_db": "-6166.532125137753436889126104132470939294735565129278510512893368557149201001989247924579470656963902",
+          "differential_return_loss_db": "-6166.532125137753436889126104132470939294735565129278510512893368557149201001989247924579470656963902",
+          "dc_conversion_loss_db": "-6166.532125137753436889126104132470939294735565129278510512893368557149201001989247924579470656963902",
+          "cd_conversion_loss_db": "-6166.532125137753436889126104132470939294735565129278510512893368557149201001989247924579470656963902"
+        },
+        "cmrr_state": "finite",
+        "cmrr_db": "0"
+      },
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\all-large-balanced.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\all-large-balanced.stderr.log"
+    },
+    {
+      "name": "all-large-input",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "modal-metrics",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\all-large-input.s4p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\all-large-input.options.json"
+      ],
+      "exitCode": 0,
+      "inputSHA256": "ad93cb8e9902aed4c45c98e3f2af7c590fd69d1c61f31c7f3d86426f3d122d36",
+      "expected": {
+        "losses": {
+          "differential_insertion_loss_db": "-6166.532125137753436889126104132470939294735565129278510512893368557149201001989247924579470656963902",
+          "differential_return_loss_db": "-6166.532125137753436889126104132470939294735565129278510512893368557149201001989247924579470656963902",
+          "dc_conversion_loss_db": "-6166.532125137753436889126104132470939294735565129278510512893368557149201001989247924579470656963902",
+          "cd_conversion_loss_db": "-6166.532125137753436889126104132470939294735565129278510512893368557149201001989247924579470656963902"
+        },
+        "cmrr_state": "finite",
+        "cmrr_db": "0"
+      },
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\all-large-input.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\all-large-input.stderr.log"
+    },
+    {
+      "name": "all-large-output",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "modal-metrics",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\all-large-output.s4p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\all-large-output.options.json"
+      ],
+      "exitCode": 0,
+      "inputSHA256": "ad93cb8e9902aed4c45c98e3f2af7c590fd69d1c61f31c7f3d86426f3d122d36",
+      "expected": {
+        "losses": {
+          "differential_insertion_loss_db": "-6166.532125137753436889126104132470939294735565129278510512893368557149201001989247924579470656963902",
+          "differential_return_loss_db": "-6166.532125137753436889126104132470939294735565129278510512893368557149201001989247924579470656963902",
+          "dc_conversion_loss_db": "-6166.532125137753436889126104132470939294735565129278510512893368557149201001989247924579470656963902",
+          "cd_conversion_loss_db": "-6166.532125137753436889126104132470939294735565129278510512893368557149201001989247924579470656963902"
+        },
+        "cmrr_state": "finite",
+        "cmrr_db": "0"
+      },
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\all-large-output.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\all-large-output.stderr.log"
+    },
+    {
+      "name": "undefined",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "modal-metrics",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\undefined.s4p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\undefined.options.json"
+      ],
+      "exitCode": 0,
+      "inputSHA256": "1ccc91dd411e66e89885e6da968490c75ec255547a2e68ab73e860835701baee",
+      "expected": {
+        "losses": {
+          "differential_insertion_loss_db": null,
+          "differential_return_loss_db": null,
+          "dc_conversion_loss_db": null,
+          "cd_conversion_loss_db": null
+        },
+        "cmrr_state": "undefined",
+        "cmrr_db": null
+      },
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\undefined.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\undefined.stderr.log"
+    },
+    {
+      "name": "positive_infinity",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "modal-metrics",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\positive_infinity.s4p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\positive_infinity.options.json"
+      ],
+      "exitCode": 0,
+      "inputSHA256": "c9feac9f5aff5d0144beba385edfbe6ee7ec7ec8da2fe2adcea935b1decea7a4",
+      "expected": {
+        "losses": {
+          "differential_insertion_loss_db": "6.020599913279623904274777894489860535363797629242170826208549222542163785488490189738545042363723441",
+          "differential_return_loss_db": null,
+          "dc_conversion_loss_db": null,
+          "cd_conversion_loss_db": null
+        },
+        "cmrr_state": "positive_infinity",
+        "cmrr_db": null
+      },
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\positive_infinity.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\positive_infinity.stderr.log"
+    },
+    {
+      "name": "negative_infinity",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "modal-metrics",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\negative_infinity.s4p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\negative_infinity.options.json"
+      ],
+      "exitCode": 0,
+      "inputSHA256": "0ae656716d520fa48c359819de7ffb3bb3382f11409eeed5c5f3e92e75f3e547",
+      "expected": {
+        "losses": {
+          "differential_insertion_loss_db": null,
+          "differential_return_loss_db": null,
+          "dc_conversion_loss_db": "12.04119982655924780854955578897972107072759525848434165241709844508432757097698037947709008472744688",
+          "cd_conversion_loss_db": "12.04119982655924780854955578897972107072759525848434165241709844508432757097698037947709008472744688"
+        },
+        "cmrr_state": "negative_infinity",
+        "cmrr_db": null
+      },
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\negative_infinity.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\negative_infinity.stderr.log"
+    },
+    {
+      "name": "finite",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "modal-metrics",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\finite.s4p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\finite.options.json"
+      ],
+      "exitCode": 0,
+      "inputSHA256": "6039305d4c25b33cfc178f70b0a2a91c380fb94339726a344ccba53601f5e4f9",
+      "expected": {
+        "losses": {
+          "differential_insertion_loss_db": "6.020599913279623904274777894489860535363797629242170826208549222542163785488490189738545042363723441",
+          "differential_return_loss_db": null,
+          "dc_conversion_loss_db": "12.04119982655924780854955578897972107072759525848434165241709844508432757097698037947709008472744688",
+          "cd_conversion_loss_db": "12.04119982655924780854955578897972107072759525848434165241709844508432757097698037947709008472744688"
+        },
+        "cmrr_state": "finite",
+        "cmrr_db": "6.020599913279623904274777894489860535363797629242170826208549222542163785488490189738545042363723441"
+      },
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\finite.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases\\finite.stderr.log"
+    }
+  ],
+  "checks": [
+    "Nine actual file requests succeed",
+    "Modal complex elements, selected definition and frequency retain the input semantics",
+    "All four loss fields match Decimal squared-norm expectations or omit exact zero",
+    "CMRR values are finite numeric values matching direct Decimal norm ratios",
+    "All four exact zero/nonzero CMRR states and omitted fields remain distinct",
+    "The large input bytes are identical to the successfully parsed pre-repair counterexample",
+    "Complete ordinary finite file output remains byte-identical to before repair"
+  ],
+  "oldCollectionsRerun": false,
+  "newManufacturerInputs": 0,
+  "nodeCompileCacheDisabled": true,
+  "tempDirectory": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.cases",
+  "baselineCompared": true,
+  "actualFileCLINodeProcesses": 9,
+  "consumerChecks": 7
+}

@@ -1,0 +1,11 @@
+[Version] 2.1
+# Hz S RI R 50
+[Number of Ports] 2
+[Two-Port Data Order] 12_21
+[Number of Frequencies] 3
+[Reference] 60 100
+[Network Data]
+1000000000.0 -0.1 0 0.6 0 0.7 0 0.16666666666666666 0
+2000000000.0 -0.1 0 0.6 0 0.7 0 0.16666666666666666 0
+3000000000.0 -0.1 0 0.6 0 0.7 0 0.16666666666666666 0
+[End]

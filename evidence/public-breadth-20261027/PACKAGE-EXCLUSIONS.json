@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "reason": "First-party NXP model has no confirmed project redistribution license; original and full-value derived data are not MIT project code",
+  "excludeAbsoluteDirectory": "D:/CodexLocal/ban/work/portfolio-progress-20261027/private-reference-inputs/touchstone-breadth-20261027",
+  "recursive": true,
+  "appliesTo": ["source archive", "evidence archive", "judge delivery", "public repository"],
+  "retainedInProject": ["download URL", "archive and entry hashes", "device and bias metadata", "code", "commands and exit metadata", "comparison counts and numerical errors"],
+  "redistributionPermissionConfirmed": false,
+  "manufacturerEndorsementClaimed": false,
+  "externalAdoptionClaimed": false
+}

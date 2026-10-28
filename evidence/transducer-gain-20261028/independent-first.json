@@ -1,0 +1,156 @@
+{
+  "complete": false,
+  "failure": "KeyError('gain_db')",
+  "requests": 4,
+  "pointChecks": 3,
+  "checks": [
+    {
+      "label": "matched",
+      "state": "finite",
+      "gain": 4.0,
+      "gain_db": 6.020599913279624,
+      "exactRationalSHA256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "bilateral rational",
+      "state": "finite",
+      "gain": 3.484310018903592,
+      "gain_db": 5.4211678970793225,
+      "exactRationalSHA256": "e3856906c987f4d3d27e91494fd0634d574dfb6e5481a5097cb8de6acba5283c",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "quarter-wave",
+      "state": "finite",
+      "gain": 0.36,
+      "gain_db": -4.436974992327127,
+      "exactRationalSHA256": "ba99706726902e83ec550da70c016266cc6a243197718fb9a7578776e75175ea",
+      "numpyWaveSolve": false
+    }
+  ],
+  "raw": [
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0,
+            0.0
+          ],
+          "load": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 4,
+            "gain_db": 6.020599913279624,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.5,
+            0.0
+          ],
+          "load": [
+            0.25,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 3.4843100189035914,
+            "gain_db": 5.4211678970793225,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 -0 -1 -0 -1 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0,
+            0.5
+          ],
+          "load": [
+            -0.0,
+            -0.5
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.36,
+            "gain_db": -4.436974992327127,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 0 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.2,
+            0.0
+          ],
+          "load": [
+            0.3,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0,
+            "state": "zero"
+          }
+        ]
+      }
+    }
+  ],
+  "fileConsumers": [],
+  "oracle": "Fraction exact complex four-wave Gaussian elimination; NumPy four-wave solve for 32 fixed ordinary complex cases; Decimal160 log ratio",
+  "numpyVersion": "2.5.3",
+  "primaryDefinition": "https://qucs.sourceforge.net/tech/node6.html",
+  "sourceSHA256": {
+    "gain.mbt": "cdffef018b0455a6805108925dd10b53f2e8dcf6bf813ec2786bbe8eb624ec55",
+    "gain_test.mbt": "76aae70b34354ff070140e11e8138f59149acf4fdc6b5843de7cd7d1b0ef018a",
+    "cmd/bridge/main.mbt": "ad7d592ee11aa5e39ae528f67d969c3cad6243e5449982f8f2a147f7ea3d76b0",
+    "tools/touchstone.mjs": "6640c0c774c63186620504d67f99b800e214c40defe70cb505bf637948f31fbe",
+    "tools/verify-gain.py": "f2e6e138059d606fe6d4a89345325a6e976ae3d8e780e3f5b6ef3e35eef92aa2",
+    "examples/power_gain/main.mbt": "81300c2c1c934eff6c4e51a3545b8e53f54cc18dffcccc8a21f2d0bf68afccba",
+    "examples/power_gain/moon.pkg": "35982d8af91d30473fb1a09057fd5dd0d165d452a136fb938db53bfe04a4f7d0",
+    "examples/power-gain.s2p": "64e7e670f508a1de2e3d56632610cc1ffed9a355ea12ba84f37a9e1907c11c6e",
+    "examples/power-gain-options.json": "9fe4c03a9cd980c314b015229427e0d956a57f8ab61f493edb30e56b5269a188"
+  }
+}

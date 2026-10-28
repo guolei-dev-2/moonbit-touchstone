@@ -1,0 +1,113 @@
+[
+  {
+    "command": [
+      "moon",
+      "fmt"
+    ],
+    "exitCode": 0,
+    "provenance": "completed console tool result; no separate raw log"
+  },
+  {
+    "command": [
+      "moon",
+      "info"
+    ],
+    "exitCode": 0,
+    "provenance": "completed console tool result; no separate raw log"
+  },
+  {
+    "command": [
+      "moon",
+      "check",
+      "--target",
+      "all",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "provenance": "completed console tool result; no separate raw log"
+  },
+  {
+    "command": [
+      "moon",
+      "build",
+      "--target",
+      "js",
+      "--release"
+    ],
+    "exitCode": 0,
+    "provenance": "completed console tool result; no separate raw log"
+  },
+  {
+    "output": "Total tests: 3, passed: 3, failed: 0.",
+    "target": "js",
+    "log": "format_extreme_test.mbt-js.log",
+    "exitCode": 0,
+    "file": "format_extreme_test.mbt"
+  },
+  {
+    "output": "Total tests: 3, passed: 3, failed: 0.",
+    "target": "js",
+    "log": "legacy_test.mbt-js.log",
+    "exitCode": 0,
+    "file": "legacy_test.mbt"
+  },
+  {
+    "output": "Total tests: 4, passed: 4, failed: 0.",
+    "target": "js",
+    "log": "document_test.mbt-js.log",
+    "exitCode": 0,
+    "file": "document_test.mbt"
+  },
+  {
+    "output": "Total tests: 3, passed: 3, failed: 0.",
+    "target": "wasm-gc",
+    "log": "format_extreme_test.mbt-wasm-gc.log",
+    "exitCode": 0,
+    "file": "format_extreme_test.mbt"
+  },
+  {
+    "output": "Total tests: 3, passed: 3, failed: 0.",
+    "target": "wasm-gc",
+    "log": "legacy_test.mbt-wasm-gc.log",
+    "exitCode": 0,
+    "file": "legacy_test.mbt"
+  },
+  {
+    "output": "Total tests: 4, passed: 4, failed: 0.",
+    "target": "wasm-gc",
+    "log": "document_test.mbt-wasm-gc.log",
+    "exitCode": 0,
+    "file": "document_test.mbt"
+  },
+  {
+    "output": "touchstone.internal_test.c\ntouchstone.blackbox_test.c\nTotal tests: 3, passed: 3, failed: 0.",
+    "target": "native",
+    "log": "format_extreme_test.mbt-native.log",
+    "exitCode": 0,
+    "file": "format_extreme_test.mbt"
+  },
+  {
+    "output": "Total tests: 3, passed: 3, failed: 0.",
+    "target": "native",
+    "log": "legacy_test.mbt-native.log",
+    "exitCode": 0,
+    "file": "legacy_test.mbt"
+  },
+  {
+    "output": "Total tests: 4, passed: 4, failed: 0.",
+    "target": "native",
+    "log": "document_test.mbt-native.log",
+    "exitCode": 0,
+    "file": "document_test.mbt"
+  },
+  {
+    "command": [
+      "python",
+      "tools/verify-format-extreme.py",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-07-max-20261028\\independent-first.json"
+    ],
+    "exitCode": 0,
+    "requests": 70
+  }
+]

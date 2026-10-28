@@ -1,0 +1,65 @@
+[
+  {
+    "name": "fmt-before-consumer",
+    "command": [
+      "moon",
+      "fmt"
+    ],
+    "exitCode": 0,
+    "provenance": "Observed console completion before the first module/file consumer; no source .mbt changed after it"
+  },
+  {
+    "name": "public-module-file-consumer",
+    "command": [
+      "python",
+      "tools/verify-one-port-consumer.py",
+      "--moon",
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-22-max-20261028\\independent-first.json"
+    ],
+    "exitCode": 0,
+    "moduleRuntimeExecutions": 1,
+    "fileCLINodeProcesses": 1,
+    "pairedSamples": 5,
+    "consumerChecks": 6,
+    "receipt": "independent-first.json"
+  },
+  {
+    "name": "info",
+    "command": [
+      "moon",
+      "info"
+    ],
+    "exitCode": 0,
+    "seconds": 2.0359897000016645,
+    "stdout": "info.stdout.log",
+    "stderr": "info.stderr.log"
+  },
+  {
+    "name": "check-all",
+    "command": [
+      "moon",
+      "check",
+      "--target",
+      "all",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 2.9859920000017155,
+    "stdout": "check-all.stdout.log",
+    "stderr": "check-all.stderr.log"
+  },
+  {
+    "name": "fmt-check",
+    "command": [
+      "moon",
+      "fmt",
+      "--check"
+    ],
+    "exitCode": 0,
+    "seconds": 5.299198599997908,
+    "stdout": "fmt-check.stdout.log",
+    "stderr": "fmt-check.stderr.log"
+  }
+]

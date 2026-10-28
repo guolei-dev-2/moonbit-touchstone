@@ -1,0 +1,27 @@
+{
+  "complete": false,
+  "failure": "AssertionError({'ok': False, 'error': 'Failure(\"connected port references differ; renormalize explicitly\")'})",
+  "requests": 3,
+  "checks": [
+    {
+      "label": "independent mixed mode and nonsequential ports",
+      "maxAbsoluteError": 9.720644932127638e-17
+    },
+    {
+      "label": "modal reference ohms",
+      "maxAbsoluteError": 0.0
+    },
+    {
+      "label": "independent mixed mode and nonsequential ports",
+      "maxAbsoluteError": 1.1123893155135927e-16
+    },
+    {
+      "label": "modal reference ohms",
+      "maxAbsoluteError": 0.0
+    }
+  ],
+  "versions": {
+    "numpy": "2.5.3",
+    "scikit_rf": "2.1.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "oldProductDefects": [],
+  "newExampleCorrection": {
+    "provenance": "Initial console moon check --target all --deny-warn after new renderer/example addition",
+    "exitCode": 1,
+    "diagnostic": "E4021: examples/gain_csv/main.mbt value identifier print is unbound",
+    "correction": "Use the existing println builtin; CSV readers skip the resulting final blank line",
+    "isOldProductBug": false
+  }
+}

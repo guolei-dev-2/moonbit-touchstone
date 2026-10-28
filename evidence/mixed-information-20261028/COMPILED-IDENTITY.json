@@ -1,0 +1,23 @@
+{
+  "before": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "21e4c5e1f8d27ced6457457d893c8492add2bcc0354c7283a25f4ef5409c4011",
+    "provenance": "observed start of17"
+  },
+  "after": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "8bdc62096cb2f49e2534e068e38131628984683cd78902299c0841a1aa4d3319"
+  },
+  "provenance": "One release JS build before the first successful focused regression; production source unchanged since execution",
+  "executedSourceSHA256": {
+    "cmd/bridge/main.mbt": "f1041a83ed8830974a24b5f05afbe9f38e483bf203b33d3f850b3f3f35dddf93",
+    "tools/verify-terminate-file.py": "8e589876bfb1e919c809f45b5c18ac7a317ca434d8b576ada9db5c43fdd7e242",
+    "tools/verify-mixed-information.py": "d68ceba6dab00f1305c0046887d2e8fb6dfc7f805127a755a7cdb5d80a2c997a",
+    "examples/mixed-information.ts": "1b5781c07caeb672aa89860b0858f1d91c9e6bbbbfc447c43261c5c29b72c5c5",
+    "examples/mixed-information-options.json": "a7182c38716883ca9962f302c14cdbdcf6d7c8ef77b1fd4da95d8ab5107be005",
+    "mixed_mode.mbt": "192e45989be2b3a41ee19472277a401c78182bceb2704ed6292b7a57efe8cf9c",
+    "document.mbt": "0435f50901dc5e06aa3c0d12a959530965b336e512415d0e3a3ae69578ea5ec1",
+    "versioned.mbt": "069ae06b33d7c0b2c0d4db1dce34a2ad3df2f135088ce7d35bec1a128961fe11"
+  },
+  "oldCoreSourceAndPublicAPIUnchanged": true
+}

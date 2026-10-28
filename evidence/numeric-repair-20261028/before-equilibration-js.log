@@ -1,0 +1,37 @@
+Error: [3002]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\numeric_scale_test.mbt:36:24 ]
+    │
+ 36 │   for i, expected in [5e-309, -5e-309, 5e-309, 5e-309] {
+    │                        ┬  
+    │                        ╰── Parse error, unexpected token id (lowercase start), you may expect `,` or `]`.
+────╯
+Error: [3002]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\numeric_scale_test.mbt:36:33 ]
+    │
+ 36 │   for i, expected in [5e-309, -5e-309, 5e-309, 5e-309] {
+    │                                 ┬  
+    │                                 ╰── Parse error, unexpected token id (lowercase start), you may expect `,` or `]`.
+────╯
+Error: [3002]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\numeric_scale_test.mbt:36:41 ]
+    │
+ 36 │   for i, expected in [5e-309, -5e-309, 5e-309, 5e-309] {
+    │                                         ┬  
+    │                                         ╰── Parse error, unexpected token id (lowercase start), you may expect `,` or `]`.
+────╯
+Error: [3002]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\numeric_scale_test.mbt:36:49 ]
+    │
+ 36 │   for i, expected in [5e-309, -5e-309, 5e-309, 5e-309] {
+    │                                                 ┬  
+    │                                                 ╰── Parse error, unexpected token id (lowercase start), you may expect `,` or `]`.
+────╯
+Error: [4014]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\numeric_scale_test.mbt:37:30 ]
+    │
+ 37 │     assert_true((inv[i].re / expected - 1.0).abs() < 1.0e-14)
+    │                              ────┬───  
+    │                                  ╰───── Expr Type Mismatch
+        has type : Int
+        wanted   : Double
+────╯

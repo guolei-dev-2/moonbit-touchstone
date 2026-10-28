@@ -1,0 +1,24 @@
+{
+  "inScopeProductionDefects": [],
+  "firstConsumer": {
+    "receipt": "independent-first.json",
+    "toolCLIProcesses": 13,
+    "fixtureMistake": "Mixed fixture assumed original information lines existed after old mixed CLI preparation",
+    "correction": "Explicitly add information to the mixed input fixture; verify new exporter preserves actual input information"
+  },
+  "secondConsumer": {
+    "receipt": "independent-final.json",
+    "toolCLIProcesses": 25,
+    "fixtureMistake": "Noisy2.1 two-port fixture omitted mandatory Two-Port Data Order",
+    "correction": "Add only the missing fixture literal; preserve24 accepted prefix cases and execute3 remaining cases",
+    "proof": "complete-consumer.py and verify-terminate-file-prefix-executed.py"
+  },
+  "acceptedCompleteConsumer": {
+    "receipt": "independent-complete.json",
+    "acceptedToolCLIProcesses": 27,
+    "consumerChecks": 19,
+    "independentGTPointComparisons": 6,
+    "freshWholeScriptRerunClaimed": false
+  },
+  "adjacentReportOnly": "Existing mixed CLI does not propagate original information lines; not modified in this round"
+}

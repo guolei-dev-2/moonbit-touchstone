@@ -1,0 +1,26 @@
+
+         --  -- 
+       /  //  / __--------_
+      /  //  /_/            \
+   ---      -                \ __
+  / X        /        ____   /   )
+  *_________/__/_____/______/ `--
+
+Oops, the compiler has encountered an unexpected situation.
+This is a bug in the compiler.
+
+A bug report containing the error description and relevant code would be
+greatly appreciated. You can submit the bug report here:
+
+  https://github.com/moonbitlang/moonbit-docs/issues/new?template=ice.md
+
+Error: Sys_error("D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain\\lib\\core\\_build\\js\\release\\bundle\\math\\math.mi: No such file or directory")
+
+Compiler args: "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain\\bin\\moonc.exe" build-package -error-format json "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\amplifier.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\analysis.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\bands.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\cascade.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\complex.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\conversion.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\document.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\gain.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\gain_band.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\gain_csv.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\gain_impedance.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\legacy.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\matrix.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\mixed_mode.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\network.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\noise.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\ripple.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\text.mbt" "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\versioned.mbt" -w @a -o "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\touchstone.core" -pkg guolei-dev/touchstone -pkg-type library -std-path "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain\\lib\\core\\_build\\js\\release\\bundle" -i "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain\\lib\\core\\_build\\js\\release\\bundle\\math\\math.mi:math" -i "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain\\lib\\core\\_build\\js\\release\\bundle\\prelude\\prelude.mi:prelude" -i "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain\\lib\\core\\_build\\js\\release\\bundle\\string\\string.mi:string" -pkg-sources "guolei-dev/touchstone:D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone" -target js -workspace-path "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone" -all-pkgs "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\all_pkgs.json"
+
+moonc version: v0.10.14+7d59c7ec9
+Failed with 0 warnings, 0 errors.
+Error: failed to run build for target Js
+
+Caused by:
+    failed when building project

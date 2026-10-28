@@ -1,0 +1,155 @@
+{
+  "complete": true,
+  "failure": null,
+  "oracle": "Fraction exact binary64 source components and Decimal precision 160, direct original noise-parameter relation",
+  "absoluteToleranceDb": 2e-11,
+  "sourceSHA256": {
+    "noise.mbt": "2bc44c55b92f9c5923d89e03ab7f8a009792c05eae570a2f9de7f4b6dc00e4e1",
+    "gain.mbt": "f0ab0b6522ba1a372d3c2ede72b0d76f6e655e0cfb1f8e42af1ce27781e5284a",
+    "noise_source_test.mbt": "3c037fc11a215c7210f8ae1709d52959848ff0879d4ca047e1ef07cea6700e7b",
+    "cmd/bridge/main.mbt": "f1041a83ed8830974a24b5f05afbe9f38e483bf203b33d3f850b3f3f35dddf93",
+    "tools/touchstone.mjs": "2ead8ae7d516ccdc6e92c9f2b08b8df4662fe505342cebaea263aa313ad852b6",
+    "tools/verify-noise-source.py": "14df68676c9e5c914efeb1c2119bd52d55a20da7ad590f5194e69e3a3d4fbd76",
+    "examples/noise-source.s2p": "2c2b312468bfb638fb2afca08e0e3ca633530717649dc4f1a803e5300ef6639e",
+    "examples/noise-source-options.json": "315ead76dcb45aa25c59292e9033139b29d4a7f71eac8532f5cb6bc43b56ce3f"
+  },
+  "bridgeSHA256": "51c12b88f2ac16027fd339cbaa5f917c61021ef49bde49261b5e84ceeadd014f",
+  "inputSHA256": "2c2b312468bfb638fb2afca08e0e3ca633530717649dc4f1a803e5300ef6639e",
+  "commands": [
+    {
+      "name": "matched",
+      "source": [
+        0.0,
+        0.0
+      ],
+      "exact_margin_fraction": "1",
+      "expected_figure_db": "1.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "noise",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\noise-source.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\matched.options.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\matched.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\matched.stderr.log",
+      "actualFigureDb": 1.0000000000000002,
+      "absoluteErrorDb": "2.220446049250313080847263336E-16"
+    },
+    {
+      "name": "rounded-unit-legal",
+      "source": [
+        0.9999999999999999,
+        1.4901161193847655e-08
+      ],
+      "exact_margin_fraction": "13510798882111487/365375409332725729550921208179070754913983135744",
+      "expected_figure_db": "320.3411827699030667793302161209969212375884430471445345258814524611204166265350711619609144713501349070426814310755372605556510293703618117657815516204925599686",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "noise",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\noise-source.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\rounded-unit-legal.options.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\rounded-unit-legal.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\rounded-unit-legal.stderr.log",
+      "actualFigureDb": 320.34118276990307,
+      "absoluteErrorDb": "4.168872878182611019436239682E-15"
+    },
+    {
+      "name": "accepted-near-unit",
+      "source": [
+        0.6,
+        0.7999999999999999
+      ],
+      "exact_margin_fraction": "5404319552844595/40564819207303340847894502572032",
+      "expected_figure_db": "164.7746851547134088545585526052591834945534305275012588590312597958018944448681548501276922562232412351132674332696351601436278280813868263627376757341854301984",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "noise",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\noise-source.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\accepted-near-unit.options.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\accepted-near-unit.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\accepted-near-unit.stderr.log",
+      "actualFigureDb": 164.7746851547134,
+      "absoluteErrorDb": "1.074613932530236479194655554E-15"
+    },
+    {
+      "name": "unit",
+      "source": [
+        1.0,
+        0.0
+      ],
+      "exact_margin_fraction": "0",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "noise",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\noise-source.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\unit.options.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\unit.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\unit.stderr.log"
+    },
+    {
+      "name": "outside-adjacent",
+      "source": [
+        0.9999999999999999,
+        1.4901161193847656e-08
+      ],
+      "exact_margin_fraction": "-1/81129638414606681695789005144064",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "noise",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\noise-source.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\outside-adjacent.options.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\outside-adjacent.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\outside-adjacent.stderr.log"
+    },
+    {
+      "name": "axis-subnormal-outside",
+      "source": [
+        1.0,
+        5e-324
+      ],
+      "exact_margin_fraction": "-1/40966672143876732145176228848043091143928566425868314369800638377010779053124493714260960149070292229477000187962034707314131344279013990700557084216067703100110397626915930050017669416781158249744236172365003101763600273594402063864722325201532144604115521818460662623935143647469165084514879475815880467163982182410113805509643338164835839186040845030529294117697218294439255325218264815180040054295920900280527835303063728875285777248462704511695944824230554347848626506942611938335291999257755662113691788246053880398723321865319809478918081631431889557552749507834196358292243660837246218506196446294893757162080795972525602568587162635206656",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "noise",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\noise-source.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\axis-subnormal-outside.options.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\axis-subnormal-outside.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.cases\\axis-subnormal-outside.stderr.log"
+    }
+  ],
+  "checks": [
+    "Three finite legal figures agree with independent direct-parameter oracle",
+    "Unit, exact adjacent outside, and axis-plus-subnormal outside sources reject with the domain error",
+    "Source-independent covariance matrices and circles are identical for all three legal requests",
+    "The actual CLI input bytes equal the before-repair input",
+    "The complete ordinary matched CLI output is byte-identical to before repair"
+  ],
+  "oldCollectionsRerun": false,
+  "newManufacturerInputs": 0,
+  "baselineCompared": true,
+  "actualNodeProcesses": 6,
+  "consumerChecks": 5
+}

@@ -1,0 +1,11 @@
+--- round12/pkg.generated.mbti
++++ round13/pkg.generated.mbti
+@@ -19,6 +19,8 @@
+ pub fn parse(String, ports? : Int) -> Document raise
+ 
+ pub fn parse_legacy(String, ports~ : Int) -> Network raise
++
++pub fn transducer_gain_samples_csv(Array[TransducerGainPoint], Double, Double, minimum_db? : Double, maximum_db? : Double) -> String raise
+ 
+ // Errors
+ 

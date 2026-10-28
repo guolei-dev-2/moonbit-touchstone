@@ -1,0 +1,690 @@
+{
+  "complete": true,
+  "failure": null,
+  "actualCLIProcesses": 27,
+  "consumerChecks": 29,
+  "commands": [
+    {
+      "label": "gamma-pass",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"minimum_db\": 3.0, \"maximum_db\": 7.0}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "ohm-fail-saved",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"minimum_db\": 4.0, \"maximum_db\": 7.0, \"terminal_mode\": \"impedance\", \"source_ohms\": [100.0, 20.0], \"load_ohms\": [25.0, -10.0]}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\saved failing table.csv"
+      ],
+      "exitCode": 3,
+      "expectedExitCode": 3,
+      "stderr": ""
+    },
+    {
+      "label": "incomplete-band",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 3000000000.0, \"minimum_db\": 3.0}"
+      ],
+      "exitCode": 4,
+      "expectedExitCode": 4,
+      "stderr": ""
+    },
+    {
+      "label": "no-selected-samples",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1100000000.0, \"end_hz\": 1900000000.0, \"minimum_db\": 0.0}"
+      ],
+      "exitCode": 4,
+      "expectedExitCode": 4,
+      "stderr": ""
+    },
+    {
+      "label": "single-original-index",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 2000000000.0, \"end_hz\": 2000000000.0, \"maximum_db\": 4.0}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "zero-upper",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\zero.s2p",
+        "{\"start_hz\": 1.0, \"end_hz\": 2.0, \"maximum_db\": 0.0}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "zero-lower",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\zero.s2p",
+        "{\"start_hz\": 1.0, \"end_hz\": 2.0, \"minimum_db\": 0.0}"
+      ],
+      "exitCode": 3,
+      "expectedExitCode": 3,
+      "stderr": ""
+    },
+    {
+      "label": "five-state-fail",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\mixed five states.s2p",
+        "{\"source\": [0.5, 0.0], \"start_hz\": 1.0, \"end_hz\": 5.0, \"minimum_db\": -3000.0, \"maximum_db\": 3000.0}"
+      ],
+      "exitCode": 3,
+      "expectedExitCode": 3,
+      "stderr": ""
+    },
+    {
+      "label": "singular-remains-unknown",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\mixed five states.s2p",
+        "{\"source\": [0.5, 0.0], \"start_hz\": 1.0, \"end_hz\": 5.0, \"maximum_db\": 5000.0}"
+      ],
+      "exitCode": 4,
+      "expectedExitCode": 4,
+      "stderr": ""
+    },
+    {
+      "label": "only-singular",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\mixed five states.s2p",
+        "{\"source\": [0.5, 0.0], \"start_hz\": 5.0, \"end_hz\": 5.0, \"maximum_db\": 0.0}"
+      ],
+      "exitCode": 4,
+      "expectedExitCode": 4,
+      "stderr": ""
+    },
+    {
+      "label": "positive-extremes-known",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\mixed five states.s2p",
+        "{\"source\": [0.5, 0.0], \"start_hz\": 3.0, \"end_hz\": 4.0, \"minimum_db\": -5000.0, \"maximum_db\": 5000.0}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "local-pass-global-inconclusive",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\mixed five states.s2p",
+        "{\"source\": [0.5, 0.0], \"start_hz\": 0.0, \"end_hz\": 1.0, \"maximum_db\": 10.0}"
+      ],
+      "exitCode": 4,
+      "expectedExitCode": 4,
+      "stderr": ""
+    },
+    {
+      "label": "full-100000-sample-CSV",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\capacity.s2p",
+        "{\"start_hz\": 0.0, \"end_hz\": 99999.0, \"maximum_db\": 0.0}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "saved-CSV-no-overwrite",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"minimum_db\": 4.0, \"maximum_db\": 7.0, \"terminal_mode\": \"impedance\", \"source_ohms\": [100.0, 20.0], \"load_ohms\": [25.0, -10.0]}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\saved failing table.csv"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: EEXIST: file already exists, open 'D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\saved failing table.csv'\n"
+    },
+    {
+      "label": "legacy-gamma",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-check",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"minimum_db\": 3.0, \"maximum_db\": 7.0}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "legacy-ohm",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-check",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"minimum_db\": 4.0, \"maximum_db\": 7.0, \"terminal_mode\": \"impedance\", \"source_ohms\": [100.0, 20.0], \"load_ohms\": [25.0, -10.0]}"
+      ],
+      "exitCode": 3,
+      "expectedExitCode": 3,
+      "stderr": ""
+    },
+    {
+      "label": "sealed12-receipt-still-reproduces",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\evidence\\gain-receipt-20261028\\receipt-fail.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "receipt-does-not-expand-to-CSV",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\forbidden-receipt-command.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"receipt may replay only gain-check\")\n"
+    },
+    {
+      "label": "unknown-mode",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"minimum_db\": 3.0, \"maximum_db\": 7.0, \"terminal_mode\": \"power\"}"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"terminal_mode must be gamma or impedance\")\n"
+    },
+    {
+      "label": "mixed-terminal-units",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"minimum_db\": 3.0, \"maximum_db\": 7.0, \"source_ohms\": [50.0, 0.0]}"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"unknown gain check option: source_ohms\")\n"
+    },
+    {
+      "label": "missing-bound",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0}"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"gain check requires a dB bound\")\n"
+    },
+    {
+      "label": "inverted-band",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 0.0, \"minimum_db\": 3.0, \"maximum_db\": 7.0}"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"gain band requires finite 0<=start_hz<=end_hz\")\n"
+    },
+    {
+      "label": "inverted-limits",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"minimum_db\": 8.0, \"maximum_db\": 7.0}"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"gain minimum exceeds maximum\")\n"
+    },
+    {
+      "label": "missing-ohm-load",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"terminal_mode\": \"impedance\", \"source_ohms\": [50.0, 0.0], \"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"minimum_db\": 3.0, \"maximum_db\": 7.0}"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"missing option: load_ohms\")\n"
+    },
+    {
+      "label": "bad-complex-shape",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"minimum_db\": 3.0, \"maximum_db\": 7.0, \"source\": [0.0]}"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"expected [real,imag] for source\")\n"
+    },
+    {
+      "label": "fixture-key-not-read",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"minimum_db\": 3.0, \"maximum_db\": 7.0, \"left_file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\reports\\\\touchstone\\\\deep-repair-13-max-20261028\\\\independent-first-cases\\\\must-not-be-opened.txt\"}"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"unknown gain check option: left_file\")\n"
+    },
+    {
+      "label": "non-ASCII-input",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-csv",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\nonascii.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"minimum_db\": 3.0, \"maximum_db\": 7.0}"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Touchstone input must be ASCII\n"
+    }
+  ],
+  "checks": [
+    {
+      "label": "gamma-pass",
+      "rows": 2,
+      "reportStatus": "pass",
+      "rangeCovered": true,
+      "pointIndices": [
+        0,
+        1
+      ],
+      "states": [
+        "finite",
+        "finite"
+      ]
+    },
+    {
+      "label": "ohm-fail-saved",
+      "rows": 2,
+      "reportStatus": "fail",
+      "rangeCovered": true,
+      "pointIndices": [
+        0,
+        1
+      ],
+      "states": [
+        "finite",
+        "finite"
+      ]
+    },
+    {
+      "label": "incomplete-band",
+      "rows": 2,
+      "reportStatus": "inconclusive",
+      "rangeCovered": false,
+      "pointIndices": [
+        0,
+        1
+      ],
+      "states": [
+        "finite",
+        "finite"
+      ]
+    },
+    {
+      "label": "no-selected-samples",
+      "rows": 0,
+      "reportStatus": "inconclusive",
+      "rangeCovered": true,
+      "pointIndices": [],
+      "states": []
+    },
+    {
+      "label": "single-original-index",
+      "rows": 1,
+      "reportStatus": "pass",
+      "rangeCovered": true,
+      "pointIndices": [
+        1
+      ],
+      "states": [
+        "finite"
+      ]
+    },
+    {
+      "label": "zero-upper",
+      "rows": 2,
+      "reportStatus": "pass",
+      "rangeCovered": true,
+      "pointIndices": [
+        0,
+        1
+      ],
+      "states": [
+        "zero",
+        "zero"
+      ]
+    },
+    {
+      "label": "zero-lower",
+      "rows": 2,
+      "reportStatus": "fail",
+      "rangeCovered": true,
+      "pointIndices": [
+        0,
+        1
+      ],
+      "states": [
+        "zero",
+        "zero"
+      ]
+    },
+    {
+      "label": "five-state-fail",
+      "rows": 5,
+      "reportStatus": "fail",
+      "rangeCovered": true,
+      "pointIndices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "states": [
+        "finite",
+        "zero",
+        "underflow",
+        "overflow",
+        "singular"
+      ]
+    },
+    {
+      "label": "singular-remains-unknown",
+      "rows": 5,
+      "reportStatus": "inconclusive",
+      "rangeCovered": true,
+      "pointIndices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "states": [
+        "finite",
+        "zero",
+        "underflow",
+        "overflow",
+        "singular"
+      ]
+    },
+    {
+      "label": "only-singular",
+      "rows": 1,
+      "reportStatus": "inconclusive",
+      "rangeCovered": true,
+      "pointIndices": [
+        4
+      ],
+      "states": [
+        "singular"
+      ]
+    },
+    {
+      "label": "positive-extremes-known",
+      "rows": 2,
+      "reportStatus": "pass",
+      "rangeCovered": true,
+      "pointIndices": [
+        2,
+        3
+      ],
+      "states": [
+        "underflow",
+        "overflow"
+      ]
+    },
+    {
+      "label": "local-pass-global-inconclusive",
+      "rows": 1,
+      "reportStatus": "inconclusive",
+      "rangeCovered": false,
+      "pointIndices": [
+        0
+      ],
+      "states": [
+        "finite"
+      ]
+    },
+    {
+      "label": "full-100000-sample-CSV",
+      "rows": 100000,
+      "CSVBytes": 6077926,
+      "allIndicesAndCellsChecked": true
+    },
+    {
+      "label": "saved-CSV-no-overwrite",
+      "preservedSHA256": "297d448b01404c3e55979518bdcc02f59bf7147e165b6e72635b46613e9a2825"
+    },
+    {
+      "label": "legacy-gamma",
+      "sealed12PayloadPreserved": true
+    },
+    {
+      "label": "legacy-ohm",
+      "sealed12PayloadPreserved": true
+    },
+    {
+      "label": "sealed12-receipt-still-reproduces",
+      "fullReviewPreserved": true
+    },
+    {
+      "label": "receipt-does-not-expand-to-CSV",
+      "rejected": true
+    },
+    {
+      "label": "unknown-mode",
+      "rejected": true
+    },
+    {
+      "label": "mixed-terminal-units",
+      "rejected": true
+    },
+    {
+      "label": "missing-bound",
+      "rejected": true
+    },
+    {
+      "label": "inverted-band",
+      "rejected": true
+    },
+    {
+      "label": "inverted-limits",
+      "rejected": true
+    },
+    {
+      "label": "missing-ohm-load",
+      "rejected": true
+    },
+    {
+      "label": "bad-complex-shape",
+      "rejected": true
+    },
+    {
+      "label": "fixture-key-not-read",
+      "rejected": true
+    },
+    {
+      "label": "non-ASCII-input",
+      "rejected": true
+    },
+    {
+      "label": "pure-MoonBit-consumer-js",
+      "CSVMatchesActualOhmFile": true
+    },
+    {
+      "label": "pure-MoonBit-consumer-wasm-gc",
+      "CSVMatchesActualOhmFile": true
+    }
+  ],
+  "oracle": "Python stdlib csv.DictReader, fixed five-state/bound truth cases and sealed12 scalar outputs; no RF oracle rerun.",
+  "newManufacturerInputs": 0,
+  "newGTNumericalComparisons": 0,
+  "capacityRowsChecked": 100000,
+  "artifacts": [
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\gamma-pass.csv",
+      "sha256": "d7d8fb32a893512cca35e101c880449e406de1be7eb40f1339db582dfcf8fd01"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\saved failing table.csv",
+      "sha256": "297d448b01404c3e55979518bdcc02f59bf7147e165b6e72635b46613e9a2825"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\incomplete-band.csv",
+      "sha256": "6887905e8e91f5c654368723f563010b77b45f7ee01f27262008634869bd48e5"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\no-selected-samples.csv",
+      "sha256": "6800d80f8e019eca8680dc121682c5f64024bce723df73aa6dbbc40ef0ea7b11"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\single-original-index.csv",
+      "sha256": "17a5a5883cd161725b0b5012beb3e799dbaf52dc97008cd37ad1240f00c059e4"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\zero.s2p",
+      "sha256": "a97dceb99557b7f5198884c6885e32f92e4cece02564c135ed77a5d028e938ca"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\zero-upper.csv",
+      "sha256": "761bcfa52367a6c901af17f0dac9dfcf4286ff607f30822276ea2d297849e556"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\zero-lower.csv",
+      "sha256": "8e5e1f3b65fd77abdfc7a90e24e2fc682c768a02caf8922836f8c813f6cfc48a"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\mixed five states.s2p",
+      "sha256": "cfdc32ab693e2e08e263e3420935ca8a6100e660953aaa11eaa3989e55a6fe4e"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\five-state-fail.csv",
+      "sha256": "4783f83d22937a2f8074e0b22fef07f577a75ceb4eb604bfcbebd98979c221c3"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\singular-remains-unknown.csv",
+      "sha256": "688d1473a49d33af37063bcb596dfe3a74fba8df0c574c77aaa87b7bfe8bd653"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\only-singular.csv",
+      "sha256": "c0d5f569da22a6ff4f1d958abb1ebca69b6029f7a0a56adbbba57624574b4f6f"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\positive-extremes-known.csv",
+      "sha256": "0d7381735df9406d03d56ccda40b2307f27edcd914acb0752dadc2eb81f6db5e"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\local-pass-global-inconclusive.csv",
+      "sha256": "34d37f6116afa9355d37ec4063ace591e38480347fd2eff7ea98aba50f64197b"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\capacity.s2p",
+      "sha256": "5278c1eff9161edb2c37f9c164e8a872254be65942e6401f6c0914e764955270"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\capacity.csv",
+      "sha256": "962491d636996e9d6c2ab091f689887ee62d1387a3a6e482d5c09d1f0abcbded"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\forbidden-receipt-command.json",
+      "sha256": "b60892e26a841b735110f48710262663ef3dc74490395c14a33dbfa217a1e9b3"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-13-max-20261028\\independent-first-cases\\nonascii.s2p",
+      "sha256": "1e833615f355745897af0958d1a65fe362c8fc9083065321f92acca065ea3183"
+    }
+  ],
+  "sourceSHA256": {
+    "gain_csv.mbt": "4e4040a7184fd12f2fac020b338fdb1281ab63254d24135a40dab14633184628",
+    "gain_csv_test.mbt": "24bcbb5b434a763914855b5bca0d25af0d1be12dc76f3690f3eaefc858af866f",
+    "cmd/bridge/main.mbt": "ee27d6a7b011de4803b2670f679d18ca140fc57f6569510bcac5e348a2170e6f",
+    "tools/touchstone.mjs": "1fec9c65f24fabeb0e0a714d372b158ddf8958dbff598e31162b8aad2d6883a5",
+    "tools/verify-gain-csv.py": "f561e6bb2e39191be582dcaa2ce909a57b7d3285962b69b89f8818689385e5c8",
+    "examples/gain_csv/main.mbt": "0baf1bdf7ead3b8e127884c09da6ff304207df52c311a004c0550e69ee1dfdf2",
+    "gain.mbt": "f0ab0b6522ba1a372d3c2ede72b0d76f6e655e0cfb1f8e42af1ce27781e5284a",
+    "gain_impedance.mbt": "70166a5f530805e1ca1b7b74ba096d00e4f9512b5e741e06d3c9a55ca317f662",
+    "gain_band.mbt": "ff2e678edfb400fbae34643fede9f735aa6fccb84a232ddcbe70e98d8d0453a3"
+  }
+}

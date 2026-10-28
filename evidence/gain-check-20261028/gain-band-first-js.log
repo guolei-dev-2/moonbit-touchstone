@@ -1,0 +1,16 @@
+Error: [4018]
+     ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_band_test.mbt:157:3 ]
+     │
+ 157 │   assert_eq(empty.lowest, None)
+     │   ────┬────  
+     │       ╰────── Type @guolei-dev/touchstone.TransducerGainObservation does not implement trait @moonbitlang/core/debug.Debug: no `impl` is defined
+  note: this constraint is required by `impl` of @moonbitlang/core/debug.Debug for type Option at moonbitlang\core\debug\debug.mbt:128:1
+─────╯
+Error: [4018]
+     ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_band_test.mbt:157:3 ]
+     │
+ 157 │   assert_eq(empty.lowest, None)
+     │   ────┬────  
+     │       ╰────── Type @guolei-dev/touchstone.TransducerGainObservation does not implement trait Eq: no `impl` is defined
+  note: this constraint is required by `impl` of Eq for type Option at moonbitlang\core\builtin\option.mbt:16:1
+─────╯

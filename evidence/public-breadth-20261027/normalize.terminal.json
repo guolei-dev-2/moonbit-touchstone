@@ -1,0 +1,17 @@
+{
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+    "normalize",
+    "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027\\BFU530W_03V3_001mA_SP.s2p",
+    "{}"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\projects\\moonbit-touchstone",
+  "pid": 42956,
+  "exitCode": 0,
+  "elapsedNs": 197914600,
+  "stdoutPrivatePath": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027\\new-input-validation\\normalized.s2p",
+  "stderrPrivatePath": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027\\new-input-validation\\normalized.s2p.stderr",
+  "stdoutSHA256": "19b37b5713d5aeee15797406f38606dcb4c93c6954914ea8ff9f5dd086ff5433",
+  "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

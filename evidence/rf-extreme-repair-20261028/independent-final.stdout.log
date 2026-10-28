@@ -1,0 +1,231 @@
+{
+  "complete": true,
+  "failure": null,
+  "requests": 60,
+  "oracleDisagreements": [
+    {
+      "oracle": "scikit-rf2.1.0 max_gain",
+      "observed": "0.0",
+      "decimal800": 4.0,
+      "input": [
+        [
+          0.0,
+          1e-200
+        ],
+        [
+          2.0,
+          0.0
+        ]
+      ],
+      "reason": "binary64 K^2 or near-unit-margin cancellation; Decimal original expression is used for this limit"
+    },
+    {
+      "oracle": "scikit-rf2.1.0 max_gain",
+      "observed": "0.0",
+      "decimal800": 4.0,
+      "input": [
+        [
+          0.0,
+          1e-300
+        ],
+        [
+          2.0,
+          0.0
+        ]
+      ],
+      "reason": "binary64 K^2 or near-unit-margin cancellation; Decimal original expression is used for this limit"
+    },
+    {
+      "oracle": "scikit-rf2.1.0 max_gain",
+      "observed": "nan",
+      "decimal800": 4.0,
+      "input": [
+        [
+          0.0,
+          5e-324
+        ],
+        [
+          2.0,
+          0.0
+        ]
+      ],
+      "reason": "binary64 K^2 or near-unit-margin cancellation; Decimal original expression is used for this limit"
+    },
+    {
+      "oracle": "scikit-rf2.1.0 max_gain",
+      "observed": "nan",
+      "decimal800": 4.0,
+      "input": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.0,
+          0.0
+        ]
+      ],
+      "reason": "binary64 K^2 or near-unit-margin cancellation; Decimal original expression is used for this limit"
+    },
+    {
+      "oracle": "scikit-rf2.1.0 max_gain",
+      "observed": "1099511627776.0",
+      "decimal800": 1099512676352.75,
+      "input": [
+        [
+          0.9999990463256836,
+          1e-100
+        ],
+        [
+          2.0,
+          0.9999990463256836
+        ]
+      ],
+      "reason": "binary64 K^2 or near-unit-margin cancellation; Decimal original expression is used for this limit"
+    },
+    {
+      "oracle": "scikit-rf2.1.0 max_gain",
+      "observed": "0.0",
+      "decimal800": 1099512676352.75,
+      "input": [
+        [
+          0.9999990463256836,
+          1e-200
+        ],
+        [
+          2.0,
+          0.9999990463256836
+        ]
+      ],
+      "reason": "binary64 K^2 or near-unit-margin cancellation; Decimal original expression is used for this limit"
+    },
+    {
+      "oracle": "scikit-rf2.1.0 max_gain",
+      "observed": "0.0",
+      "decimal800": 1099512676352.75,
+      "input": [
+        [
+          0.9999990463256836,
+          1e-300
+        ],
+        [
+          2.0,
+          0.9999990463256836
+        ]
+      ],
+      "reason": "binary64 K^2 or near-unit-margin cancellation; Decimal original expression is used for this limit"
+    },
+    {
+      "oracle": "scikit-rf2.1.0 max_gain",
+      "observed": "nan",
+      "decimal800": 1099512676352.75,
+      "input": [
+        [
+          0.9999990463256836,
+          5e-324
+        ],
+        [
+          2.0,
+          0.9999990463256836
+        ]
+      ],
+      "reason": "binary64 K^2 or near-unit-margin cancellation; Decimal original expression is used for this limit"
+    },
+    {
+      "oracle": "scikit-rf2.1.0 max_gain",
+      "observed": "nan",
+      "decimal800": 1099512676352.75,
+      "input": [
+        [
+          0.9999990463256836,
+          0.0
+        ],
+        [
+          2.0,
+          0.9999990463256836
+        ]
+      ],
+      "reason": "binary64 K^2 or near-unit-margin cancellation; Decimal original expression is used for this limit"
+    },
+    {
+      "oracle": "scikit-rf2.1.0 max_gain",
+      "observed": "2e+100",
+      "decimal800": 1.2676506002282305e+30,
+      "input": [
+        [
+          0.9999999999999991,
+          1e-100
+        ],
+        [
+          2.0,
+          0.9999999999999991
+        ]
+      ],
+      "reason": "binary64 K^2 or near-unit-margin cancellation; Decimal original expression is used for this limit"
+    },
+    {
+      "oracle": "scikit-rf2.1.0 max_gain",
+      "observed": "2e+200",
+      "decimal800": 1.2676506002282305e+30,
+      "input": [
+        [
+          0.9999999999999991,
+          1e-200
+        ],
+        [
+          2.0,
+          0.9999999999999991
+        ]
+      ],
+      "reason": "binary64 K^2 or near-unit-margin cancellation; Decimal original expression is used for this limit"
+    },
+    {
+      "oracle": "scikit-rf2.1.0 max_gain",
+      "observed": "1.9999999999999998e+300",
+      "decimal800": 1.2676506002282305e+30,
+      "input": [
+        [
+          0.9999999999999991,
+          1e-300
+        ],
+        [
+          2.0,
+          0.9999999999999991
+        ]
+      ],
+      "reason": "binary64 K^2 or near-unit-margin cancellation; Decimal original expression is used for this limit"
+    },
+    {
+      "oracle": "scikit-rf2.1.0 max_gain",
+      "observed": "inf",
+      "decimal800": 1.2676506002282305e+30,
+      "input": [
+        [
+          0.9999999999999991,
+          5e-324
+        ],
+        [
+          2.0,
+          0.9999999999999991
+        ]
+      ],
+      "reason": "binary64 K^2 or near-unit-margin cancellation; Decimal original expression is used for this limit"
+    },
+    {
+      "oracle": "scikit-rf2.1.0 max_gain",
+      "observed": "nan",
+      "decimal800": 1.2676506002282305e+30,
+      "input": [
+        [
+          0.9999999999999991,
+          0.0
+        ],
+        [
+          2.0,
+          0.9999999999999991
+        ]
+      ],
+      "reason": "binary64 K^2 or near-unit-margin cancellation; Decimal original expression is used for this limit"
+    }
+  ]
+}

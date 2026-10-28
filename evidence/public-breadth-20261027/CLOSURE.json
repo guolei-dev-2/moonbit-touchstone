@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "status": "original-vendor-breadth-feedback-locally-remedied",
+  "priorManufacturer": "Johanson Technology",
+  "newManufacturer": "NXP Semiconductors",
+  "combinedEvidenceVendors": 2,
+  "newDevice": "BFU530W",
+  "selectedMember": "BFU530W_03V3_001mA_SP.s2p",
+  "inputSHA256": "d4a56bc6b099544c63ddbe25e9a1366935daf1a76bf0e47b0b269bb600ff2a95",
+  "newFrequencyPoints": 98,
+  "newComplexValuesPerCheck": 392,
+  "independentChecks": 3,
+  "currentModule": "guolei-dev/touchstone@0.3.0",
+  "engineSHA256": "70e384bb7e73e08c30715458d13d0c759e7b54546d471c02e6f264a4364f9da0",
+  "sourceInputCount": 46,
+  "allSourceInputsUnchanged": true,
+  "newAlgorithmChanges": 0,
+  "currentCLIStrictJSBuildExitCode": 0,
+  "newCLICommandExitCodes": [
+    0,
+    0,
+    0
+  ],
+  "referenceRuntime": {
+    "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "D:\\CodexLocal\\ban\\work\\touchstone-tcl-20261021\\rf-venv\\Scripts\\python.exe",
+    "scikitRF": "2.1.0",
+    "numpy": "2.5.3",
+    "skrfSourcePath": "D:\\CodexLocal\\ban\\work\\touchstone-tcl-20261021\\rf-venv\\Lib\\site-packages\\skrf\\__init__.py",
+    "skrfSourceSHA256": "950606d6238fa037694f1fc7d1d6e8644e57a75484cd8053e68ad15ce898737a",
+    "numpySourcePath": "D:\\CodexLocal\\ban\\work\\touchstone-tcl-20261021\\rf-venv\\Lib\\site-packages\\numpy\\__init__.py",
+    "numpySourceSHA256": "a6958cb364663b7acce81ccfd58eeb65a2b34d5376157f924777b97211a73be4"
+  },
+  "prior30or1103SuiteRerun": false,
+  "oldPublicSampleRerun": false,
+  "realExecutionToolObservations": [
+    {
+      "chunk": "d89485",
+      "exitCode": 0,
+      "scope": "one current strict JS build controller"
+    },
+    {
+      "chunk": "6abefd",
+      "exitCode": 0,
+      "scope": "new-input-only scikit-rf/NumPy verifier; raw CLI data preserved privately"
+    }
+  ],
+  "producerFailuresPreserved": [
+    "FETCH-01-FAILURE.json",
+    "SOURCE.json: earlierAttempts"
+  ],
+  "modifiedExistingFiles": [
+    "README.md"
+  ],
+  "newEvidenceDirectory": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\projects\\moonbit-touchstone\\evidence\\public-breadth-20261027",
+  "publicFiles": [
+    {
+      "path": "BUILD.json",
+      "bytes": 1200,
+      "sha256": "0b113c427d1b14b98b29e579871cc1a7803ba8cc7836ac85bdb52ea6e90fce9f"
+    },
+    {
+      "path": "build.stderr.raw",
+      "bytes": 44,
+      "sha256": "d9b015c38c593df35215cd7f4dc78b49f23b6ab51a36a1d02bc12597f4bbde84"
+    },
+    {
+      "path": "build.stdout.raw",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "build.terminal.json",
+      "bytes": 685,
+      "sha256": "69ae7ebc0ffbf6d81c5fce190895dfffba59fd40c5f040c418d5311bc28538df"
+    },
+    {
+      "path": "dump.terminal.json",
+      "bytes": 1019,
+      "sha256": "9ea74eb54b00680f7520e5a5dbc4595874eee0727d929b83186746c393f6b2d2"
+    },
+    {
+      "path": "FETCH-01-FAILURE.json",
+      "bytes": 345,
+      "sha256": "8845f5ea0b8a16eed59ace1220422c706882c56bb45b2ff6c61701d29587cb3a"
+    },
+    {
+      "path": "fetch_nxp.py",
+      "bytes": 2742,
+      "sha256": "604778250d98de698b56cb923b347577bc18af312842afe384b113f39d6eed37"
+    },
+    {
+      "path": "fetch_nxp_curl.py",
+      "bytes": 1164,
+      "sha256": "c10bae959afa8bb14d45cd03ae657d3d58950dce626853dab1dc530da81d2c0a"
+    },
+    {
+      "path": "final_readback.py",
+      "bytes": 5753,
+      "sha256": "ea5e3d67282c7a58220f31fad43be1510e3fd46fafbb3007b85ae36c267533ba"
+    },
+    {
+      "path": "INPUTS-BEFORE.json",
+      "bytes": 4585,
+      "sha256": "274576b566447659f38fc97fc9db92946801dbd10965370a7632eb1abde98950"
+    },
+    {
+      "path": "normalize.terminal.json",
+      "bytes": 1034,
+      "sha256": "12644ac584b1059815528f4f72eaff38c4179e10acd5c9d5497deff13cc6d924"
+    },
+    {
+      "path": "PACKAGE-EXCLUSIONS.json",
+      "bytes": 720,
+      "sha256": "d5704c56e3d4f9b26de4752e69fad58543a0eb3082883cf48325fa2601bd6e03"
+    },
+    {
+      "path": "prepare_and_build.py",
+      "bytes": 6134,
+      "sha256": "a928d7bcf03d723c398d54f044488d0936c15cedc97e2b26d9a5e73045a80a5d"
+    },
+    {
+      "path": "PRIVATE-FILE-HASHES.json",
+      "bytes": 1875,
+      "sha256": "c49d07fb40085f42b666336f90e41a01df1c657f90efe2c5771afd2c174c5bcb"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4013,
+      "sha256": "2c78894522bdeccc41b8b723a5cc74de7b05ff78f7dd1ae57b95b3020239ad59"
+    },
+    {
+      "path": "RESULT.json",
+      "bytes": 6661,
+      "sha256": "9c67ad3e4721e7082c579ad430dade94ad093019b077188ce339befd3d9cd12e"
+    },
+    {
+      "path": "rf-convert.terminal.json",
+      "bytes": 1038,
+      "sha256": "c51fd9d37769c793dbc4ce02fc725feb7d4bd29205b05b7be04c684176bb9c69"
+    },
+    {
+      "path": "SOURCE.json",
+      "bytes": 8548,
+      "sha256": "1dfb801393c9f2d20dfd0ccde7e696790419355f386c55c56822ca29668816d7"
+    },
+    {
+      "path": "verify_nxp.py",
+      "bytes": 6737,
+      "sha256": "5bc2968de35f882f095ec2a0f19d9109f7b51d69afce58ac8a7198c8a1396d4c"
+    }
+  ],
+  "mainReadmeSHA256": "852c0e33aedb7f5979d3c8c5a6ca2a50c1685be2ec88e53be1c685248beb37ca",
+  "originalDataExcludedDirectory": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027",
+  "privateHashManifest": "PRIVATE-FILE-HASHES.json",
+  "publicDirectoryHasNoOriginalArchiveOrS2P": true,
+  "allCurrentLinksExist": true,
+  "allReadbacksPassed": true,
+  "formalContestAcceptanceClaim": false,
+  "manufacturerEndorsementClaim": false,
+  "externalAdoptionClaim": false,
+  "allManufacturersOrBiasesClaim": false,
+  "newPhysicalMeasurementClaim": false,
+  "fullProjectComplete": false,
+  "conclusion": "Adds one genuine first-party NXP bias file and independent current-CLI numerical/read-write evidence; does not rerun or redate Johanson history or certify all manufacturer data."
+}

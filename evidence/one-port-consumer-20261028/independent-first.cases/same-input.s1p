@@ -1,0 +1,11 @@
+[Version] 2.1
+# Hz Z RI R 50
+[Number of Ports] 1
+[Number of Frequencies] 5
+[Network Data]
+1000000000 0 0
+2000000000 50 0
+3000000000 150 0
+4000000000 -150 0
+5000000000 50 50
+[End]

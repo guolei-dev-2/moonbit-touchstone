@@ -1,0 +1,57 @@
+{
+  "excludeEntireDirectory": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027",
+  "redistributionPermissionConfirmed": false,
+  "containsNoVendorValues": true,
+  "files": [
+    {
+      "path": "BFU530W_03V3_001mA_SP.s2p",
+      "bytes": 9544,
+      "sha256": "d4a56bc6b099544c63ddbe25e9a1366935daf1a76bf0e47b0b269bb600ff2a95"
+    },
+    {
+      "path": "BFU530W_Spar.zip",
+      "bytes": 118380,
+      "sha256": "981d4f80f7ee35d273ce7917708c9f8ffded52372e71dff0ec57f99e41f78928"
+    },
+    {
+      "path": "new-input-validation/dump.json",
+      "bytes": 36347,
+      "sha256": "8fe444c22bb97a325bf68dd95bca48854c5630c4373806e186228dec569d3652"
+    },
+    {
+      "path": "new-input-validation/dump.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "new-input-validation/normalized.s2p",
+      "bytes": 16666,
+      "sha256": "19b37b5713d5aeee15797406f38606dcb4c93c6954914ea8ff9f5dd086ff5433"
+    },
+    {
+      "path": "new-input-validation/normalized.s2p.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "new-input-validation/y.json",
+      "bytes": 37908,
+      "sha256": "071f8a5f234bbb9bbe4b0bfb5d31a34131ff0f06b4b973a509ea8b4f46bcd345"
+    },
+    {
+      "path": "new-input-validation/y.json.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "nxp-curl.headers.txt",
+      "bytes": 971,
+      "sha256": "c565e20a3245293bd125c6afbeb6052b549855cf721d1ea0d17b8935d4d2f974"
+    },
+    {
+      "path": "nxp-curl.response.bin",
+      "bytes": 118380,
+      "sha256": "981d4f80f7ee35d273ce7917708c9f8ffded52372e71dff0ec57f99e41f78928"
+    }
+  ]
+}

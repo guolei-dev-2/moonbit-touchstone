@@ -1,0 +1,13 @@
+{
+  "before": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "c2faa832247630e1ade7d297315888d7b42edf75c2363543b82477e293c62dce",
+    "provenance": "observed at start of round09"
+  },
+  "after": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "4158dfb5a081e05c40287470302e13cd5347b96d85e65c8dd4035fa408f885ea"
+  },
+  "publicAPIUnchanged": true,
+  "round08PerFrequencyFeedbackAndScalePreserved": true
+}

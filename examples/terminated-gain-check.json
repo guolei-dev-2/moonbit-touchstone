@@ -1,0 +1,1 @@
+{"terminal_mode":"impedance","source_ohms":[100,20],"load_ohms":[30,-12],"start_hz":900000000,"end_hz":1100000000,"minimum_db":3,"maximum_db":10}

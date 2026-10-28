@@ -1,0 +1,23 @@
+{
+  "before": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "8bdc62096cb2f49e2534e068e38131628984683cd78902299c0841a1aa4d3319",
+    "provenance": "observed start of20"
+  },
+  "after": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "51c12b88f2ac16027fd339cbaa5f917c61021ef49bde49261b5e84ceeadd014f"
+  },
+  "provenance": "One successful release JS build; first actual new-test runtime and first file consumer pass executed the final production source; core unchanged since",
+  "executedSourceSHA256": {
+    "noise.mbt": "2bc44c55b92f9c5923d89e03ab7f8a009792c05eae570a2f9de7f4b6dc00e4e1",
+    "gain.mbt": "f0ab0b6522ba1a372d3c2ede72b0d76f6e655e0cfb1f8e42af1ce27781e5284a",
+    "noise_source_test.mbt": "3c037fc11a215c7210f8ae1709d52959848ff0879d4ca047e1ef07cea6700e7b",
+    "cmd/bridge/main.mbt": "f1041a83ed8830974a24b5f05afbe9f38e483bf203b33d3f850b3f3f35dddf93",
+    "tools/touchstone.mjs": "2ead8ae7d516ccdc6e92c9f2b08b8df4662fe505342cebaea263aa313ad852b6",
+    "tools/verify-noise-source.py": "14df68676c9e5c914efeb1c2119bd52d55a20da7ad590f5194e69e3a3d4fbd76",
+    "examples/noise-source.s2p": "2c2b312468bfb638fb2afca08e0e3ca633530717649dc4f1a803e5300ef6639e",
+    "examples/noise-source-options.json": "315ead76dcb45aa25c59292e9033139b29d4a7f71eac8532f5cb6bc43b56ce3f"
+  },
+  "publicInterfaceUnchanged": true
+}

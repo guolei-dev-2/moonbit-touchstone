@@ -1,0 +1,176 @@
+[
+  {
+    "name": "fmt",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "fmt"
+    ],
+    "exitCode": 0,
+    "seconds": 0.8634884000057355,
+    "stdout": "fmt.stdout.log",
+    "stderr": "fmt.stderr.log"
+  },
+  {
+    "name": "info",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "info"
+    ],
+    "exitCode": 0,
+    "seconds": 2.72410089999903,
+    "stdout": "info.stdout.log",
+    "stderr": "info.stderr.log"
+  },
+  {
+    "name": "check-all",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "check",
+      "--target",
+      "all",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 2.1434641999949235,
+    "stdout": "check-all.stdout.log",
+    "stderr": "check-all.stderr.log"
+  },
+  {
+    "name": "test-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 3.2043547999928705,
+    "stdout": "test-js.stdout.log",
+    "stderr": "test-js.stderr.log"
+  },
+  {
+    "name": "test-wasm-gc",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "--target",
+      "wasm-gc",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 3.626784099993529,
+    "stdout": "test-wasm-gc.stdout.log",
+    "stderr": "test-wasm-gc.stderr.log"
+  },
+  {
+    "name": "numeric-native",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "numeric_scale_test.mbt",
+      "--target",
+      "native",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 4.828871599995182,
+    "stdout": "numeric-native.stdout.log",
+    "stderr": "numeric-native.stderr.log"
+  },
+  {
+    "name": "fraction-native",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "numeric_scale_reference_test.mbt",
+      "--target",
+      "native",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 0.6983122000092408,
+    "stdout": "fraction-native.stdout.log",
+    "stderr": "fraction-native.stderr.log"
+  },
+  {
+    "name": "build-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "build",
+      "--target",
+      "js",
+      "--release",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 2.3583473000035156,
+    "stdout": "build-js.stdout.log",
+    "stderr": "build-js.stderr.log"
+  },
+  {
+    "name": "independent-rf",
+    "command": [
+      "D:/CodexLocal/ban/work/touchstone-tcl-20261021/rf-venv/Scripts/python.exe",
+      "tools/verify-repair05.py",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-05-20261028\\targeted-rf-first.json"
+    ],
+    "exitCode": 1,
+    "seconds": 4.579160299996147,
+    "stdout": "independent-rf.stdout.log",
+    "stderr": "independent-rf.stderr.log"
+  },
+  {
+    "name": "consumer-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "run",
+      "examples/rf_03",
+      "--target",
+      "js"
+    ],
+    "exitCode": 0,
+    "seconds": 1.8161542000016198,
+    "stdout": "consumer-js.stdout.log",
+    "stderr": "consumer-js.stderr.log"
+  },
+  {
+    "name": "consumer-wasm-gc",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "run",
+      "examples/rf_03",
+      "--target",
+      "wasm-gc"
+    ],
+    "exitCode": 0,
+    "seconds": 1.5654377000028035,
+    "stdout": "consumer-wasm-gc.stdout.log",
+    "stderr": "consumer-wasm-gc.stderr.log"
+  },
+  {
+    "name": "fmt-final",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "fmt",
+      "--check"
+    ],
+    "exitCode": 0,
+    "seconds": 1.6731033000105526,
+    "stdout": "fmt-final.stdout.log",
+    "stderr": "fmt-final.stderr.log"
+  },
+  {
+    "name": "independent-rf-corrected",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\touchstone-tcl-20261021\\rf-venv\\Scripts\\python.exe",
+      "tools/verify-repair05.py",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-05-20261028\\targeted-rf-after.json"
+    ],
+    "exitCode": 0,
+    "stdout": "independent-rf-after.log",
+    "note": "Reference z0 input shape and text-only bridge output handling corrected; initial failure preserved."
+  }
+]

@@ -1,0 +1,141 @@
+[
+  {
+    "name": "fmt-before-runtime",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "fmt"
+    ],
+    "exitCode": 0,
+    "seconds": 0.8387128000031225,
+    "stdout": "fmt-before-runtime.stdout.log",
+    "stderr": "fmt-before-runtime.stderr.log"
+  },
+  {
+    "name": "release-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "build",
+      "--target",
+      "js",
+      "--release",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 1.7906616999825928,
+    "stdout": "release-js.stdout.log",
+    "stderr": "release-js.stderr.log"
+  },
+  {
+    "name": "noise-source-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "--target",
+      "js",
+      "--file",
+      "noise_source_test.mbt",
+      "--deny-warn"
+    ],
+    "exitCode": 2,
+    "seconds": 0.09855680001783185,
+    "stdout": "noise-source-js.stdout.log",
+    "stderr": "noise-source-js.stderr.log"
+  },
+  {
+    "name": "noise-source-js-runtime",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "noise_source_test.mbt",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 1.3575739999942016,
+    "stdout": "noise-source-js-runtime.stdout.log",
+    "stderr": "noise-source-js-runtime.stderr.log"
+  },
+  {
+    "name": "noise-source-wasm-gc-runtime",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "noise_source_test.mbt",
+      "--target",
+      "wasm-gc",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 2.5237704000028316,
+    "stdout": "noise-source-wasm-gc-runtime.stdout.log",
+    "stderr": "noise-source-wasm-gc-runtime.stderr.log"
+  },
+  {
+    "name": "noise-source-native-runtime",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "noise_source_test.mbt",
+      "--target",
+      "native",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 2.10542350000469,
+    "stdout": "noise-source-native-runtime.stdout.log",
+    "stderr": "noise-source-native-runtime.stderr.log"
+  },
+  {
+    "name": "independent-file-consumer",
+    "command": [
+      "python",
+      "tools/verify-noise-source.py",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\independent-first.json",
+      "--before",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-20-max-20261028\\BASELINE.json"
+    ],
+    "exitCode": 0,
+    "seconds": 1.5079316000046674,
+    "stdout": "independent-file-consumer.stdout.log",
+    "stderr": "independent-file-consumer.stderr.log"
+  },
+  {
+    "name": "info",
+    "command": [
+      "moon",
+      "info"
+    ],
+    "exitCode": 0,
+    "seconds": 1.30453920000582,
+    "stdout": "info.stdout.log",
+    "stderr": "info.stderr.log"
+  },
+  {
+    "name": "check-all",
+    "command": [
+      "moon",
+      "check",
+      "--target",
+      "all",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 3.6147895000176504,
+    "stdout": "check-all.stdout.log",
+    "stderr": "check-all.stderr.log"
+  },
+  {
+    "name": "fmt-check",
+    "command": [
+      "moon",
+      "fmt",
+      "--check"
+    ],
+    "exitCode": 0,
+    "seconds": 2.3369166999764275,
+    "stdout": "fmt-check.stdout.log",
+    "stderr": "fmt-check.stderr.log"
+  }
+]

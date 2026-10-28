@@ -1,0 +1,21 @@
+Error: [4015]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain.mbt:51:14 ]
+    │
+ 51 │     for j in i + 1..<terms.length() {
+    │              ───────────┬──────────  
+    │                         ╰──────────── Type Int has no method iter.
+────╯
+Error: [0051]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain.mbt:51:19 ]
+    │
+ 51 │     for j in i + 1..<terms.length() {
+    │                   ─┬─  
+    │                    ╰─── Error Warning (ambiguous_precedence): Operator `+` and `..<` are ambiguous, add parenthesis to disambiguate.
+────╯
+Error: [4137]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain.mbt:51:19 ]
+    │
+ 51 │     for j in i + 1..<terms.length() {
+    │                   ─┬─  
+    │                    ╰─── Range operators are currently only supported in `for .. in` loops.
+────╯

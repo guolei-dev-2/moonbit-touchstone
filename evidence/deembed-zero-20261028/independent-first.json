@@ -1,0 +1,229 @@
+{
+  "complete": true,
+  "failure": null,
+  "sourceSHA256": {
+    "cascade.mbt": "86741d33d111c767ede19f74bc7dfe820a9a14bb50712acd9f017d7405497e40",
+    "noise.mbt": "aeb757e1ec9f196c22583f91b7bf9f73cc7de5d97989ea7ea03343f8a5e5e15c",
+    "mixed_mode.mbt": "6f5686d5014238898999234c86f3d3bab609c85dd00c84d8cb2170f765b66b15",
+    "deembed_zero_test.mbt": "4a49b7eb0037454569292c18020120c27aedb1260db466ef5f40ff243538bd7a",
+    "cmd/bridge/main.mbt": "f1041a83ed8830974a24b5f05afbe9f38e483bf203b33d3f850b3f3f35dddf93",
+    "tools/touchstone.mjs": "2ead8ae7d516ccdc6e92c9f2b08b8df4662fe505342cebaea263aa313ad852b6",
+    "tools/verify-deembed-zero.py": "d58c0dff87d3e6ffad75dde787ee0d935f1b62749ad88e9fe816c7be2ba960fe",
+    "examples/deembed-opaque.s2p": "5fd1da6a96d1d695773cd6510bb604dac88a38d08ab67208063a60b3675137f3",
+    "examples/deembed-thru.s2p": "5e62e80a7b0e6ec29800110dab392e3cc5053dc125c95df721c0dbf894682f18",
+    "examples/deembed-zero-options.json": "2a9368cd7d6ac2e83b11972e7f6eaf4950fafa6c2270dc9d20418c244c7b070c"
+  },
+  "bridgeSHA256": "385e953c48ae2ae2434abbd37e259f988b3833b78379b8b7b678137b3202a289",
+  "oracle": "Exact Fraction independent connected boundary waves generating measured data from known original DUTs; recovered S compared to originals, then actual file metrics checked",
+  "absoluteMatrixTolerance": 2e-12,
+  "commands": [
+    {
+      "name": "deembed-write",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "deembed",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\measured.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\deembed-write.options.json",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\recovered.s2p"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\deembed-write.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\deembed-write.stderr.log"
+    },
+    {
+      "name": "dump-recovered",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "dump",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\recovered.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\dump-recovered.options.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\dump-recovered.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\dump-recovered.stderr.log"
+    },
+    {
+      "name": "inspect-recovered",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "inspect",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\recovered.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\inspect-recovered.options.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\inspect-recovered.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\inspect-recovered.stderr.log"
+    },
+    {
+      "name": "metrics-recovered",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "metrics",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\recovered.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\metrics-recovered.options.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\metrics-recovered.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\metrics-recovered.stderr.log"
+    },
+    {
+      "name": "ordinary-compatible",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "deembed",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\ordinary.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\ordinary-compatible.options.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\ordinary-compatible.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\ordinary-compatible.stderr.log"
+    },
+    {
+      "name": "singular-fixture",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "deembed",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\measured.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\singular-fixture.options.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\singular-fixture.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\singular-fixture.stderr.log"
+    },
+    {
+      "name": "true-recovery-pole",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "deembed",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\pole-measured.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\true-recovery-pole.options.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\true-recovery-pole.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\true-recovery-pole.stderr.log"
+    },
+    {
+      "name": "original-opaque",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "deembed",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\deembed-opaque.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\original-opaque.options.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\original-opaque.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.cases\\original-opaque.stderr.log"
+    }
+  ],
+  "checks": [
+    "A real three-point recovered Touchstone file is created by the existing deembed command",
+    "Opaque, reverse-only and ordinary recovered S match independent original DUT matrices",
+    "Output uses fixture inner references and preserves measurement information without invented noise",
+    "The actual recovered file feeds metrics with exact zero-transmission loss flags and a finite ordinary sample",
+    "Ordinary nonzero-forward control completes, with exact pre-repair text comparison when baseline supplied",
+    "A noninvertible fixture remains an error before the zero-forward fallback",
+    "A genuine nonrepresentable recovery denominator remains an error",
+    "The original ideal-through opaque counterexample now recovers finite all-zero S",
+    "The opaque input bytes remain identical to the original baseline when supplied"
+  ],
+  "recoveredSamples": 3,
+  "oldCollectionsRerun": false,
+  "newManufacturerInputs": 0,
+  "nodeCompileCacheDisabled": true,
+  "baselineCompared": true,
+  "expectedDUT": [
+    [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.25,
+        0.0
+      ],
+      [
+        0.3,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -0.2,
+        0.0
+      ]
+    ],
+    [
+      [
+        0.25,
+        0.0
+      ],
+      [
+        0.3,
+        0.0
+      ],
+      [
+        0.4,
+        0.0
+      ],
+      [
+        -0.2,
+        0.0
+      ]
+    ]
+  ],
+  "measuredFractions": [
+    [
+      "1/10",
+      "0",
+      "0",
+      "1/6"
+    ],
+    [
+      "29/190",
+      "90/931",
+      "0",
+      "17/210"
+    ],
+    [
+      "6997/46670",
+      "450/4667",
+      "560/4667",
+      "12877/140010"
+    ]
+  ],
+  "recoveredSHA256": "c474d9037593f00e2e43a2b5598b801805551e5e2bdd25acd6424b1c561fd470",
+  "actualFileCLINodeProcesses": 8,
+  "consumerChecks": 9
+}

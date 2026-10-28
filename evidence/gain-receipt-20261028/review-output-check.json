@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "CLIProcesses": 2,
+  "workflowChecks": 2,
+  "commands": [
+    {
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\fail.json",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\review-output.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first-cases\\fail.json",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\review-output.json"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stdout": "",
+      "stderr": "touchstone: EEXIST: file already exists, open 'D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\review-output.json'\n"
+    }
+  ],
+  "savedReviewSHA256": "3422541e01c08f534a064c35ca32fd6052d95f10e4c57905ed774178f50c64ec",
+  "checks": [
+    "CLI review saved full reproduced-fail JSON",
+    "Existing review output preserved on rejected overwrite"
+  ],
+  "sourceSHA256": {
+    "cmd/bridge/main.mbt": "56c3f1d1a54ca8f518ebe167abca2b1dc914196e5f102f7e0231fbd5165f2109",
+    "tools/touchstone.mjs": "72ef7b916ff69aa51322a77cc523e2c75705ab9cf6f8ea0f342d757d3b8870c3"
+  }
+}

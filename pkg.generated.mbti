@@ -1,0 +1,310 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "guolei-dev/touchstone"
+
+// Values
+pub fn band_limit(BandMetric, Double, Double, input~ : Int, output~ : Int, minimum? : Double, maximum? : Double) -> BandLimit raise
+
+pub fn check_transducer_gain(Array[TransducerGainPoint], Double, Double, minimum_db? : Double, maximum_db? : Double) -> TransducerGainBandReport raise
+
+pub fn complex(Double, im? : Double) -> Complex
+
+pub fn document(Network, noise? : Array[NoisePoint], noise_reference_ohms? : Double, mixed_mode_order? : Array[String], information? : Array[String]) -> Document raise
+
+pub fn invert_matrix(Int, Array[Complex]) -> Array[Complex] raise
+
+pub fn multiply_matrices(Int, Array[Complex], Array[Complex]) -> Array[Complex] raise
+
+pub fn network(Int, Array[Double], Array[Array[Complex]], Array[Double], parameter? : String) -> Network raise
+
+pub fn parse(String, ports? : Int) -> Document raise
+
+pub fn parse_legacy(String, ports~ : Int) -> Network raise
+
+pub fn synthesize_shunt_stub(Complex, reference_ohms~ : Double, termination~ : StubTermination, tolerance? : Double) -> ShuntStubMatch raise
+
+pub fn transducer_gain_samples_csv(Array[TransducerGainPoint], Double, Double, minimum_db? : Double, maximum_db? : Double) -> String raise
+
+// Errors
+
+// Types and methods
+pub struct BandIssue {
+  observation : BandObservation
+  reason : String
+} derive(ToJson)
+pub fn BandIssue::to_json(Self) -> Json
+
+pub struct BandLimit {
+  metric : BandMetric
+  start_hz : Double
+  end_hz : Double
+  input : Int
+  output : Int
+  minimum : Double?
+  maximum : Double?
+}
+
+pub(all) enum BandMetric {
+  ReflectionMagnitude
+  TransmissionMagnitude
+  ReturnLossDb
+  InsertionLossDb
+  Vswr
+}
+pub fn BandMetric::name(Self) -> String
+
+pub struct BandObservation {
+  point : Int
+  frequency_hz : Double
+  value : Double?
+  state : String
+}
+pub fn BandObservation::to_json(Self) -> Json
+pub impl ToJson for BandObservation
+
+pub struct BandReport {
+  scope : String
+  status : String
+  reference_ohms : Array[Double]
+  max_details : Int
+  results : Array[BandResult]
+} derive(ToJson)
+pub fn BandReport::issues_csv(Self) -> String
+pub fn BandReport::to_json(Self) -> Json
+
+pub struct BandResult {
+  rule : BandLimit
+  status : String
+  range_covered : Bool
+  start_sampled : Bool
+  end_sampled : Bool
+  sample_count : Int
+  failed_count : Int
+  undefined_count : Int
+  lowest : BandObservation?
+  highest : BandObservation?
+  issues : Array[BandIssue]
+  issues_truncated : Bool
+}
+pub fn BandResult::to_json(Self) -> Json
+pub impl ToJson for BandResult
+
+pub(all) struct Complex {
+  re : Double
+  im : Double
+} derive(ToJson)
+pub fn Complex::add(Self, Self) -> Self
+pub fn Complex::conjugate(Self) -> Self
+pub fn Complex::divide(Self, Self) -> Self raise
+pub fn Complex::magnitude(Self) -> Double
+pub fn Complex::mul(Self, Self) -> Self
+pub fn Complex::phase(Self) -> Double
+pub fn Complex::scale(Self, Double) -> Self
+pub fn Complex::sub(Self, Self) -> Self
+pub fn Complex::to_json(Self) -> Json
+
+pub(all) struct Diagnostic {
+  frequency_hz : Double
+  reciprocity_error : Double
+  reciprocal : Bool
+  passivity : String
+} derive(ToJson)
+pub fn Diagnostic::to_json(Self) -> Json
+
+pub struct Document {
+  // private fields
+}
+pub fn Document::cascade(Self, Self) -> Self raise
+pub fn Document::deembed(Self, Self, Self) -> Self raise
+pub fn Document::information_lines(Self) -> Array[String]
+pub fn Document::interpolate(Self, Array[Double]) -> Self raise
+pub fn Document::mixed_mode_metrics(Self, Int, Int, cmrr? : String) -> Array[ModalMetric] raise
+pub fn Document::mixed_mode_order(Self) -> Array[String]
+pub fn Document::modal_network(Self) -> Network raise
+pub fn Document::network_only(Self) -> Network raise
+pub fn Document::noise_circles(Self, Double) -> Array[RfCircle] raise
+pub fn Document::noise_correlation(Self, representation? : String) -> Array[Array[Complex]] raise
+pub fn Document::noise_data(Self) -> Array[NoisePoint]
+pub fn Document::noise_figure(Self, Complex) -> Array[Double] raise
+pub fn Document::noise_reference_ohms(Self) -> Double
+pub fn Document::raw_network(Self) -> Network
+pub fn Document::single_ended_network(Self) -> Network raise
+pub fn Document::write(Self) -> String raise
+
+pub(all) struct ModalMetric {
+  frequency_hz : Double
+  sdd : Complex
+  sdc : Complex
+  scd : Complex
+  scc : Complex
+  differential_insertion_loss_db : Double?
+  differential_return_loss_db : Double?
+  dc_conversion_loss_db : Double?
+  cd_conversion_loss_db : Double?
+  cmrr_db : Double?
+  cmrr_state : String
+  cmrr_definition : String
+} derive(ToJson)
+pub fn ModalMetric::to_json(Self) -> Json
+
+pub struct Network {
+  // private fields
+}
+pub fn Network::cascade(Self, Self) -> Self raise
+pub fn Network::check_bands(Self, Array[BandLimit], max_details? : Int) -> BandReport raise
+pub fn Network::check_ripple(Self, Double, Double, input~ : Int, output~ : Int, maximum_ripple_db~ : Double) -> RippleReport raise
+pub fn Network::convert(Self, String) -> Self raise
+pub fn Network::deembed(Self, Self, Self) -> Self raise
+pub fn Network::diagnostics(Self, tolerance? : Double) -> Array[Diagnostic] raise
+pub fn Network::frequency_hz(Self) -> Array[Double]
+pub fn Network::gain_circles(Self, Double, source? : Bool) -> Array[RfCircle] raise
+pub fn Network::group_delay(Self, Int, Int) -> Array[Double] raise
+pub fn Network::interpolate(Self, Array[Double]) -> Self raise
+pub fn Network::matrix(Self, Int) -> Array[Complex] raise
+pub fn Network::metrics(Self, Int, Int) -> Array[SignalMetric] raise
+pub fn Network::mixed_mode(Self, Array[String]) -> Self raise
+pub fn Network::parameter(Self) -> String
+pub fn Network::ports(Self) -> Int
+pub fn Network::reference_ohms(Self) -> Array[Double]
+pub fn Network::renormalize(Self, Array[Double]) -> Self raise
+pub fn Network::select_ports(Self, Array[Int]) -> Self raise
+pub fn Network::single_ended(Self, Array[String], Array[Double]) -> Self raise
+pub fn Network::stability(Self) -> Array[StabilityPoint] raise
+pub fn Network::stability_circles(Self, source? : Bool) -> Array[RfCircle] raise
+pub fn Network::terminate_ports(Self, Array[(Int, Complex)], impedance? : Bool) -> Self raise
+pub fn Network::to_mixed_mode(Self, Array[(Int, Int)]) -> Document raise
+pub fn Network::transducer_gain(Self, source? : Complex, load? : Complex) -> Array[TransducerGainPoint] raise
+pub fn Network::transducer_gain_impedance(Self, Complex, Complex) -> Array[TransducerGainPoint] raise
+pub fn Network::write_legacy(Self, format? : String, unit? : String) -> String raise
+
+pub(all) struct NoisePoint {
+  frequency_hz : Double
+  minimum_figure_db : Double
+  gamma_opt : Complex
+  resistance_ohms : Double
+} derive(ToJson)
+pub fn NoisePoint::to_json(Self) -> Json
+
+pub(all) struct RfCircle {
+  frequency_hz : Double
+  a : Double
+  b : Complex
+  c : Double
+  center : Complex?
+  radius : Double?
+  state : String
+} derive(ToJson)
+pub fn RfCircle::to_json(Self) -> Json
+
+pub struct RippleReport {
+  scope : String
+  status : String
+  start_hz : Double
+  end_hz : Double
+  input : Int
+  output : Int
+  maximum_ripple_db : Double
+  sample_count : Int
+  range_covered : Bool
+  start_sampled : Bool
+  end_sampled : Bool
+  ripple_db : Double?
+  ripple_state : String
+  lowest_loss : BandObservation?
+  highest_loss : BandObservation?
+}
+pub fn RippleReport::to_json(Self) -> Json
+pub impl ToJson for RippleReport
+
+pub struct ShuntStubMatch {
+  load_ohms : Complex
+  reference_ohms : Double
+  termination : StubTermination
+  tolerance : Double
+  state : String
+  detail : String
+  solutions : Array[ShuntStubSolution]
+  free_distance_stub_radians : Double?
+}
+pub fn ShuntStubMatch::to_json(Self) -> Json
+pub impl ToJson for ShuntStubMatch
+
+pub struct ShuntStubSolution {
+  distance_radians : Double
+  stub_radians : Double
+  distance_lambda_g : Double
+  stub_lambda_g : Double
+  normalized_admittance_error : Double
+} derive(ToJson)
+pub fn ShuntStubSolution::to_json(Self) -> Json
+
+pub(all) struct SignalMetric {
+  frequency_hz : Double
+  reflection_magnitude : Double
+  transmission_magnitude : Double
+  return_loss_db : Double?
+  return_loss_infinite : Bool
+  insertion_loss_db : Double?
+  insertion_loss_infinite : Bool
+  vswr : Double?
+  vswr_state : String
+} derive(ToJson)
+pub fn SignalMetric::to_json(Self) -> Json
+
+pub(all) struct StabilityPoint {
+  frequency_hz : Double
+  delta_magnitude : Double
+  k : Double?
+  mu_input : Double?
+  mu_output : Double?
+  unconditionally_stable : Bool
+  msg : Double?
+  mag : Double?
+  gain_state : String
+} derive(ToJson)
+pub fn StabilityPoint::to_json(Self) -> Json
+
+pub(all) enum StubTermination {
+  Open
+  Short
+}
+
+pub(all) struct TransducerGainBandReport {
+  scope : String
+  status : String
+  start_hz : Double
+  end_hz : Double
+  minimum_db : Double?
+  maximum_db : Double?
+  sample_count : Int
+  state_counts : Map[String, Int]
+  below_minimum_count : Int
+  above_maximum_count : Int
+  range_covered : Bool
+  start_sampled : Bool
+  end_sampled : Bool
+  lowest : TransducerGainObservation?
+  highest : TransducerGainObservation?
+  reasons : Array[String]
+} derive(ToJson)
+pub fn TransducerGainBandReport::to_json(Self) -> Json
+
+pub(all) struct TransducerGainObservation {
+  point : Int
+  frequency_hz : Double
+  gain : Double?
+  gain_db : Double?
+  state : String
+} derive(ToJson)
+pub fn TransducerGainObservation::to_json(Self) -> Json
+
+pub(all) struct TransducerGainPoint {
+  frequency_hz : Double
+  gain : Double?
+  gain_db : Double?
+  state : String
+} derive(ToJson)
+pub fn TransducerGainPoint::to_json(Self) -> Json
+
+// Type aliases
+
+// Traits

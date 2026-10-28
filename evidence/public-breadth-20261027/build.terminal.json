@@ -1,0 +1,20 @@
+{
+  "command": [
+    "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+    "build",
+    "--target",
+    "js",
+    "--release",
+    "--deny-warn"
+  ],
+  "cwd": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\projects\\moonbit-touchstone",
+  "pid": 36280,
+  "exitCode": 0,
+  "elapsedNs": 2673030500,
+  "environmentOverrides": {
+    "MOON_HOME": "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon",
+    "PATHPrefix": "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin"
+  },
+  "stdoutSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderrSHA256": "d9b015c38c593df35215cd7f4dc78b49f23b6ab51a36a1d02bc12597f4bbde84"
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "name": "fmt-before-runtime",
+    "command": [
+      "moon",
+      "fmt"
+    ],
+    "exitCode": 0,
+    "provenance": "Successful console sequence before runtime regression"
+  },
+  {
+    "name": "release-js",
+    "command": [
+      "moon",
+      "build",
+      "--target",
+      "js",
+      "--release",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "provenance": "Successful console sequence before runtime regression; production source unchanged"
+  },
+  {
+    "name": "focused-regression",
+    "command": [
+      "python",
+      "tools/verify-mixed-information.py",
+      "--before",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\BEFORE-RESPONSES.json",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first.json"
+    ],
+    "exitCode": 0,
+    "actualNodeProcesses": 8,
+    "compiledBridgeProcesses": 3,
+    "fileCLIProcesses": 5,
+    "consumerChecks": 6,
+    "receipt": "independent-first.json"
+  },
+  {
+    "name": "updated-current16-fixture-syntax",
+    "command": [
+      "python",
+      "ast.parse tools/verify-terminate-file.py"
+    ],
+    "exitCode": 0,
+    "old16SuiteRerun": false
+  },
+  {
+    "name": "info",
+    "command": [
+      "moon",
+      "info"
+    ],
+    "exitCode": 0,
+    "seconds": 1.8211734000069555,
+    "stdout": "info.stdout.log",
+    "stderr": "info.stderr.log"
+  },
+  {
+    "name": "check-all",
+    "command": [
+      "moon",
+      "check",
+      "--target",
+      "all",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 1.5013057000178378,
+    "stdout": "check-all.stdout.log",
+    "stderr": "check-all.stderr.log"
+  },
+  {
+    "name": "fmt-check",
+    "command": [
+      "moon",
+      "fmt",
+      "--check"
+    ],
+    "exitCode": 0,
+    "seconds": 3.2019078000157606,
+    "stdout": "fmt-check.stdout.log",
+    "stderr": "fmt-check.stderr.log"
+  }
+]

@@ -1,0 +1,6 @@
+import {
+  "guolei-dev/touchstone" @rf,
+  "moonbitlang/core/math",
+}
+
+pkgtype(kind: "executable")

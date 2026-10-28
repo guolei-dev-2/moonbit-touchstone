@@ -1,0 +1,2350 @@
+{
+  "complete": true,
+  "failure": null,
+  "requests": 71,
+  "pointChecks": 66,
+  "checks": [
+    {
+      "label": "matched",
+      "state": "finite",
+      "gain": 4.0,
+      "gain_db": 6.020599913279624,
+      "exactRationalSHA256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "bilateral rational",
+      "state": "finite",
+      "gain": 3.484310018903592,
+      "gain_db": 5.4211678970793225,
+      "exactRationalSHA256": "e3856906c987f4d3d27e91494fd0634d574dfb6e5481a5097cb8de6acba5283c",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "quarter-wave",
+      "state": "finite",
+      "gain": 0.36,
+      "gain_db": -4.436974992327127,
+      "exactRationalSHA256": "ba99706726902e83ec550da70c016266cc6a243197718fb9a7578776e75175ea",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "blocked",
+      "state": "zero"
+    },
+    {
+      "label": "load open",
+      "state": "zero"
+    },
+    {
+      "label": "load short",
+      "state": "zero"
+    },
+    {
+      "label": "load imaginary",
+      "state": "zero"
+    },
+    {
+      "label": "feedback pole",
+      "state": "singular"
+    },
+    {
+      "label": "load pole",
+      "state": "singular"
+    },
+    {
+      "label": "blocked pole",
+      "state": "singular"
+    },
+    {
+      "label": "small finite",
+      "state": "finite",
+      "gain": 9.332636185032189e-302,
+      "gain_db": -3010.299956639812,
+      "exactRationalSHA256": "9389337a804e03c0e10708ebe4062dcd127e4d52b731f19ae48450d1422ac4a6",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "subnormal finite",
+      "state": "finite",
+      "gain": 8.095e-320,
+      "gain_db": -3190.9179540382006,
+      "exactRationalSHA256": "a926eb91b7a9c9adbac486a267c72adf711c2e855f4046732e0cd2f04665eb5f",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "positive underflow",
+      "state": "underflow",
+      "gain": 0.0,
+      "gain_db": -4000.0,
+      "exactRationalSHA256": "43acce616cc3c787e223d58970f0111a1ee04460fc4b5e96c8a17dccc2661940",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "minimum subnormal amplitude",
+      "state": "underflow",
+      "gain": 0.0,
+      "gain_db": -6466.124306862316,
+      "exactRationalSHA256": "942cab5094ff027bfcad0120a2f56c0a20a4567194ba341ae00513a05d2619b8",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "positive overflow",
+      "state": "overflow",
+      "gain": null,
+      "gain_db": 4000.0,
+      "exactRationalSHA256": "de21e575a00ad7c39aa418a1ca7908f8aa72960523dc940c75cdb41cc36ff302",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "largest finite amplitude",
+      "state": "overflow",
+      "gain": null,
+      "gain_db": 6165.094311198335,
+      "exactRationalSHA256": "19b1aff2a48ab0071dc38f43673269925e997f03e4f607de3324d6118b95e58d",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "finite despite squared overflow",
+      "state": "finite",
+      "gain": 3.0,
+      "gain_db": 4.771212547196624,
+      "exactRationalSHA256": "0a07aa09d30ad92a96c1d987eebebfabaeed771ae56f75869e04a881ae62c4db",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "large determinant products",
+      "state": "underflow",
+      "gain": 0.0,
+      "gain_db": -8303.467874862246,
+      "exactRationalSHA256": "2e45d0e79b107ad5cd709d8f19302635f6873df80b4cbb029eb2c535b3f2c524",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "rank one same signs",
+      "state": "finite",
+      "gain": 0.5625,
+      "gain_db": -2.498774732165999,
+      "exactRationalSHA256": "24ab78ef375cd463ca457536178a5bdbba3acd43b3de87ae8869c923993d1430",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "rank one opposite signs",
+      "state": "overflow",
+      "gain": null,
+      "gain_db": 3997.501225267834,
+      "exactRationalSHA256": "c7c2ba8ca6e8c153099ef41f4c7c8a6c0d65769aa574fa87078549451fff91b4",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "mixed transfer scales",
+      "state": "underflow",
+      "gain": 0.0,
+      "gain_db": -4000.0,
+      "exactRationalSHA256": "3aa8a400c86c99de869814778ad9b2bcf77cbad4bf73bfa34f2341759a88d594",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "source near unit circle",
+      "state": "finite",
+      "gain": 2.220446049250313e-16,
+      "gain_db": -156.53559774527022,
+      "exactRationalSHA256": "cd7e717227ec6abae12abeffbe83fd224de8a812b44fb92344c6b16d0fd02fef",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "load near unit circle",
+      "state": "finite",
+      "gain": 2.220446049250313e-16,
+      "gain_db": -156.53559774527022,
+      "exactRationalSHA256": "cd7e717227ec6abae12abeffbe83fd224de8a812b44fb92344c6b16d0fd02fef",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "complex wave system 0",
+      "state": "finite",
+      "gain": 5.511308338621243,
+      "gain_db": 7.412547089778932,
+      "exactRationalSHA256": "bfdfecca63a0dfcb81d7b6df4472d88b361e79c1d9b57c500faa3655be3a62a4",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 1",
+      "state": "finite",
+      "gain": 1.705096599353659,
+      "gain_db": 2.3174898824221235,
+      "exactRationalSHA256": "9cdaabbe5fe0e1c830cd541255561d044c388c1367dc9115263a385075f5c2dc",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 2",
+      "state": "finite",
+      "gain": 4.216885738197214,
+      "gain_db": 6.249918334211384,
+      "exactRationalSHA256": "af31bcd3b07ed31f8da5cd7a28630792ca7a6aa3ed4691aaaba49532bfaa08b2",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 3",
+      "state": "finite",
+      "gain": 3.0244441460336935,
+      "gain_db": 4.806455685777581,
+      "exactRationalSHA256": "87a8c893a4b25460439e41b35a529711c0c5d49b01268ce983530a1a00d9003a",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 4",
+      "state": "finite",
+      "gain": 1.2337119975526465,
+      "gain_db": 0.9121378816411675,
+      "exactRationalSHA256": "71f1fb5a4b322f59a173cfbd5913c71057c91cbf12dd1483aa1a6188deb57642",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 5",
+      "state": "finite",
+      "gain": 4.564585100870369,
+      "gain_db": 6.594013083563128,
+      "exactRationalSHA256": "48c1321d336572ec8788be488b07de104102996ab2ecd2698c1b9757aeb86997",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 6",
+      "state": "finite",
+      "gain": 3.29316558927506,
+      "gain_db": 5.176135687624279,
+      "exactRationalSHA256": "fb29e125f2535ad2ab15da55faee9d8fab2d32cd360ab436b82946ec7111f405",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 7",
+      "state": "finite",
+      "gain": 1.4143761089195088,
+      "gain_db": 1.5056491180074616,
+      "exactRationalSHA256": "9699b2f8175691389b2814c7359a084d1df9c1525f5e3c0af87bc5e7ab11d3cc",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 8",
+      "state": "finite",
+      "gain": 2.6771474221996137,
+      "gain_db": 4.276722870946466,
+      "exactRationalSHA256": "43004582d0fec90a243a6fa268642ef9fa9ddcbdbc53f3c639b83816d728b276",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 9",
+      "state": "finite",
+      "gain": 2.79218817088813,
+      "gain_db": 4.459446828711169,
+      "exactRationalSHA256": "e31cc54813b4f194e44c9076801dc73a4eeb5cdc8fe326d55e24936577a8ba3c",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 10",
+      "state": "finite",
+      "gain": 6.069848423874768,
+      "gain_db": 7.831778460181397,
+      "exactRationalSHA256": "c76ca0f816aef60753954f8e915c4d57885b514552317322ab7bd5dc4049d0ff",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 11",
+      "state": "finite",
+      "gain": 3.0584179909421065,
+      "gain_db": 4.854968397271306,
+      "exactRationalSHA256": "b051eaafded07e85e33d1a76fdaefd23c9d3427cffae4a54a6869d22bc38b517",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 12",
+      "state": "finite",
+      "gain": 1.750073540866356,
+      "gain_db": 2.430562988128044,
+      "exactRationalSHA256": "4ba3b77048cba36e7e5b3961114188ea703fde740250082bf862e3cad7cbb0e9",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 13",
+      "state": "finite",
+      "gain": 4.392985878816865,
+      "gain_db": 6.4275980723486965,
+      "exactRationalSHA256": "0038a1f38f5cd3e90f77042776acf0653e27e9ad89af59341bb00d900421d939",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 14",
+      "state": "finite",
+      "gain": 5.008249708686529,
+      "gain_db": 6.996859744358078,
+      "exactRationalSHA256": "7453c222c97726bb3936f6523de31f6ac9e403fda6965c515d6f4b255577f355",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 15",
+      "state": "finite",
+      "gain": 3.9206472003992534,
+      "gain_db": 5.933577640514639,
+      "exactRationalSHA256": "35df6fc21bdbff5c7785e735b06eaf41c852088f2800a6c1415a149d806696e5",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 16",
+      "state": "finite",
+      "gain": 1.6114976399039822,
+      "gain_db": 2.072296738089938,
+      "exactRationalSHA256": "5efb3243333ce0aef9568f17e1e275afe6a2c90c417b19138443ef83b0883bfa",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 17",
+      "state": "finite",
+      "gain": 3.3071901849551737,
+      "gain_db": 5.194591703904539,
+      "exactRationalSHA256": "e4e1ad858d4e21e6893bf7217aa9fef2f64c2428fd3891bc9205ea0bef5c929a",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 18",
+      "state": "finite",
+      "gain": 2.1236362310052566,
+      "gain_db": 3.2708012615839728,
+      "exactRationalSHA256": "c79c5343024b71d61f110ae40ebae77dd22cb4818bcb49717e61cce0392e2a99",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 19",
+      "state": "finite",
+      "gain": 0.7727792610578352,
+      "gain_db": -1.1194454152139157,
+      "exactRationalSHA256": "9f95e4aa1fbe886b6feb5553944fb60d7a3834a1c6b4db8ebf144f170c67e1c4",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 20",
+      "state": "finite",
+      "gain": 2.9146341463414633,
+      "gain_db": 4.64584048564421,
+      "exactRationalSHA256": "6075475c3bfc94946dba720813cbfa6fc5f57068a43d24d1f8738a4bb152b16b",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 21",
+      "state": "finite",
+      "gain": 0.6869118867798304,
+      "gain_db": -1.6309896823818093,
+      "exactRationalSHA256": "5c845fc181bfc072388be12d849adcbbbefa364df9144b9c4187f18f03bc3468",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 22",
+      "state": "finite",
+      "gain": 1.4819095392664234,
+      "gain_db": 1.7082169365917323,
+      "exactRationalSHA256": "2ec0af17eb9dc225910c0369e0641f01c2095c6b2da7d9e1dd9bf15e17d1d3a7",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 23",
+      "state": "finite",
+      "gain": 2.226381790511975,
+      "gain_db": 3.4759964126323584,
+      "exactRationalSHA256": "8b7e4b39dc62aa5173e82c8f52916f4b6d1cc7406564d3e0fe4cfb62ade9ddaf",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 24",
+      "state": "finite",
+      "gain": 0.7321101659464327,
+      "gain_db": -1.3542356257180415,
+      "exactRationalSHA256": "c28ad6d5c17658e6b78c7519036ada768e707e0b9fb96c90a0b50015d6344b7b",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 25",
+      "state": "finite",
+      "gain": 1.42967202515966,
+      "gain_db": 1.5523641928316252,
+      "exactRationalSHA256": "ea24580b81921c69ac658e369b61818d89f904eb5bde3c67e3276deb93d022a5",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 26",
+      "state": "finite",
+      "gain": 4.459397233767788,
+      "gain_db": 6.4927616011579845,
+      "exactRationalSHA256": "8ca67eafd710e6bad3e7404d030c249ad99def399a7d12e20cb106a1808038e6",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 27",
+      "state": "finite",
+      "gain": 1.6122882940293515,
+      "gain_db": 2.0744270081367935,
+      "exactRationalSHA256": "fc296daac2aba460773aa73b0b94be74f12f9bd90b0e9361a8ada10b0b1fb9eb",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 28",
+      "state": "finite",
+      "gain": 1.3226917871439408,
+      "gain_db": 1.214586569336461,
+      "exactRationalSHA256": "a71418739b08b3d9ebd88ba7ecd60be75e7109d14aa50996c3ec19d07fc69220",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 29",
+      "state": "finite",
+      "gain": 3.1237999791652893,
+      "gain_db": 4.946832176745799,
+      "exactRationalSHA256": "f66eac166b3f944d6224821fc2f3bb55249f44be42bb0f3ce37e42a60d71c647",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 30",
+      "state": "finite",
+      "gain": 0.11166188289414963,
+      "gain_db": -9.520950531500647,
+      "exactRationalSHA256": "66335e09874e8d672d79c1c7edef9aa070a3627202fd127703571d5a4c52b969",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "complex wave system 31",
+      "state": "finite",
+      "gain": 2.8806724931101475,
+      "gain_db": 4.594938856597472,
+      "exactRationalSHA256": "c7084ab04aabece07fd87ab7ff0e20dd2109b88123065a7cdd6ca8b4c0aee6c3",
+      "numpyWaveSolve": true
+    },
+    {
+      "label": "batch 0",
+      "state": "zero"
+    },
+    {
+      "label": "batch 1",
+      "state": "singular"
+    },
+    {
+      "label": "batch 2",
+      "state": "finite",
+      "gain": 3.9183673469387754,
+      "gain_db": 5.931051486750359,
+      "exactRationalSHA256": "41e8ef5c05dce496161422fb06530be60f84ef3b9a0eeb5532875794779142ec",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "independent Z physical units",
+      "state": "finite",
+      "gain": 0.24138426181686487,
+      "gain_db": -6.172910491885707,
+      "exactRationalSHA256": "ac78637312c8ec851568584347d47625fce6b4de2a81302afc518f5eaf0aff81",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "independent Y physical units",
+      "state": "finite",
+      "gain": 0.24138426181686487,
+      "gain_db": -6.172910491885707,
+      "exactRationalSHA256": "ac78637312c8ec851568584347d47625fce6b4de2a81302afc518f5eaf0aff81",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "independent H physical units",
+      "state": "finite",
+      "gain": 0.24138426181686487,
+      "gain_db": -6.172910491885707,
+      "exactRationalSHA256": "ac78637312c8ec851568584347d47625fce6b4de2a81302afc518f5eaf0aff81",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "independent G physical units",
+      "state": "finite",
+      "gain": 0.24138426181686487,
+      "gain_db": -6.172910491885707,
+      "exactRationalSHA256": "ac78637312c8ec851568584347d47625fce6b4de2a81302afc518f5eaf0aff81",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "file CLI 0",
+      "state": "finite",
+      "gain": 4.0,
+      "gain_db": 6.020599913279624,
+      "exactRationalSHA256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "file CLI 1",
+      "state": "finite",
+      "gain": 2.25,
+      "gain_db": 3.5218251811136247,
+      "exactRationalSHA256": "aceea65272192df3e9cee56f5c2b5e7bc88abad6a54dc4b3c98254d079fc5242",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "file CLI 0",
+      "state": "finite",
+      "gain": 3.484310018903592,
+      "gain_db": 5.4211678970793225,
+      "exactRationalSHA256": "e3856906c987f4d3d27e91494fd0634d574dfb6e5481a5097cb8de6acba5283c",
+      "numpyWaveSolve": false
+    },
+    {
+      "label": "file CLI 1",
+      "state": "finite",
+      "gain": 1.843990230949532,
+      "gain_db": 2.6575861592804984,
+      "exactRationalSHA256": "6da34209798c5b80d1ed794b5bcd5654a1a5427d7d009a78d71c6c93949b7254",
+      "numpyWaveSolve": false
+    }
+  ],
+  "raw": [
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0,
+            0.0
+          ],
+          "load": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 4,
+            "gain_db": 6.020599913279624,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.5,
+            0.0
+          ],
+          "load": [
+            0.25,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 3.4843100189035914,
+            "gain_db": 5.4211678970793225,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 -0 -1 -0 -1 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0,
+            0.5
+          ],
+          "load": [
+            -0.0,
+            -0.5
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.36,
+            "gain_db": -4.436974992327127,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 0 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.2,
+            0.0
+          ],
+          "load": [
+            0.3,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0,
+            "state": "zero"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.10000000000000001 0 0.20000000000000001 0 0.80000000000000004 0 0.29999999999999999 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.2,
+            0.0
+          ],
+          "load": [
+            1.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0,
+            "state": "zero"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.10000000000000001 0 0.20000000000000001 0 0.80000000000000004 0 0.29999999999999999 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.2,
+            0.0
+          ],
+          "load": [
+            -1.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0,
+            "state": "zero"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.10000000000000001 0 0.20000000000000001 0 0.80000000000000004 0 0.29999999999999999 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.2,
+            0.0
+          ],
+          "load": [
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0,
+            "state": "zero"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 2 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.5,
+            0.0
+          ],
+          "load": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "state": "singular"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 1 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0,
+            0.0
+          ],
+          "load": [
+            1.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "state": "singular"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 2 0 0 0 0 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.5,
+            0.0
+          ],
+          "load": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "state": "singular"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 3.0549363634996047e-151 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0,
+            0.0
+          ],
+          "load": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 9.332636185032189e-302,
+            "gain_db": -3010.299956639812,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 2.8451311993408992e-160 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0,
+            0.0
+          ],
+          "load": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 8.095e-320,
+            "gain_db": -3190.9179540382006,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 9.9999999999999998e-201 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0,
+            0.0
+          ],
+          "load": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0,
+            "gain_db": -4000,
+            "state": "underflow"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 4.9406564584124654e-324 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0,
+            0.0
+          ],
+          "load": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0,
+            "gain_db": -6466.124306862316,
+            "state": "underflow"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 9.9999999999999997e+199 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0,
+            0.0
+          ],
+          "load": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain_db": 4000,
+            "state": "overflow"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1.7976931348623157e+308 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0,
+            0.0
+          ],
+          "load": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain_db": 6165.094311198335,
+            "state": "overflow"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 9.9999999999999997e+199 0 0 0 9.9999999999999997e+199 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.5,
+            0.0
+          ],
+          "load": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 3,
+            "gain_db": 4.771212547196625,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 1e+308 0 0.10000000000000001 0 9.9999999999999997e+199 0 1e+308 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.5,
+            0.0
+          ],
+          "load": [
+            0.25,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0,
+            "gain_db": -8303.467874862246,
+            "state": "underflow"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 9.9999999999999997e+199 0 9.9999999999999997e+199 0 9.9999999999999997e+199 0 9.9999999999999997e+199 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.5,
+            0.0
+          ],
+          "load": [
+            0.5,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.5625,
+            "gain_db": -2.4987747321659985,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 9.9999999999999997e+199 0 9.9999999999999997e+199 0 -9.9999999999999997e+199 0 -9.9999999999999997e+199 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.5,
+            0.0
+          ],
+          "load": [
+            0.5,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain_db": 3997.501225267834,
+            "state": "overflow"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 9.9999999999999997e+199 0 9.9999999999999998e-201 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.5,
+            0.0
+          ],
+          "load": [
+            0.5,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0,
+            "gain_db": -4000,
+            "state": "underflow"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 1 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.9999999999999999,
+            0.0
+          ],
+          "load": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 2.220446049250313e-16,
+            "gain_db": -156.53559774527022,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 1 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0,
+            0.0
+          ],
+          "load": [
+            0.9999999999999999,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 2.220446049250313e-16,
+            "gain_db": -156.53559774527022,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.1875 0.125 -0.25 -0.0625 -1.75 1.9375 0.125 -0.25\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0,
+            -0.25
+          ],
+          "load": [
+            0.375,
+            -0.0625
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 5.5113083386212445,
+            "gain_db": 7.412547089778933,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.1875 -0.1875 -0.25 -0.25 -0.3125 1.625 0 -0.0625\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            -0.0625,
+            -0.0625
+          ],
+          "load": [
+            0.375,
+            -0.375
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1.7050965993536589,
+            "gain_db": 2.317489882422123,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.1875 -0.1875 -0.25 -0.1875 -0.4375 1.875 -0.375 0.25\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.25,
+            0.0625
+          ],
+          "load": [
+            -0.25,
+            -0.25
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 4.216885738197214,
+            "gain_db": 6.249918334211384,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.375 -0.25 0.125 -0.125 -0.0625 1.9375 -0.25 -0.1875\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0,
+            0.125
+          ],
+          "load": [
+            0.3125,
+            0.0625
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 3.024444146033693,
+            "gain_db": 4.80645568577758,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.3125 -0.0625 -0.125 -0.0625 0.625 -1.25 -0.0625 0.0625\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.125,
+            -0.1875
+          ],
+          "load": [
+            -0.375,
+            0.4375
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1.2337119975526463,
+            "gain_db": 0.9121378816411676,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.125 0.125 0 -0.125 -1.625 -1.8125 0.375 -0.125\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            -0.125,
+            0.25
+          ],
+          "load": [
+            0.1875,
+            -0.25
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 4.564585100870369,
+            "gain_db": 6.594013083563128,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 -0.125 -0.375 -0.1875 0 1.1875 1.3125 0.375 -0.0625\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.125,
+            0.25
+          ],
+          "load": [
+            0.0,
+            -0.0625
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 3.29316558927506,
+            "gain_db": 5.176135687624279,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 -0.0625 0.1875 -0.125 -0.25 0.8125 -0.8125 0 0.3125\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.1875,
+            -0.1875
+          ],
+          "load": [
+            0.0625,
+            -0.4375
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1.4143761089195086,
+            "gain_db": 1.5056491180074612,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.375 -0.375 -0.1875 0.25 -1.5 -0.5 0.1875 0.25\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.125,
+            -0.0625
+          ],
+          "load": [
+            0.1875,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 2.6771474221996137,
+            "gain_db": 4.276722870946467,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.375 0.375 0.125 0 1.5625 0.0625 -0.25 0.125\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.125,
+            -0.0625
+          ],
+          "load": [
+            -0.125,
+            -0.3125
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 2.79218817088813,
+            "gain_db": 4.459446828711169,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 -0.1875 -0.0625 -0.1875 0.25 -2 1.0625 -0.3125 -0.125\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            -0.125,
+            -0.0625
+          ],
+          "load": [
+            -0.375,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 6.069848423874768,
+            "gain_db": 7.831778460181397,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.0625 0.3125 -0.0625 -0.25 -2 -1.25 -0.3125 -0.125\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            -0.125,
+            0.1875
+          ],
+          "load": [
+            0.375,
+            0.0625
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 3.0584179909421065,
+            "gain_db": 4.854968397271306,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.125 0.25 -0.0625 -0.0625 -1.375 -0.5625 0.125 -0.0625\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.25,
+            0.1875
+          ],
+          "load": [
+            0.375,
+            -0.125
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1.7500735408663557,
+            "gain_db": 2.4305629881280435,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 -0.375 0.25 -0.125 -0.25 0.8125 1.875 0.3125 0.375\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.1875,
+            -0.125
+          ],
+          "load": [
+            0.375,
+            -0.1875
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 4.392985878816864,
+            "gain_db": 6.427598072348696,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.0625 0.375 0.0625 -0.25 1.75 2 -0.375 0.25\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            -0.125,
+            0.25
+          ],
+          "load": [
+            -0.4375,
+            0.125
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 5.008249708686528,
+            "gain_db": 6.996859744358078,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0.375 0.0625 0.1875 -1.875 1.3125 0.0625 0.125\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0625,
+            0.0
+          ],
+          "load": [
+            0.4375,
+            -0.375
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 3.920647200399253,
+            "gain_db": 5.933577640514639,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.0625 -0.3125 0 -0.1875 -0.5 -1.25 -0.25 -0.3125\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.125,
+            0.125
+          ],
+          "load": [
+            0.25,
+            0.0625
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1.6114976399039824,
+            "gain_db": 2.0722967380899386,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0.1875 -0.1875 -0.1875 -1.6875 0.875 0.125 0.375\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            -0.125,
+            -0.0625
+          ],
+          "load": [
+            0.0625,
+            0.125
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 3.3071901849551733,
+            "gain_db": 5.194591703904539,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 -0.0625 0.0625 -0.1875 0.0625 1.6875 1.375 0.125 0.25\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0,
+            0.25
+          ],
+          "load": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 2.123636231005256,
+            "gain_db": 3.2708012615839714,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 -0.375 0.25 -0.125 0.75 0.5625 0.0625 0.1875\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0625,
+            0.0625
+          ],
+          "load": [
+            -0.125,
+            0.25
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.7727792610578352,
+            "gain_db": -1.1194454152139155,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 -0.125 -0.25 0.25 -0.125 0.6875 -1.6875 0 -0.125\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0,
+            0.0
+          ],
+          "load": [
+            -0.0625,
+            -0.25
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 2.9146341463414633,
+            "gain_db": 4.64584048564421,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.0625 0.3125 0.25 -0.25 0.75 -0.8125 0.25 -0.25\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.125,
+            0.0
+          ],
+          "load": [
+            0.25,
+            -0.5
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.6869118867798304,
+            "gain_db": -1.6309896823818093,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0.375 0 0.0625 -0.125 -1.9375 -0.0625 -0.3125\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.25,
+            0.125
+          ],
+          "load": [
+            0.5,
+            -0.4375
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1.4819095392664232,
+            "gain_db": 1.708216936591732,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.0625 -0.1875 0 0 0.1875 1.5625 -0.3125 0.375\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.1875,
+            0.25
+          ],
+          "load": [
+            -0.125,
+            0.1875
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 2.226381790511975,
+            "gain_db": 3.475996412632359,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 -0.375 -0.125 0 -0.1875 1.0625 0.1875 -0.375 -0.125\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            -0.0625,
+            0.0
+          ],
+          "load": [
+            0.3125,
+            -0.3125
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.7321101659464327,
+            "gain_db": -1.3542356257180415,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 -0.0625 -0.1875 -0.125 0.1875 -1.0625 1.25 0.1875 0.0625\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            -0.125,
+            -0.1875
+          ],
+          "load": [
+            -0.4375,
+            0.3125
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1.42967202515966,
+            "gain_db": 1.5523641928316254,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 -0.125 -0.125 0.1875 2 -1 0.125 0.3125\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            -0.125,
+            -0.0625
+          ],
+          "load": [
+            0.0,
+            0.125
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 4.459397233767787,
+            "gain_db": 6.4927616011579845,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 -0.125 -0.1875 0.1875 -0.125 -1 1.0625 -0.0625 -0.375\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            -0.125,
+            -0.1875
+          ],
+          "load": [
+            0.0625,
+            -0.1875
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1.6122882940293508,
+            "gain_db": 2.074427008136792,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.0625 0.0625 0.0625 0.0625 1.3125 0.6875 0 0.1875\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            -0.125,
+            -0.1875
+          ],
+          "load": [
+            -0.5,
+            -0.4375
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1.3226917871439405,
+            "gain_db": 1.2145865693364613,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.1875 0.375 -0.125 -0.125 -0.5 1.9375 0.3125 -0.0625\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            -0.25,
+            -0.25
+          ],
+          "load": [
+            -0.25,
+            -0.125
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 3.123799979165289,
+            "gain_db": 4.946832176745799,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.1875 0.25 -0.125 0.1875 -0.0625 -0.375 0.0625 -0.0625\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.25,
+            -0.1875
+          ],
+          "load": [
+            -0.375,
+            0.375
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.1116618828941496,
+            "gain_db": -9.520950531500649,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 -0.0625 0.1875 0.25 1.3125 1.25 -0.25 0.3125\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.125,
+            0.0
+          ],
+          "load": [
+            0.3125,
+            -0.3125
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 2.880672493110148,
+            "gain_db": 4.594938856597473,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 3\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 0 0 0 0\n2000000000.0 2 0 0 0 1 0 0 0\n3000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.5,
+            0.0
+          ],
+          "load": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0,
+            "state": "zero"
+          },
+          {
+            "frequency_hz": 2000000000,
+            "state": "singular"
+          },
+          {
+            "frequency_hz": 3000000000,
+            "gain": 3.9183673469387754,
+            "gain_db": 5.93105148675036,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz Z RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 62.244897959183675 0 2.4994793293705904 0 62.486983234264756 0 62.755102040816332 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.2,
+            0.0
+          ],
+          "load": [
+            -0.3,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.24138426181686498,
+            "gain_db": -6.1729104918857045,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz Y RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.01673469387755102 0 -0.00066652782116549171 0 -0.016663195529137267 -0 0.016598639455782313 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.2,
+            0.0
+          ],
+          "load": [
+            -0.3,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.24138426181686498,
+            "gain_db": -6.1729104918857045,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz H RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 59.756097560975611 0 0.03982910150866957 0 -0.99572753771673916 0 0.015934959349593495 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.2,
+            0.0
+          ],
+          "load": [
+            -0.3,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.24138426181686481,
+            "gain_db": -6.172910491885708,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz G RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.016065573770491802 0 -0.040155569553822594 0 1.0038892388455649 0 60.245901639344261 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.2,
+            0.0
+          ],
+          "load": [
+            -0.3,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.24138426181686498,
+            "gain_db": -6.1729104918857045,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            1.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"transducer gain requires |source|<1 and |load|<=1\")"
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            -1.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"transducer gain requires |source|<1 and |load|<=1\")"
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"transducer gain requires |source|<1 and |load|<=1\")"
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.9,
+            0.9
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"transducer gain requires |source|<1 and |load|<=1\")"
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "load": [
+            1.001,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"transducer gain requires |source|<1 and |load|<=1\")"
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "load": [
+            0.0,
+            -1.001
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"transducer gain requires |source|<1 and |load|<=1\")"
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": [
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"expected [real,imag] for source\")"
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "source": null
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "JsonDecodeError((Root, \"Array::from_json: expected array\"))"
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "load": [
+            "bad",
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "JsonDecodeError((Index(Root, index=0), \"Double::from_json: expected number\"))"
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain",
+          "soruce": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"unknown transducer gain option: soruce\")"
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S RI R 50\n1 0 0\n",
+        "options": {
+          "command": "transducer-gain",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"transducer gain requires a two-port\")"
+      }
+    }
+  ],
+  "fileConsumers": [
+    {
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "transducer-gain",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p"
+      ],
+      "exitCode": 0,
+      "stdout": "[\n  {\n    \"frequency_hz\": 1000000000,\n    \"gain\": 4,\n    \"gain_db\": 6.020599913279624,\n    \"state\": \"finite\"\n  },\n  {\n    \"frequency_hz\": 2000000000,\n    \"gain\": 2.25,\n    \"gain_db\": 3.5218251811136247,\n    \"state\": \"finite\"\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "transducer-gain",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain-options.json"
+      ],
+      "exitCode": 0,
+      "stdout": "[\n  {\n    \"frequency_hz\": 1000000000,\n    \"gain\": 3.4843100189035914,\n    \"gain_db\": 5.4211678970793225,\n    \"state\": \"finite\"\n  },\n  {\n    \"frequency_hz\": 2000000000,\n    \"gain\": 1.843990230949532,\n    \"gain_db\": 2.6575861592804984,\n    \"state\": \"finite\"\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "transducer-gain",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"source\": [1.0, 0.0]}"
+      ],
+      "exitCode": 2,
+      "stdout": "",
+      "stderr": "touchstone: Failure(\"transducer gain requires |source|<1 and |load|<=1\")\n"
+    },
+    {
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "transducer-gain",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"soruce\": [0.0, 0.0]}"
+      ],
+      "exitCode": 2,
+      "stdout": "",
+      "stderr": "touchstone: Failure(\"unknown transducer gain option: soruce\")\n"
+    }
+  ],
+  "oracle": "Fraction exact complex four-wave Gaussian elimination; NumPy four-wave solve for 32 fixed ordinary complex cases; Decimal160 log ratio",
+  "numpyVersion": "2.5.3",
+  "primaryDefinition": "https://qucs.sourceforge.net/tech/node6.html",
+  "sourceSHA256": {
+    "gain.mbt": "cdffef018b0455a6805108925dd10b53f2e8dcf6bf813ec2786bbe8eb624ec55",
+    "gain_test.mbt": "76aae70b34354ff070140e11e8138f59149acf4fdc6b5843de7cd7d1b0ef018a",
+    "cmd/bridge/main.mbt": "ad7d592ee11aa5e39ae528f67d969c3cad6243e5449982f8f2a147f7ea3d76b0",
+    "tools/touchstone.mjs": "6640c0c774c63186620504d67f99b800e214c40defe70cb505bf637948f31fbe",
+    "tools/verify-gain.py": "3c18d2304d3b7a88ec0c71631021a322af193cb7f67f29bbb52b7e5c0f7552ef",
+    "examples/power_gain/main.mbt": "81300c2c1c934eff6c4e51a3545b8e53f54cc18dffcccc8a21f2d0bf68afccba",
+    "examples/power_gain/moon.pkg": "35982d8af91d30473fb1a09057fd5dd0d165d452a136fb938db53bfe04a4f7d0",
+    "examples/power-gain.s2p": "64e7e670f508a1de2e3d56632610cc1ffed9a355ea12ba84f37a9e1907c11c6e",
+    "examples/power-gain-options.json": "9fe4c03a9cd980c314b015229427e0d956a57f8ab61f493edb30e56b5269a188"
+  }
+}

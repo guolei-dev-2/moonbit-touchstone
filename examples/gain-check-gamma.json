@@ -1,0 +1,6 @@
+{
+  "start_hz": 1000000000,
+  "end_hz": 2000000000,
+  "minimum_db": 3.0,
+  "maximum_db": 7.0
+}

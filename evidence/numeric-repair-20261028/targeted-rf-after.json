@@ -1,0 +1,1019 @@
+{
+  "complete": true,
+  "failure": null,
+  "requests": 19,
+  "checks": [
+    {
+      "label": "independent mixed mode and nonsequential ports",
+      "maxAbsoluteError": 9.720644932127638e-17
+    },
+    {
+      "label": "modal reference ohms",
+      "maxAbsoluteError": 0.0
+    },
+    {
+      "label": "independent mixed mode and nonsequential ports",
+      "maxAbsoluteError": 1.1123893155135927e-16
+    },
+    {
+      "label": "modal reference ohms",
+      "maxAbsoluteError": 0.0
+    },
+    {
+      "label": "cascade at distinct inner/outer references",
+      "maxAbsoluteError": 1.1188630228279524e-16
+    },
+    {
+      "label": "two-sided independently generated DUT",
+      "maxAbsoluteError": 1.8619006149354548e-16
+    },
+    {
+      "label": "deembedded DUT references",
+      "maxAbsoluteError": 0.0
+    },
+    {
+      "label": "cascade at distinct inner/outer references",
+      "maxAbsoluteError": 1.5515838457795457e-17
+    },
+    {
+      "label": "two-sided independently generated DUT",
+      "maxAbsoluteError": 3.337167946540778e-16
+    },
+    {
+      "label": "deembedded DUT references",
+      "maxAbsoluteError": 0.0
+    },
+    {
+      "label": "analytic reflection_magnitude [1,2]",
+      "status": "pass"
+    },
+    {
+      "label": "analytic reflection_magnitude [1,3]",
+      "status": "fail"
+    },
+    {
+      "label": "analytic reflection_magnitude [0,3]",
+      "status": "fail"
+    },
+    {
+      "label": "analytic reflection_magnitude [1.3,1.5]",
+      "status": "inconclusive"
+    },
+    {
+      "label": "analytic vswr [1,2]",
+      "status": "fail"
+    },
+    {
+      "label": "analytic vswr [3,3]",
+      "status": "inconclusive"
+    },
+    {
+      "label": "analytic zero-transmission ripple",
+      "status": "fail"
+    },
+    {
+      "label": "analytic zero-transmission ripple",
+      "status": "inconclusive"
+    }
+  ],
+  "raw": [
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 3\n[Number of Frequencies] 2\n[Reference] 50 75 50\n[Network Data]\n1 -0.0081216211893457152 0.0038477187698477341 -0.025083311334112391 -0.0027850610805404412 -0.0098526715272583588 0.0030547902587996752 0.0077989066292724566 0.0021041523966590413 -0.040835183386928736 0.020347123223560692 0.044448937521275232 -0.025420901227320755 0.026458968991420015 -0.058553392257541338 0.0047242298204112718 -0.02655706209230459 0.025968446329069434 0.030044640134242587\n2 -0.03269199254818364 -0.026111958243060025 -0.02030411798545546 0.026164049294548013 0.021116876376608053 0.056257326390528668 -0.033638679393361647 -0.055047721347206931 0.028188450639042763 0.049130062592221677 0.033054951108140322 0.016880055228082697 0.025155473505517785 0.014788576285013094 0.014624479070674908 -0.0012963238744758709 0.085672760105761608 0.057533593922284479\n[End]\n",
+        "left": "",
+        "right": "",
+        "options": {
+          "command": "mixed",
+          "pairs": [
+            [
+              2,
+              0
+            ]
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 3\n[Number of Frequencies] 2\n[Reference] 50 75 50\n[Matrix Format] Full\n[Mixed-Mode Order] D3,1 C3,1 S2\n[Network Data]\n1 0.0006202638377811047 0.04469548045141599 0.03520085401854686 -0.01770563057597308 0.021077114480860765 -0.0168093431177919\n  -0.001110786500131566 0.04390255194036793 0.017226561301942712 -0.01080312154732567 -0.014396044597067743 -0.020748014269929657\n  0.025915485374431613 -0.01946315207003947 0.036944804901230165 -0.0164874312133844 -0.04083518338692871 0.020347123223560692\n2 0.003354208837726108 -0.01981213349815866 0.06120167489142754 0.02108840102991446 0.024698247835722262 -0.01941741608172991\n  0.05716307776251771 0.06255715113543003 0.04962655871985197 0.0512337691773831 -0.004016111191332338 0.0175841372772181\n  0.047159518389562005 0.0508606185720582 -0.00041275822885039447 -0.026988615534896787 0.028188450639042795 0.04913006259222168\n[End]\n",
+          "network": {
+            "ports": 3,
+            "parameter": "S",
+            "frequency_hz": [
+              1,
+              2
+            ],
+            "reference_ohms": [
+              100,
+              25,
+              75
+            ],
+            "values": [
+              [
+                {
+                  "re": 0.0006202638377811047,
+                  "im": 0.04469548045141599
+                },
+                {
+                  "re": 0.03520085401854686,
+                  "im": -0.01770563057597308
+                },
+                {
+                  "re": 0.021077114480860765,
+                  "im": -0.0168093431177919
+                },
+                {
+                  "re": -0.001110786500131566,
+                  "im": 0.04390255194036793
+                },
+                {
+                  "re": 0.017226561301942712,
+                  "im": -0.01080312154732567
+                },
+                {
+                  "re": -0.014396044597067743,
+                  "im": -0.020748014269929657
+                },
+                {
+                  "re": 0.025915485374431613,
+                  "im": -0.01946315207003947
+                },
+                {
+                  "re": 0.036944804901230165,
+                  "im": -0.0164874312133844
+                },
+                {
+                  "re": -0.04083518338692871,
+                  "im": 0.020347123223560692
+                }
+              ],
+              [
+                {
+                  "re": 0.003354208837726108,
+                  "im": -0.01981213349815866
+                },
+                {
+                  "re": 0.06120167489142754,
+                  "im": 0.02108840102991446
+                },
+                {
+                  "re": 0.024698247835722262,
+                  "im": -0.01941741608172991
+                },
+                {
+                  "re": 0.05716307776251771,
+                  "im": 0.06255715113543003
+                },
+                {
+                  "re": 0.04962655871985197,
+                  "im": 0.0512337691773831
+                },
+                {
+                  "re": -0.004016111191332338,
+                  "im": 0.0175841372772181
+                },
+                {
+                  "re": 0.047159518389562005,
+                  "im": 0.0508606185720582
+                },
+                {
+                  "re": -0.00041275822885039447,
+                  "im": -0.026988615534896787
+                },
+                {
+                  "re": 0.028188450639042795,
+                  "im": 0.04913006259222168
+                }
+              ]
+            ]
+          },
+          "order": [
+            "D3,1",
+            "C3,1",
+            "S2"
+          ]
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 4\n[Number of Frequencies] 2\n[Reference] 35 35 110 110\n[Network Data]\n1 -0.037771345764480942 -0.02650069441784705 0.021409266879371155 0.078222322079677081 -0.022435339956433861 -0.021972515039383661 -0.052616969378297247 -0.095416268236510351 -0.013911107162312085 0.0093598462638578052 0.016302875176409531 -0.012678486814223905 0.050112138146992183 0.028746081121392163 0.069591278672677948 -0.0026524471864320053 0.0044422185762611043 -0.10274213596631082 -0.036123724004281245 0.0066544459347227958 -0.027665541214917714 0.032092687066421065 -0.067493229306869643 0.041936677953962949 0.085546194509256906 -0.018576696521749883 -0.01043554433649143 -0.026286434845756507 -0.042765092335142862 0.031875670710017609 -0.014067643410671009 -0.066403828779077897\n2 -0.015698936632534768 0.025785486906874728 -0.061826503397095493 -0.024545697836203539 -0.038844713651357804 -0.022566711544560671 -0.052164440050174843 -0.006419716019318452 0.014305354960263042 0.035252375399639629 0.089667789032586584 -0.012949925569339516 0.00018386967307802306 0.0076555556823472513 -0.049160088587996684 -0.094628759625877565 0.04781642437301286 -0.010324855097713012 0.051871931977159558 -0.0036908191245114716 0.0044371337784654451 0.037269596683394711 -0.021880161886519752 -0.070932288333645607 -0.018546248191968092 0.047101678696160283 -0.025599634835043159 -0.034953797050646197 0.034751979226993274 -0.06602683340381503 0.013677920843368002 0.064054771872893795\n[End]\n",
+        "left": "",
+        "right": "",
+        "options": {
+          "command": "mixed",
+          "pairs": [
+            [
+              2,
+              3
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 4\n[Number of Frequencies] 2\n[Reference] 35 35 110 110\n[Matrix Format] Full\n[Mixed-Mode Order] D3,4 D2,1 C3,4 C2,1\n[Network Data]\n1 0.03426256850821184 -0.05406174518831869 0.02770789813260299 0.05855316011252011 -0.019163017387986706 0.054278761544722144 -0.0533960778003928 -0.025612279332040817\n  -0.024830384973774572 -0.021022612444651256 -0.014483315152565275 -0.0633806747878029 0.09737786307720062 0.07174120860542708 0.009376923449603608 -0.027520134106098066\n  0.005565119583740046 0.044217754300776804 -0.06827384071314532 0.05084342178851349 -0.07599575313380072 0.019750603475661856 0.02171457237237267 -0.0704754106995472\n  0.005351244448088807 0.05242114075247541 0.0446972974912868 0.04134234170972119 0.022325553742469507 -0.045647574670466914 -0.006985155435506159 0.024201493555731965\n2 0.002621618640679892 0.11914174514687462 0.0055544471236108825 0.04434475586000402 -0.032936464089207806 -0.01584531505966484 0.07191711968859185 -0.013081777933869287\n  0.018012115931128832 0.05921565541673352 0.06074500041844215 0.0010644418870495581 0.021016467393306988 -0.0289933881898256 0.09074929201123993 0.010531330379814463\n  0.023695677024305188 -0.01093986012983425 -0.0014989395194641864 -0.03771071988680246 0.015493435981153547 -0.017817376590586066 0.027771236661580583 -0.0009338962883552\n  0.03133184232994587 0.0430686598914913 0.014617433653881389 -0.0492667428560287 -0.06999268630822567 -0.05797981575370472 0.013223851981609629 0.011771119450485652\n[End]\n",
+          "network": {
+            "ports": 4,
+            "parameter": "S",
+            "frequency_hz": [
+              1,
+              2
+            ],
+            "reference_ohms": [
+              220,
+              70,
+              55,
+              17.5
+            ],
+            "values": [
+              [
+                {
+                  "re": 0.03426256850821184,
+                  "im": -0.05406174518831869
+                },
+                {
+                  "re": 0.02770789813260299,
+                  "im": 0.05855316011252011
+                },
+                {
+                  "re": -0.019163017387986706,
+                  "im": 0.054278761544722144
+                },
+                {
+                  "re": -0.0533960778003928,
+                  "im": -0.025612279332040817
+                },
+                {
+                  "re": -0.024830384973774572,
+                  "im": -0.021022612444651256
+                },
+                {
+                  "re": -0.014483315152565275,
+                  "im": -0.0633806747878029
+                },
+                {
+                  "re": 0.09737786307720062,
+                  "im": 0.07174120860542708
+                },
+                {
+                  "re": 0.009376923449603608,
+                  "im": -0.027520134106098066
+                },
+                {
+                  "re": 0.005565119583740046,
+                  "im": 0.044217754300776804
+                },
+                {
+                  "re": -0.06827384071314532,
+                  "im": 0.05084342178851349
+                },
+                {
+                  "re": -0.07599575313380072,
+                  "im": 0.019750603475661856
+                },
+                {
+                  "re": 0.02171457237237267,
+                  "im": -0.0704754106995472
+                },
+                {
+                  "re": 0.005351244448088807,
+                  "im": 0.05242114075247541
+                },
+                {
+                  "re": 0.0446972974912868,
+                  "im": 0.04134234170972119
+                },
+                {
+                  "re": 0.022325553742469507,
+                  "im": -0.045647574670466914
+                },
+                {
+                  "re": -0.006985155435506159,
+                  "im": 0.024201493555731965
+                }
+              ],
+              [
+                {
+                  "re": 0.002621618640679892,
+                  "im": 0.11914174514687462
+                },
+                {
+                  "re": 0.0055544471236108825,
+                  "im": 0.04434475586000402
+                },
+                {
+                  "re": -0.032936464089207806,
+                  "im": -0.01584531505966484
+                },
+                {
+                  "re": 0.07191711968859185,
+                  "im": -0.013081777933869287
+                },
+                {
+                  "re": 0.018012115931128832,
+                  "im": 0.05921565541673352
+                },
+                {
+                  "re": 0.06074500041844215,
+                  "im": 0.0010644418870495581
+                },
+                {
+                  "re": 0.021016467393306988,
+                  "im": -0.0289933881898256
+                },
+                {
+                  "re": 0.09074929201123993,
+                  "im": 0.010531330379814463
+                },
+                {
+                  "re": 0.023695677024305188,
+                  "im": -0.01093986012983425
+                },
+                {
+                  "re": -0.0014989395194641864,
+                  "im": -0.03771071988680246
+                },
+                {
+                  "re": 0.015493435981153547,
+                  "im": -0.017817376590586066
+                },
+                {
+                  "re": 0.027771236661580583,
+                  "im": -0.0009338962883552
+                },
+                {
+                  "re": 0.03133184232994587,
+                  "im": 0.0430686598914913
+                },
+                {
+                  "re": 0.014617433653881389,
+                  "im": -0.0492667428560287
+                },
+                {
+                  "re": -0.06999268630822567,
+                  "im": -0.05797981575370472
+                },
+                {
+                  "re": 0.013223851981609629,
+                  "im": 0.011771119450485652
+                }
+              ]
+            ]
+          },
+          "order": [
+            "D3,4",
+            "D2,1",
+            "C3,4",
+            "C2,1"
+          ]
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 35 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.10624134460859809 0.019205007585244439 0.31451657823717233 -0.012326211545339669 0.65174761839630646 -0.021124556900809301 -0.04640991757152358 -0.034384203282881366\n2 0.035211497536702434 -0.0032343626660925519 0.36056876656434261 0.010233264563799709 0.61962819122357682 0.0063040263829736197 -0.017521421068566197 -0.058336607358955989\n[End]\n",
+        "left": "",
+        "right": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 75 90\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.055355144247935265 0.043656785958710358 0.31307976621843137 -0.033717654275595969 0.61738259583679578 -0.041705366680906353 -0.040524034746304304 0.03608864723348644\n2 0.01897104040891474 -0.021114545918138786 0.27898958667922236 0.041039486663560387 0.72044807886713769 0.021010812321580766 -0.019007424780284891 0.022182325259627489\n[End]\n",
+        "options": {
+          "command": "cascade"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "[Version] 2.1\n# Hz S RI R 35\n[Number of Ports] 2\n[Two-Port Data Order] 12_21\n[Number of Frequencies] 2\n[Reference] 35 90\n[Matrix Format] Full\n[Network Data]\n1 0.1182336075003023 0.02727442373704308 0.09789034219686363 -0.014832663763501331 0.4009044232064117 -0.04175405107002776 -0.05060287754553567 0.031107879565177847\n2 0.039620386643859556 -0.007783101817751997 0.10003142997808985 0.01755138025186809 0.44559318850331375 0.017205413011872766 -0.020454074578597027 0.00990662156308781\n[End]\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 35 110\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.11650661955893285 0.02693405576201538 0.031792515394794364 -0.012107780416911552 0.27832452861022117 -0.031785035597213233 0.011455171398719996 0.053840929212030091\n2 0.03622785860264896 -0.0069425930918704838 0.023266255875788476 0.0074568545876861018 0.32788219016676207 0.03205806393001015 0.04134970951585084 0.040285999244365225\n[End]\n",
+        "left": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 35 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.10624134460859809 0.019205007585244439 0.31451657823717233 -0.012326211545339669 0.65174761839630646 -0.021124556900809301 -0.04640991757152358 -0.034384203282881366\n2 0.035211497536702434 -0.0032343626660925519 0.36056876656434261 0.010233264563799709 0.61962819122357682 0.0063040263829736197 -0.017521421068566197 -0.058336607358955989\n[End]\n",
+        "right": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 90 110\n[Two-Port Data Order] 12_21\n[Network Data]\n1 -0.039631980268634508 -0.019096340874980661 0.33495485155918403 -0.072525634686282925 0.69315585364625709 -0.0067002514506077681 0.02156934943241957 0.043947678521890458\n2 -0.069290000615413905 0.033793427974207708 0.23802874286868761 0.033020644428917632 0.73665320016106817 0.04443659414047979 0.045254798108715175 0.039270870944093192\n[End]\n",
+        "options": {
+          "command": "deembed"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "[Version] 2.1\n# Hz S RI R 75\n[Number of Ports] 2\n[Two-Port Data Order] 12_21\n[Number of Frequencies] 2\n[Reference] 75 90\n[Matrix Format] Full\n[Network Data]\n1 0.05535514424793528 0.043656785958710316 0.3130797662184312 -0.033717654275595886 0.6173825958367958 -0.04170536668090635 -0.04052403474630432 0.03608864723348641\n2 0.018971040408914692 -0.021114545918138793 0.2789895866792224 0.04103948666356037 0.7204480788671378 0.021010812321580735 -0.01900742478028488 0.022182325259627524\n[End]\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 0.5 2\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.023969771314921007 -0.00066538741212209419 0.37873077465555388 -0.063673010000858593 0.64228858323337223 -0.0069081786390216516 -0.042537697830755866 0.057136921343381254\n2 -0.055551046367313894 -0.030284261518151438 0.3164341512126157 0.013338353541721344 0.63308310241728849 -0.031824099186458413 0.040262628992047994 0.046372118073585898\n[End]\n",
+        "left": "",
+        "right": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 2 3\n[Two-Port Data Order] 12_21\n[Network Data]\n1 -0.0013631733621572975 0.0096604036815598499 0.28718205414226233 0.018673419944758268 0.60729370550741457 0.02285330578724171 -0.036161949546813302 0.0061281752595618993\n2 0.045430977609443444 -0.010954393037260321 0.17257287259726056 0.013145661892754157 0.6297933396679849 0.076678829235361332 0.0013378974588349995 0.033464408323081472\n[End]\n",
+        "options": {
+          "command": "cascade"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "[Version] 2.1\n# Hz S RI R 0.5\n[Number of Ports] 2\n[Two-Port Data Order] 12_21\n[Number of Frequencies] 2\n[Reference] 0.5 3\n[Matrix Format] Full\n[Network Data]\n1 0.024060254338106477 0.0017383833584558824 0.10989388443228469 -0.011261702158189526 0.3900280512560876 0.010287389165129298 -0.04457683162509492 0.015306705161332094\n2 -0.04642332309927736 -0.03254734892572496 0.05454915867269793 0.006567785576348296 0.4020426861372776 0.02923947606125954 0.004673726344131712 0.03934304527586282\n[End]\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 0.5 5\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.026158853008099465 0.00069337120960329796 0.02715584278250607 -0.0047699876163541741 0.2344859382125121 -0.0065671295470521168 0.0025728559250744482 -0.00054940609224227535\n2 -0.045764138932327086 -0.032646602447282153 0.018750001261042676 0.004460940599661992 0.28710820826719408 0.029491603468343858 -0.043101674566327748 -0.0062656214934379822\n[End]\n",
+        "left": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 0.5 2\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.023969771314921007 -0.00066538741212209419 0.37873077465555388 -0.063673010000858593 0.64228858323337223 -0.0069081786390216516 -0.042537697830755866 0.057136921343381254\n2 -0.055551046367313894 -0.030284261518151438 0.3164341512126157 0.013338353541721344 0.63308310241728849 -0.031824099186458413 0.040262628992047994 0.046372118073585898\n[End]\n",
+        "right": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 3 5\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.050448083598673046 -0.020616042934389057 0.24939444847706577 -0.018349783115530444 0.60144634614489212 -0.03375064625661469 0.0089269066848927155 -0.0036862631614341143\n2 0.0283307885714335 -0.010115438820531116 0.34837823061845785 0.039422943485165923 0.71531634055850679 0.020530267194173862 -0.042860985309408857 -0.016208333698945677\n[End]\n",
+        "options": {
+          "command": "deembed"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "[Version] 2.1\n# Hz S RI R 2\n[Number of Ports] 2\n[Two-Port Data Order] 12_21\n[Number of Frequencies] 2\n[Reference] 2 3\n[Matrix Format] Full\n[Network Data]\n1 -0.0013631733621572934 0.00966040368155985 0.2871820541422624 0.01867341994475825 0.6072937055074142 0.02285330578724169 -0.03616194954681329 0.006128175259561897\n2 0.045430977609443514 -0.01095439303726033 0.17257287259726062 0.013145661892754169 0.6297933396679848 0.07667882923536133 0.001337897458834972 0.03346440832308145\n[End]\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.006559338231193452 -0.016484417175681023 0.33987235989452136 0.014736564555343366 0.64634043351778969 0.020904315869929049 0.036666837102480573 -0.071547610163336384\n2 0.038806865390538126 0.10978967367551602 0.2914184838040314 0.040346669640288171 0.64617466768382448 -0.030308648622159332 -0.039461514817067528 0.036495408657684754\n[End]\n",
+        "left": "",
+        "right": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 75 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.014531629475630621 -0.012672969043360072 0.25970239422605745 0.067370043810345004 0.67053602699298043 -0.014750036943159866 -0.01008473122906098 0.012159335369561089\n2 -0.00027717133679242023 0.0032123336041746269 0.25450092391357615 0.034206196597566615 0.66471343628942658 -0.014134270459399479 0.017215369058492462 0.0091770337774107428\n[End]\n",
+        "options": {
+          "command": "cascade"
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"connected port references differ; renormalize explicitly\")"
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 3\n[Number of Frequencies] 2\n[Reference] 50 75 50\n[Network Data]\n1 0.0030026123199439294 -0.066463521903227699 0.031105749486579098 0.0094825814365471842 -0.035500069645150983 -0.025002446601669601 0.0378086166664902 0.027508175376245447 0.12238938474061398 0.13938478857025302 0.0031101090334461415 0.043705682888461911 -0.047419986571246964 -0.022072399562164054 -0.0063270746338417718 0.015079167959440126 0.12796372267697254 0.029671782277041373\n2 0.020558910550285473 -0.023403967468036156 -0.0048706630968762925 0.048814656936600989 0.13073054454804561 0.010733537793963781 -0.020199057362854416 0.055608495805728658 -0.030107361780813115 0.039766436831838572 -0.023545373967978383 -0.089001188573162152 -0.0060842691532462983 0.021045793473347646 0.032251556915171765 -0.032008489319395476 -0.038071075197619049 -0.0167194188570256\n[End]\n",
+        "left": "",
+        "right": "",
+        "options": {
+          "command": "mixed",
+          "pairs": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"mode pair requires distinct ports with equal real references\")"
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.006559338231193452 -0.016484417175681023 0.33987235989452136 0.014736564555343366 0.64634043351778969 0.020904315869929049 0.036666837102480573 -0.071547610163336384\n2 0.038806865390538126 0.10978967367551602 0.2914184838040314 0.040346669640288171 0.64617466768382448 -0.030308648622159332 -0.039461514817067528 0.036495408657684754\n[End]\n",
+        "left": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0 0 0 0 1 0 0 0\n2 0 0 0 0 1 0 0 0\n[End]\n",
+        "right": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.006559338231193452 -0.016484417175681023 0.33987235989452136 0.014736564555343366 0.64634043351778969 0.020904315869929049 0.036666837102480573 -0.071547610163336384\n2 0.038806865390538126 0.10978967367551602 0.2914184838040314 0.040346669640288171 0.64617466768382448 -0.030308648622159332 -0.039461514817067528 0.036495408657684754\n[End]\n",
+        "options": {
+          "command": "deembed"
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"singular or numerically unsafe matrix\")"
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S RI R 50\n1 NaN 0\n",
+        "left": "",
+        "right": "",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"non-finite numeric field\")"
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S RI R 50\n1 Inf 0\n",
+        "left": "",
+        "right": "",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"non-finite numeric field\")"
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 1\n[Number of Frequencies] 3\n[Reference] 50\n[Network Data]\n1 0 0\n2 1 0\n3 1.2 0\n[End]\n",
+        "left": "",
+        "right": "",
+        "options": {
+          "command": "band-check",
+          "limits": [
+            {
+              "metric": "reflection_magnitude",
+              "start_hz": 1,
+              "end_hz": 2,
+              "input": 0,
+              "output": 0,
+              "maximum": 1
+            }
+          ],
+          "max_details": 8
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "scope": "sampled_points_only",
+          "status": "pass",
+          "reference_ohms": [
+            50
+          ],
+          "max_details": 8,
+          "results": [
+            {
+              "metric": "reflection_magnitude",
+              "start_hz": 1,
+              "end_hz": 2,
+              "input": 0,
+              "output": 0,
+              "minimum": null,
+              "maximum": 1,
+              "status": "pass",
+              "range_covered": true,
+              "start_sampled": true,
+              "end_sampled": true,
+              "sample_count": 2,
+              "failed_count": 0,
+              "undefined_count": 0,
+              "lowest": {
+                "point": 0,
+                "frequency_hz": 1,
+                "value": 0,
+                "state": "finite"
+              },
+              "highest": {
+                "point": 1,
+                "frequency_hz": 2,
+                "value": 1,
+                "state": "finite"
+              },
+              "issues": [],
+              "issues_truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 1\n[Number of Frequencies] 3\n[Reference] 50\n[Network Data]\n1 0 0\n2 1 0\n3 1.2 0\n[End]\n",
+        "left": "",
+        "right": "",
+        "options": {
+          "command": "band-check",
+          "limits": [
+            {
+              "metric": "reflection_magnitude",
+              "start_hz": 1,
+              "end_hz": 3,
+              "input": 0,
+              "output": 0,
+              "maximum": 1
+            }
+          ],
+          "max_details": 0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "scope": "sampled_points_only",
+          "status": "fail",
+          "reference_ohms": [
+            50
+          ],
+          "max_details": 0,
+          "results": [
+            {
+              "metric": "reflection_magnitude",
+              "start_hz": 1,
+              "end_hz": 3,
+              "input": 0,
+              "output": 0,
+              "minimum": null,
+              "maximum": 1,
+              "status": "fail",
+              "range_covered": true,
+              "start_sampled": true,
+              "end_sampled": true,
+              "sample_count": 3,
+              "failed_count": 1,
+              "undefined_count": 0,
+              "lowest": {
+                "point": 0,
+                "frequency_hz": 1,
+                "value": 0,
+                "state": "finite"
+              },
+              "highest": {
+                "point": 2,
+                "frequency_hz": 3,
+                "value": 1.2,
+                "state": "finite"
+              },
+              "issues": [],
+              "issues_truncated": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 1\n[Number of Frequencies] 3\n[Reference] 50\n[Network Data]\n1 0 0\n2 1 0\n3 1.2 0\n[End]\n",
+        "left": "",
+        "right": "",
+        "options": {
+          "command": "band-check",
+          "limits": [
+            {
+              "metric": "reflection_magnitude",
+              "start_hz": 0,
+              "end_hz": 3,
+              "input": 0,
+              "output": 0,
+              "maximum": 1
+            }
+          ],
+          "max_details": 8
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "scope": "sampled_points_only",
+          "status": "fail",
+          "reference_ohms": [
+            50
+          ],
+          "max_details": 8,
+          "results": [
+            {
+              "metric": "reflection_magnitude",
+              "start_hz": 0,
+              "end_hz": 3,
+              "input": 0,
+              "output": 0,
+              "minimum": null,
+              "maximum": 1,
+              "status": "fail",
+              "range_covered": false,
+              "start_sampled": false,
+              "end_sampled": true,
+              "sample_count": 3,
+              "failed_count": 1,
+              "undefined_count": 0,
+              "lowest": {
+                "point": 0,
+                "frequency_hz": 1,
+                "value": 0,
+                "state": "finite"
+              },
+              "highest": {
+                "point": 2,
+                "frequency_hz": 3,
+                "value": 1.2,
+                "state": "finite"
+              },
+              "issues": [
+                {
+                  "observation": {
+                    "point": 2,
+                    "frequency_hz": 3,
+                    "value": 1.2,
+                    "state": "finite"
+                  },
+                  "reason": "above_maximum"
+                }
+              ],
+              "issues_truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 1\n[Number of Frequencies] 3\n[Reference] 50\n[Network Data]\n1 0 0\n2 1 0\n3 1.2 0\n[End]\n",
+        "left": "",
+        "right": "",
+        "options": {
+          "command": "band-check",
+          "limits": [
+            {
+              "metric": "reflection_magnitude",
+              "start_hz": 1.3,
+              "end_hz": 1.5,
+              "input": 0,
+              "output": 0,
+              "maximum": 1
+            }
+          ],
+          "max_details": 8
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "scope": "sampled_points_only",
+          "status": "inconclusive",
+          "reference_ohms": [
+            50
+          ],
+          "max_details": 8,
+          "results": [
+            {
+              "metric": "reflection_magnitude",
+              "start_hz": 1.3,
+              "end_hz": 1.5,
+              "input": 0,
+              "output": 0,
+              "minimum": null,
+              "maximum": 1,
+              "status": "inconclusive",
+              "range_covered": true,
+              "start_sampled": false,
+              "end_sampled": false,
+              "sample_count": 0,
+              "failed_count": 0,
+              "undefined_count": 0,
+              "lowest": null,
+              "highest": null,
+              "issues": [],
+              "issues_truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 1\n[Number of Frequencies] 3\n[Reference] 50\n[Network Data]\n1 0 0\n2 1 0\n3 1.2 0\n[End]\n",
+        "left": "",
+        "right": "",
+        "options": {
+          "command": "band-check",
+          "limits": [
+            {
+              "metric": "vswr",
+              "start_hz": 1,
+              "end_hz": 2,
+              "input": 0,
+              "output": 0,
+              "maximum": 100
+            }
+          ],
+          "max_details": 8
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "scope": "sampled_points_only",
+          "status": "fail",
+          "reference_ohms": [
+            50
+          ],
+          "max_details": 8,
+          "results": [
+            {
+              "metric": "vswr",
+              "start_hz": 1,
+              "end_hz": 2,
+              "input": 0,
+              "output": 0,
+              "minimum": null,
+              "maximum": 100,
+              "status": "fail",
+              "range_covered": true,
+              "start_sampled": true,
+              "end_sampled": true,
+              "sample_count": 2,
+              "failed_count": 1,
+              "undefined_count": 0,
+              "lowest": {
+                "point": 0,
+                "frequency_hz": 1,
+                "value": 1,
+                "state": "finite"
+              },
+              "highest": {
+                "point": 1,
+                "frequency_hz": 2,
+                "value": null,
+                "state": "infinite"
+              },
+              "issues": [
+                {
+                  "observation": {
+                    "point": 1,
+                    "frequency_hz": 2,
+                    "value": null,
+                    "state": "infinite"
+                  },
+                  "reason": "above_maximum"
+                }
+              ],
+              "issues_truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 1\n[Number of Frequencies] 3\n[Reference] 50\n[Network Data]\n1 0 0\n2 1 0\n3 1.2 0\n[End]\n",
+        "left": "",
+        "right": "",
+        "options": {
+          "command": "band-check",
+          "limits": [
+            {
+              "metric": "vswr",
+              "start_hz": 3,
+              "end_hz": 3,
+              "input": 0,
+              "output": 0,
+              "maximum": 100
+            }
+          ],
+          "max_details": 8
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "scope": "sampled_points_only",
+          "status": "inconclusive",
+          "reference_ohms": [
+            50
+          ],
+          "max_details": 8,
+          "results": [
+            {
+              "metric": "vswr",
+              "start_hz": 3,
+              "end_hz": 3,
+              "input": 0,
+              "output": 0,
+              "minimum": null,
+              "maximum": 100,
+              "status": "inconclusive",
+              "range_covered": true,
+              "start_sampled": true,
+              "end_sampled": true,
+              "sample_count": 1,
+              "failed_count": 0,
+              "undefined_count": 1,
+              "lowest": null,
+              "highest": null,
+              "issues": [
+                {
+                  "observation": {
+                    "point": 2,
+                    "frequency_hz": 3,
+                    "value": null,
+                    "state": "undefined"
+                  },
+                  "reason": "undefined"
+                }
+              ],
+              "issues_truncated": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0 0 0 0 0.5 0 0 0\n2 0 0 0 0 0 0 0 0\n[End]\n",
+        "left": "",
+        "right": "",
+        "options": {
+          "command": "ripple-check",
+          "start_hz": 1,
+          "end_hz": 2,
+          "input": 0,
+          "output": 1,
+          "maximum_ripple_db": 1.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "scope": "sampled_points_only",
+          "status": "fail",
+          "start_hz": 1,
+          "end_hz": 2,
+          "input": 0,
+          "output": 1,
+          "maximum_ripple_db": 1,
+          "sample_count": 2,
+          "range_covered": true,
+          "start_sampled": true,
+          "end_sampled": true,
+          "ripple_db": null,
+          "ripple_state": "infinite",
+          "lowest_loss": {
+            "point": 0,
+            "frequency_hz": 1,
+            "value": 6.020599913279624,
+            "state": "finite"
+          },
+          "highest_loss": {
+            "point": 1,
+            "frequency_hz": 2,
+            "value": null,
+            "state": "infinite"
+          }
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0 0 0 0 0 0 0 0\n2 0 0 0 0 0 0 0 0\n[End]\n",
+        "left": "",
+        "right": "",
+        "options": {
+          "command": "ripple-check",
+          "start_hz": 1,
+          "end_hz": 2,
+          "input": 0,
+          "output": 1,
+          "maximum_ripple_db": 1.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "scope": "sampled_points_only",
+          "status": "inconclusive",
+          "start_hz": 1,
+          "end_hz": 2,
+          "input": 0,
+          "output": 1,
+          "maximum_ripple_db": 1,
+          "sample_count": 2,
+          "range_covered": true,
+          "start_sampled": true,
+          "end_sampled": true,
+          "ripple_db": null,
+          "ripple_state": "undefined",
+          "lowest_loss": {
+            "point": 0,
+            "frequency_hz": 1,
+            "value": null,
+            "state": "infinite"
+          },
+          "highest_loss": {
+            "point": 0,
+            "frequency_hz": 1,
+            "value": null,
+            "state": "infinite"
+          }
+        }
+      }
+    }
+  ],
+  "versions": {
+    "numpy": "2.5.3",
+    "scikit_rf": "2.1.0"
+  },
+  "sourceSHA256": {
+    "complex.mbt": "d732420ce61edb01b559abbadcf5d44253923a4a5a434eed5570a0a606cfa8de",
+    "matrix.mbt": "2ad8bd10ed06e0549da56cf42d43c0c3c53578d0747ccbadd634a3ed5296ab58",
+    "cascade.mbt": "6dc09bd7f21b7eaa004b7891cc8f23a24dee9c6b88aafb90583ed151caebdefb",
+    "conversion.mbt": "a9bba63395d0fd56157f8e16f815308719a99126f077a0397fe60db274a938e8",
+    "mixed_mode.mbt": "192e45989be2b3a41ee19472277a401c78182bceb2704ed6292b7a57efe8cf9c",
+    "bands.mbt": "58d9149f83da41b491fca93145e94cdb70d2fee2927c4e660ec1d4c8b7c5a9f8",
+    "ripple.mbt": "f0a2b65a8b6423a078c8e7a8e58ebac28564a6ab5955f45a4d2eb73cc9727585",
+    "tools/verify-repair05.py": "078ae3d29de9d613de8ebc644fc1007692d9280b6ff4ef899c48af14903dde3e"
+  }
+}

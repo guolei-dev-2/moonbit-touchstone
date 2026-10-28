@@ -1,0 +1,24 @@
+{
+  "before": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "4158dfb5a081e05c40287470302e13cd5347b96d85e65c8dd4035fa408f885ea",
+    "provenance": "observed at start of round10"
+  },
+  "after": {
+    "_build/js/release/build/cmd/bridge/bridge.js": {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+      "sha256": "1780ac9b7bd457028c6d973491fcbcbccb724f3da645ddcd450764975a0068c1"
+    },
+    "_build/js/debug/build/examples/power_gain_ohms/power_gain_ohms.js": {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\debug\\build\\examples\\power_gain_ohms\\power_gain_ohms.js",
+      "sha256": "a9b825f7d2275add624a13f29e07dfc99397120a16d6eebb59b302bab7321c2c"
+    },
+    "_build/wasm-gc/debug/build/examples/power_gain_ohms/power_gain_ohms.wasm": {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\wasm-gc\\debug\\build\\examples\\power_gain_ohms\\power_gain_ohms.wasm",
+      "sha256": "687bc9ea8f00a83cb56183793230073379a2278597de0c3c9fdbf11c2008d090"
+    }
+  },
+  "oldPublicSignaturesRetained": true,
+  "old05to09CoreProductionUnchanged": true,
+  "oldBridgePreservedAroundAddedBranch": true
+}

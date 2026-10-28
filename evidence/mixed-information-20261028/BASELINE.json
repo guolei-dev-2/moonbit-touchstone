@@ -1,0 +1,115 @@
+{
+  "complete": true,
+  "actualNodeProcesses": 4,
+  "confirmedDefect": "mixed file path loses legal Information lines already parsed in the input Document",
+  "scopeEvidence": [
+    "README.md states no silent metadata loss",
+    "docs/SCOPE.md requires information and noise/modal metadata preservation"
+  ],
+  "information": [
+    "Calibration: fixture A; reference plane at connector.",
+    "Bias: 3.3 V / 1 mA. ! Annotation inside information.",
+    "Source: project synthetic; no measurement claim."
+  ],
+  "inputMetadata": {
+    "ports": 3,
+    "parameter": "S",
+    "points": 2,
+    "frequency_hz": [
+      1200000000,
+      1800000000
+    ],
+    "reference_ohms": [
+      50,
+      50,
+      75
+    ],
+    "noise": [],
+    "noise_reference_ohms": 50,
+    "mixed_mode_order": [],
+    "information": [
+      "Calibration: fixture A; reference plane at connector.",
+      "Bias: 3.3 V / 1 mA. ! Annotation inside information.",
+      "Source: project synthetic; no measurement claim."
+    ]
+  },
+  "oldOutputMetadata": {
+    "ports": 3,
+    "parameter": "S",
+    "points": 2,
+    "frequency_hz": [
+      1200000000,
+      1800000000
+    ],
+    "reference_ohms": [
+      50,
+      50,
+      75
+    ],
+    "noise": [],
+    "noise_reference_ohms": 50,
+    "mixed_mode_order": [
+      "D1,2",
+      "C1,2",
+      "S3"
+    ],
+    "information": []
+  },
+  "commands": [
+    {
+      "label": "legal-input-information",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "inspect",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\baseline\\mixed-information.ts"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\baseline\\legal-input-information.stdout.txt"
+    },
+    {
+      "label": "with-information",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\bridge-probe.mjs",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\baseline\\mixed-information.ts",
+        "{\"command\": \"mixed\", \"pairs\": [[0, 1]]}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\baseline\\with-information.stdout.txt"
+    },
+    {
+      "label": "without-information",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\bridge-probe.mjs",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\baseline\\no-information.ts",
+        "{\"command\": \"mixed\", \"pairs\": [[0, 1]]}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\baseline\\without-information.stdout.txt"
+    },
+    {
+      "label": "old-output-information-missing",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "inspect",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\baseline\\with-information-output.ts"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\baseline\\old-output-information-missing.stdout.txt"
+    }
+  ],
+  "inputSHA256": "1b5781c07caeb672aa89860b0858f1d91c9e6bbbbfc447c43261c5c29b72c5c5",
+  "newLegalInput": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\baseline\\mixed-information.ts",
+  "noInformationControl": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\baseline\\no-information.ts"
+}

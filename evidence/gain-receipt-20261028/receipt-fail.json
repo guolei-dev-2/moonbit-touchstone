@@ -1,0 +1,80 @@
+{
+  "schema": "touchstone.gain-receipt.v1",
+  "input": {
+    "sha256": "64e7e670f508a1de2e3d56632610cc1ffed9a355ea12ba84f37a9e1907c11c6e",
+    "bytes": 139
+  },
+  "request": {
+    "command": "gain-check",
+    "terminal_mode": "impedance",
+    "start_hz": 1000000000,
+    "end_hz": 2000000000,
+    "source_ohms": [
+      100,
+      20
+    ],
+    "load_ohms": [
+      25,
+      -10
+    ],
+    "minimum_db": 4,
+    "maximum_db": 7,
+    "ports": 2
+  },
+  "result": {
+    "status": "fail",
+    "terminal_mode": "impedance",
+    "reference_ohms": [
+      50,
+      50
+    ],
+    "matching": {
+      "source_ohms": [
+        100,
+        20
+      ],
+      "load_ohms": [
+        25,
+        -10
+      ]
+    },
+    "report": {
+      "scope": "sampled_points_only",
+      "status": "fail",
+      "start_hz": 1000000000,
+      "end_hz": 2000000000,
+      "minimum_db": 4,
+      "maximum_db": 7,
+      "sample_count": 2,
+      "state_counts": {
+        "finite": 2,
+        "zero": 0,
+        "singular": 0,
+        "overflow": 0,
+        "underflow": 0
+      },
+      "below_minimum_count": 1,
+      "above_maximum_count": 0,
+      "range_covered": true,
+      "start_sampled": true,
+      "end_sampled": true,
+      "lowest": {
+        "point": 1,
+        "frequency_hz": 2000000000,
+        "gain": 2.1806456499737945,
+        "gain_db": 3.3858509943292328,
+        "state": "finite"
+      },
+      "highest": {
+        "point": 0,
+        "frequency_hz": 1000000000,
+        "gain": 4.070696145688784,
+        "gain_db": 6.0966868597663435,
+        "state": "finite"
+      },
+      "reasons": [
+        "below_minimum"
+      ]
+    }
+  }
+}

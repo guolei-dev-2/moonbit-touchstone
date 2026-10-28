@@ -1,0 +1,26 @@
+{
+  "before": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "fd62a50ff38a0718bbb86f8056fc23d1be22839ddb2e732c1fc4baff23b7c576",
+    "provenance": "observed start of25"
+  },
+  "after": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "385e953c48ae2ae2434abbd37e259f988b3833b78379b8b7b678137b3202a289"
+  },
+  "provenance": "One successful production release JS build using isolated25 same-version SDK; only new-test variable naming changed before first actual runtime; production source unchanged since acceptance",
+  "executedSourceSHA256": {
+    "cascade.mbt": "86741d33d111c767ede19f74bc7dfe820a9a14bb50712acd9f017d7405497e40",
+    "noise.mbt": "aeb757e1ec9f196c22583f91b7bf9f73cc7de5d97989ea7ea03343f8a5e5e15c",
+    "mixed_mode.mbt": "6f5686d5014238898999234c86f3d3bab609c85dd00c84d8cb2170f765b66b15",
+    "deembed_zero_test.mbt": "4a49b7eb0037454569292c18020120c27aedb1260db466ef5f40ff243538bd7a",
+    "cmd/bridge/main.mbt": "f1041a83ed8830974a24b5f05afbe9f38e483bf203b33d3f850b3f3f35dddf93",
+    "tools/touchstone.mjs": "2ead8ae7d516ccdc6e92c9f2b08b8df4662fe505342cebaea263aa313ad852b6",
+    "tools/verify-deembed-zero.py": "d58c0dff87d3e6ffad75dde787ee0d935f1b62749ad88e9fe816c7be2ba960fe",
+    "examples/deembed-opaque.s2p": "5fd1da6a96d1d695773cd6510bb604dac88a38d08ab67208063a60b3675137f3",
+    "examples/deembed-thru.s2p": "5e62e80a7b0e6ec29800110dab392e3cc5053dc125c95df721c0dbf894682f18",
+    "examples/deembed-zero-options.json": "2a9368cd7d6ac2e83b11972e7f6eaf4950fafa6c2270dc9d20418c244c7b070c"
+  },
+  "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain",
+  "oldPublicLibraryAPIUnchanged": true
+}

@@ -1,0 +1,4 @@
+[guolei-dev/touchstone] test gain_test.mbt:120 ("rank-one large scattering matrix retains lower-order feedback terms") failed: gain_test.mbt:125:3-125:31@guolei-dev/touchstone FAILED: `"singular" != "finite"`
+diff:
+-"singular" +"finite"
+Total tests: 8, passed: 7, failed: 1.

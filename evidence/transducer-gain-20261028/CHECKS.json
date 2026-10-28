@@ -1,0 +1,293 @@
+[
+  {
+    "name": "info-before-oracle",
+    "command": [
+      "moon",
+      "info"
+    ],
+    "exitCode": 0,
+    "provenance": "completed console result before independent-corrected.json"
+  },
+  {
+    "name": "release-before-oracle",
+    "command": [
+      "moon",
+      "build",
+      "--target",
+      "js",
+      "--release",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "provenance": "completed console result before independent-corrected.json"
+  },
+  {
+    "name": "independent-corrected",
+    "command": [
+      "rf-venv/Scripts/python.exe",
+      "tools/verify-gain.py",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\feature-08-transducer-gain-max-20261028\\independent-corrected.json"
+    ],
+    "exitCode": 0,
+    "receipt": "independent-corrected.json"
+  },
+  {
+    "name": "fmt-check",
+    "command": [
+      "moon",
+      "fmt",
+      "--check"
+    ],
+    "exitCode": 0,
+    "seconds": 2.6969685000076424,
+    "stdout": "fmt-check.stdout.log",
+    "stderr": "fmt-check.stderr.log"
+  },
+  {
+    "name": "check-all",
+    "command": [
+      "moon",
+      "check",
+      "--target",
+      "all",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 3.4005894000001717,
+    "stdout": "check-all.stdout.log",
+    "stderr": "check-all.stderr.log"
+  },
+  {
+    "name": "gain_test.mbt-js",
+    "command": [
+      "moon",
+      "test",
+      "gain_test.mbt",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 2.8220556000014767,
+    "stdout": "gain_test.mbt-js.stdout.log",
+    "stderr": "gain_test.mbt-js.stderr.log"
+  },
+  {
+    "name": "rf_test.mbt-js",
+    "command": [
+      "moon",
+      "test",
+      "rf_test.mbt",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 0.8874408999981824,
+    "stdout": "rf_test.mbt-js.stdout.log",
+    "stderr": "rf_test.mbt-js.stderr.log"
+  },
+  {
+    "name": "rf_extreme_test.mbt-js",
+    "command": [
+      "moon",
+      "test",
+      "rf_extreme_test.mbt",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 1.1496450999984518,
+    "stdout": "rf_extreme_test.mbt-js.stdout.log",
+    "stderr": "rf_extreme_test.mbt-js.stderr.log"
+  },
+  {
+    "name": "format_extreme_test.mbt-js",
+    "command": [
+      "moon",
+      "test",
+      "format_extreme_test.mbt",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 0.9857675000093877,
+    "stdout": "format_extreme_test.mbt-js.stdout.log",
+    "stderr": "format_extreme_test.mbt-js.stderr.log"
+  },
+  {
+    "name": "gain_test.mbt-wasm-gc",
+    "command": [
+      "moon",
+      "test",
+      "gain_test.mbt",
+      "--target",
+      "wasm-gc",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 2.552449799986789,
+    "stdout": "gain_test.mbt-wasm-gc.stdout.log",
+    "stderr": "gain_test.mbt-wasm-gc.stderr.log"
+  },
+  {
+    "name": "rf_test.mbt-wasm-gc",
+    "command": [
+      "moon",
+      "test",
+      "rf_test.mbt",
+      "--target",
+      "wasm-gc",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 0.44794280000496656,
+    "stdout": "rf_test.mbt-wasm-gc.stdout.log",
+    "stderr": "rf_test.mbt-wasm-gc.stderr.log"
+  },
+  {
+    "name": "rf_extreme_test.mbt-wasm-gc",
+    "command": [
+      "moon",
+      "test",
+      "rf_extreme_test.mbt",
+      "--target",
+      "wasm-gc",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 0.48763960000360385,
+    "stdout": "rf_extreme_test.mbt-wasm-gc.stdout.log",
+    "stderr": "rf_extreme_test.mbt-wasm-gc.stderr.log"
+  },
+  {
+    "name": "format_extreme_test.mbt-wasm-gc",
+    "command": [
+      "moon",
+      "test",
+      "format_extreme_test.mbt",
+      "--target",
+      "wasm-gc",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 0.4559953999996651,
+    "stdout": "format_extreme_test.mbt-wasm-gc.stdout.log",
+    "stderr": "format_extreme_test.mbt-wasm-gc.stderr.log"
+  },
+  {
+    "name": "gain_test.mbt-native",
+    "command": [
+      "moon",
+      "test",
+      "gain_test.mbt",
+      "--target",
+      "native",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 4.380824499996379,
+    "stdout": "gain_test.mbt-native.stdout.log",
+    "stderr": "gain_test.mbt-native.stderr.log"
+  },
+  {
+    "name": "rf_test.mbt-native",
+    "command": [
+      "moon",
+      "test",
+      "rf_test.mbt",
+      "--target",
+      "native",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 0.48207369999727234,
+    "stdout": "rf_test.mbt-native.stdout.log",
+    "stderr": "rf_test.mbt-native.stderr.log"
+  },
+  {
+    "name": "rf_extreme_test.mbt-native",
+    "command": [
+      "moon",
+      "test",
+      "rf_extreme_test.mbt",
+      "--target",
+      "native",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 0.48463449999690056,
+    "stdout": "rf_extreme_test.mbt-native.stdout.log",
+    "stderr": "rf_extreme_test.mbt-native.stderr.log"
+  },
+  {
+    "name": "format_extreme_test.mbt-native",
+    "command": [
+      "moon",
+      "test",
+      "format_extreme_test.mbt",
+      "--target",
+      "native",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 0.5819717999838758,
+    "stdout": "format_extreme_test.mbt-native.stdout.log",
+    "stderr": "format_extreme_test.mbt-native.stderr.log"
+  },
+  {
+    "name": "consumer-js",
+    "command": [
+      "moon",
+      "run",
+      "examples/power_gain",
+      "--target",
+      "js"
+    ],
+    "exitCode": 0,
+    "seconds": 2.296370600000955,
+    "stdout": "consumer-js.stdout.log",
+    "stderr": "consumer-js.stderr.log"
+  },
+  {
+    "name": "consumer-wasm-gc",
+    "command": [
+      "moon",
+      "run",
+      "examples/power_gain",
+      "--target",
+      "wasm-gc"
+    ],
+    "exitCode": 0,
+    "seconds": 1.8497850999992806,
+    "stdout": "consumer-wasm-gc.stdout.log",
+    "stderr": "consumer-wasm-gc.stderr.log"
+  },
+  {
+    "name": "package",
+    "command": [
+      "moon",
+      "package"
+    ],
+    "exitCode": 0,
+    "seconds": 3.509684200020274,
+    "stdout": "package.stdout.log",
+    "stderr": "package.stderr.log"
+  },
+  {
+    "name": "independent-final",
+    "command": [
+      "rf-venv/Scripts/python.exe",
+      "tools/verify-gain.py",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\feature-08-transducer-gain-max-20261028\\independent-final.json"
+    ],
+    "exitCode": 0,
+    "requests": 71,
+    "fileConsumers": 5,
+    "reason": "final Node-only option route and added CLI rejection"
+  }
+]

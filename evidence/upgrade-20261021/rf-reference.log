@@ -1,0 +1,48 @@
+{
+  "complete": true,
+  "date": "2026-10-22",
+  "requests": 345,
+  "assertions": 1085,
+  "scikit_rf": "2.1.0",
+  "numpy": "2.5.3",
+  "maximum_absolute_error": 4.6079406956778257e-10,
+  "groups": {
+    "mixed": {
+      "configurations": 12,
+      "representations": [
+        "S",
+        "Y",
+        "Z"
+      ],
+      "ports": [
+        3,
+        4,
+        6,
+        8
+      ]
+    },
+    "rf": {
+      "random_twoports": 24,
+      "termination_cross_oracle": "scikit-rf connect",
+      "gain_circle": "direct bilateral available/operating gain equation"
+    },
+    "noise": {
+      "random_three_block_chains": 20,
+      "covariance_normalization": "4 kB T0",
+      "reference": "scikit-rf set_noise_a/cascade/interpolate/nfdb_gs/nf_circle, original independently generated DUT and NumPy two-sided noise subtraction",
+      "oracle_caveat": "scikit-rf 2.1 noisy inv is implemented only for left deembedding; right.inv does not subtract noise, so it is not used as a false two-sided oracle"
+    },
+    "boundaries": {
+      "rejections": 7,
+      "matched_friis": true,
+      "sparse_noise": true,
+      "single_noise_record": true,
+      "unattainable_noise_circle": true
+    }
+  },
+  "elapsed_seconds": 0.7720308303833008,
+  "references": [
+    "https://ibis.org/touchstone_ver2.1/touchstone_ver2_1.pdf",
+    "https://scikit-rf.readthedocs.io/en/latest/_modules/skrf/network.html"
+  ]
+}

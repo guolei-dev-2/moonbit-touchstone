@@ -1,0 +1,150 @@
+[
+  {
+    "name": "fmt-before-runtime",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain\\bin\\moon.exe",
+      "fmt"
+    ],
+    "exitCode": 0,
+    "seconds": 8.034911499998998,
+    "stdout": "fmt-before-runtime.stdout.log",
+    "stderr": "fmt-before-runtime.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain"
+  },
+  {
+    "name": "release-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain\\bin\\moon.exe",
+      "build",
+      "--target",
+      "js",
+      "--release",
+      "--deny-warn"
+    ],
+    "exitCode": 4294967295,
+    "seconds": 1.650482800003374,
+    "stdout": "release-js.stdout.log",
+    "stderr": "release-js.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain"
+  },
+  {
+    "name": "release-js-with-bundles",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain\\bin\\moon.exe",
+      "build",
+      "--target",
+      "js",
+      "--release",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 3.037063499999931,
+    "stdout": "release-js-with-bundles.stdout.log",
+    "stderr": "release-js-with-bundles.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain"
+  },
+  {
+    "name": "modal-scale-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain\\bin\\moon.exe",
+      "test",
+      "modal_scale_test.mbt",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 2.37229749999824,
+    "stdout": "modal-scale-js.stdout.log",
+    "stderr": "modal-scale-js.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain"
+  },
+  {
+    "name": "modal-scale-wasm-gc",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain\\bin\\moon.exe",
+      "test",
+      "modal_scale_test.mbt",
+      "--target",
+      "wasm-gc",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 3.28494040001533,
+    "stdout": "modal-scale-wasm-gc.stdout.log",
+    "stderr": "modal-scale-wasm-gc.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain"
+  },
+  {
+    "name": "modal-scale-native",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain\\bin\\moon.exe",
+      "test",
+      "modal_scale_test.mbt",
+      "--target",
+      "native",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 7.627122800011421,
+    "stdout": "modal-scale-native.stdout.log",
+    "stderr": "modal-scale-native.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain"
+  },
+  {
+    "name": "independent-file-consumer",
+    "command": [
+      "python",
+      "tools/verify-modal-scale.py",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\independent-first.json",
+      "--before",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\BASELINE.json"
+    ],
+    "exitCode": 0,
+    "seconds": 6.335694899986265,
+    "stdout": "independent-file-consumer.stdout.log",
+    "stderr": "independent-file-consumer.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain"
+  },
+  {
+    "name": "info",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain\\bin\\moon.exe",
+      "info"
+    ],
+    "exitCode": 0,
+    "seconds": 5.450053600012325,
+    "stdout": "info.stdout.log",
+    "stderr": "info.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain"
+  },
+  {
+    "name": "check-all",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain\\bin\\moon.exe",
+      "check",
+      "--target",
+      "all",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 5.905718299996806,
+    "stdout": "check-all.stdout.log",
+    "stderr": "check-all.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain"
+  },
+  {
+    "name": "fmt-check",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain\\bin\\moon.exe",
+      "fmt",
+      "--check"
+    ],
+    "exitCode": 0,
+    "seconds": 5.6481723000179045,
+    "stdout": "fmt-check.stdout.log",
+    "stderr": "fmt-check.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain"
+  }
+]

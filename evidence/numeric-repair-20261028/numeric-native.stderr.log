@@ -1,0 +1,9 @@
+utf.c
+runtime.c
+env.c
+sync_io.c
+backtrace.c
+touchstone.internal_test.c
+  正在创建库 D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\_build\native\debug\test\touchstone.internal_test.lib 和对象 D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\_build\native\debug\test\touchstone.internal_test.exp
+touchstone.blackbox_test.c
+  正在创建库 D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\_build\native\debug\test\touchstone.blackbox_test.lib 和对象 D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\_build\native\debug\test\touchstone.blackbox_test.exp

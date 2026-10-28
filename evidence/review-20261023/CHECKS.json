@@ -1,0 +1,167 @@
+{
+  "complete": true,
+  "date": "2026-10-23",
+  "executedAtUtc": "2026-10-23T05:35:25.021983+00:00",
+  "checks": [
+    {
+      "name": "toolchain",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon/bin/moon.exe",
+        "version",
+        "--all"
+      ],
+      "exitCode": 0,
+      "seconds": 0.209,
+      "log": "toolchain.log"
+    },
+    {
+      "name": "fmt-apply",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon/bin/moon.exe",
+        "fmt"
+      ],
+      "exitCode": 0,
+      "seconds": 0.213,
+      "log": "fmt-apply.log"
+    },
+    {
+      "name": "info",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon/bin/moon.exe",
+        "info"
+      ],
+      "exitCode": 0,
+      "seconds": 0.579,
+      "log": "info.log"
+    },
+    {
+      "name": "test-js",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon/bin/moon.exe",
+        "test",
+        "--target",
+        "js",
+        "--deny-warn"
+      ],
+      "exitCode": 0,
+      "seconds": 1.425,
+      "log": "test-js.log",
+      "testCount": 30
+    },
+    {
+      "name": "test-wasm-gc",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon/bin/moon.exe",
+        "test",
+        "--target",
+        "wasm-gc",
+        "--deny-warn"
+      ],
+      "exitCode": 0,
+      "seconds": 1.486,
+      "log": "test-wasm-gc.log",
+      "testCount": 30
+    },
+    {
+      "name": "build-js",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon/bin/moon.exe",
+        "build",
+        "--target",
+        "js",
+        "--release",
+        "--deny-warn"
+      ],
+      "exitCode": 0,
+      "seconds": 0.206,
+      "log": "build-js.log"
+    },
+    {
+      "name": "fmt",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon/bin/moon.exe",
+        "fmt",
+        "--check"
+      ],
+      "exitCode": 0,
+      "seconds": 0.711,
+      "log": "fmt.log"
+    },
+    {
+      "name": "check-all",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon/bin/moon.exe",
+        "check",
+        "--target",
+        "all",
+        "--deny-warn"
+      ],
+      "exitCode": 0,
+      "seconds": 1.228,
+      "log": "check-all.log"
+    },
+    {
+      "name": "cli",
+      "command": [
+        "node",
+        "tools/check-cli.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 3.999,
+      "log": "cli.log"
+    },
+    {
+      "name": "rf-live",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\touchstone-tcl-20261021\\rf-venv\\Scripts\\python.exe",
+        "tools/verify-rf.py"
+      ],
+      "exitCode": 0,
+      "seconds": 3.734,
+      "log": "rf-live.log"
+    },
+    {
+      "name": "rf-example-js",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon/bin/moon.exe",
+        "run",
+        "examples/rf_03",
+        "--target",
+        "js"
+      ],
+      "exitCode": 0,
+      "seconds": 0.936,
+      "log": "rf-example-js.log"
+    },
+    {
+      "name": "rf-example-wasm-gc",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon/bin/moon.exe",
+        "run",
+        "examples/rf_03",
+        "--target",
+        "wasm-gc"
+      ],
+      "exitCode": 0,
+      "seconds": 1.046,
+      "log": "rf-example-wasm-gc.log"
+    },
+    {
+      "name": "package",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon/bin/moon.exe",
+        "package"
+      ],
+      "exitCode": 0,
+      "log": "package.log"
+    }
+  ],
+  "sourceManifest": "SOURCE-MANIFEST.json",
+  "sourceIdentitySHA256": "835598dee7c6d15dba0f073bcadb8ed44067634a6aebe9b5776d67f9dda164ae",
+  "materialChecks": {
+    "proposalMatchesNamedAttachment": true,
+    "proposalLines": 30,
+    "currentDocumentLinksExist": true
+  },
+  "artifactReceipt": "Final archive SHA-256 and byte readback are in the external delivery MANIFEST.json, avoiding circular package identity."
+}

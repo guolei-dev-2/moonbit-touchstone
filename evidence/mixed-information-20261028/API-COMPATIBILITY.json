@@ -1,0 +1,17 @@
+{
+  "method": "All old generated interface bytes equal; exact bridge diff restricted to mixed text expression and exact current16 fixture-setup substitution",
+  "newPublicAPI": [],
+  "oldPublicLibraryAPIUnchanged": true,
+  "oldNumericalParserWriterAndOtherBridgePathsUnchanged": true,
+  "interfaceSHA256": {
+    "pkg.generated.mbti": "d6fff09f4d6abb0e16f61024128908260b4c9021ed80f678b34bfba43c59bee4",
+    "examples/band_check/pkg.generated.mbti": "38969f7463fc933922ce0c784f446711b82fad8fbd9b9748bbbed8b38bac051f",
+    "examples/gain_check/pkg.generated.mbti": "6f8836e88225a08f87d6036289001cbc19174ba6e104867eeb088d0b5da9bc7a",
+    "examples/gain_csv/pkg.generated.mbti": "3c7cb5e0595c1df72f177a8219eb3eedbbd3f48879bf1c41db0423b9478fda06",
+    "examples/power_gain/pkg.generated.mbti": "5f46993e6cce943c7aa319a26536008692a123eb4ec430d56ea2ebf307e969b1",
+    "examples/power_gain_ohms/pkg.generated.mbti": "d59202ab6c2bc12223741dace61d7360579b560a4c29ce4550a62aef3097d3c1",
+    "examples/rf_03/pkg.generated.mbti": "1aab85047cd89a5d4600c1150164bbbc8b17b154bd8c9d0e6e1041d8fbdbccf6"
+  },
+  "current16NumericalOracleAndAssertionsUnchanged": true,
+  "old16SuiteRerun": false
+}

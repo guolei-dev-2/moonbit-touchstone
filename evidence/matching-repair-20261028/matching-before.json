@@ -1,0 +1,109 @@
+[
+  {
+    "label": "inside source rounded norm one",
+    "exactMargin": "13510798882111487/365375409332725729550921208179070754913983135744",
+    "floatMargin": 3.697785493223493e-32,
+    "query": {
+      "text": "# Hz S RI R 50\n1 0 0 1 0 1 0 0 0\n",
+      "options": {
+        "command": "transducer-gain",
+        "ports": 2,
+        "source": [
+          0.9999999999999999,
+          1.4901161193847655e-08
+        ]
+      }
+    },
+    "response": {
+      "ok": true,
+      "result": [
+        {
+          "frequency_hz": 1,
+          "gain": 2.220446049250313e-16,
+          "gain_db": -156.53559774527022,
+          "state": "finite"
+        }
+      ]
+    }
+  },
+  {
+    "label": "outside load rounded norm one",
+    "exactMargin": "-1/81129638414606681695789005144064",
+    "floatMargin": -1.232595164407831e-32,
+    "query": {
+      "text": "# Hz S RI R 50\n1 0 0 1 0 1 0 0 0\n",
+      "options": {
+        "command": "transducer-gain",
+        "ports": 2,
+        "load": [
+          0.9999999999999999,
+          1.4901161193847656e-08
+        ]
+      }
+    },
+    "response": {
+      "ok": true,
+      "result": [
+        {
+          "frequency_hz": 1,
+          "gain": 2.220446049250313e-16,
+          "gain_db": -156.53559774527022,
+          "state": "finite"
+        }
+      ]
+    }
+  },
+  {
+    "label": "ordinary complex margin",
+    "exactMargin": "25220157913274775/81129638414606681695789005144064",
+    "floatMargin": 3.108624468950438e-16,
+    "query": {
+      "text": "# Hz S RI R 50\n1 0 0 1 0 1 0 0 0\n",
+      "options": {
+        "command": "transducer-gain",
+        "ports": 2,
+        "source": [
+          0.6,
+          0.7999999999999998
+        ]
+      }
+    },
+    "response": {
+      "ok": true,
+      "result": [
+        {
+          "frequency_hz": 1,
+          "gain": 4.4408920985006257e-16,
+          "gain_db": -153.5252977886304,
+          "state": "finite"
+        }
+      ]
+    }
+  },
+  {
+    "label": "tiny imaginary outside load",
+    "exactMargin": "-2970939442134968069332467635641/29709394421349681756905405205037586945354674513912105456990149419762540397671940778635883047714723700728034044609018752580415440512016810013465897133206448300711141298321469941942634945325767773765421229628542537582252150006480921810886453035790547064356084841643824896876723654308149038286624561491907987580592908849198747021761397708460162416672701998639294621902395908857155973689670912922569526518216726075721818986257605197824",
+    "floatMargin": -0.0,
+    "query": {
+      "text": "# Hz S RI R 50\n1 0 0 1 0 1 0 0 0\n",
+      "options": {
+        "command": "transducer-gain",
+        "ports": 2,
+        "load": [
+          1.0,
+          1e-200
+        ]
+      }
+    },
+    "response": {
+      "ok": true,
+      "result": [
+        {
+          "frequency_hz": 1,
+          "gain": 0,
+          "state": "zero"
+        }
+      ]
+    }
+  }
+]

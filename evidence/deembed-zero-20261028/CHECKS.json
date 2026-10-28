@@ -1,0 +1,162 @@
+[
+  {
+    "name": "fmt-before-runtime",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain\\bin\\moon.exe",
+      "fmt"
+    ],
+    "exitCode": 0,
+    "seconds": 5.242401199997403,
+    "stdout": "fmt-before-runtime.stdout.log",
+    "stderr": "fmt-before-runtime.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain"
+  },
+  {
+    "name": "release-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain\\bin\\moon.exe",
+      "build",
+      "--target",
+      "js",
+      "--release",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 5.266210300003877,
+    "stdout": "release-js.stdout.log",
+    "stderr": "release-js.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain"
+  },
+  {
+    "name": "deembed-zero-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain\\bin\\moon.exe",
+      "test",
+      "deembed_zero_test.mbt",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "exitCode": 1,
+    "seconds": 1.6512383000226691,
+    "stdout": "deembed-zero-js.stdout.log",
+    "stderr": "deembed-zero-js.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain"
+  },
+  {
+    "name": "fmt-after-test-name-correction",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain\\bin\\moon.exe",
+      "fmt"
+    ],
+    "exitCode": 0,
+    "seconds": 0.4952354999841191,
+    "stdout": "fmt-after-test-name-correction.stdout.log",
+    "stderr": "fmt-after-test-name-correction.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain"
+  },
+  {
+    "name": "deembed-zero-js-runtime",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain\\bin\\moon.exe",
+      "test",
+      "deembed_zero_test.mbt",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 2.3880604000005405,
+    "stdout": "deembed-zero-js-runtime.stdout.log",
+    "stderr": "deembed-zero-js-runtime.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain"
+  },
+  {
+    "name": "deembed-zero-wasm-gc-runtime",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain\\bin\\moon.exe",
+      "test",
+      "deembed_zero_test.mbt",
+      "--target",
+      "wasm-gc",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 3.6983534999890253,
+    "stdout": "deembed-zero-wasm-gc-runtime.stdout.log",
+    "stderr": "deembed-zero-wasm-gc-runtime.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain"
+  },
+  {
+    "name": "deembed-zero-native-runtime",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain\\bin\\moon.exe",
+      "test",
+      "deembed_zero_test.mbt",
+      "--target",
+      "native",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 4.969698500004597,
+    "stdout": "deembed-zero-native-runtime.stdout.log",
+    "stderr": "deembed-zero-native-runtime.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain"
+  },
+  {
+    "name": "independent-file-consumer",
+    "command": [
+      "python",
+      "tools/verify-deembed-zero.py",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\independent-first.json",
+      "--before",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\BASELINE.json"
+    ],
+    "exitCode": 0,
+    "seconds": 3.3353600000264123,
+    "stdout": "independent-file-consumer.stdout.log",
+    "stderr": "independent-file-consumer.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain"
+  },
+  {
+    "name": "info",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain\\bin\\moon.exe",
+      "info"
+    ],
+    "exitCode": 0,
+    "seconds": 3.8069423000270035,
+    "stdout": "info.stdout.log",
+    "stderr": "info.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain"
+  },
+  {
+    "name": "check-all",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain\\bin\\moon.exe",
+      "check",
+      "--target",
+      "all",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 5.402200200012885,
+    "stdout": "check-all.stdout.log",
+    "stderr": "check-all.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain"
+  },
+  {
+    "name": "fmt-check",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain\\bin\\moon.exe",
+      "fmt",
+      "--check"
+    ],
+    "exitCode": 0,
+    "seconds": 4.365055100002792,
+    "stdout": "fmt-check.stdout.log",
+    "stderr": "fmt-check.stderr.log",
+    "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\toolchain"
+  }
+]

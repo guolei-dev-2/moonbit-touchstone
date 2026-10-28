@@ -1,0 +1,21 @@
+{
+  "before": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "206da088f47a8a53e82c3dd48ee583147747ed7b7b82754554a7ac5c1934e46c",
+    "provenance": "observed at feature08 start"
+  },
+  "after": {
+    "_build/js/release/build/cmd/bridge/bridge.js": {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+      "sha256": "c2faa832247630e1ade7d297315888d7b42edf75c2363543b82477e293c62dce"
+    },
+    "_build/js/debug/build/examples/power_gain/power_gain.js": {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\debug\\build\\examples\\power_gain\\power_gain.js",
+      "sha256": "310ca226f80d1c2f6fe20fd6800b572c57541ee5144bc32d170a97dc1a1a29ca"
+    },
+    "_build/wasm-gc/debug/build/examples/power_gain/power_gain.wasm": {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\wasm-gc\\debug\\build\\examples\\power_gain\\power_gain.wasm",
+      "sha256": "9a722afb7f19383b61c3059ae766f3ccba210b6d400a0affc891619293ad9a5c"
+    }
+  }
+}

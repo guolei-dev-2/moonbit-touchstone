@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File "D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\tools\verify-rf-extreme.py", line 122, in <module>
+    if failure:raise failure
+               ^^^^^^^^^^^^^
+  File "D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\tools\verify-rf-extreme.py", line 98, in <module>
+    close(noise_matrix(result['a'])/rn,wanted.noise/(4*K_BOLTZMANN*T0)/rn,'independent normalized chain covariance',rtol=2e-10,atol=1e-13)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\tools\verify-rf-extreme.py", line 35, in close
+    np.testing.assert_allclose(got,want,rtol=rtol,atol=atol,err_msg=label)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CodexLocal\ban\work\touchstone-tcl-20261021\rf-venv\Lib\site-packages\numpy\testing\_private\utils.py", line 1780, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         verbose=verbose, header=header, equal_nan=equal_nan,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                         strict=strict)
+                         ^^^^^^^^^^^^^^
+  File "D:\CodexLocal\ban\work\touchstone-tcl-20261021\rf-venv\Lib\site-packages\numpy\testing\_private\utils.py", line 988, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=2e-10, atol=1e-13
+independent normalized chain covariance
+Mismatched elements: 9 / 12 (75%)
+First 5 mismatches are at indices:
+ [0, 0, 1]: (-0.02+0j) (ACTUAL), (-1+0j) (DESIRED)
+ [0, 1, 0]: (-0.02+0j) (ACTUAL), (-1+0j) (DESIRED)
+ [0, 1, 1]: (0.00039999999999999996+0j) (ACTUAL), (1+0j) (DESIRED)
+ [1, 0, 1]: (-0.04+0j) (ACTUAL), (-2+0j) (DESIRED)
+ [1, 1, 0]: (-0.04+0j) (ACTUAL), (-2+0j) (DESIRED)
+Max absolute difference among violations: 2.9988
+Max relative difference among violations: 0.9996
+ ACTUAL: array([[[ 1.0e+00+0.j, -2.0e-02+0.j],
+        [-2.0e-02+0.j,  4.0e-04+0.j]],
+...
+ DESIRED: array([[[ 1.+0.j, -1.+0.j],
+        [-1.+0.j,  1.+0.j]],
+...

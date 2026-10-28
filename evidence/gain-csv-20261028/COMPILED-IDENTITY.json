@@ -1,0 +1,35 @@
+{
+  "before": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "95ccf94bfcc09343eb75575eff334c1424de0a67c8374aa0b6b82ed90af77bfe",
+    "provenance": "observed start of13"
+  },
+  "after": {
+    "_build/js/release/build/cmd/bridge/bridge.js": {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+      "sha256": "c3902b34f0961e16578e08b60926530cb7c84907cbeeb9740f5d576339ad7cde"
+    },
+    "_build/js/debug/build/examples/gain_csv/gain_csv.js": {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\debug\\build\\examples\\gain_csv\\gain_csv.js",
+      "sha256": "df86686e0160837812caa08fe2b03880632bd03ad3bfdb82376e29955b19caa4"
+    },
+    "_build/wasm-gc/debug/build/examples/gain_csv/gain_csv.wasm": {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\wasm-gc\\debug\\build\\examples\\gain_csv\\gain_csv.wasm",
+      "sha256": "6cbb494fb9dea101f2579de2239b98f7bf069e1bcddfc9dd53a8392410af2587"
+    }
+  },
+  "executedSourceSHA256": {
+    "gain_csv.mbt": "4e4040a7184fd12f2fac020b338fdb1281ab63254d24135a40dab14633184628",
+    "gain_csv_test.mbt": "24bcbb5b434a763914855b5bca0d25af0d1be12dc76f3690f3eaefc858af866f",
+    "cmd/bridge/main.mbt": "ee27d6a7b011de4803b2670f679d18ca140fc57f6569510bcac5e348a2170e6f",
+    "tools/touchstone.mjs": "1fec9c65f24fabeb0e0a714d372b158ddf8958dbff598e31162b8aad2d6883a5",
+    "tools/verify-gain-csv.py": "f561e6bb2e39191be582dcaa2ce909a57b7d3285962b69b89f8818689385e5c8",
+    "examples/gain_csv/main.mbt": "0baf1bdf7ead3b8e127884c09da6ff304207df52c311a004c0550e69ee1dfdf2",
+    "gain.mbt": "f0ab0b6522ba1a372d3c2ede72b0d76f6e655e0cfb1f8e42af1ce27781e5284a",
+    "gain_impedance.mbt": "70166a5f530805e1ca1b7b74ba096d00e4f9512b5e741e06d3c9a55ca317f662",
+    "gain_band.mbt": "ff2e678edfb400fbae34643fede9f735aa6fccb84a232ddcbe70e98d8d0453a3"
+  },
+  "oldNumericalReportAndReceiptSourceUnchanged": true,
+  "oldBridgePreservedAroundSharedGainBranch": true,
+  "oldGainCheckSetupAndPayloadPreserved": true
+}

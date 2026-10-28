@@ -1,0 +1,245 @@
+{
+  "manufacturer": "NXP Semiconductors",
+  "device": "BFU530W",
+  "productURL": "https://www.nxp.com/products/radio-frequency-rf/legacy-rf/legacy-rf-wideband-transistors/npn-wideband-silicon-rf-transistor:BFU530W",
+  "archiveURL": "https://www.nxp.com/downloads/en/s-parameters/BFU530W_Spar.zip",
+  "officialListing": {
+    "description": "BFU530W: S-parameters 40 MHz - 6 GHz",
+    "revision": "1.0",
+    "date": "2019-04-23"
+  },
+  "retrievedUTC": "2026-10-27T04:57:13.278084+00:00",
+  "archiveBytes": 118380,
+  "archiveSHA256": "981d4f80f7ee35d273ce7917708c9f8ffded52372e71dff0ec57f99e41f78928",
+  "entries": [
+    {
+      "path": "BFU530W_03V3_001mA_SP.s2p",
+      "bytes": 9544,
+      "sha256": "d4a56bc6b099544c63ddbe25e9a1366935daf1a76bf0e47b0b269bb600ff2a95"
+    },
+    {
+      "path": "BFU530W_03V3_002mA_SP.s2p",
+      "bytes": 9485,
+      "sha256": "989015d2f0b5c683076f63d1e7d3c2e3f6d7f76fe98995da9b79d39db2437d11"
+    },
+    {
+      "path": "BFU530W_03V3_003mA_SP.s2p",
+      "bytes": 9485,
+      "sha256": "0f5c755aa4dbfc0b196358b567371fcff12b4a72ffe39a2dee56b6d094fc4843"
+    },
+    {
+      "path": "BFU530W_03V3_005mA_SP.s2p",
+      "bytes": 9485,
+      "sha256": "d6ef868871d149e3d489f9aa37ee9e6a9362fba82c0531846518c61e74f3126a"
+    },
+    {
+      "path": "BFU530W_03V3_008mA_SP.s2p",
+      "bytes": 9485,
+      "sha256": "6f955fa3c6facc3feb888bb35988f6666d129f0aa107ffe567baa874910398f5"
+    },
+    {
+      "path": "BFU530W_03V3_010mA_SP.s2p",
+      "bytes": 9485,
+      "sha256": "73d9238af78cc90f1d46070e0b21d53728a5a02b1800dc947bf93c4a047763ed"
+    },
+    {
+      "path": "BFU530W_03V3_015mA_SP.s2p",
+      "bytes": 9486,
+      "sha256": "43fad3cde999507dcf5ee704b967ad0ffa4d87a6fe85d5a6ce0f17b8bfecab46"
+    },
+    {
+      "path": "BFU530W_03V3_020mA_SP.s2p",
+      "bytes": 9486,
+      "sha256": "996e1362004b571ac0f2254a9244db8edb9bced37f6fc550c3b34ccd38d68c0f"
+    },
+    {
+      "path": "BFU530W_03V3_025mA_SP.s2p",
+      "bytes": 9486,
+      "sha256": "44a54ce587a6d00e5e867ceb10c0cc5a8192fafd603128e709c95412997c35fe"
+    },
+    {
+      "path": "BFU530W_05V0_001mA_SP.s2p",
+      "bytes": 9544,
+      "sha256": "b8612e5a5d942a18e60103dbbb8242316ba591651b13951f9ede9e9b59b3ba10"
+    },
+    {
+      "path": "BFU530W_05V0_002mA_SP.s2p",
+      "bytes": 9485,
+      "sha256": "1d3c0bf7918332a3221121a001e842785c8738b5dbeecd595ce6cfbcce5f71fe"
+    },
+    {
+      "path": "BFU530W_05V0_003mA_SP.s2p",
+      "bytes": 9485,
+      "sha256": "d114860bd25fb0bd49a42329be37cabf42004b541f57a7b3880b6207a725fc15"
+    },
+    {
+      "path": "BFU530W_05V0_005mA_SP.s2p",
+      "bytes": 9485,
+      "sha256": "69aeb490ef6c47843a30840394ba075659c0cc6ca893f2cb7be186b49f7c7677"
+    },
+    {
+      "path": "BFU530W_05V0_008mA_SP.s2p",
+      "bytes": 9485,
+      "sha256": "db46c0b92d0bac0d805e693a98f85b1c59799d9dd4ea5a05035cdaddd66c25fd"
+    },
+    {
+      "path": "BFU530W_05V0_010mA_SP.s2p",
+      "bytes": 9485,
+      "sha256": "99cc27645b9057184972ebb361f09f882625329acff5acac4e395ceab96c8916"
+    },
+    {
+      "path": "BFU530W_05V0_015mA_SP.s2p",
+      "bytes": 9486,
+      "sha256": "def83f415cd74b9046c89cae4279693d4dcea70b8e1a2cd4b10880fbeed3a3dd"
+    },
+    {
+      "path": "BFU530W_05V0_020mA_SP.s2p",
+      "bytes": 9486,
+      "sha256": "14557a2023319bbd160f900e85503f581ad71c704acd56ee0c24c41816bf5bb5"
+    },
+    {
+      "path": "BFU530W_05V0_025mA_SP.s2p",
+      "bytes": 9486,
+      "sha256": "0705ef93e3cf87f03a3822c4ea49c5b73d6838e5e4ee859ab24bddfb30c3d55d"
+    },
+    {
+      "path": "BFU530W_08V0_001mA_SP.s2p",
+      "bytes": 9544,
+      "sha256": "7eca6b871017f086521efa36f18a4efafae9190182ac988887d86e8eb20fa3b6"
+    },
+    {
+      "path": "BFU530W_08V0_002mA_SP.s2p",
+      "bytes": 9485,
+      "sha256": "2d63b7ddbf4cbdd2f6162903932407f33a8e1f7a54a424a4d7b0bbcfec386ad1"
+    },
+    {
+      "path": "BFU530W_08V0_003mA_SP.s2p",
+      "bytes": 9485,
+      "sha256": "6ee1ad1061ac77a0e1b2182545f294624353d20ddc41e5c6b7edd46f876ed90a"
+    },
+    {
+      "path": "BFU530W_08V0_005mA_SP.s2p",
+      "bytes": 9485,
+      "sha256": "ee553472dcdab27e8a9805614ec280a6695f49c9bb3491b1465619cab4d65ac4"
+    },
+    {
+      "path": "BFU530W_08V0_008mA_SP.s2p",
+      "bytes": 9485,
+      "sha256": "72ee111ab359a9eeb7f1cc014a09df47502709e54f02b920b5f3eec71d0713f5"
+    },
+    {
+      "path": "BFU530W_08V0_010mA_SP.s2p",
+      "bytes": 9485,
+      "sha256": "22906e624645db2efe7b2230c749b2a02508adcb290d7092133ee178020b8a54"
+    },
+    {
+      "path": "BFU530W_08V0_015mA_SP.s2p",
+      "bytes": 9486,
+      "sha256": "22b66b255392195c8e661b401eaa37db4e85760ee5579d1566661fb573510f7b"
+    },
+    {
+      "path": "BFU530W_08V0_020mA_SP.s2p",
+      "bytes": 9486,
+      "sha256": "54b1a8f10de5d84caa242b9318c3f0d8fab7fae914f6660c9567ba0e06278aef"
+    },
+    {
+      "path": "BFU530W_08V0_025mA_SP.s2p",
+      "bytes": 9486,
+      "sha256": "c825446ec4e533330a80f3a0cb3466d7b2c13a5475a650c8e219745ae2412512"
+    },
+    {
+      "path": "BFU530W_12V0_001mA_SP.s2p",
+      "bytes": 9545,
+      "sha256": "e2ecbb62cad70426fa85c158797cb121fcd6bae98015ff1f1e7f43a56f3e041d"
+    },
+    {
+      "path": "BFU530W_12V0_002mA_SP.s2p",
+      "bytes": 9486,
+      "sha256": "09f356bbc798932a5697012c150194809c4453c3ce1b9efe5aac27db8dbf50a8"
+    },
+    {
+      "path": "BFU530W_12V0_003mA_SP.s2p",
+      "bytes": 9486,
+      "sha256": "18cb1c53130b9d66bf859b079a6ad45e5371d4ff4e2cf8050a99363b0d39d69c"
+    },
+    {
+      "path": "BFU530W_12V0_005mA_SP.s2p",
+      "bytes": 9486,
+      "sha256": "2fe75691878884d078dd264115024904989f6f702399047cd246dd3a7e94c0c6"
+    },
+    {
+      "path": "BFU530W_12V0_008mA_SP.s2p",
+      "bytes": 9486,
+      "sha256": "f44c55f56392ccc85cb057c418927def3865d31f98d776873451f5c06c46dffb"
+    },
+    {
+      "path": "BFU530W_12V0_010mA_SP.s2p",
+      "bytes": 9487,
+      "sha256": "cc108f7d1121fb2e0e858bb046fec3c229713a07374e71d8e2542002a1728fb1"
+    },
+    {
+      "path": "BFU530W_12V0_015mA_SP.s2p",
+      "bytes": 9487,
+      "sha256": "9007df7cd9cd029bf5686a28786862fb9d4c7d2c834e9493a639da95c1d08d6c"
+    },
+    {
+      "path": "BFU530W_12V0_020mA_SP.s2p",
+      "bytes": 9487,
+      "sha256": "cc98229a44731ef94dd098cd8cd1707575a61cd1666a590e6bed21b78549674b"
+    },
+    {
+      "path": "BFU530W_12V0_025mA_SP.s2p",
+      "bytes": 9487,
+      "sha256": "30534ea4d7e9d92a16724e6f4ca7f1ddc500bb685745f6b63d1c32d473dd8dfd"
+    }
+  ],
+  "selectedMember": "BFU530W_03V3_001mA_SP.s2p",
+  "selectedBytes": 9544,
+  "selectedSHA256": "d4a56bc6b099544c63ddbe25e9a1366935daf1a76bf0e47b0b269bb600ff2a95",
+  "selectedHeader": {
+    "format": "MHz S MA R 50",
+    "nominalBias": "3.3V / 1mA (filename)",
+    "measuredHeaderDate": "2013-03-26 18:05:03",
+    "biasHeaderValues": {
+      "V_out": "3.3010",
+      "I_out": "0.9950",
+      "V_in": "0.7835",
+      "I_in": "0.0103"
+    },
+    "preprocessing": "manufacturer header says deembedded for feedlines and parallel"
+  },
+  "priorManufacturer": "Johanson Technology; Agilent E5071C is the instrument, not the DUT vendor",
+  "termsURL": "https://www.nxp.com/pages/terms-of-use:TERMSOFUSE",
+  "termsObservation": "Default published-content permission is limited to unmodified personal non-commercial use; other uses require consent; download software may have a separate license. No broader redistribution license was present in this ZIP.",
+  "copyrightScope": "NXP original data are not the project MIT code; no endorsement or external adoption claimed",
+  "redistributionPermissionConfirmed": false,
+  "privateExcludedDirectory": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027",
+  "privateExcludedKinds": [
+    "source ZIP and duplicate HTTP response",
+    "selected original S2P",
+    "full-value CLI dumps and rewritten S2P"
+  ],
+  "actualDownload": {
+    "client": "curl.exe default user agent; public official URL; no login",
+    "toolChunk": "2e039b",
+    "httpStatus": 200,
+    "exitCode": 0,
+    "bytes": 118380,
+    "headersPath": "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027\\nxp-curl.headers.txt",
+    "headersSHA256": "c565e20a3245293bd125c6afbeb6052b549855cf721d1ea0d17b8935d4d2f974"
+  },
+  "earlierAttempts": [
+    {
+      "client": "Python urllib",
+      "toolChunk": "22668b",
+      "exitCode": 1,
+      "result": "HTTP404, zero saved bytes"
+    },
+    {
+      "client": "curl.exe",
+      "toolChunk": "10c190",
+      "exitCode": 1,
+      "result": "local output-directory error before HTTP; no download"
+    }
+  ]
+}

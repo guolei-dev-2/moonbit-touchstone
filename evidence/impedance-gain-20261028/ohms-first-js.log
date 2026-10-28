@@ -1,0 +1,141 @@
+Error: [3002]
+   ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:9:42 ]
+   │
+ 9 │   assert_true((value-expected).abs() <= 2e-12 * expected.abs())
+   │                                          ┬  
+   │                                          ╰── Parse error, unexpected token id (lowercase start), you may expect `,` or `)`.
+───╯
+Error: [3002]
+   ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:9:63 ]
+   │
+ 9 │   assert_true((value-expected).abs() <= 2e-12 * expected.abs())
+   │                                                               ┬  
+   │                                                               ╰── Parse error, unexpected token `)`, you may expect a statement or expression on a new line, or `}` to close the block.
+───╯
+Error: [3002]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:15:29 ]
+    │
+ 15 │   let net = ohm_fixture([c(.25),c(.125),c(2.),c(-.25)], refs=[50.,75.])
+    │                             ─┬  
+    │                              ╰── Parse error, unexpected token `.` integer, you may expect simple expression.
+────╯
+Error: [3002]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:15:36 ]
+    │
+ 15 │   let net = ohm_fixture([c(.25),c(.125),c(2.),c(-.25)], refs=[50.,75.])
+    │                                    ─┬─  
+    │                                     ╰─── Parse error, unexpected token `.` integer, you may expect simple expression.
+────╯
+Error: [3002]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:15:51 ]
+    │
+ 15 │   let net = ohm_fixture([c(.25),c(.125),c(2.),c(-.25)], refs=[50.,75.])
+    │                                                   ─┬  
+    │                                                    ╰── Parse error, unexpected token `.` integer, you may expect simple expression.
+────╯
+Error: [3002]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:26:23 ]
+    │
+ 26 │   for resistance in [1e308,5e-324,50.] {
+    │                       ──┬─  
+    │                         ╰─── Parse error, unexpected token id (lowercase start), you may expect `,` or `]`.
+────╯
+Error: [3002]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:26:29 ]
+    │
+ 26 │   for resistance in [1e308,5e-324,50.] {
+    │                             ┬  
+    │                             ╰── Parse error, unexpected token id (lowercase start), you may expect `,` or `]`.
+────╯
+Error: [4014]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:26:35 ]
+    │
+ 26 │   for resistance in [1e308,5e-324,50.] {
+    │                                   ─┬─  
+    │                                    ╰─── Expr Type Mismatch
+        has type : Double
+        wanted   : Int
+────╯
+Error: [4014]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:27:49 ]
+    │
+ 27 │     let point = net.transducer_gain_impedance(c(resistance),c(resistance))[0]
+    │                                                 ─────┬────  
+    │                                                      ╰────── Expr Type Mismatch
+        has type : Int
+        wanted   : Double
+────╯
+Error: [4014]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:27:63 ]
+    │
+ 27 │     let point = net.transducer_gain_impedance(c(resistance),c(resistance))[0]
+    │                                                               ─────┬────  
+    │                                                                    ╰────── Expr Type Mismatch
+        has type : Int
+        wanted   : Double
+────╯
+Error: [3002]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:30:47 ]
+    │
+ 30 │     assert_true(point.gain_db.unwrap().abs()<1e-11)
+    │                                               ┬  
+    │                                               ╰── Parse error, unexpected token id (lowercase start), you may expect `,` or `)`.
+────╯
+Error: [3002]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:38:37 ]
+    │
+ 38 │   let source = @touchstone.complex(5e-324, im=1e308)
+    │                                     ┬  
+    │                                     ╰── Parse error, unexpected token id (lowercase start), you may expect `,` or `)`.
+────╯
+Error: [3002]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:38:48 ]
+    │
+ 38 │   let source = @touchstone.complex(5e-324, im=1e308)
+    │                                                ──┬─  
+    │                                                  ╰─── Parse error, unexpected token id (lowercase start), you may expect `,` or `)`.
+────╯
+Error: [3002]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:39:35 ]
+    │
+ 39 │   let load = @touchstone.complex(5e-324, im=-1e308)
+    │                                   ┬  
+    │                                   ╰── Parse error, unexpected token id (lowercase start), you may expect `,` or `)`.
+────╯
+Error: [3002]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:39:47 ]
+    │
+ 39 │   let load = @touchstone.complex(5e-324, im=-1e308)
+    │                                               ──┬─  
+    │                                                 ╰─── Parse error, unexpected token id (lowercase start), you may expect `,` or `)`.
+────╯
+Error: [3002]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:46:33 ]
+    │
+ 46 │   for (transfer,state,db) in [(1e200,"overflow",4000.),(1e-200,"underflow",-4000.)] {
+    │                                 ──┬─  
+    │                                   ╰─── Parse error, unexpected token id (lowercase start), you may expect `,` or `)`.
+────╯
+Error: [3002]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:46:58 ]
+    │
+ 46 │   for (transfer,state,db) in [(1e200,"overflow",4000.),(1e-200,"underflow",-4000.)] {
+    │                                                          ┬  
+    │                                                          ╰── Parse error, unexpected token id (lowercase start), you may expect `,` or `)`.
+────╯
+Error: [4014]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:47:42 ]
+    │
+ 47 │     let net = ohm_fixture([c(0.),c(0.),c(transfer),c(0.)])
+    │                                          ────┬───  
+    │                                              ╰───── Expr Type Mismatch
+        has type : Int
+        wanted   : Double
+────╯
+Error: [3002]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\gain_impedance_test.mbt:73:68 ]
+    │
+ 73 │   for (source,load) in [(c(0.),c(50.)),(c(-1.),c(50.)),(c(50.),c(-5e-324)),(@touchstone.complex(0.,im=1.),c(50.)),(c(1./0.),c(50.))] {
+    │                                                                    ┬  
+    │                                                                    ╰── Parse error, unexpected token id (lowercase start), you may expect `,` or `)`.
+────╯

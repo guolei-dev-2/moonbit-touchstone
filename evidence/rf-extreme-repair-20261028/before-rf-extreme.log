@@ -1,0 +1,4 @@
+[guolei-dev/touchstone] test rf_extreme_test.mbt:2 ("matched bilateral amplifier retains finite MAG at huge Rollett K") failed: rf_extreme_test.mbt:10:5-10:67@guolei-dev/touchstone FAILED: `false` is not true
+[guolei-dev/touchstone] test rf_extreme_test.mbt:15 ("huge finite matched impedance termination is a zero reflection load") failed: division requires finite complex values
+[guolei-dev/touchstone] test rf_extreme_test.mbt:26 ("noise interpolation does not erase a small nonzero noise resistance") failed: rf_extreme_test.mbt:36:3-36:71@guolei-dev/touchstone FAILED: `false` is not true
+Total tests: 3, passed: 0, failed: 3.

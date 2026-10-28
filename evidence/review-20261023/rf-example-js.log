@@ -1,0 +1,3 @@
+[{"frequency_hz":1000000000,"sdd":{"re":0.8,"im":0},"sdc":{"re":0,"im":0},"scd":{"re":0,"im":0},"scc":{"re":0.8,"im":0},"differential_insertion_loss_db":1.938200260161128,"differential_return_loss_db":336.08149544718026,"cmrr_db":0,"cmrr_state":"finite","cmrr_definition":"balanced"}]
+[{"frequency_hz":1000000000,"delta_magnitude":0.019999999999999997,"k":11.879999999999999,"mu_input":4.090909090909091,"mu_output":6.666666666666666,"unconditionally_stable":true,"msg":100,"mag":4.216235961989551,"gain_state":"mag"}]
+[{"frequency_hz":1000000000,"minimum_figure_db":1.7992141260754106,"gamma_opt":{"re":0.18541992177356628,"im":0.0852443952554284},"resistance_ohms":11.54175885386691}]

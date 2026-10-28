@@ -1,0 +1,23 @@
+{
+  "ports": 4,
+  "parameter": "S",
+  "points": 1,
+  "frequency_hz": [
+    1000000000
+  ],
+  "reference_ohms": [
+    50,
+    50,
+    50,
+    50
+  ],
+  "noise": [],
+  "noise_reference_ohms": 50,
+  "mixed_mode_order": [
+    "D1,2",
+    "D3,4",
+    "C1,2",
+    "C3,4"
+  ],
+  "information": []
+}

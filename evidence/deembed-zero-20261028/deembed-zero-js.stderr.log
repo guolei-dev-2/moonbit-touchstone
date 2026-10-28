@@ -1,0 +1,35 @@
+Error: [0035]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\deembed_zero_test.mbt:28:7 ]
+    │
+ 28 │   let opaque = deembed_zero_network([0.0, 0.0, 0.0, 0.0], [50.0, 50.0])
+    │       ───┬──  
+    │          ╰──── Error Warning (reserved_keyword): The word `opaque` is reserved for possible future use. Please consider using another name.
+────╯
+Error: [0035]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\deembed_zero_test.mbt:29:21 ]
+    │
+ 29 │   deembed_zero_near(opaque.deembed(through, through), [0.0, 0.0, 0.0, 0.0])
+    │                     ───┬──  
+    │                        ╰──── Error Warning (reserved_keyword): The word `opaque` is reserved for possible future use. Please consider using another name.
+────╯
+Error: [0035]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\deembed_zero_test.mbt:30:39 ]
+    │
+ 30 │   let document = @touchstone.document(opaque, information=["Opaque DUT"])
+    │                                       ───┬──  
+    │                                          ╰──── Error Warning (reserved_keyword): The word `opaque` is reserved for possible future use. Please consider using another name.
+────╯
+Error: [0035]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\deembed_zero_test.mbt:68:7 ]
+    │
+ 68 │   let opaque = deembed_zero_network([0.0, 0.0, 0.0, 0.0], [50.0, 50.0])
+    │       ───┬──  
+    │          ╰──── Error Warning (reserved_keyword): The word `opaque` is reserved for possible future use. Please consider using another name.
+────╯
+Error: [0035]
+    ╭─[ D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\deembed_zero_test.mbt:70:7 ]
+    │
+ 70 │   try opaque.deembed(singular, through) catch {
+    │       ───┬──  
+    │          ╰──── Error Warning (reserved_keyword): The word `opaque` is reserved for possible future use. Please consider using another name.
+────╯

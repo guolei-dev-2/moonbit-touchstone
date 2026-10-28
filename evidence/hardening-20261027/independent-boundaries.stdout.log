@@ -1,0 +1,260 @@
+{
+  "complete": true,
+  "seed": 20261027,
+  "passivity": [
+    {
+      "ports": 1,
+      "gap": 4e-07,
+      "minimumEigenvalue": 4.000000005666138e-07,
+      "state": "passive"
+    },
+    {
+      "ports": 1,
+      "gap": 2.5e-08,
+      "minimumEigenvalue": 2.500000051419704e-08,
+      "state": "boundary"
+    },
+    {
+      "ports": 1,
+      "gap": 0.0,
+      "minimumEigenvalue": 4.440892098500626e-16,
+      "state": "boundary"
+    },
+    {
+      "ports": 1,
+      "gap": -2.5e-08,
+      "minimumEigenvalue": -2.499999962601862e-08,
+      "state": "boundary"
+    },
+    {
+      "ports": 1,
+      "gap": -4e-07,
+      "minimumEigenvalue": -3.9999999934536845e-07,
+      "state": "active"
+    },
+    {
+      "ports": 1,
+      "fixture": "collective gain or lossless",
+      "state": "boundary"
+    },
+    {
+      "ports": 2,
+      "gap": 4e-07,
+      "minimumEigenvalue": 4.0000000016415793e-07,
+      "state": "passive"
+    },
+    {
+      "ports": 2,
+      "gap": 2.5e-08,
+      "minimumEigenvalue": 2.5000000243580178e-08,
+      "state": "boundary"
+    },
+    {
+      "ports": 2,
+      "gap": 0.0,
+      "minimumEigenvalue": 2.42861286636753e-16,
+      "state": "boundary"
+    },
+    {
+      "ports": 2,
+      "gap": -2.5e-08,
+      "minimumEigenvalue": -2.4999999723163135e-08,
+      "state": "boundary"
+    },
+    {
+      "ports": 2,
+      "gap": -4e-07,
+      "minimumEigenvalue": -3.9999999944945186e-07,
+      "state": "active"
+    },
+    {
+      "ports": 2,
+      "fixture": "collective gain or lossless",
+      "state": "boundary"
+    },
+    {
+      "ports": 16,
+      "gap": 4e-07,
+      "minimumEigenvalue": 4.000000001225012e-07,
+      "state": "passive"
+    },
+    {
+      "ports": 16,
+      "gap": 2.5e-08,
+      "minimumEigenvalue": 2.5000000181106783e-08,
+      "state": "boundary"
+    },
+    {
+      "ports": 16,
+      "gap": 0.0,
+      "minimumEigenvalue": 2.2202125645644268e-16,
+      "state": "boundary"
+    },
+    {
+      "ports": 16,
+      "gap": -2.5e-08,
+      "minimumEigenvalue": -2.4999999737064273e-08,
+      "state": "boundary"
+    },
+    {
+      "ports": 16,
+      "gap": -4e-07,
+      "minimumEigenvalue": -3.999999990123249e-07,
+      "state": "active"
+    },
+    {
+      "ports": 16,
+      "fixture": "collective gain or lossless",
+      "state": "active"
+    },
+    {
+      "ports": 31,
+      "gap": 4e-07,
+      "minimumEigenvalue": 3.9999999945639075e-07,
+      "state": "passive"
+    },
+    {
+      "ports": 31,
+      "gap": 2.5e-08,
+      "minimumEigenvalue": 2.4999999514996318e-08,
+      "state": "boundary"
+    },
+    {
+      "ports": 31,
+      "gap": 0.0,
+      "minimumEigenvalue": -3.3306690738754696e-16,
+      "state": "boundary"
+    },
+    {
+      "ports": 31,
+      "gap": -2.5e-08,
+      "minimumEigenvalue": -2.5000000625219343e-08,
+      "state": "boundary"
+    },
+    {
+      "ports": 31,
+      "gap": -4e-07,
+      "minimumEigenvalue": -4.000000006776361e-07,
+      "state": "active"
+    },
+    {
+      "ports": 31,
+      "fixture": "collective gain or lossless",
+      "state": "active"
+    },
+    {
+      "ports": 32,
+      "gap": 4e-07,
+      "minimumEigenvalue": 3.9999999923434615e-07,
+      "state": "passive"
+    },
+    {
+      "ports": 32,
+      "gap": 2.5e-08,
+      "minimumEigenvalue": 2.499999918192941e-08,
+      "state": "boundary"
+    },
+    {
+      "ports": 32,
+      "gap": 0.0,
+      "minimumEigenvalue": -4.440892098500626e-16,
+      "state": "boundary"
+    },
+    {
+      "ports": 32,
+      "gap": -2.5e-08,
+      "minimumEigenvalue": -2.5000001291353158e-08,
+      "state": "boundary"
+    },
+    {
+      "ports": 32,
+      "gap": -4e-07,
+      "minimumEigenvalue": -4.000000005666138e-07,
+      "state": "active"
+    },
+    {
+      "ports": 32,
+      "fixture": "collective gain or lossless",
+      "state": "active"
+    }
+  ],
+  "mixed": [
+    {
+      "ports": 31,
+      "pairs": 15,
+      "representation": "S",
+      "maxAbsoluteError": 2.393981248322776e-16,
+      "inverseMaxAbsoluteError": 1.8561541192951836e-16
+    },
+    {
+      "ports": 31,
+      "pairs": 15,
+      "representation": "Y",
+      "maxAbsoluteError": 1.3878449536528033e-17,
+      "inverseMaxAbsoluteError": 5.150245627764264e-18
+    },
+    {
+      "ports": 31,
+      "pairs": 15,
+      "representation": "Z",
+      "maxAbsoluteError": 1.1368878926877637e-13,
+      "inverseMaxAbsoluteError": 1.4545616520814927e-14
+    },
+    {
+      "ports": 32,
+      "pairs": 16,
+      "representation": "S",
+      "maxAbsoluteError": 2.680161805326998e-16,
+      "inverseMaxAbsoluteError": 1.5269508632971128e-16
+    },
+    {
+      "ports": 32,
+      "pairs": 16,
+      "representation": "Y",
+      "maxAbsoluteError": 2.081668281462914e-17,
+      "inverseMaxAbsoluteError": 3.2932640989247197e-18
+    },
+    {
+      "ports": 32,
+      "pairs": 16,
+      "representation": "Z",
+      "maxAbsoluteError": 8.526512829121202e-14,
+      "inverseMaxAbsoluteError": 1.7708057242771247e-14
+    },
+    {
+      "ports": 32,
+      "pairs": 1,
+      "representation": "S",
+      "maxAbsoluteError": 1.1102314949223176e-16,
+      "inverseMaxAbsoluteError": 1.6653571243298153e-16
+    },
+    {
+      "ports": 32,
+      "pairs": 1,
+      "representation": "Y",
+      "maxAbsoluteError": 6.939105658912966e-18,
+      "inverseMaxAbsoluteError": 3.469446951953614e-18
+    },
+    {
+      "ports": 32,
+      "pairs": 1,
+      "representation": "Z",
+      "maxAbsoluteError": 1.4211288389453755e-14,
+      "inverseMaxAbsoluteError": 3.2196766802994825e-15
+    }
+  ],
+  "rejections": 7,
+  "requests": 55,
+  "versions": {
+    "python": "3.14.4",
+    "numpy": "2.5.3",
+    "scikit_rf": "2.1.0",
+    "node": "v24.11.0"
+  },
+  "bridgeSHA256": "70e384bb7e73e08c30715458d13d0c759e7b54546d471c02e6f264a4364f9da0",
+  "limits": [
+    "Synthetic upper-port and boundary cases, not exhaustive numerical certification.",
+    "No vendor data or historical full suite rerun.",
+    "Exact +/-tolerance floating-point cutpoints are not certified."
+  ]
+}

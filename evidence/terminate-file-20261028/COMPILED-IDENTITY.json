@@ -1,0 +1,27 @@
+{
+  "before": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "c3902b34f0961e16578e08b60926530cb7c84907cbeeb9740f5d576339ad7cde",
+    "provenance": "observed start of16"
+  },
+  "after": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "21e4c5e1f8d27ced6457457d893c8492add2bcc0354c7283a25f4ef5409c4011"
+  },
+  "provenance": "One release JS build before actual new-command consumers/demo; production source unchanged since accepted executions",
+  "executedSourceSHA256": {
+    "cmd/bridge/main.mbt": "e9915281ec2a53bc52e3ec97aead1bd4660bb68716fc2db064105b6eb953dd6c",
+    "tools/touchstone.mjs": "2ead8ae7d516ccdc6e92c9f2b08b8df4662fe505342cebaea263aa313ad852b6",
+    "tools/verify-terminate-file.py": "dd303c6192d371502a2a0b78c6ee93dc345521da41f5f8962d6cf37c74db15cb",
+    "examples/loaded-four-port.ts": "e35d7a948747708a054e0a0c660f10ca0a214fd943047fe8a410a978206acb10",
+    "examples/terminate-four-port.json": "168b2279bd0fc8fe7ca7f2b9d14de694749be55a41fcbe07668f577ce7cfb3d6",
+    "examples/terminated-gain-check.json": "4aba76e20d8090588a3da4d55d96818b7d12887403cd683a076f1e2a6f5a081c",
+    "examples/terminate_file_demo.mjs": "27ada236c99683419f9aec562c7f389f5ec7c8d8b36d6775c184a528a89260a7",
+    "amplifier.mbt": "61572fe6cb3c204392bf43f839e009544afc233cf583ddff26cc7f5e78417d38",
+    "gain.mbt": "f0ab0b6522ba1a372d3c2ede72b0d76f6e655e0cfb1f8e42af1ce27781e5284a",
+    "gain_impedance.mbt": "70166a5f530805e1ca1b7b74ba096d00e4f9512b5e741e06d3c9a55ca317f662",
+    "gain_band.mbt": "ff2e678edfb400fbae34643fede9f735aa6fccb84a232ddcbe70e98d8d0453a3"
+  },
+  "oldNumericalFormatReportReceiptAndCSVSourceUnchanged": true,
+  "oldPublicAPIUnchanged": true
+}

@@ -1,0 +1,3 @@
+point,frequency_hz,gain,gain_db,state,start_hz,end_hz,minimum_db,maximum_db,below_minimum,above_maximum,sample_status,report_status,range_covered
+0,1000000000,4.070696145688784,6.0966868597663435,finite,1000000000,2000000000,4,7,false,false,pass,fail,true
+1,2000000000,2.1806456499737945,3.3858509943292328,finite,1000000000,2000000000,4,7,true,false,fail,fail,true

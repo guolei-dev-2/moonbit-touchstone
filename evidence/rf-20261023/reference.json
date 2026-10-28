@@ -1,0 +1,88 @@
+{
+  "complete": true,
+  "date": "2026-10-23",
+  "requests": 368,
+  "assertions": 1103,
+  "scikit_rf": "2.1.0",
+  "numpy": "2.5.3",
+  "maximum_absolute_error": 2.44131825866134e-10,
+  "groups": {
+    "mixed": {
+      "configurations": 12,
+      "representations": [
+        "S",
+        "Y",
+        "Z"
+      ],
+      "ports": [
+        3,
+        4,
+        6,
+        8
+      ]
+    },
+    "rf": {
+      "random_twoports": 24,
+      "termination_cross_oracle": "scikit-rf connect",
+      "gain_circle": "direct bilateral available/operating gain equation"
+    },
+    "noise": {
+      "random_three_block_chains": 20,
+      "covariance_normalization": "4 kB T0",
+      "reference": "scikit-rf set_noise_a/cascade/interpolate/nfdb_gs/nf_circle, original independently generated DUT and NumPy two-sided noise subtraction",
+      "oracle_caveat": "scikit-rf 2.1 noisy inv is implemented only for left deembedding; right.inv does not subtract noise, so it is not used as a false two-sided oracle"
+    },
+    "boundaries": {
+      "rejections": 7,
+      "matched_friis": true,
+      "sparse_noise": true,
+      "single_noise_record": true,
+      "unattainable_noise_circle": true
+    },
+    "noise_psd": {
+      "negative_eigenvalue_deembedding": 3,
+      "references_ohms": [
+        1,
+        50,
+        1000000.0
+      ],
+      "input_covariance_rejection": true,
+      "parser_preserves_measurement": true
+    }
+  },
+  "elapsed_seconds": 1.0336005687713623,
+  "sources": {
+    "amplifier.mbt": "5e14060ce2a7b77c7b3e1293517dab004fc725e63a01617facbd6adacba6f3a6",
+    "analysis.mbt": "c67936328db5fbbe0d0ab4098697003908ee41a8422c3c7286503827bae56dfd",
+    "analysis_test.mbt": "11947393626dc6100fca08177486573e37aef8c7694fe8eeb3da9c7d67bdb786",
+    "bands.mbt": "58d9149f83da41b491fca93145e94cdb70d2fee2927c4e660ec1d4c8b7c5a9f8",
+    "bands_test.mbt": "55477b23457f03db1cdb5cb70a73bf2907e64ed1abf093128e5bae9e037ec185",
+    "cascade.mbt": "6dc09bd7f21b7eaa004b7891cc8f23a24dee9c6b88aafb90583ed151caebdefb",
+    "cmd/bridge/entry.mbt": "707731f6d55f8795e9fd5ae849230f5505042484d3dd0705b0e8916a200d69e0",
+    "cmd/bridge/main.mbt": "6d4b696015c0ac120870665e062fde7417094e7adf62e9a67138d58570a46651",
+    "complex.mbt": "3147d7d3ffc973367065ec9c7c57b0add94301d805f172519dc35caa25e0fb80",
+    "conversion.mbt": "a9bba63395d0fd56157f8e16f815308719a99126f077a0397fe60db274a938e8",
+    "core_test.mbt": "ddbc73bcadfc959b958dbeb01e82e7633ac94d40bd682d73b62d77d9cdb0291f",
+    "document.mbt": "0435f50901dc5e06aa3c0d12a959530965b336e512415d0e3a3ae69578ea5ec1",
+    "document_test.mbt": "32add52b59e97044ab666934e4548846913ee6bab99bc0831075e1b1ffd3c014",
+    "examples/band_check/main.mbt": "343cc363b26d864eeb015fd599c2408c70b278aa7256195e35df337daafa50aa",
+    "examples/rf_03/main.mbt": "3be7767bbbffb3ee704a38ecd51029d722f2ffc2c829c855c869e799e96230c2",
+    "legacy.mbt": "fcec525a49fb4cc83b20c47990d9d29442e221c4ebe3990d6bbb4484a6362cdd",
+    "legacy_test.mbt": "d41f8402e21b84fe3728a1afd40902ee73e11de07ccdd6db80a9f6965b6f3359",
+    "line_endings_test.mbt": "48e7fc6a73d38990357b536e2543a93986859e34f379a7922ac65280c4517896",
+    "matrix.mbt": "84d0ce5fa77bb110a8d8994ce3e94de7e4e31a4aaed99baf174deb3504890143",
+    "mixed_mode.mbt": "192e45989be2b3a41ee19472277a401c78182bceb2704ed6292b7a57efe8cf9c",
+    "network.mbt": "86378cd4bdc55e448257327296707d075365263111918ea92bc867bd20f98555",
+    "noise.mbt": "808a77b211cc861131f047713b526468d2735de27b70187f0eae0fbdb3c9b041",
+    "operations_test.mbt": "9201652cf318aee95fe471aae8778ce87338a74a607780c75b6b163470a98109",
+    "rf_test.mbt": "5fdb29e70f67e0fd64d50781226f0e5cdd5deedadf7712dbb4c364a68134eb3e",
+    "ripple.mbt": "f0a2b65a8b6423a078c8e7a8e58ebac28564a6ab5955f45a4d2eb73cc9727585",
+    "ripple_test.mbt": "26a872e25f7187e510a8d0950660bd3049f3405e2f11bf6e946afc973b409246",
+    "text.mbt": "e40c2c9a23e4aa6c7c7ff305b75ff3874876241b4c87b72ae7054637d864b40b",
+    "versioned.mbt": "069ae06b33d7c0b2c0d4db1dce34a2ad3df2f135088ce7d35bec1a128961fe11"
+  },
+  "references": [
+    "https://ibis.org/touchstone_ver2.1/touchstone_ver2_1.pdf",
+    "https://scikit-rf.readthedocs.io/en/latest/_modules/skrf/network.html"
+  ]
+}

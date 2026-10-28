@@ -1,0 +1,249 @@
+{
+  "complete": true,
+  "oldCodeDefect": false,
+  "workflowGap": "No file CLI export after explicit nonmatched multiport termination; old terminate intentionally returns analysis JSON",
+  "actualCLIProcesses": 2,
+  "commands": [
+    {
+      "label": "old-terminate-is-network-JSON",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "terminate",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\baseline\\loaded-four-port.ts",
+        "{\"terminations\": [[1, 75, 15], [2, 25, -10]], \"impedance\": true}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stdout": "{\n  \"ports\": 2,\n  \"parameter\": \"S\",\n  \"frequency_hz\": [\n    900000000,\n    1100000000\n  ],\n  \"reference_ohms\": [\n    50,\n    75\n  ],\n  \"values\": [\n    [\n      {\n        \"re\": 0.12562601895339937,\n        \"im\": 0.06244063894608212\n      },\n      {\n        \"re\": 0.06270810731488148,\n        \"im\": 0.03220525378902926\n      },\n      {\n        \"re\": 1.751724807373562,\n        \"im\": 0.2509068659329428\n      },\n      {\n        \"re\": -0.12525585926593658,\n        \"im\": 0.06457554472994519\n      }\n    ],\n    [\n      {\n        \"re\": 0.06254428034058405,\n        \"im\": -0.031196974677602386\n      },\n      {\n        \"re\": 0.03157753775813915,\n        \"im\": -0.015879084893463593\n      },\n      {\n        \"re\": 1.2504634890269422,\n        \"im\": -0.12470076196253609\n      },\n      {\n        \"re\": 0.12532768602790217,\n        \"im\": -0.06309302231161382\n      }\n    ]\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "old-JSON-is-not-Touchstone-input",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "transducer-gain-impedance",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\baseline\\old-terminate-result.json",
+        "{\"ports\": 2, \"source_ohms\": [100, 20], \"load_ohms\": [30, -12]}"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stdout": "",
+      "stderr": "touchstone: Failure(\"missing option line\")\n"
+    }
+  ],
+  "syntheticInput": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\baseline\\loaded-four-port.ts",
+  "inputSHA256": "e35d7a948747708a054e0a0c660f10ca0a214fd943047fe8a410a978206acb10",
+  "networkSpecification": {
+    "frequency_hz": [
+      900000000.0,
+      1100000000.0
+    ],
+    "reference_ohms": [
+      50,
+      50,
+      75,
+      75
+    ],
+    "sRowMajor": [
+      [
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.0625,
+          0.0
+        ],
+        [
+          0.03125,
+          -0.015625
+        ],
+        [
+          0.0625,
+          0.03125
+        ],
+        [
+          0.125,
+          -0.03125
+        ],
+        [
+          0.0625,
+          0.0
+        ],
+        [
+          0.03125,
+          0.0
+        ],
+        [
+          0.0625,
+          0.015625
+        ],
+        [
+          0.0625,
+          0.03125
+        ],
+        [
+          0.015625,
+          0.0
+        ],
+        [
+          -0.0625,
+          0.0
+        ],
+        [
+          0.03125,
+          -0.015625
+        ],
+        [
+          1.75,
+          0.25
+        ],
+        [
+          0.125,
+          0.0625
+        ],
+        [
+          0.0625,
+          0.0
+        ],
+        [
+          -0.125,
+          0.0625
+        ]
+      ],
+      [
+        [
+          0.0625,
+          -0.03125
+        ],
+        [
+          0.03125,
+          0.0
+        ],
+        [
+          0.015625,
+          0.015625
+        ],
+        [
+          0.03125,
+          -0.015625
+        ],
+        [
+          0.0625,
+          0.015625
+        ],
+        [
+          0.03125,
+          0.0
+        ],
+        [
+          0.015625,
+          0.0
+        ],
+        [
+          0.03125,
+          -0.015625
+        ],
+        [
+          0.03125,
+          -0.015625
+        ],
+        [
+          0.03125,
+          0.0
+        ],
+        [
+          -0.03125,
+          0.0
+        ],
+        [
+          0.015625,
+          0.015625
+        ],
+        [
+          1.25,
+          -0.125
+        ],
+        [
+          0.0625,
+          -0.03125
+        ],
+        [
+          0.03125,
+          0.0
+        ],
+        [
+          0.125,
+          -0.0625
+        ]
+      ]
+    ]
+  },
+  "options": {
+    "terminations": [
+      [
+        1,
+        75,
+        15
+      ],
+      [
+        2,
+        25,
+        -10
+      ]
+    ],
+    "impedance": true
+  },
+  "oldReducedNetwork": {
+    "ports": 2,
+    "parameter": "S",
+    "frequency_hz": [
+      900000000,
+      1100000000
+    ],
+    "reference_ohms": [
+      50,
+      75
+    ],
+    "values": [
+      [
+        {
+          "re": 0.12562601895339937,
+          "im": 0.06244063894608212
+        },
+        {
+          "re": 0.06270810731488148,
+          "im": 0.03220525378902926
+        },
+        {
+          "re": 1.751724807373562,
+          "im": 0.2509068659329428
+        },
+        {
+          "re": -0.12525585926593658,
+          "im": 0.06457554472994519
+        }
+      ],
+      [
+        {
+          "re": 0.06254428034058405,
+          "im": -0.031196974677602386
+        },
+        {
+          "re": 0.03157753775813915,
+          "im": -0.015879084893463593
+        },
+        {
+          "re": 1.2504634890269422,
+          "im": -0.12470076196253609
+        },
+        {
+          "re": 0.12532768602790217,
+          "im": -0.06309302231161382
+        }
+      ]
+    ]
+  }
+}

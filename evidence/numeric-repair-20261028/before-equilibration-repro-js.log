@@ -1,0 +1,2 @@
+[guolei-dev/touchstone] test numeric_scale_test.mbt:31 ("row equilibration avoids overflowing elimination with finite inverse") failed: non-finite complex result
+Total tests: 1, passed: 0, failed: 1.

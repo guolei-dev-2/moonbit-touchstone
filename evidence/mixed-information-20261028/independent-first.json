@@ -1,0 +1,231 @@
+{
+  "complete": true,
+  "failure": null,
+  "actualNodeProcesses": 8,
+  "compiledBridgeProcesses": 3,
+  "fileCLIProcesses": 5,
+  "consumerChecks": 6,
+  "commands": [
+    {
+      "label": "fixed-information-response",
+      "kind": "compiled-bridge",
+      "argv": [
+        "node",
+        "--input-type=module",
+        "-e",
+        "import fs from 'node:fs';import {run} from './_build/js/release/build/cmd/bridge/bridge.js';process.stdout.write(run(fs.readFileSync(process.argv[1],'ascii'),process.argv[2],'','')+'\\n');",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\mixed-information.ts",
+        "{\"command\": \"mixed\", \"pairs\": [[0, 1]]}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\fixed-information-response.stdout.txt"
+    },
+    {
+      "label": "no-information-control",
+      "kind": "compiled-bridge",
+      "argv": [
+        "node",
+        "--input-type=module",
+        "-e",
+        "import fs from 'node:fs';import {run} from './_build/js/release/build/cmd/bridge/bridge.js';process.stdout.write(run(fs.readFileSync(process.argv[1],'ascii'),process.argv[2],'','')+'\\n');",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\no-information.ts",
+        "{\"command\": \"mixed\", \"pairs\": [[0, 1]]}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\no-information-control.stdout.txt"
+    },
+    {
+      "label": "actual-file-example",
+      "kind": "file-CLI",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "mixed",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\mixed-information.ts",
+        "{\"pairs\": [[0, 1]]}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\mixed output.ts"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\actual-file-example.stdout.txt"
+    },
+    {
+      "label": "actual-file-readback",
+      "kind": "file-CLI",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "inspect",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\mixed output.ts",
+        "{}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\actual-file-readback.stdout.txt"
+    },
+    {
+      "label": "already-mixed-information",
+      "kind": "compiled-bridge",
+      "argv": [
+        "node",
+        "--input-type=module",
+        "-e",
+        "import fs from 'node:fs';import {run} from './_build/js/release/build/cmd/bridge/bridge.js';process.stdout.write(run(fs.readFileSync(process.argv[1],'ascii'),process.argv[2],'','')+'\\n');",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\already-mixed-input.ts",
+        "{\"command\": \"mixed\", \"pairs\": [[0, 1]]}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\already-mixed-information.stdout.txt"
+    },
+    {
+      "label": "new-metadata-handoff",
+      "kind": "file-CLI",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "terminate-file",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\mixed output.ts",
+        "{\"terminations\": [[2, 0.25, 0.1]]}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\reduced output.ts"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\new-metadata-handoff.stdout.txt"
+    },
+    {
+      "label": "metadata-handoff-readback",
+      "kind": "file-CLI",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "inspect",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\reduced output.ts",
+        "{}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\metadata-handoff-readback.stdout.txt"
+    },
+    {
+      "label": "noisy-rejection-preserved",
+      "kind": "file-CLI",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "mixed",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\noisy.ts",
+        "{\"pairs\": [[0, 1]]}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\must-not-write-noisy.ts"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"mixed-mode file conversion cannot encode two-port noise parameters; use an explicit Network analysis view\")\n",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\noisy-rejection-preserved.stdout.txt"
+    }
+  ],
+  "checks": [
+    {
+      "label": "literal-information-preserved-only-text-block-changes",
+      "lines": 3,
+      "networkAndOrderExactBeforeMatch": true
+    },
+    {
+      "label": "no-information-full-response-byte-compatible",
+      "entireParsedPayloadAndTextEqual": true
+    },
+    {
+      "label": "actual-CLI-file-literal-and-parser-readback",
+      "informationLines": 3,
+      "modeAndReferencePreserved": true
+    },
+    {
+      "label": "already-mixed-input-single-information-copy",
+      "informationLines": 3
+    },
+    {
+      "label": "new-input-mixed-to-terminate-file-information-retained",
+      "informationLines": 3,
+      "old16NumericalCollectionRerun": false
+    },
+    {
+      "label": "noisy-input-refusal-preserved",
+      "noOutputWritten": true
+    }
+  ],
+  "newNumericalComparisons": 0,
+  "oldCollectionsRerun": false,
+  "artifacts": [
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\fixed-information-response.stdout.txt",
+      "sha256": "cecbb8a4e505f4cbf7c6a689a62ec2b51c7c901c7fdf2b08f00b1fcb4468b85d"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\no-information.ts",
+      "sha256": "00d0f4288c4bb8e40dc4c4761072c2e8847af3a43c794d8186371dcc1a488297"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\no-information-control.stdout.txt",
+      "sha256": "27b5158c51368051e8ca605db2954a7a4dd7f4cc3a6a3db978eb29e4bd13065b"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\actual-file-example.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\mixed output.ts",
+      "sha256": "7db70dcd21d4ba50696a3996a3a99191f96de93fba46e1caa6e7cb91707f9b15"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\actual-file-readback.stdout.txt",
+      "sha256": "44a38fb6b2af5a94250039c6a9798d74a31d9e99f4b484434b1e7544e1aeebb6"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\already-mixed-input.ts",
+      "sha256": "7db70dcd21d4ba50696a3996a3a99191f96de93fba46e1caa6e7cb91707f9b15"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\already-mixed-information.stdout.txt",
+      "sha256": "c32383a3a418ae023114c5859a620bf197a46a0d97f3362a06c5eaded82236f2"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\new-metadata-handoff.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\reduced output.ts",
+      "sha256": "c24ac42c6984a6188d121e72266d2ba21f2686c884e7c75b256180d6331cc158"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\metadata-handoff-readback.stdout.txt",
+      "sha256": "107aab5d51155149ef64ff4fcccdd13166ac7b3c0bf67dbea08a1e5561cb0af9"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\noisy.ts",
+      "sha256": "aff7b7824998ff8917771f35aa1e138041f075f2fb604220986c8e496bdd5d39"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-17-max-20261028\\independent-first-cases\\noisy-rejection-preserved.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "sourceSHA256": {
+    "cmd/bridge/main.mbt": "f1041a83ed8830974a24b5f05afbe9f38e483bf203b33d3f850b3f3f35dddf93",
+    "tools/verify-terminate-file.py": "8e589876bfb1e919c809f45b5c18ac7a317ca434d8b576ada9db5c43fdd7e242",
+    "tools/verify-mixed-information.py": "d68ceba6dab00f1305c0046887d2e8fb6dfc7f805127a755a7cdb5d80a2c997a",
+    "examples/mixed-information.ts": "1b5781c07caeb672aa89860b0858f1d91c9e6bbbbfc447c43261c5c29b72c5c5",
+    "examples/mixed-information-options.json": "a7182c38716883ca9962f302c14cdbdcf6d7c8ef77b1fd4da95d8ab5107be005",
+    "mixed_mode.mbt": "192e45989be2b3a41ee19472277a401c78182bceb2704ed6292b7a57efe8cf9c",
+    "document.mbt": "0435f50901dc5e06aa3c0d12a959530965b336e512415d0e3a3ae69578ea5ec1",
+    "versioned.mbt": "069ae06b33d7c0b2c0d4db1dce34a2ad3df2f135088ce7d35bec1a128961fe11"
+  }
+}

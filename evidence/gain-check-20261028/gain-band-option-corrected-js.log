@@ -1,0 +1,8 @@
+[guolei-dev/touchstone] test gain_band_test.mbt:15 ("gain band locates original worst points and counts zero-power violations") failed: ports must be 1..32 with one real reference per port
+[guolei-dev/touchstone] test gain_band_test.mbt:37 ("inclusive gain bounds single-point intervals and first ties are preserved") failed: ports must be 1..32 with one real reference per port
+[guolei-dev/touchstone] test gain_band_test.mbt:62 ("positive gain overflow and underflow remain known through dB") failed: ports must be 1..32 with one real reference per port
+[guolei-dev/touchstone] test gain_band_test.mbt:96 ("singular points are unknown and known failure takes precedence") failed: ports must be 1..32 with one real reference per port
+[guolei-dev/touchstone] test gain_band_test.mbt:126 ("coverage empty selection and sampled-only one-point selection are explicit") failed: ports must be 1..32 with one real reference per port
+[guolei-dev/touchstone] test gain_band_test.mbt:161 ("invalid rules frequency order and forged state shapes raise") failed: ports must be 1..32 with one real reference per port
+[guolei-dev/touchstone] test gain_band_test.mbt:234 ("both Gamma and physical ohm GT traces feed the same report contract") failed: ports must be 1..32 with one real reference per port
+Total tests: 8, passed: 1, failed: 7.

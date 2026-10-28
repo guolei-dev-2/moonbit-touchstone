@@ -1,0 +1,25 @@
+{
+  "before": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "51c12b88f2ac16027fd339cbaa5f917c61021ef49bde49261b5e84ceeadd014f",
+    "provenance": "observed start of24"
+  },
+  "after": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "fd62a50ff38a0718bbb86f8056fc23d1be22839ddb2e732c1fc4baff23b7c576"
+  },
+  "provenance": "Successful release JS build from copied same-version local SDK after required stdlib bundle copy; final core/source unchanged since first actual runtime acceptance",
+  "executedSourceSHA256": {
+    "mixed_mode.mbt": "6f5686d5014238898999234c86f3d3bab609c85dd00c84d8cb2170f765b66b15",
+    "modal_scale_test.mbt": "6d5b38c1eaa123c82a3a84cdb22e56252781791a88e91006dfc94de44d91131f",
+    "gain.mbt": "f0ab0b6522ba1a372d3c2ede72b0d76f6e655e0cfb1f8e42af1ce27781e5284a",
+    "noise.mbt": "2bc44c55b92f9c5923d89e03ab7f8a009792c05eae570a2f9de7f4b6dc00e4e1",
+    "cmd/bridge/main.mbt": "f1041a83ed8830974a24b5f05afbe9f38e483bf203b33d3f850b3f3f35dddf93",
+    "tools/touchstone.mjs": "2ead8ae7d516ccdc6e92c9f2b08b8df4662fe505342cebaea263aa313ad852b6",
+    "tools/verify-modal-scale.py": "4c2a781f826a0ecf2db519312dad3fcf338c2f96870727f1ec3ad33d64505fe1",
+    "examples/modal-scale.s4p": "3ead5e5423e78eec3d6b90ae59d6cbdf529c6cb3fa953d57c9ac39d16625a5fe",
+    "examples/modal-scale-options.json": "3e7162ed13e94c7e644e37ee8f810f8c458de822e435dd9fd96024c321d88999"
+  },
+  "localSDK": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\toolchain",
+  "oldPublicLibraryAPIUnchanged": true
+}

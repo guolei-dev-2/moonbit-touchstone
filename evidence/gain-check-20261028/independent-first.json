@@ -1,0 +1,3166 @@
+{
+  "complete": true,
+  "failure": null,
+  "requests": 39,
+  "reportChecks": 27,
+  "checks": [
+    {
+      "label": "gamma pass",
+      "expectedStatus": "pass",
+      "samples": 2,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "pass",
+        "start_hz": 1000000000.0,
+        "end_hz": 2000000000.0,
+        "minimum_db": 3.0,
+        "maximum_db": 7.0,
+        "sample_count": 2,
+        "state_counts": {
+          "finite": 2,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 1,
+          "frequency_hz": 2000000000.0,
+          "state": "finite",
+          "gain": 2.25,
+          "gain_db": 3.5218251811136247
+        },
+        "highest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 4.0,
+          "gain_db": 6.020599913279624
+        },
+        "reasons": [
+          "limits_met"
+        ]
+      }
+    },
+    {
+      "label": "gamma lower fail",
+      "expectedStatus": "fail",
+      "samples": 2,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "fail",
+        "start_hz": 1000000000.0,
+        "end_hz": 2000000000.0,
+        "minimum_db": 4.0,
+        "maximum_db": null,
+        "sample_count": 2,
+        "state_counts": {
+          "finite": 2,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 1,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 1,
+          "frequency_hz": 2000000000.0,
+          "state": "finite",
+          "gain": 2.25,
+          "gain_db": 3.5218251811136247
+        },
+        "highest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 4.0,
+          "gain_db": 6.020599913279624
+        },
+        "reasons": [
+          "below_minimum"
+        ]
+      }
+    },
+    {
+      "label": "gamma upper fail",
+      "expectedStatus": "fail",
+      "samples": 2,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "fail",
+        "start_hz": 1000000000.0,
+        "end_hz": 2000000000.0,
+        "minimum_db": null,
+        "maximum_db": 6.0,
+        "sample_count": 2,
+        "state_counts": {
+          "finite": 2,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 1,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 1,
+          "frequency_hz": 2000000000.0,
+          "state": "finite",
+          "gain": 2.25,
+          "gain_db": 3.5218251811136247
+        },
+        "highest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 4.0,
+          "gain_db": 6.020599913279624
+        },
+        "reasons": [
+          "above_maximum"
+        ]
+      }
+    },
+    {
+      "label": "both bounds fail",
+      "expectedStatus": "fail",
+      "samples": 2,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "fail",
+        "start_hz": 1000000000.0,
+        "end_hz": 2000000000.0,
+        "minimum_db": 4.0,
+        "maximum_db": 6.0,
+        "sample_count": 2,
+        "state_counts": {
+          "finite": 2,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 1,
+        "above_maximum_count": 1,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 1,
+          "frequency_hz": 2000000000.0,
+          "state": "finite",
+          "gain": 2.25,
+          "gain_db": 3.5218251811136247
+        },
+        "highest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 4.0,
+          "gain_db": 6.020599913279624
+        },
+        "reasons": [
+          "above_maximum",
+          "below_minimum"
+        ]
+      }
+    },
+    {
+      "label": "point interval",
+      "expectedStatus": "pass",
+      "samples": 1,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "pass",
+        "start_hz": 1000000000.0,
+        "end_hz": 1000000000.0,
+        "minimum_db": 0.0,
+        "maximum_db": 7.0,
+        "sample_count": 1,
+        "state_counts": {
+          "finite": 1,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 4.0,
+          "gain_db": 6.020599913279624
+        },
+        "highest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 4.0,
+          "gain_db": 6.020599913279624
+        },
+        "reasons": [
+          "limits_met"
+        ]
+      }
+    },
+    {
+      "label": "empty interior",
+      "expectedStatus": "inconclusive",
+      "samples": 0,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "inconclusive",
+        "start_hz": 1400000000.0,
+        "end_hz": 1600000000.0,
+        "minimum_db": 0.0,
+        "maximum_db": null,
+        "sample_count": 0,
+        "state_counts": {
+          "finite": 0,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": false,
+        "end_sampled": false,
+        "lowest": null,
+        "highest": null,
+        "reasons": [
+          "no_samples"
+        ]
+      }
+    },
+    {
+      "label": "partial range",
+      "expectedStatus": "inconclusive",
+      "samples": 2,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "inconclusive",
+        "start_hz": 500000000.0,
+        "end_hz": 2000000000.0,
+        "minimum_db": 3.0,
+        "maximum_db": null,
+        "sample_count": 2,
+        "state_counts": {
+          "finite": 2,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 0,
+        "range_covered": false,
+        "start_sampled": false,
+        "end_sampled": true,
+        "lowest": {
+          "point": 1,
+          "frequency_hz": 2000000000.0,
+          "state": "finite",
+          "gain": 2.25,
+          "gain_db": 3.5218251811136247
+        },
+        "highest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 4.0,
+          "gain_db": 6.020599913279624
+        },
+        "reasons": [
+          "incomplete_range"
+        ]
+      }
+    },
+    {
+      "label": "known fail beats coverage",
+      "expectedStatus": "fail",
+      "samples": 2,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "fail",
+        "start_hz": 500000000.0,
+        "end_hz": 2000000000.0,
+        "minimum_db": 4.0,
+        "maximum_db": null,
+        "sample_count": 2,
+        "state_counts": {
+          "finite": 2,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 1,
+        "above_maximum_count": 0,
+        "range_covered": false,
+        "start_sampled": false,
+        "end_sampled": true,
+        "lowest": {
+          "point": 1,
+          "frequency_hz": 2000000000.0,
+          "state": "finite",
+          "gain": 2.25,
+          "gain_db": 3.5218251811136247
+        },
+        "highest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 4.0,
+          "gain_db": 6.020599913279624
+        },
+        "reasons": [
+          "below_minimum",
+          "incomplete_range"
+        ]
+      }
+    },
+    {
+      "label": "outside range",
+      "expectedStatus": "inconclusive",
+      "samples": 0,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "inconclusive",
+        "start_hz": 3000000000.0,
+        "end_hz": 4000000000.0,
+        "minimum_db": 0.0,
+        "maximum_db": null,
+        "sample_count": 0,
+        "state_counts": {
+          "finite": 0,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 0,
+        "range_covered": false,
+        "start_sampled": false,
+        "end_sampled": false,
+        "lowest": null,
+        "highest": null,
+        "reasons": [
+          "incomplete_range",
+          "no_samples"
+        ]
+      }
+    },
+    {
+      "label": "ohm pass",
+      "expectedStatus": "pass",
+      "samples": 2,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "pass",
+        "start_hz": 1000000000.0,
+        "end_hz": 2000000000.0,
+        "minimum_db": 3.0,
+        "maximum_db": 7.0,
+        "sample_count": 2,
+        "state_counts": {
+          "finite": 2,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 1,
+          "frequency_hz": 2000000000.0,
+          "state": "finite",
+          "gain": 2.1806456499737945,
+          "gain_db": 3.3858509943292323
+        },
+        "highest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 4.070696145688784,
+          "gain_db": 6.0966868597663435
+        },
+        "reasons": [
+          "limits_met"
+        ]
+      }
+    },
+    {
+      "label": "ohm fail",
+      "expectedStatus": "fail",
+      "samples": 2,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "fail",
+        "start_hz": 1000000000.0,
+        "end_hz": 2000000000.0,
+        "minimum_db": 4.0,
+        "maximum_db": 7.0,
+        "sample_count": 2,
+        "state_counts": {
+          "finite": 2,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 1,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 1,
+          "frequency_hz": 2000000000.0,
+          "state": "finite",
+          "gain": 2.1806456499737945,
+          "gain_db": 3.3858509943292323
+        },
+        "highest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 4.070696145688784,
+          "gain_db": 6.0966868597663435
+        },
+        "reasons": [
+          "below_minimum"
+        ]
+      }
+    },
+    {
+      "label": "zero below finite lower",
+      "expectedStatus": "fail",
+      "samples": 5,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "fail",
+        "start_hz": 1000000000.0,
+        "end_hz": 5000000000.0,
+        "minimum_db": -5000.0,
+        "maximum_db": 5000.0,
+        "sample_count": 5,
+        "state_counts": {
+          "finite": 2,
+          "zero": 1,
+          "singular": 0,
+          "overflow": 1,
+          "underflow": 1
+        },
+        "below_minimum_count": 1,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "zero",
+          "gain": 0.0,
+          "gain_db": null
+        },
+        "highest": {
+          "point": 4,
+          "frequency_hz": 5000000000.0,
+          "state": "overflow",
+          "gain": null,
+          "gain_db": 4000.0
+        },
+        "reasons": [
+          "below_minimum"
+        ]
+      }
+    },
+    {
+      "label": "positive extremes known",
+      "expectedStatus": "pass",
+      "samples": 4,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "pass",
+        "start_hz": 2000000000.0,
+        "end_hz": 5000000000.0,
+        "minimum_db": -5000.0,
+        "maximum_db": 5000.0,
+        "sample_count": 4,
+        "state_counts": {
+          "finite": 2,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 1,
+          "underflow": 1
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 1,
+          "frequency_hz": 2000000000.0,
+          "state": "underflow",
+          "gain": 0.0,
+          "gain_db": -4000.0
+        },
+        "highest": {
+          "point": 4,
+          "frequency_hz": 5000000000.0,
+          "state": "overflow",
+          "gain": null,
+          "gain_db": 4000.0
+        },
+        "reasons": [
+          "limits_met"
+        ]
+      }
+    },
+    {
+      "label": "zero meets upper",
+      "expectedStatus": "pass",
+      "samples": 1,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "pass",
+        "start_hz": 1000000000.0,
+        "end_hz": 1000000000.0,
+        "minimum_db": null,
+        "maximum_db": -5000.0,
+        "sample_count": 1,
+        "state_counts": {
+          "finite": 0,
+          "zero": 1,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "zero",
+          "gain": 0.0,
+          "gain_db": null
+        },
+        "highest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "zero",
+          "gain": 0.0,
+          "gain_db": null
+        },
+        "reasons": [
+          "limits_met"
+        ]
+      }
+    },
+    {
+      "label": "zero fails lower",
+      "expectedStatus": "fail",
+      "samples": 1,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "fail",
+        "start_hz": 1000000000.0,
+        "end_hz": 1000000000.0,
+        "minimum_db": -5000.0,
+        "maximum_db": null,
+        "sample_count": 1,
+        "state_counts": {
+          "finite": 0,
+          "zero": 1,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 1,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "zero",
+          "gain": 0.0,
+          "gain_db": null
+        },
+        "highest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "zero",
+          "gain": 0.0,
+          "gain_db": null
+        },
+        "reasons": [
+          "below_minimum"
+        ]
+      }
+    },
+    {
+      "label": "overflow exceeds upper",
+      "expectedStatus": "fail",
+      "samples": 1,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "fail",
+        "start_hz": 5000000000.0,
+        "end_hz": 5000000000.0,
+        "minimum_db": null,
+        "maximum_db": 3000.0,
+        "sample_count": 1,
+        "state_counts": {
+          "finite": 0,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 1,
+          "underflow": 0
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 1,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 4,
+          "frequency_hz": 5000000000.0,
+          "state": "overflow",
+          "gain": null,
+          "gain_db": 4000.0
+        },
+        "highest": {
+          "point": 4,
+          "frequency_hz": 5000000000.0,
+          "state": "overflow",
+          "gain": null,
+          "gain_db": 4000.0
+        },
+        "reasons": [
+          "above_maximum"
+        ]
+      }
+    },
+    {
+      "label": "singular unknown",
+      "expectedStatus": "inconclusive",
+      "samples": 3,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "inconclusive",
+        "start_hz": 1000000000.0,
+        "end_hz": 3000000000.0,
+        "minimum_db": -2.0,
+        "maximum_db": null,
+        "sample_count": 3,
+        "state_counts": {
+          "finite": 2,
+          "zero": 0,
+          "singular": 1,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 0.75,
+          "gain_db": -1.2493873660829995
+        },
+        "highest": {
+          "point": 2,
+          "frequency_hz": 3000000000.0,
+          "state": "finite",
+          "gain": 3.0,
+          "gain_db": 4.771212547196624
+        },
+        "reasons": [
+          "singular_samples"
+        ]
+      }
+    },
+    {
+      "label": "known fail beats singular",
+      "expectedStatus": "fail",
+      "samples": 3,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "fail",
+        "start_hz": 1000000000.0,
+        "end_hz": 3000000000.0,
+        "minimum_db": 0.0,
+        "maximum_db": null,
+        "sample_count": 3,
+        "state_counts": {
+          "finite": 2,
+          "zero": 0,
+          "singular": 1,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 1,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 0.75,
+          "gain_db": -1.2493873660829995
+        },
+        "highest": {
+          "point": 2,
+          "frequency_hz": 3000000000.0,
+          "state": "finite",
+          "gain": 3.0,
+          "gain_db": 4.771212547196624
+        },
+        "reasons": [
+          "below_minimum",
+          "singular_samples"
+        ]
+      }
+    },
+    {
+      "label": "only singular",
+      "expectedStatus": "inconclusive",
+      "samples": 1,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "inconclusive",
+        "start_hz": 2000000000.0,
+        "end_hz": 2000000000.0,
+        "minimum_db": -2.0,
+        "maximum_db": null,
+        "sample_count": 1,
+        "state_counts": {
+          "finite": 0,
+          "zero": 0,
+          "singular": 1,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": null,
+        "highest": null,
+        "reasons": [
+          "singular_samples"
+        ]
+      }
+    },
+    {
+      "label": "ohm singular unknown",
+      "expectedStatus": "inconclusive",
+      "samples": 3,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "inconclusive",
+        "start_hz": 1000000000.0,
+        "end_hz": 3000000000.0,
+        "minimum_db": -2.0,
+        "maximum_db": null,
+        "sample_count": 3,
+        "state_counts": {
+          "finite": 2,
+          "zero": 0,
+          "singular": 1,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 0.75,
+          "gain_db": -1.2493873660829995
+        },
+        "highest": {
+          "point": 2,
+          "frequency_hz": 3000000000.0,
+          "state": "finite",
+          "gain": 3.0,
+          "gain_db": 4.771212547196624
+        },
+        "reasons": [
+          "singular_samples"
+        ]
+      }
+    },
+    {
+      "label": "inclusive ties",
+      "expectedStatus": "pass",
+      "samples": 2,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "pass",
+        "start_hz": 1000000000.0,
+        "end_hz": 2000000000.0,
+        "minimum_db": 0.0,
+        "maximum_db": 0.0,
+        "sample_count": 2,
+        "state_counts": {
+          "finite": 2,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 1.0,
+          "gain_db": 0.0
+        },
+        "highest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 1.0,
+          "gain_db": 0.0
+        },
+        "reasons": [
+          "limits_met"
+        ]
+      }
+    },
+    {
+      "label": "single interior sample",
+      "expectedStatus": "pass",
+      "samples": 1,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "pass",
+        "start_hz": 1250000000.0,
+        "end_hz": 2750000000.0,
+        "minimum_db": -1.0,
+        "maximum_db": null,
+        "sample_count": 1,
+        "state_counts": {
+          "finite": 1,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": false,
+        "end_sampled": false,
+        "lowest": {
+          "point": 1,
+          "frequency_hz": 2000000000.0,
+          "state": "finite",
+          "gain": 1.0,
+          "gain_db": 0.0
+        },
+        "highest": {
+          "point": 1,
+          "frequency_hz": 2000000000.0,
+          "state": "finite",
+          "gain": 1.0,
+          "gain_db": 0.0
+        },
+        "reasons": [
+          "limits_met"
+        ]
+      }
+    },
+    {
+      "label": "unequal reference match",
+      "expectedStatus": "pass",
+      "samples": 2,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "pass",
+        "start_hz": 1000000000.0,
+        "end_hz": 2000000000.0,
+        "minimum_db": 3.0,
+        "maximum_db": 7.0,
+        "sample_count": 2,
+        "state_counts": {
+          "finite": 2,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 1,
+          "frequency_hz": 2000000000.0,
+          "state": "finite",
+          "gain": 2.25,
+          "gain_db": 3.5218251811136247
+        },
+        "highest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 4.0,
+          "gain_db": 6.020599913279624
+        },
+        "reasons": [
+          "limits_met"
+        ]
+      }
+    },
+    {
+      "label": "file pass",
+      "expectedStatus": "pass",
+      "samples": 2,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "pass",
+        "start_hz": 1000000000.0,
+        "end_hz": 2000000000.0,
+        "minimum_db": 3.0,
+        "maximum_db": 7.0,
+        "sample_count": 2,
+        "state_counts": {
+          "finite": 2,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 1,
+          "frequency_hz": 2000000000.0,
+          "state": "finite",
+          "gain": 2.25,
+          "gain_db": 3.5218251811136247
+        },
+        "highest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 4.0,
+          "gain_db": 6.020599913279624
+        },
+        "reasons": [
+          "limits_met"
+        ]
+      }
+    },
+    {
+      "label": "file saved fail",
+      "expectedStatus": "fail",
+      "samples": 2,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "fail",
+        "start_hz": 1000000000.0,
+        "end_hz": 2000000000.0,
+        "minimum_db": 4.0,
+        "maximum_db": 7.0,
+        "sample_count": 2,
+        "state_counts": {
+          "finite": 2,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 1,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 1,
+          "frequency_hz": 2000000000.0,
+          "state": "finite",
+          "gain": 2.1806456499737945,
+          "gain_db": 3.3858509943292323
+        },
+        "highest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 4.070696145688784,
+          "gain_db": 6.0966868597663435
+        },
+        "reasons": [
+          "below_minimum"
+        ]
+      }
+    },
+    {
+      "label": "file incomplete",
+      "expectedStatus": "inconclusive",
+      "samples": 2,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "inconclusive",
+        "start_hz": 1000000000.0,
+        "end_hz": 3000000000.0,
+        "minimum_db": 3.0,
+        "maximum_db": null,
+        "sample_count": 2,
+        "state_counts": {
+          "finite": 2,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 0,
+        "above_maximum_count": 0,
+        "range_covered": false,
+        "start_sampled": true,
+        "end_sampled": false,
+        "lowest": {
+          "point": 1,
+          "frequency_hz": 2000000000.0,
+          "state": "finite",
+          "gain": 2.25,
+          "gain_db": 3.5218251811136247
+        },
+        "highest": {
+          "point": 0,
+          "frequency_hz": 1000000000.0,
+          "state": "finite",
+          "gain": 4.0,
+          "gain_db": 6.020599913279624
+        },
+        "reasons": [
+          "incomplete_range"
+        ]
+      }
+    },
+    {
+      "label": "NXP aggregate report",
+      "expectedStatus": "fail",
+      "samples": 98,
+      "reference": {
+        "scope": "sampled_points_only",
+        "status": "fail",
+        "start_hz": 40000000.0,
+        "end_hz": 6000000000.0,
+        "minimum_db": 2.0,
+        "maximum_db": 30.0,
+        "sample_count": 98,
+        "state_counts": {
+          "finite": 98,
+          "zero": 0,
+          "singular": 0,
+          "overflow": 0,
+          "underflow": 0
+        },
+        "below_minimum_count": 27,
+        "above_maximum_count": 0,
+        "range_covered": true,
+        "start_sampled": true,
+        "end_sampled": true,
+        "lowest": {
+          "point": 97,
+          "frequency_hz": 6000000000.0,
+          "state": "finite",
+          "gain": 0.5533276995999998,
+          "gain_db": -2.5701758844783895
+        },
+        "highest": {
+          "point": 1,
+          "frequency_hz": 50000000.0,
+          "state": "finite",
+          "gain": 12.23810289,
+          "gain_db": 10.877141001411825
+        },
+        "reasons": [
+          "below_minimum"
+        ]
+      }
+    }
+  ],
+  "raw": [
+    {
+      "label": "gamma pass",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": 3.0,
+          "maximum_db": 7.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "pass",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "pass",
+            "start_hz": 1000000000,
+            "end_hz": 2000000000,
+            "minimum_db": 3,
+            "maximum_db": 7,
+            "sample_count": 2,
+            "state_counts": {
+              "finite": 2,
+              "zero": 0,
+              "singular": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 0,
+            "above_maximum_count": 0,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "lowest": {
+              "point": 1,
+              "frequency_hz": 2000000000,
+              "gain": 2.25,
+              "gain_db": 3.5218251811136247,
+              "state": "finite"
+            },
+            "highest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 4,
+              "gain_db": 6.020599913279624,
+              "state": "finite"
+            },
+            "reasons": [
+              "limits_met"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "gamma lower fail",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": 4.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "fail",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "fail",
+            "start_hz": 1000000000,
+            "end_hz": 2000000000,
+            "minimum_db": 4,
+            "sample_count": 2,
+            "state_counts": {
+              "finite": 2,
+              "zero": 0,
+              "singular": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 1,
+            "above_maximum_count": 0,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "lowest": {
+              "point": 1,
+              "frequency_hz": 2000000000,
+              "gain": 2.25,
+              "gain_db": 3.5218251811136247,
+              "state": "finite"
+            },
+            "highest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 4,
+              "gain_db": 6.020599913279624,
+              "state": "finite"
+            },
+            "reasons": [
+              "below_minimum"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "gamma upper fail",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "maximum_db": 6.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "fail",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "fail",
+            "start_hz": 1000000000,
+            "end_hz": 2000000000,
+            "maximum_db": 6,
+            "sample_count": 2,
+            "state_counts": {
+              "finite": 2,
+              "zero": 0,
+              "singular": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 0,
+            "above_maximum_count": 1,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "lowest": {
+              "point": 1,
+              "frequency_hz": 2000000000,
+              "gain": 2.25,
+              "gain_db": 3.5218251811136247,
+              "state": "finite"
+            },
+            "highest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 4,
+              "gain_db": 6.020599913279624,
+              "state": "finite"
+            },
+            "reasons": [
+              "above_maximum"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "both bounds fail",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": 4.0,
+          "maximum_db": 6.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "fail",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "fail",
+            "start_hz": 1000000000,
+            "end_hz": 2000000000,
+            "minimum_db": 4,
+            "maximum_db": 6,
+            "sample_count": 2,
+            "state_counts": {
+              "finite": 2,
+              "zero": 0,
+              "singular": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 1,
+            "above_maximum_count": 1,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "lowest": {
+              "point": 1,
+              "frequency_hz": 2000000000,
+              "gain": 2.25,
+              "gain_db": 3.5218251811136247,
+              "state": "finite"
+            },
+            "highest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 4,
+              "gain_db": 6.020599913279624,
+              "state": "finite"
+            },
+            "reasons": [
+              "below_minimum",
+              "above_maximum"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "point interval",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 1000000000.0,
+          "minimum_db": 0.0,
+          "maximum_db": 7.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "pass",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "pass",
+            "start_hz": 1000000000,
+            "end_hz": 1000000000,
+            "minimum_db": 0,
+            "maximum_db": 7,
+            "sample_count": 1,
+            "state_counts": {
+              "finite": 1,
+              "zero": 0,
+              "singular": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 0,
+            "above_maximum_count": 0,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "lowest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 4,
+              "gain_db": 6.020599913279624,
+              "state": "finite"
+            },
+            "highest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 4,
+              "gain_db": 6.020599913279624,
+              "state": "finite"
+            },
+            "reasons": [
+              "limits_met"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "empty interior",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1400000000.0,
+          "end_hz": 1600000000.0,
+          "minimum_db": 0.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "inconclusive",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "inconclusive",
+            "start_hz": 1400000000,
+            "end_hz": 1600000000,
+            "minimum_db": 0,
+            "sample_count": 0,
+            "state_counts": {
+              "finite": 0,
+              "zero": 0,
+              "singular": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 0,
+            "above_maximum_count": 0,
+            "range_covered": true,
+            "start_sampled": false,
+            "end_sampled": false,
+            "reasons": [
+              "no_samples"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "partial range",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 500000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": 3.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "inconclusive",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "inconclusive",
+            "start_hz": 500000000,
+            "end_hz": 2000000000,
+            "minimum_db": 3,
+            "sample_count": 2,
+            "state_counts": {
+              "finite": 2,
+              "zero": 0,
+              "singular": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 0,
+            "above_maximum_count": 0,
+            "range_covered": false,
+            "start_sampled": false,
+            "end_sampled": true,
+            "lowest": {
+              "point": 1,
+              "frequency_hz": 2000000000,
+              "gain": 2.25,
+              "gain_db": 3.5218251811136247,
+              "state": "finite"
+            },
+            "highest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 4,
+              "gain_db": 6.020599913279624,
+              "state": "finite"
+            },
+            "reasons": [
+              "incomplete_range"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "known fail beats coverage",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 500000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": 4.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "fail",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "fail",
+            "start_hz": 500000000,
+            "end_hz": 2000000000,
+            "minimum_db": 4,
+            "sample_count": 2,
+            "state_counts": {
+              "finite": 2,
+              "zero": 0,
+              "singular": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 1,
+            "above_maximum_count": 0,
+            "range_covered": false,
+            "start_sampled": false,
+            "end_sampled": true,
+            "lowest": {
+              "point": 1,
+              "frequency_hz": 2000000000,
+              "gain": 2.25,
+              "gain_db": 3.5218251811136247,
+              "state": "finite"
+            },
+            "highest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 4,
+              "gain_db": 6.020599913279624,
+              "state": "finite"
+            },
+            "reasons": [
+              "below_minimum",
+              "incomplete_range"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "outside range",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 3000000000.0,
+          "end_hz": 4000000000.0,
+          "minimum_db": 0.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "inconclusive",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "inconclusive",
+            "start_hz": 3000000000,
+            "end_hz": 4000000000,
+            "minimum_db": 0,
+            "sample_count": 0,
+            "state_counts": {
+              "finite": 0,
+              "zero": 0,
+              "singular": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 0,
+            "above_maximum_count": 0,
+            "range_covered": false,
+            "start_sampled": false,
+            "end_sampled": false,
+            "reasons": [
+              "incomplete_range",
+              "no_samples"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "ohm pass",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "terminal_mode": "impedance",
+          "source_ohms": [
+            100.0,
+            20.0
+          ],
+          "load_ohms": [
+            25.0,
+            -10.0
+          ],
+          "minimum_db": 3.0,
+          "maximum_db": 7.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "pass",
+          "terminal_mode": "impedance",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source_ohms": [
+              100,
+              20
+            ],
+            "load_ohms": [
+              25,
+              -10
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "pass",
+            "start_hz": 1000000000,
+            "end_hz": 2000000000,
+            "minimum_db": 3,
+            "maximum_db": 7,
+            "sample_count": 2,
+            "state_counts": {
+              "finite": 2,
+              "zero": 0,
+              "singular": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 0,
+            "above_maximum_count": 0,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "lowest": {
+              "point": 1,
+              "frequency_hz": 2000000000,
+              "gain": 2.1806456499737945,
+              "gain_db": 3.3858509943292328,
+              "state": "finite"
+            },
+            "highest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 4.070696145688784,
+              "gain_db": 6.0966868597663435,
+              "state": "finite"
+            },
+            "reasons": [
+              "limits_met"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "ohm fail",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "terminal_mode": "impedance",
+          "source_ohms": [
+            100.0,
+            20.0
+          ],
+          "load_ohms": [
+            25.0,
+            -10.0
+          ],
+          "minimum_db": 4.0,
+          "maximum_db": 7.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "fail",
+          "terminal_mode": "impedance",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source_ohms": [
+              100,
+              20
+            ],
+            "load_ohms": [
+              25,
+              -10
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "fail",
+            "start_hz": 1000000000,
+            "end_hz": 2000000000,
+            "minimum_db": 4,
+            "maximum_db": 7,
+            "sample_count": 2,
+            "state_counts": {
+              "finite": 2,
+              "zero": 0,
+              "singular": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 1,
+            "above_maximum_count": 0,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "lowest": {
+              "point": 1,
+              "frequency_hz": 2000000000,
+              "gain": 2.1806456499737945,
+              "gain_db": 3.3858509943292328,
+              "state": "finite"
+            },
+            "highest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 4.070696145688784,
+              "gain_db": 6.0966868597663435,
+              "state": "finite"
+            },
+            "reasons": [
+              "below_minimum"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "zero below finite lower",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 5\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 0 0 0 0\n2000000000.0 0 0 0 0 9.9999999999999998e-201 0 0 0\n3000000000.0 0 0 0 0 1 0 0 0\n4000000000.0 0 0 0 0 2 0 0 0\n5000000000.0 0 0 0 0 9.9999999999999997e+199 0 0 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 5000000000.0,
+          "minimum_db": -5000.0,
+          "maximum_db": 5000.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "fail",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "fail",
+            "start_hz": 1000000000,
+            "end_hz": 5000000000,
+            "minimum_db": -5000,
+            "maximum_db": 5000,
+            "sample_count": 5,
+            "state_counts": {
+              "finite": 2,
+              "zero": 1,
+              "singular": 0,
+              "overflow": 1,
+              "underflow": 1
+            },
+            "below_minimum_count": 1,
+            "above_maximum_count": 0,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "lowest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 0,
+              "state": "zero"
+            },
+            "highest": {
+              "point": 4,
+              "frequency_hz": 5000000000,
+              "gain_db": 4000,
+              "state": "overflow"
+            },
+            "reasons": [
+              "below_minimum"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "positive extremes known",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 5\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 0 0 0 0\n2000000000.0 0 0 0 0 9.9999999999999998e-201 0 0 0\n3000000000.0 0 0 0 0 1 0 0 0\n4000000000.0 0 0 0 0 2 0 0 0\n5000000000.0 0 0 0 0 9.9999999999999997e+199 0 0 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 2000000000.0,
+          "end_hz": 5000000000.0,
+          "minimum_db": -5000.0,
+          "maximum_db": 5000.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "pass",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "pass",
+            "start_hz": 2000000000,
+            "end_hz": 5000000000,
+            "minimum_db": -5000,
+            "maximum_db": 5000,
+            "sample_count": 4,
+            "state_counts": {
+              "finite": 2,
+              "zero": 0,
+              "singular": 0,
+              "overflow": 1,
+              "underflow": 1
+            },
+            "below_minimum_count": 0,
+            "above_maximum_count": 0,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "lowest": {
+              "point": 1,
+              "frequency_hz": 2000000000,
+              "gain": 0,
+              "gain_db": -4000,
+              "state": "underflow"
+            },
+            "highest": {
+              "point": 4,
+              "frequency_hz": 5000000000,
+              "gain_db": 4000,
+              "state": "overflow"
+            },
+            "reasons": [
+              "limits_met"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "zero meets upper",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 5\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 0 0 0 0\n2000000000.0 0 0 0 0 9.9999999999999998e-201 0 0 0\n3000000000.0 0 0 0 0 1 0 0 0\n4000000000.0 0 0 0 0 2 0 0 0\n5000000000.0 0 0 0 0 9.9999999999999997e+199 0 0 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 1000000000.0,
+          "maximum_db": -5000.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "pass",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "pass",
+            "start_hz": 1000000000,
+            "end_hz": 1000000000,
+            "maximum_db": -5000,
+            "sample_count": 1,
+            "state_counts": {
+              "finite": 0,
+              "zero": 1,
+              "singular": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 0,
+            "above_maximum_count": 0,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "lowest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 0,
+              "state": "zero"
+            },
+            "highest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 0,
+              "state": "zero"
+            },
+            "reasons": [
+              "limits_met"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "zero fails lower",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 5\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 0 0 0 0\n2000000000.0 0 0 0 0 9.9999999999999998e-201 0 0 0\n3000000000.0 0 0 0 0 1 0 0 0\n4000000000.0 0 0 0 0 2 0 0 0\n5000000000.0 0 0 0 0 9.9999999999999997e+199 0 0 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 1000000000.0,
+          "minimum_db": -5000.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "fail",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "fail",
+            "start_hz": 1000000000,
+            "end_hz": 1000000000,
+            "minimum_db": -5000,
+            "sample_count": 1,
+            "state_counts": {
+              "finite": 0,
+              "zero": 1,
+              "singular": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 1,
+            "above_maximum_count": 0,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "lowest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 0,
+              "state": "zero"
+            },
+            "highest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 0,
+              "state": "zero"
+            },
+            "reasons": [
+              "below_minimum"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "overflow exceeds upper",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 5\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 0 0 0 0\n2000000000.0 0 0 0 0 9.9999999999999998e-201 0 0 0\n3000000000.0 0 0 0 0 1 0 0 0\n4000000000.0 0 0 0 0 2 0 0 0\n5000000000.0 0 0 0 0 9.9999999999999997e+199 0 0 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 5000000000.0,
+          "end_hz": 5000000000.0,
+          "maximum_db": 3000.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "fail",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "fail",
+            "start_hz": 5000000000,
+            "end_hz": 5000000000,
+            "maximum_db": 3000,
+            "sample_count": 1,
+            "state_counts": {
+              "finite": 0,
+              "zero": 0,
+              "singular": 0,
+              "overflow": 1,
+              "underflow": 0
+            },
+            "below_minimum_count": 0,
+            "above_maximum_count": 1,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "lowest": {
+              "point": 4,
+              "frequency_hz": 5000000000,
+              "gain_db": 4000,
+              "state": "overflow"
+            },
+            "highest": {
+              "point": 4,
+              "frequency_hz": 5000000000,
+              "gain_db": 4000,
+              "state": "overflow"
+            },
+            "reasons": [
+              "above_maximum"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "singular unknown",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 3\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n2000000000.0 2 0 0 0 1 0 0 0\n3000000000.0 0 0 0 0 2 0 0 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 3000000000.0,
+          "minimum_db": -2.0,
+          "source": [
+            0.5,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "inconclusive",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0.5,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "inconclusive",
+            "start_hz": 1000000000,
+            "end_hz": 3000000000,
+            "minimum_db": -2,
+            "sample_count": 3,
+            "state_counts": {
+              "finite": 2,
+              "zero": 0,
+              "singular": 1,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 0,
+            "above_maximum_count": 0,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "lowest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 0.75,
+              "gain_db": -1.2493873660829993,
+              "state": "finite"
+            },
+            "highest": {
+              "point": 2,
+              "frequency_hz": 3000000000,
+              "gain": 3,
+              "gain_db": 4.771212547196625,
+              "state": "finite"
+            },
+            "reasons": [
+              "singular_samples"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "known fail beats singular",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 3\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n2000000000.0 2 0 0 0 1 0 0 0\n3000000000.0 0 0 0 0 2 0 0 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 3000000000.0,
+          "minimum_db": 0.0,
+          "source": [
+            0.5,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "fail",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0.5,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "fail",
+            "start_hz": 1000000000,
+            "end_hz": 3000000000,
+            "minimum_db": 0,
+            "sample_count": 3,
+            "state_counts": {
+              "finite": 2,
+              "zero": 0,
+              "singular": 1,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 1,
+            "above_maximum_count": 0,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "lowest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 0.75,
+              "gain_db": -1.2493873660829993,
+              "state": "finite"
+            },
+            "highest": {
+              "point": 2,
+              "frequency_hz": 3000000000,
+              "gain": 3,
+              "gain_db": 4.771212547196625,
+              "state": "finite"
+            },
+            "reasons": [
+              "below_minimum",
+              "singular_samples"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "only singular",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 3\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n2000000000.0 2 0 0 0 1 0 0 0\n3000000000.0 0 0 0 0 2 0 0 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 2000000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": -2.0,
+          "source": [
+            0.5,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "inconclusive",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0.5,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "inconclusive",
+            "start_hz": 2000000000,
+            "end_hz": 2000000000,
+            "minimum_db": -2,
+            "sample_count": 1,
+            "state_counts": {
+              "finite": 0,
+              "zero": 0,
+              "singular": 1,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 0,
+            "above_maximum_count": 0,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "reasons": [
+              "singular_samples"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "ohm singular unknown",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 3\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n2000000000.0 2 0 0 0 1 0 0 0\n3000000000.0 0 0 0 0 2 0 0 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 3000000000.0,
+          "minimum_db": -2.0,
+          "terminal_mode": "impedance",
+          "source_ohms": [
+            150.0,
+            0.0
+          ],
+          "load_ohms": [
+            50.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "inconclusive",
+          "terminal_mode": "impedance",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source_ohms": [
+              150,
+              0
+            ],
+            "load_ohms": [
+              50,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "inconclusive",
+            "start_hz": 1000000000,
+            "end_hz": 3000000000,
+            "minimum_db": -2,
+            "sample_count": 3,
+            "state_counts": {
+              "finite": 2,
+              "zero": 0,
+              "singular": 1,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 0,
+            "above_maximum_count": 0,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "lowest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 0.75,
+              "gain_db": -1.2493873660829993,
+              "state": "finite"
+            },
+            "highest": {
+              "point": 2,
+              "frequency_hz": 3000000000,
+              "gain": 3,
+              "gain_db": 4.771212547196625,
+              "state": "finite"
+            },
+            "reasons": [
+              "singular_samples"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "inclusive ties",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 3\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n2000000000.0 0 0 0 0 1 0 0 0\n3000000000.0 0 0 0 0 2 0 0 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": 0.0,
+          "maximum_db": 0.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "pass",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "pass",
+            "start_hz": 1000000000,
+            "end_hz": 2000000000,
+            "minimum_db": 0,
+            "maximum_db": 0,
+            "sample_count": 2,
+            "state_counts": {
+              "finite": 2,
+              "zero": 0,
+              "singular": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 0,
+            "above_maximum_count": 0,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "lowest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 1,
+              "gain_db": 0,
+              "state": "finite"
+            },
+            "highest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 1,
+              "gain_db": 0,
+              "state": "finite"
+            },
+            "reasons": [
+              "limits_met"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "single interior sample",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 3\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n2000000000.0 0 0 0 0 1 0 0 0\n3000000000.0 0 0 0 0 2 0 0 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1250000000.0,
+          "end_hz": 2750000000.0,
+          "minimum_db": -1.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "pass",
+          "terminal_mode": "gamma",
+          "reference_ohms": [
+            50,
+            50
+          ],
+          "matching": {
+            "source": [
+              0,
+              0
+            ],
+            "load": [
+              0,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "pass",
+            "start_hz": 1250000000,
+            "end_hz": 2750000000,
+            "minimum_db": -1,
+            "sample_count": 1,
+            "state_counts": {
+              "finite": 1,
+              "zero": 0,
+              "singular": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 0,
+            "above_maximum_count": 0,
+            "range_covered": true,
+            "start_sampled": false,
+            "end_sampled": false,
+            "lowest": {
+              "point": 1,
+              "frequency_hz": 2000000000,
+              "gain": 1,
+              "gain_db": 0,
+              "state": "finite"
+            },
+            "highest": {
+              "point": 1,
+              "frequency_hz": 2000000000,
+              "gain": 1,
+              "gain_db": 0,
+              "state": "finite"
+            },
+            "reasons": [
+              "limits_met"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "unequal reference match",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 75.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "terminal_mode": "impedance",
+          "source_ohms": [
+            50.0,
+            0.0
+          ],
+          "load_ohms": [
+            75.0,
+            0.0
+          ],
+          "minimum_db": 3.0,
+          "maximum_db": 7.0
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "status": "pass",
+          "terminal_mode": "impedance",
+          "reference_ohms": [
+            50,
+            75
+          ],
+          "matching": {
+            "source_ohms": [
+              50,
+              0
+            ],
+            "load_ohms": [
+              75,
+              0
+            ]
+          },
+          "report": {
+            "scope": "sampled_points_only",
+            "status": "pass",
+            "start_hz": 1000000000,
+            "end_hz": 2000000000,
+            "minimum_db": 3,
+            "maximum_db": 7,
+            "sample_count": 2,
+            "state_counts": {
+              "finite": 2,
+              "zero": 0,
+              "singular": 0,
+              "overflow": 0,
+              "underflow": 0
+            },
+            "below_minimum_count": 0,
+            "above_maximum_count": 0,
+            "range_covered": true,
+            "start_sampled": true,
+            "end_sampled": true,
+            "lowest": {
+              "point": 1,
+              "frequency_hz": 2000000000,
+              "gain": 2.25,
+              "gain_db": 3.521825181113625,
+              "state": "finite"
+            },
+            "highest": {
+              "point": 0,
+              "frequency_hz": 1000000000,
+              "gain": 4,
+              "gain_db": 6.020599913279623,
+              "state": "finite"
+            },
+            "reasons": [
+              "limits_met"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "invalid 0",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"gain check requires a dB bound\")"
+      }
+    },
+    {
+      "label": "invalid 1",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "end_hz": 2000000000.0,
+          "minimum_db": 3.0
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"missing option: start_hz\")"
+      }
+    },
+    {
+      "label": "invalid 2",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 0.0,
+          "minimum_db": 3.0
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"gain band requires finite 0<=start_hz<=end_hz\")"
+      }
+    },
+    {
+      "label": "invalid 3",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": -1.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": 3.0
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"gain band requires finite 0<=start_hz<=end_hz\")"
+      }
+    },
+    {
+      "label": "invalid 4",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": null
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "JsonDecodeError((Root, \"Double::from_json: expected number\"))"
+      }
+    },
+    {
+      "label": "invalid 5",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": 8.0,
+          "maximum_db": 7.0
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"gain minimum exceeds maximum\")"
+      }
+    },
+    {
+      "label": "invalid 6",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "min_db": 3.0
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"unknown gain check option: min_db\")"
+      }
+    },
+    {
+      "label": "invalid 7",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": 3.0,
+          "terminal_mode": "ohm"
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"terminal_mode must be gamma or impedance\")"
+      }
+    },
+    {
+      "label": "invalid 8",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": 3.0,
+          "source_ohms": [
+            50.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"unknown gain check option: source_ohms\")"
+      }
+    },
+    {
+      "label": "invalid 9",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": 3.0,
+          "terminal_mode": "impedance",
+          "source_ohms": [
+            50.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"missing option: load_ohms\")"
+      }
+    },
+    {
+      "label": "invalid 10",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": 3.0,
+          "terminal_mode": "impedance",
+          "source_ohms": [
+            100.0,
+            20.0
+          ],
+          "load_ohms": [
+            25.0,
+            -10.0
+          ],
+          "source": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"unknown gain check option: source\")"
+      }
+    },
+    {
+      "label": "invalid 11",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": 3.0,
+          "source": [
+            1.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"transducer gain requires |source|<1 and |load|<=1\")"
+      }
+    },
+    {
+      "label": "invalid 12",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": 3.0,
+          "terminal_mode": "impedance",
+          "source_ohms": [
+            0.0,
+            0.0
+          ],
+          "load_ohms": [
+            25.0,
+            -10.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"impedance gain requires Re(source)>0 and Re(load)>=0 ohm\")"
+      }
+    },
+    {
+      "label": "invalid 13",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": 3.0,
+          "left_file": "ignored.json"
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"unknown gain check option: left_file\")"
+      }
+    },
+    {
+      "label": "invalid 14",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": 3.0,
+          "ports": 0.5
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"ports must be an exact Int32 integer\")"
+      }
+    },
+    {
+      "label": "invalid 15",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 2\n[Reference] 50.0 50.0\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n2000000000.0 0.20000000000000001 0 0.10000000000000001 0 1.5 0 -0.20000000000000001 0\n[End]\n",
+        "options": {
+          "command": "gain-check",
+          "start_hz": 1000000000.0,
+          "end_hz": 2000000000.0,
+          "minimum_db": "3"
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "JsonDecodeError((Root, \"Double::from_json: expected number\"))"
+      }
+    }
+  ],
+  "fileConsumers": [
+    {
+      "label": "file pass",
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "gain-check",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\gain-check-gamma.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "file saved fail",
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "gain-check",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\gain-check-ohms.json",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-11-max-20261028\\independent-first-cli-fail.json"
+      ],
+      "exitCode": 3,
+      "expectedExitCode": 3,
+      "stderr": "",
+      "savedReportSHA256": "85929219ee985d5c065243e5b64f7e8d028e1570a60df842528a9cf2a4d814f7"
+    },
+    {
+      "label": "file incomplete",
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "gain-check",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 3000000000.0, \"minimum_db\": 3.0}"
+      ],
+      "exitCode": 4,
+      "expectedExitCode": 4,
+      "stderr": ""
+    },
+    {
+      "label": "file invalid bound",
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "gain-check",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"min_db\": 3.0}"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"unknown gain check option: min_db\")\n"
+    },
+    {
+      "label": "file mixed units",
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "gain-check",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"start_hz\": 1000000000.0, \"end_hz\": 2000000000.0, \"terminal_mode\": \"impedance\", \"source_ohms\": [100.0, 20.0], \"load_ohms\": [25.0, -10.0], \"minimum_db\": 3.0, \"source\": [0.0, 0.0]}"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"unknown gain check option: source\")\n"
+    },
+    {
+      "label": "NXP aggregate report",
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "gain-check",
+        "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027\\BFU530W_03V3_001mA_SP.s2p",
+        "{\"start_hz\": 40000000.0, \"end_hz\": 6000000000.0, \"minimum_db\": 2.0, \"maximum_db\": 30.0}"
+      ],
+      "exitCode": 3,
+      "expectedExitCode": 3,
+      "stderr": ""
+    }
+  ],
+  "vendor": {
+    "sha256": "d4a56bc6b099544c63ddbe25e9a1366935daf1a76bf0e47b0b269bb600ff2a95",
+    "bytes": 9544,
+    "referenceSamplesClassified": 98,
+    "individualGTComparisons": 0,
+    "skrfVersion": "2.1.0",
+    "numpyVersion": "2.5.3",
+    "policy": "Only aggregate report, counts and two extrema retained; no original model, S matrix or full GT export."
+  },
+  "oracle": "Exact Fraction four-wave power with Decimal160 dB; declarative masks/builtin extrema and hand-pinned status table; NumPy98-sample aggregate NXP reference only",
+  "sourceSHA256": {
+    "gain_band.mbt": "ff2e678edfb400fbae34643fede9f735aa6fccb84a232ddcbe70e98d8d0453a3",
+    "gain_band_test.mbt": "97b220c9b9ebfb304568672ec536f93119af2ff6ea9aed2cdf732cd475c9c649",
+    "gain.mbt": "f0ab0b6522ba1a372d3c2ede72b0d76f6e655e0cfb1f8e42af1ce27781e5284a",
+    "gain_impedance.mbt": "70166a5f530805e1ca1b7b74ba096d00e4f9512b5e741e06d3c9a55ca317f662",
+    "cmd/bridge/main.mbt": "12c5ad46d83c0c72be00c4a7e0bbb002e3383114ad523f6787dd6251ac6ab25f",
+    "tools/touchstone.mjs": "f4bd2734b697af1e80b752b13f3c6a4278470f5544fa1f3ae3583a5c9856eef5",
+    "tools/verify-gain-check.py": "5ae4f39bc59f9c846626a5cecaa7a16207a9a9ce0ada033907b8e188a0979540",
+    "examples/gain-check-gamma.json": "654dd7d7064c6becbd8a8c48ee5dc30a3ae6d682e978774d3fd3c0fff5e79960",
+    "examples/gain-check-ohms.json": "2fb058c6c368f017ae20d5cdfa0d78d661d351cce6a073f436608c21d5c667b3",
+    "examples/gain_check/main.mbt": "197ef066e227399fa3d0e5788eb56fb098b031e189ff5c8447a7c9d108ac98de",
+    "examples/gain_check/moon.pkg": "35982d8af91d30473fb1a09057fd5dd0d165d452a136fb938db53bfe04a4f7d0"
+  }
+}

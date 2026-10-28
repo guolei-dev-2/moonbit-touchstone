@@ -1,0 +1,2338 @@
+{
+  "complete": true,
+  "failure": null,
+  "requests": 70,
+  "checks": [
+    {
+      "label": "Fraction legacy S input (-1074, 1022)",
+      "values": 8
+    },
+    {
+      "label": "Fraction independent legacy S output (-1074, 1022)",
+      "values": 8
+    },
+    {
+      "label": "Fraction legacy Y input (-1074, 1022)",
+      "values": 8
+    },
+    {
+      "label": "Fraction independent legacy Y output (-1074, 1022)",
+      "values": 8
+    },
+    {
+      "label": "Fraction legacy Z input (-1074, 1022)",
+      "values": 8
+    },
+    {
+      "label": "Fraction independent legacy Z output (-1074, 1022)",
+      "values": 8
+    },
+    {
+      "label": "Fraction legacy H input (-1074, 1022)",
+      "values": 8
+    },
+    {
+      "label": "Fraction independent legacy H output (-1074, 1022)",
+      "values": 8
+    },
+    {
+      "label": "Fraction legacy G input (-1074, 1022)",
+      "values": 8
+    },
+    {
+      "label": "Fraction independent legacy G output (-1074, 1022)",
+      "values": 8
+    },
+    {
+      "label": "Fraction legacy S input (1000, -1000)",
+      "values": 8
+    },
+    {
+      "label": "Fraction independent legacy S output (1000, -1000)",
+      "values": 8
+    },
+    {
+      "label": "Fraction legacy Y input (1000, -1000)",
+      "values": 8
+    },
+    {
+      "label": "Fraction independent legacy Y output (1000, -1000)",
+      "values": 8
+    },
+    {
+      "label": "Fraction legacy Z input (1000, -1000)",
+      "values": 8
+    },
+    {
+      "label": "Fraction independent legacy Z output (1000, -1000)",
+      "values": 8
+    },
+    {
+      "label": "Fraction legacy H input (1000, -1000)",
+      "values": 8
+    },
+    {
+      "label": "Fraction independent legacy H output (1000, -1000)",
+      "values": 8
+    },
+    {
+      "label": "Fraction legacy G input (1000, -1000)",
+      "values": 8
+    },
+    {
+      "label": "Fraction independent legacy G output (1000, -1000)",
+      "values": 8
+    },
+    {
+      "label": "Fraction legacy S input (2, 4)",
+      "values": 8
+    },
+    {
+      "label": "Fraction independent legacy S output (2, 4)",
+      "values": 8
+    },
+    {
+      "label": "Fraction legacy Y input (2, 4)",
+      "values": 8
+    },
+    {
+      "label": "Fraction independent legacy Y output (2, 4)",
+      "values": 8
+    },
+    {
+      "label": "Fraction legacy Z input (2, 4)",
+      "values": 8
+    },
+    {
+      "label": "Fraction independent legacy Z output (2, 4)",
+      "values": 8
+    },
+    {
+      "label": "Fraction legacy H input (2, 4)",
+      "values": 8
+    },
+    {
+      "label": "Fraction independent legacy H output (2, 4)",
+      "values": 8
+    },
+    {
+      "label": "Fraction legacy G input (2, 4)",
+      "values": 8
+    },
+    {
+      "label": "Fraction independent legacy G output (2, 4)",
+      "values": 8
+    },
+    {
+      "label": "exact degree period MA v1",
+      "values": 2
+    },
+    {
+      "label": "exact degree period MA v2",
+      "values": 2
+    },
+    {
+      "label": "exact degree period DB v1",
+      "values": 2
+    },
+    {
+      "label": "exact degree period DB v2",
+      "values": 2
+    },
+    {
+      "label": "exact degree period MA v1",
+      "values": 2
+    },
+    {
+      "label": "exact degree period MA v2",
+      "values": 2
+    },
+    {
+      "label": "exact degree period DB v1",
+      "values": 2
+    },
+    {
+      "label": "exact degree period DB v2",
+      "values": 2
+    },
+    {
+      "label": "exact degree period MA v1",
+      "values": 2
+    },
+    {
+      "label": "exact degree period MA v2",
+      "values": 2
+    },
+    {
+      "label": "exact degree period DB v1",
+      "values": 2
+    },
+    {
+      "label": "exact degree period DB v2",
+      "values": 2
+    },
+    {
+      "label": "exact degree period MA v1",
+      "values": 2
+    },
+    {
+      "label": "exact degree period MA v2",
+      "values": 2
+    },
+    {
+      "label": "exact degree period DB v1",
+      "values": 2
+    },
+    {
+      "label": "exact degree period DB v2",
+      "values": 2
+    },
+    {
+      "label": "exact degree period MA v1",
+      "values": 2
+    },
+    {
+      "label": "exact degree period MA v2",
+      "values": 2
+    },
+    {
+      "label": "exact degree period DB v1",
+      "values": 2
+    },
+    {
+      "label": "exact degree period DB v2",
+      "values": 2
+    },
+    {
+      "label": "exact degree period MA v1",
+      "values": 2
+    },
+    {
+      "label": "exact degree period MA v2",
+      "values": 2
+    },
+    {
+      "label": "exact degree period DB v1",
+      "values": 2
+    },
+    {
+      "label": "exact degree period DB v2",
+      "values": 2
+    },
+    {
+      "label": "exact degree period MA v1",
+      "values": 2
+    },
+    {
+      "label": "exact degree period MA v2",
+      "values": 2
+    },
+    {
+      "label": "exact degree period DB v1",
+      "values": 2
+    },
+    {
+      "label": "exact degree period DB v2",
+      "values": 2
+    },
+    {
+      "label": "exact degree period MA v1",
+      "values": 2
+    },
+    {
+      "label": "exact degree period MA v2",
+      "values": 2
+    },
+    {
+      "label": "exact degree period DB v1",
+      "values": 2
+    },
+    {
+      "label": "exact degree period DB v2",
+      "values": 2
+    },
+    {
+      "label": "noise Gamma degrees and metadata",
+      "values": 2
+    },
+    {
+      "label": "noise Gamma degrees and metadata",
+      "values": 2
+    },
+    {
+      "label": "nonuniform group-delay secants",
+      "values": 3
+    },
+    {
+      "label": "nonuniform group-delay secants",
+      "values": 3
+    }
+  ],
+  "raw": [
+    {
+      "query": {
+        "text": "# Hz S RI R 4.9406564584124654e-324 4.4942328371557898e+307\n1 0.75 -0.25 0.75 -0.25 0.75 -0.25 0.75 -0.25\n",
+        "options": {
+          "command": "dump",
+          "ports": 2
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 2,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            5e-324,
+            4.49423283715579e+307
+          ],
+          "values": [
+            [
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 4.9406564584124654e-324\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 4.9406564584124654e-324 4.4942328371557898e+307\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.75 -0.25 0.75 -0.25 0.75 -0.25 0.75 -0.25\n[End]\n",
+        "options": {
+          "command": "legacy",
+          "format": "RI"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "# HZ S RI R 5e-324 4.49423283715579e+307\n1 0.75 -0.25 0.75 -0.25 0.75 -0.25 0.75 -0.25\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz Y RI R 4.9406564584124654e-324 4.4942328371557898e+307\n1 4.9406564584124654e-324 -0 1.1175870895385742e-08 -3.7252902984619141e-09 1.1175870895385742e-08 -3.7252902984619141e-09 8.0363145538970049e+300 -2.6787715179656683e+300\n",
+        "options": {
+          "command": "dump",
+          "ports": 2
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 2,
+          "parameter": "Y",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            5e-324,
+            4.49423283715579e+307
+          ],
+          "values": [
+            [
+              {
+                "re": 1,
+                "im": 0
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 1.7881393432617188e-07,
+                "im": -5.960464477539063e-08
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz Y RI R 4.9406564584124654e-324\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 4.9406564584124654e-324 4.4942328371557898e+307\n[Two-Port Data Order] 12_21\n[Network Data]\n1 1 0 0.75 -0.25 0.75 -0.25 1.7881393432617188e-07 -5.9604644775390625e-08\n[End]\n",
+        "options": {
+          "command": "legacy",
+          "format": "RI"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "# HZ Y RI R 5e-324 4.49423283715579e+307\n1 5e-324 0 1.1175870895385742e-8 -3.725290298461914e-9 1.1175870895385742e-8 -3.725290298461914e-9 8.036314553897005e+300 -2.6787715179656683e+300\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz Z RI R 4.9406564584124654e-324 4.4942328371557898e+307\n1 8.0363145538970049e+300 -2.6787715179656683e+300 50331648 -16777216 50331648 -16777216 1.668805393880401e-308 -5.5626846462680035e-309\n",
+        "options": {
+          "command": "dump",
+          "ports": 2
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 2,
+          "parameter": "Z",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            5e-324,
+            4.49423283715579e+307
+          ],
+          "values": [
+            [
+              {
+                "re": 3.970466940254533e-23,
+                "im": -1.3234889800848443e-23
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz Z RI R 4.9406564584124654e-324\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 4.9406564584124654e-324 4.4942328371557898e+307\n[Two-Port Data Order] 12_21\n[Network Data]\n1 3.9704669402545328e-23 -1.3234889800848443e-23 0.75 -0.25 0.75 -0.25 0.75 -0.25\n[End]\n",
+        "options": {
+          "command": "legacy",
+          "format": "RI"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "# HZ Z RI R 5e-324 4.49423283715579e+307\n1 8.036314553897005e+300 -2.6787715179656683e+300 50331648 -16777216 50331648 -16777216 1.668805393880401e-308 -5.562684646268003e-309\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz H RI R 4.9406564584124654e-324 4.4942328371557898e+307\n1 8.0363145538970049e+300 -2.6787715179656683e+300 8.0363145538970049e+300 -2.6787715179656683e+300 8.0363145538970049e+300 -2.6787715179656683e+300 8.0363145538970049e+300 -2.6787715179656683e+300\n",
+        "options": {
+          "command": "dump",
+          "ports": 2
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 2,
+          "parameter": "H",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            5e-324,
+            4.49423283715579e+307
+          ],
+          "values": [
+            [
+              {
+                "re": 3.970466940254533e-23,
+                "im": -1.3234889800848443e-23
+              },
+              {
+                "re": 2.6645352591003757e-15,
+                "im": -8.881784197001252e-16
+              },
+              {
+                "re": 2.6645352591003757e-15,
+                "im": -8.881784197001252e-16
+              },
+              {
+                "re": 1.7881393432617188e-07,
+                "im": -5.960464477539063e-08
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz H RI R 4.9406564584124654e-324\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 4.9406564584124654e-324 4.4942328371557898e+307\n[Two-Port Data Order] 12_21\n[Network Data]\n1 3.9704669402545328e-23 -1.3234889800848443e-23 2.6645352591003757e-15 -8.8817841970012523e-16 2.6645352591003757e-15 -8.8817841970012523e-16 1.7881393432617188e-07 -5.9604644775390625e-08\n[End]\n",
+        "options": {
+          "command": "legacy",
+          "format": "RI"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "# HZ H RI R 5e-324 4.49423283715579e+307\n1 8.036314553897005e+300 -2.6787715179656683e+300 8.036314553897005e+300 -2.6787715179656683e+300 8.036314553897005e+300 -2.6787715179656683e+300 8.036314553897005e+300 -2.6787715179656683e+300\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz G RI R 4.9406564584124654e-324 4.4942328371557898e+307\n1 4.9406564584124654e-324 -0 2.4867138175374285e-316 -8.289046058458095e-317 2.4867138175374285e-316 -8.289046058458095e-317 1.668805393880401e-308 -5.5626846462680035e-309\n",
+        "options": {
+          "command": "dump",
+          "ports": 2
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 2,
+          "parameter": "G",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            5e-324,
+            4.49423283715579e+307
+          ],
+          "values": [
+            [
+              {
+                "re": 1,
+                "im": 0
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz G RI R 4.9406564584124654e-324\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 4.9406564584124654e-324 4.4942328371557898e+307\n[Two-Port Data Order] 12_21\n[Network Data]\n1 1 0 0.75 -0.25 0.75 -0.25 0.75 -0.25\n[End]\n",
+        "options": {
+          "command": "legacy",
+          "format": "RI"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "# HZ G RI R 5e-324 4.49423283715579e+307\n1 5e-324 0 2.4867138e-316 -8.289046e-317 2.4867138e-316 -8.289046e-317 1.668805393880401e-308 -5.562684646268003e-309\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S RI R 1.0715086071862673e+301 9.3326361850321888e-302\n1 0.75 -0.25 0.75 -0.25 0.75 -0.25 0.75 -0.25\n",
+        "options": {
+          "command": "dump",
+          "ports": 2
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 2,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            1.0715086071862673e+301,
+            9.332636185032189e-302
+          ],
+          "values": [
+            [
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 1.0715086071862673e+301\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 1.0715086071862673e+301 9.3326361850321888e-302\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.75 -0.25 0.75 -0.25 0.75 -0.25 0.75 -0.25\n[End]\n",
+        "options": {
+          "command": "legacy",
+          "format": "RI"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "# HZ S RI R 1.0715086071862673e+301 9.332636185032189e-302\n1 0.75 -0.25 0.75 -0.25 0.75 -0.25 0.75 -0.25\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz Y RI R 1.0715086071862673e+301 9.3326361850321888e-302\n1 8.0363145538970049e+300 -2.6787715179656683e+300 0.75 -0.25 0.75 -0.25 6.9994771387741416e-302 -2.3331590462580472e-302\n",
+        "options": {
+          "command": "dump",
+          "ports": 2
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 2,
+          "parameter": "Y",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            1.0715086071862673e+301,
+            9.332636185032189e-302
+          ],
+          "values": [
+            [
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz Y RI R 1.0715086071862673e+301\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 1.0715086071862673e+301 9.3326361850321888e-302\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.75 -0.25 0.75 -0.25 0.75 -0.25 0.75 -0.25\n[End]\n",
+        "options": {
+          "command": "legacy",
+          "format": "RI"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "# HZ Y RI R 1.0715086071862673e+301 9.332636185032189e-302\n1 8.036314553897005e+300 -2.6787715179656683e+300 0.75 -0.25 0.75 -0.25 6.999477138774142e-302 -2.3331590462580472e-302\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz Z RI R 1.0715086071862673e+301 9.3326361850321888e-302\n1 6.9994771387741416e-302 -2.3331590462580472e-302 0.75 -0.25 0.75 -0.25 8.0363145538970049e+300 -2.6787715179656683e+300\n",
+        "options": {
+          "command": "dump",
+          "ports": 2
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 2,
+          "parameter": "Z",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            1.0715086071862673e+301,
+            9.332636185032189e-302
+          ],
+          "values": [
+            [
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz Z RI R 1.0715086071862673e+301\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 1.0715086071862673e+301 9.3326361850321888e-302\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.75 -0.25 0.75 -0.25 0.75 -0.25 0.75 -0.25\n[End]\n",
+        "options": {
+          "command": "legacy",
+          "format": "RI"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "# HZ Z RI R 1.0715086071862673e+301 9.332636185032189e-302\n1 6.999477138774142e-302 -2.3331590462580472e-302 0.75 -0.25 0.75 -0.25 8.036314553897005e+300 -2.6787715179656683e+300\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz H RI R 1.0715086071862673e+301 9.3326361850321888e-302\n1 6.9994771387741416e-302 -2.3331590462580472e-302 6.9994771387741416e-302 -2.3331590462580472e-302 6.9994771387741416e-302 -2.3331590462580472e-302 6.9994771387741416e-302 -2.3331590462580472e-302\n",
+        "options": {
+          "command": "dump",
+          "ports": 2
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 2,
+          "parameter": "H",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            1.0715086071862673e+301,
+            9.332636185032189e-302
+          ],
+          "values": [
+            [
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz H RI R 1.0715086071862673e+301\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 1.0715086071862673e+301 9.3326361850321888e-302\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.75 -0.25 0.75 -0.25 0.75 -0.25 0.75 -0.25\n[End]\n",
+        "options": {
+          "command": "legacy",
+          "format": "RI"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "# HZ H RI R 1.0715086071862673e+301 9.332636185032189e-302\n1 6.999477138774142e-302 -2.3331590462580472e-302 6.999477138774142e-302 -2.3331590462580472e-302 6.999477138774142e-302 -2.3331590462580472e-302 6.999477138774142e-302 -2.3331590462580472e-302\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz G RI R 1.0715086071862673e+301 9.3326361850321888e-302\n1 8.0363145538970049e+300 -2.6787715179656683e+300 8.0363145538970049e+300 -2.6787715179656683e+300 8.0363145538970049e+300 -2.6787715179656683e+300 8.0363145538970049e+300 -2.6787715179656683e+300\n",
+        "options": {
+          "command": "dump",
+          "ports": 2
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 2,
+          "parameter": "G",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            1.0715086071862673e+301,
+            9.332636185032189e-302
+          ],
+          "values": [
+            [
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz G RI R 1.0715086071862673e+301\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 1.0715086071862673e+301 9.3326361850321888e-302\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.75 -0.25 0.75 -0.25 0.75 -0.25 0.75 -0.25\n[End]\n",
+        "options": {
+          "command": "legacy",
+          "format": "RI"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "# HZ G RI R 1.0715086071862673e+301 9.332636185032189e-302\n1 8.036314553897005e+300 -2.6787715179656683e+300 8.036314553897005e+300 -2.6787715179656683e+300 8.036314553897005e+300 -2.6787715179656683e+300 8.036314553897005e+300 -2.6787715179656683e+300\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S RI R 4 16\n1 0.75 -0.25 0.75 -0.25 0.75 -0.25 0.75 -0.25\n",
+        "options": {
+          "command": "dump",
+          "ports": 2
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 2,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            4,
+            16
+          ],
+          "values": [
+            [
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 4\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 4 16\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.75 -0.25 0.75 -0.25 0.75 -0.25 0.75 -0.25\n[End]\n",
+        "options": {
+          "command": "legacy",
+          "format": "RI"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "# HZ S RI R 4 16\n1 0.75 -0.25 0.75 -0.25 0.75 -0.25 0.75 -0.25\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz Y RI R 4 16\n1 3 -1 6 -2 6 -2 12 -4\n",
+        "options": {
+          "command": "dump",
+          "ports": 2
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 2,
+          "parameter": "Y",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            4,
+            16
+          ],
+          "values": [
+            [
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz Y RI R 4\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 4 16\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.75 -0.25 0.75 -0.25 0.75 -0.25 0.75 -0.25\n[End]\n",
+        "options": {
+          "command": "legacy",
+          "format": "RI"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "# HZ Y RI R 4 16\n1 3 -1 6 -2 6 -2 12 -4\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz Z RI R 4 16\n1 0.1875 -0.0625 0.09375 -0.03125 0.09375 -0.03125 0.046875 -0.015625\n",
+        "options": {
+          "command": "dump",
+          "ports": 2
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 2,
+          "parameter": "Z",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            4,
+            16
+          ],
+          "values": [
+            [
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz Z RI R 4\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 4 16\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.75 -0.25 0.75 -0.25 0.75 -0.25 0.75 -0.25\n[End]\n",
+        "options": {
+          "command": "legacy",
+          "format": "RI"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "# HZ Z RI R 4 16\n1 0.1875 -0.0625 0.09375 -0.03125 0.09375 -0.03125 0.046875 -0.015625\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz H RI R 4 16\n1 0.1875 -0.0625 1.5 -0.5 1.5 -0.5 12 -4\n",
+        "options": {
+          "command": "dump",
+          "ports": 2
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 2,
+          "parameter": "H",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            4,
+            16
+          ],
+          "values": [
+            [
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz H RI R 4\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 4 16\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.75 -0.25 0.75 -0.25 0.75 -0.25 0.75 -0.25\n[End]\n",
+        "options": {
+          "command": "legacy",
+          "format": "RI"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "# HZ H RI R 4 16\n1 0.1875 -0.0625 1.5 -0.5 1.5 -0.5 12 -4\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz G RI R 4 16\n1 3 -1 0.375 -0.125 0.375 -0.125 0.046875 -0.015625\n",
+        "options": {
+          "command": "dump",
+          "ports": 2
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 2,
+          "parameter": "G",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            4,
+            16
+          ],
+          "values": [
+            [
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              },
+              {
+                "re": 0.75,
+                "im": -0.25
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz G RI R 4\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 4 16\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0.75 -0.25 0.75 -0.25 0.75 -0.25 0.75 -0.25\n[End]\n",
+        "options": {
+          "command": "legacy",
+          "format": "RI"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "# HZ G RI R 4 16\n1 3 -1 0.375 -0.125 0.375 -0.125 0.046875 -0.015625\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz Z RI R 1e308\n1 1e308 0\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"non-finite complex result\")"
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz Y RI R 1e308\n[Number of Ports] 1\n[Number of Frequencies] 1\n[Network Data]\n1 1e308 0\n[End]\n",
+        "options": {
+          "command": "legacy"
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"non-finite complex result\")"
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S MA R 50\n1 0.75 3.6e+21\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.75,
+                "im": 0
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S MA R 50\n[Number of Ports] 1\n[Number of Frequencies] 1\n[Network Data]\n1 0.75 3.6e+21\n[End]\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.75,
+                "im": 0
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S DB R 50\n1 0 3.6e+21\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 1,
+                "im": 0
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S DB R 50\n[Number of Ports] 1\n[Number of Frequencies] 1\n[Network Data]\n1 0 3.6e+21\n[End]\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 1,
+                "im": 0
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S MA R 50\n1 0.75 -3.6e+21\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.75,
+                "im": 0
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S MA R 50\n[Number of Ports] 1\n[Number of Frequencies] 1\n[Network Data]\n1 0.75 -3.6e+21\n[End]\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.75,
+                "im": 0
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S DB R 50\n1 0 -3.6e+21\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 1,
+                "im": 0
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S DB R 50\n[Number of Ports] 1\n[Number of Frequencies] 1\n[Network Data]\n1 0 -3.6e+21\n[End]\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 1,
+                "im": 0
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S MA R 50\n1 0.75 1.2089258196146292e+24\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": -0.18144142169975083,
+                "im": -0.7277217947069974
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S MA R 50\n[Number of Ports] 1\n[Number of Frequencies] 1\n[Network Data]\n1 0.75 1.2089258196146292e+24\n[End]\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": -0.18144142169975083,
+                "im": -0.7277217947069974
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S DB R 50\n1 0 1.2089258196146292e+24\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": -0.24192189559966779,
+                "im": -0.9702957262759965
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S DB R 50\n[Number of Ports] 1\n[Number of Frequencies] 1\n[Network Data]\n1 0 1.2089258196146292e+24\n[End]\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": -0.24192189559966779,
+                "im": -0.9702957262759965
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S MA R 50\n1 0.75 1e+308\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.32877836009180805,
+                "im": -0.6740955347243753
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S MA R 50\n[Number of Ports] 1\n[Number of Frequencies] 1\n[Network Data]\n1 0.75 1e+308\n[End]\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.32877836009180805,
+                "im": -0.6740955347243753
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S DB R 50\n1 0 1e+308\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.4383711467890774,
+                "im": -0.898794046299167
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S DB R 50\n[Number of Ports] 1\n[Number of Frequencies] 1\n[Network Data]\n1 0 1e+308\n[End]\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.4383711467890774,
+                "im": -0.898794046299167
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S MA R 50\n1 0.75 -1e+308\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.32877836009180805,
+                "im": 0.6740955347243753
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S MA R 50\n[Number of Ports] 1\n[Number of Frequencies] 1\n[Network Data]\n1 0.75 -1e+308\n[End]\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.32877836009180805,
+                "im": 0.6740955347243753
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S DB R 50\n1 0 -1e+308\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.4383711467890774,
+                "im": 0.898794046299167
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S DB R 50\n[Number of Ports] 1\n[Number of Frequencies] 1\n[Network Data]\n1 0 -1e+308\n[End]\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.4383711467890774,
+                "im": 0.898794046299167
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S MA R 50\n1 0.75 720.25\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.7499928605405508,
+                "im": 0.0032724819635599283
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S MA R 50\n[Number of Ports] 1\n[Number of Frequencies] 1\n[Network Data]\n1 0.75 720.25\n[End]\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.7499928605405508,
+                "im": 0.0032724819635599283
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S DB R 50\n1 0 720.25\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.9999904807207345,
+                "im": 0.004363309284746571
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S DB R 50\n[Number of Ports] 1\n[Number of Frequencies] 1\n[Network Data]\n1 0 720.25\n[End]\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.9999904807207345,
+                "im": 0.004363309284746571
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S MA R 50\n1 0.75 -720.25\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.7499928605405508,
+                "im": -0.0032724819635599283
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S MA R 50\n[Number of Ports] 1\n[Number of Frequencies] 1\n[Network Data]\n1 0.75 -720.25\n[End]\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.7499928605405508,
+                "im": -0.0032724819635599283
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S DB R 50\n1 0 -720.25\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.9999904807207345,
+                "im": -0.004363309284746571
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S DB R 50\n[Number of Ports] 1\n[Number of Frequencies] 1\n[Network Data]\n1 0 -720.25\n[End]\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.9999904807207345,
+                "im": -0.004363309284746571
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S MA R 50\n1 0.75 45\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.5303300858899107,
+                "im": 0.5303300858899106
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S MA R 50\n[Number of Ports] 1\n[Number of Frequencies] 1\n[Network Data]\n1 0.75 45\n[End]\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.5303300858899107,
+                "im": 0.5303300858899106
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S DB R 50\n1 0 45\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.7071067811865476,
+                "im": 0.7071067811865475
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S DB R 50\n[Number of Ports] 1\n[Number of Frequencies] 1\n[Network Data]\n1 0 45\n[End]\n",
+        "options": {
+          "command": "dump",
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 1,
+          "parameter": "S",
+          "frequency_hz": [
+            1
+          ],
+          "reference_ohms": [
+            50
+          ],
+          "values": [
+            [
+              {
+                "re": 0.7071067811865476,
+                "im": 0.7071067811865475
+              }
+            ]
+          ],
+          "mixed_mode_order": []
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Two-Port Data Order] 12_21\n[Reference] 75 75\n[Number of Noise Frequencies] 1\n[Begin Information]\nfixture ! retained\n[End Information]\n[Network Data]\n10 0 0 .5 0 .5 0 0 0\n[Noise Data]\n1 0 .5 3.6e21 1\n[End]\n",
+        "options": {
+          "command": "normalize"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Two-Port Data Order] 12_21\n[Number of Frequencies] 1\n[Reference] 75 75\n[Matrix Format] Full\n[Number of Noise Frequencies] 1\n[Begin Information]\nfixture ! retained\n[End Information]\n[Network Data]\n10 0 0 0.5 0 0.5 0 0 0\n[Noise Data]\n1 0 0.5 0 1\n[End]\n"
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Two-Port Data Order] 12_21\n[Reference] 75 75\n[Number of Noise Frequencies] 1\n[Begin Information]\nfixture ! retained\n[End Information]\n[Network Data]\n10 0 0 .5 0 .5 0 0 0\n[Noise Data]\n1 0 .5 3.6e21 1\n[End]\n",
+        "options": {
+          "command": "inspect"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 2,
+          "parameter": "S",
+          "points": 1,
+          "frequency_hz": [
+            10
+          ],
+          "reference_ohms": [
+            75,
+            75
+          ],
+          "noise": [
+            {
+              "frequency_hz": 1,
+              "minimum_figure_db": 0,
+              "gamma_opt": {
+                "re": 0.5,
+                "im": 0
+              },
+              "resistance_ohms": 1
+            }
+          ],
+          "noise_reference_ohms": 50,
+          "mixed_mode_order": [],
+          "information": [
+            "fixture ! retained"
+          ]
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Two-Port Data Order] 12_21\n[Number of Frequencies] 1\n[Reference] 75 75\n[Matrix Format] Full\n[Number of Noise Frequencies] 1\n[Begin Information]\nfixture ! retained\n[End Information]\n[Network Data]\n10 0 0 0.5 0 0.5 0 0 0\n[Noise Data]\n1 0 0.5 0 1\n[End]\n",
+        "options": {
+          "command": "inspect"
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": {
+          "ports": 2,
+          "parameter": "S",
+          "points": 1,
+          "frequency_hz": [
+            10
+          ],
+          "reference_ohms": [
+            75,
+            75
+          ],
+          "noise": [
+            {
+              "frequency_hz": 1,
+              "minimum_figure_db": 0,
+              "gamma_opt": {
+                "re": 0.5,
+                "im": 0
+              },
+              "resistance_ohms": 1
+            }
+          ],
+          "noise_reference_ohms": 50,
+          "mixed_mode_order": [],
+          "information": [
+            "fixture ! retained"
+          ]
+        }
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S RI R 50\n0 1 0\n1 0 -1\n3 -1 0\n",
+        "options": {
+          "command": "delay",
+          "input": 0,
+          "output": 0,
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          0.25,
+          0.16666666666666666,
+          0.125
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S RI R 50\n0 1 0\n9.9999999999999998e-201 0 -1\n2.9999999999999999e-200 -1 0\n",
+        "options": {
+          "command": "delay",
+          "input": 0,
+          "output": 0,
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          2.5e+199,
+          1.6666666666666667e+199,
+          1.25e+199
+        ]
+      }
+    },
+    {
+      "query": {
+        "text": "# Hz S RI R 50\n0 0 0\n9.9999999999999998e-201 0 -1\n2.9999999999999999e-200 -1 0\n",
+        "options": {
+          "command": "delay",
+          "input": 0,
+          "output": 0,
+          "ports": 1
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"group delay undefined at zero transmission\")"
+      }
+    }
+  ],
+  "primarySpecification": {
+    "url": "https://www.ibis.org/touchstone_ver2.1/touchstone_ver2_1.pdf",
+    "version": "2.1,2024-01-26",
+    "sections": [
+      "p4 angles in degrees",
+      "p8 legacy voltage/current normalization",
+      "p10 noise count greater than zero",
+      "p28 information placement"
+    ]
+  },
+  "sourceSHA256": {
+    "text.mbt": "bfb2a549e220f38adc40ecbe5621224349ebdce330fa04fd59adf79fb885240a",
+    "legacy.mbt": "b9e1cf11972f6549a9f9bf8f8ee0eb9e6446560af545e92fc63bc70ae771b125",
+    "versioned.mbt": "069ae06b33d7c0b2c0d4db1dce34a2ad3df2f135088ce7d35bec1a128961fe11",
+    "document.mbt": "0435f50901dc5e06aa3c0d12a959530965b336e512415d0e3a3ae69578ea5ec1",
+    "analysis.mbt": "c67936328db5fbbe0d0ab4098697003908ee41a8422c3c7286503827bae56dfd",
+    "tools/verify-format-extreme.py": "b4be96bacbdf639cd14dcfbfca8e2a37c7aab35534e48b3cdd0c3e9a1ca90059"
+  }
+}

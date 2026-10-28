@@ -1,0 +1,5 @@
+import {
+  "guolei-dev/touchstone" @rf,
+}
+
+pkgtype(kind: "executable")

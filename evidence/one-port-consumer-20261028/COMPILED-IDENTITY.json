@@ -1,0 +1,30 @@
+{
+  "before": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "51c12b88f2ac16027fd339cbaa5f917c61021ef49bde49261b5e84ceeadd014f",
+    "provenance": "observed start of22"
+  },
+  "after": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "51c12b88f2ac16027fd339cbaa5f917c61021ef49bde49261b5e84ceeadd014f"
+  },
+  "existingReleaseBridgeUnchanged": true,
+  "freshReleaseBridgeBuild": false,
+  "newConsumer": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\debug\\build\\examples\\one_port_metrics\\one_port_metrics.js",
+    "sha256": "1d85131d0c760031c0d3700e7cad7a4292908bacef83aa29c7f6929644f7e46a",
+    "provenance": "Observed after the single successful moon run and before final check/info; consumer sources unchanged"
+  },
+  "newConsumerBuild": "Produced by the single moon run --target js before acceptance",
+  "runtimeConsumerSourceSHA256": {
+    "examples/one_port_metrics/main.mbt": "7352f6bea825a988617d37b2e314358f8ead1d543405efda094a71acb552a4ce",
+    "examples/one_port_metrics/moon.pkg": "35982d8af91d30473fb1a09057fd5dd0d165d452a136fb938db53bfe04a4f7d0",
+    "analysis.mbt": "c67936328db5fbbe0d0ab4098697003908ee41a8422c3c7286503827bae56dfd",
+    "conversion.mbt": "a9bba63395d0fd56157f8e16f815308719a99126f077a0397fe60db274a938e8",
+    "versioned.mbt": "069ae06b33d7c0b2c0d4db1dce34a2ad3df2f135088ce7d35bec1a128961fe11",
+    "cmd/bridge/main.mbt": "f1041a83ed8830974a24b5f05afbe9f38e483bf203b33d3f850b3f3f35dddf93",
+    "tools/touchstone.mjs": "2ead8ae7d516ccdc6e92c9f2b08b8df4662fe505342cebaea263aa313ad852b6",
+    "tools/verify-one-port-consumer.py": "126febe182c36142a1daf50005c78f0629f8d24df19464595134e25ed7e8fe46"
+  },
+  "coreAndConsumerSourceUnchangedSinceExecution": true
+}

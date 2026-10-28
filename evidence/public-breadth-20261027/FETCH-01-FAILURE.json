@@ -1,0 +1,10 @@
+{
+  "source": "Actual exec tool observation, no reconstructed raw log",
+  "chunk": "22668b",
+  "exitCode": 1,
+  "attemptURL": "https://www.nxp.com/downloads/en/s-parameters/BFU530W_Spar.zip",
+  "exception": "urllib.error.HTTPError: HTTP Error 404: Not Found",
+  "downloadedBytesSaved": 0,
+  "targetRuns": 0,
+  "noAutomaticRetry": true
+}

@@ -1,0 +1,4 @@
+! Synthetic two-frequency bilateral amplifier, not measured device data.
+# GHz S RI R 50
+1 .25 0 2 0 .125 0 -.25 0
+2 .2 0 1.5 0 .1 0 -.2 0

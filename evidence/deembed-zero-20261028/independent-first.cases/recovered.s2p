@@ -1,0 +1,16 @@
+[Version] 2.1
+# Hz S RI R 75
+[Number of Ports] 2
+[Two-Port Data Order] 12_21
+[Number of Frequencies] 3
+[Reference] 75 60
+[Matrix Format] Full
+[Begin Information]
+Zero forward DUT sweep
+Known independent fixture wave model
+[End Information]
+[Network Data]
+1000000000 0 0 0 0 0 0 9.912705577010329e-17 0
+2000000000 0.25 0 0.30000000000000016 0 0 0 -0.19999999999999996 0
+3000000000 0.24999999999999992 0 0.30000000000000004 0 0.4000000000000001 0 -0.19999999999999998 0
+[End]

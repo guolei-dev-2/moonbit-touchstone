@@ -1,0 +1,396 @@
+[
+  {
+    "name": "fmt",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "fmt"
+    ],
+    "exitCode": 0,
+    "seconds": 1.4400121000071522,
+    "stdout": "fmt.stdout.log",
+    "stderr": "fmt.stderr.log"
+  },
+  {
+    "name": "info",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "info"
+    ],
+    "exitCode": 0,
+    "seconds": 1.199684499995783,
+    "stdout": "info.stdout.log",
+    "stderr": "info.stderr.log"
+  },
+  {
+    "name": "check-all",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "check",
+      "--target",
+      "all",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 2.86247550000553,
+    "stdout": "check-all.stdout.log",
+    "stderr": "check-all.stderr.log"
+  },
+  {
+    "name": "rf_extreme_test.mbt-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "rf_extreme_test.mbt",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 1.9999932999780867,
+    "stdout": "rf_extreme_test.mbt-js.stdout.log",
+    "stderr": "rf_extreme_test.mbt-js.stderr.log"
+  },
+  {
+    "name": "rf_test.mbt-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "rf_test.mbt",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 0.8707996000011917,
+    "stdout": "rf_test.mbt-js.stdout.log",
+    "stderr": "rf_test.mbt-js.stderr.log"
+  },
+  {
+    "name": "rf_extreme_test.mbt-wasm-gc",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "rf_extreme_test.mbt",
+      "--target",
+      "wasm-gc",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 2.477358100004494,
+    "stdout": "rf_extreme_test.mbt-wasm-gc.stdout.log",
+    "stderr": "rf_extreme_test.mbt-wasm-gc.stderr.log"
+  },
+  {
+    "name": "rf_test.mbt-wasm-gc",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "rf_test.mbt",
+      "--target",
+      "wasm-gc",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 0.5856466999975964,
+    "stdout": "rf_test.mbt-wasm-gc.stdout.log",
+    "stderr": "rf_test.mbt-wasm-gc.stderr.log"
+  },
+  {
+    "name": "rf_extreme_test.mbt-native",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "rf_extreme_test.mbt",
+      "--target",
+      "native",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 3.901197899976978,
+    "stdout": "rf_extreme_test.mbt-native.stdout.log",
+    "stderr": "rf_extreme_test.mbt-native.stderr.log"
+  },
+  {
+    "name": "rf_test.mbt-native",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "rf_test.mbt",
+      "--target",
+      "native",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 0.41535140000632964,
+    "stdout": "rf_test.mbt-native.stdout.log",
+    "stderr": "rf_test.mbt-native.stderr.log"
+  },
+  {
+    "name": "build-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "build",
+      "--target",
+      "js",
+      "--release",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 2.1193292000098154,
+    "stdout": "build-js.stdout.log",
+    "stderr": "build-js.stderr.log"
+  },
+  {
+    "name": "independent-extreme",
+    "command": [
+      "D:/CodexLocal/ban/work/touchstone-tcl-20261021/rf-venv/Scripts/python.exe",
+      "tools/verify-rf-extreme.py",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-06-max-20261028\\independent-first.json"
+    ],
+    "exitCode": 1,
+    "seconds": 21.18386869999813,
+    "stdout": "independent-extreme.stdout.log",
+    "stderr": "independent-extreme.stderr.log"
+  },
+  {
+    "name": "independent-corrected",
+    "command": [
+      "D:/CodexLocal/ban/work/touchstone-tcl-20261021/rf-venv/Scripts/python.exe",
+      "tools/verify-rf-extreme.py",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-06-max-20261028\\independent-after.json"
+    ],
+    "exitCode": 0,
+    "stdout": "independent-after.log",
+    "note": "Option-line noise reference corrected; initial oracle-fixture mismatch retained."
+  },
+  {
+    "name": "consumer-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "run",
+      "examples/rf_03",
+      "--target",
+      "js"
+    ],
+    "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone",
+    "exitCode": 0,
+    "seconds": 2.9607359999790788,
+    "stdout": "consumer-js.stdout.log",
+    "stderr": "consumer-js.stderr.log"
+  },
+  {
+    "name": "consumer-wasm-gc",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "run",
+      "examples/rf_03",
+      "--target",
+      "wasm-gc"
+    ],
+    "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone",
+    "exitCode": 0,
+    "seconds": 1.9023707000014838,
+    "stdout": "consumer-wasm-gc.stdout.log",
+    "stderr": "consumer-wasm-gc.stderr.log"
+  },
+  {
+    "name": "baseline-js-identity-reconstruction",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "build",
+      "--target",
+      "js",
+      "--release",
+      "--deny-warn"
+    ],
+    "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-06-max-20261028\\baseline-before",
+    "exitCode": 0,
+    "seconds": 2.6103959000029135,
+    "stdout": "baseline-js-identity-reconstruction.stdout.log",
+    "stderr": "baseline-js-identity-reconstruction.stderr.log"
+  },
+  {
+    "name": "fmt-final",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "fmt"
+    ],
+    "exitCode": 0,
+    "seconds": 0.2868756999960169,
+    "stdout": "fmt-final.stdout.log",
+    "stderr": "fmt-final.stderr.log"
+  },
+  {
+    "name": "info-final",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "info"
+    ],
+    "exitCode": 0,
+    "seconds": 1.095552000013413,
+    "stdout": "info-final.stdout.log",
+    "stderr": "info-final.stderr.log"
+  },
+  {
+    "name": "check-all-final",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "check",
+      "--target",
+      "all",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 2.8861965000105556,
+    "stdout": "check-all-final.stdout.log",
+    "stderr": "check-all-final.stderr.log"
+  },
+  {
+    "name": "final-rf_extreme_test.mbt-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "rf_extreme_test.mbt",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 3.3357393000042066,
+    "stdout": "final-rf_extreme_test.mbt-js.stdout.log",
+    "stderr": "final-rf_extreme_test.mbt-js.stderr.log"
+  },
+  {
+    "name": "final-rf_test.mbt-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "rf_test.mbt",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 1.5475582999933977,
+    "stdout": "final-rf_test.mbt-js.stdout.log",
+    "stderr": "final-rf_test.mbt-js.stderr.log"
+  },
+  {
+    "name": "final-rf_extreme_test.mbt-wasm-gc",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "rf_extreme_test.mbt",
+      "--target",
+      "wasm-gc",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 2.5205625999951735,
+    "stdout": "final-rf_extreme_test.mbt-wasm-gc.stdout.log",
+    "stderr": "final-rf_extreme_test.mbt-wasm-gc.stderr.log"
+  },
+  {
+    "name": "final-rf_test.mbt-wasm-gc",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "rf_test.mbt",
+      "--target",
+      "wasm-gc",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 1.031069299991941,
+    "stdout": "final-rf_test.mbt-wasm-gc.stdout.log",
+    "stderr": "final-rf_test.mbt-wasm-gc.stderr.log"
+  },
+  {
+    "name": "final-rf_extreme_test.mbt-native",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "rf_extreme_test.mbt",
+      "--target",
+      "native",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 5.194959100015694,
+    "stdout": "final-rf_extreme_test.mbt-native.stdout.log",
+    "stderr": "final-rf_extreme_test.mbt-native.stderr.log"
+  },
+  {
+    "name": "final-rf_test.mbt-native",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "rf_test.mbt",
+      "--target",
+      "native",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 0.4326369999907911,
+    "stdout": "final-rf_test.mbt-native.stdout.log",
+    "stderr": "final-rf_test.mbt-native.stderr.log"
+  },
+  {
+    "name": "build-js-final",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "build",
+      "--target",
+      "js",
+      "--release",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 2.3706017999793403,
+    "stdout": "build-js-final.stdout.log",
+    "stderr": "build-js-final.stderr.log"
+  },
+  {
+    "name": "independent-final",
+    "command": [
+      "D:/CodexLocal/ban/work/touchstone-tcl-20261021/rf-venv/Scripts/python.exe",
+      "tools/verify-rf-extreme.py",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-06-max-20261028\\independent-final.json"
+    ],
+    "exitCode": 0,
+    "seconds": 7.759491800010437,
+    "stdout": "independent-final.stdout.log",
+    "stderr": "independent-final.stderr.log"
+  },
+  {
+    "name": "final-consumer-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "run",
+      "examples/rf_03",
+      "--target",
+      "js"
+    ],
+    "exitCode": 0,
+    "seconds": 2.2580531999992672,
+    "stdout": "final-consumer-js.stdout.log",
+    "stderr": "final-consumer-js.stderr.log"
+  },
+  {
+    "name": "final-consumer-wasm-gc",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "run",
+      "examples/rf_03",
+      "--target",
+      "wasm-gc"
+    ],
+    "exitCode": 0,
+    "seconds": 1.6107819000026211,
+    "stdout": "final-consumer-wasm-gc.stdout.log",
+    "stderr": "final-consumer-wasm-gc.stderr.log"
+  }
+]

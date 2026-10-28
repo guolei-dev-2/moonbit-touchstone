@@ -1,0 +1,25 @@
+[
+  {
+    "frequency_hz": 1000000000,
+    "sdd": {
+      "re": 0.5,
+      "im": 0.5
+    },
+    "sdc": {
+      "re": 0,
+      "im": 0
+    },
+    "scd": {
+      "re": 0,
+      "im": 0
+    },
+    "scc": {
+      "re": 0.5,
+      "im": 0.5
+    },
+    "differential_insertion_loss_db": 3.0102999566398116,
+    "cmrr_db": 0,
+    "cmrr_state": "finite",
+    "cmrr_definition": "balanced"
+  }
+]

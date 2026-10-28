@@ -1,0 +1,22 @@
+{
+  "sharedSDK": "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon",
+  "readOnlyObservedLocations": [
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\lib\\core\\_build",
+      "exists": true
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\registry",
+      "exists": true
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build",
+      "exists": true
+    }
+  ],
+  "defaultTemp": "C:\\Users\\uiwcv\\AppData\\Local\\Temp",
+  "sdkOrOldReportToolsExecuted": 0,
+  "dependencyInstallOrUpdate": false,
+  "pythonDontWriteBytecode": "1",
+  "policy": "No dependency tool for read-only research. Do not invoke24 toolchain or old generators; any necessary future writes must be confined to25/project after actual cache location check."
+}

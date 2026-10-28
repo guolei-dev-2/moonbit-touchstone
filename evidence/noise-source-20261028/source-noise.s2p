@@ -1,0 +1,11 @@
+[Version] 2.1
+# Hz S RI R 50
+[Number of Ports] 2
+[Two-Port Data Order] 21_12
+[Number of Frequencies] 1
+[Number of Noise Frequencies] 1
+[Network Data]
+1000000000 0 0 .5 0 0 0 0 0
+[Noise Data]
+1000000000 1 0 0 50
+[End]

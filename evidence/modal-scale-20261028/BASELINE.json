@@ -1,0 +1,52 @@
+{
+  "records": [
+    {
+      "name": "large-parse",
+      "command": [
+        "C:/Program Files/nodejs/node.exe",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "inspect",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\large.s4p"
+      ],
+      "exitCode": 0,
+      "stdout": "{\n  \"ports\": 4,\n  \"parameter\": \"S\",\n  \"points\": 1,\n  \"frequency_hz\": [\n    1000000000\n  ],\n  \"reference_ohms\": [\n    50,\n    50,\n    50,\n    50\n  ],\n  \"noise\": [],\n  \"noise_reference_ohms\": 50,\n  \"mixed_mode_order\": [\n    \"D1,2\",\n    \"D3,4\",\n    \"C1,2\",\n    \"C3,4\"\n  ],\n  \"information\": []\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "large-metrics",
+      "command": [
+        "C:/Program Files/nodejs/node.exe",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "modal-metrics",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\large.s4p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\options.json"
+      ],
+      "exitCode": 0,
+      "stdout": "[\n  {\n    \"frequency_hz\": 1000000000,\n    \"sdd\": {\n      \"re\": 1.5e+308,\n      \"im\": 1.5e+308\n    },\n    \"sdc\": {\n      \"re\": 0,\n      \"im\": 0\n    },\n    \"scd\": {\n      \"re\": 0,\n      \"im\": 0\n    },\n    \"scc\": {\n      \"re\": 1.5e+308,\n      \"im\": 1.5e+308\n    },\n    \"differential_insertion_loss_db\": \"-Infinity\",\n    \"cmrr_db\": \"NaN\",\n    \"cmrr_state\": \"finite\",\n    \"cmrr_definition\": \"balanced\"\n  }\n]\n",
+      "stderr": ""
+    },
+    {
+      "name": "ordinary-metrics",
+      "command": [
+        "C:/Program Files/nodejs/node.exe",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "modal-metrics",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\ordinary.s4p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\options.json"
+      ],
+      "exitCode": 0,
+      "stdout": "[\n  {\n    \"frequency_hz\": 1000000000,\n    \"sdd\": {\n      \"re\": 0.5,\n      \"im\": 0.5\n    },\n    \"sdc\": {\n      \"re\": 0,\n      \"im\": 0\n    },\n    \"scd\": {\n      \"re\": 0,\n      \"im\": 0\n    },\n    \"scc\": {\n      \"re\": 0.5,\n      \"im\": 0.5\n    },\n    \"differential_insertion_loss_db\": 3.0102999566398116,\n    \"cmrr_db\": 0,\n    \"cmrr_state\": \"finite\",\n    \"cmrr_definition\": \"balanced\"\n  }\n]\n",
+      "stderr": ""
+    }
+  ],
+  "actualFileCLINodeProcesses": 3,
+  "bridgeSHA256": "51c12b88f2ac16027fd339cbaa5f917c61021ef49bde49261b5e84ceeadd014f",
+  "inputSHA256": {
+    "large.s4p": "3ead5e5423e78eec3d6b90ae59d6cbdf529c6cb3fa953d57c9ac39d16625a5fe",
+    "ordinary.s4p": "cda2ffc3724a5c68993bdf445502d8117065099f59c53286e2da4f7ecf6704e0"
+  },
+  "independentExpected": "Balanced Sdd21/Scc21=1 exactly, hence CMRR=0dB; each loss is finite -20log10(sqrt(2)*1.5e308), evaluable without linear magnitude overflow",
+  "nodeCompileCacheDisabled": true,
+  "tempDirectory": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-24-max-20261028\\runtime-temp",
+  "sdkToolsExecuted": 0
+}

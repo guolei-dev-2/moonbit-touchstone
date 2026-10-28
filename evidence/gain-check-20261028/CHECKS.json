@@ -1,0 +1,136 @@
+[
+  {
+    "name": "info-before-oracle",
+    "command": [
+      "moon",
+      "info"
+    ],
+    "exitCode": 0,
+    "provenance": "completed console result before independent-first.json"
+  },
+  {
+    "name": "release-before-oracle",
+    "command": [
+      "moon",
+      "build",
+      "--target",
+      "js",
+      "--release",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "provenance": "completed console result before independent-first.json"
+  },
+  {
+    "name": "independent-report",
+    "command": [
+      "rf-venv/Scripts/python.exe",
+      "tools/verify-gain-check.py",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-11-max-20261028\\independent-first.json",
+      "--vendor-input",
+      "private-pinned-NXP-input"
+    ],
+    "exitCode": 0,
+    "receipt": "independent-first.json"
+  },
+  {
+    "name": "fmt-check",
+    "command": [
+      "moon",
+      "fmt",
+      "--check"
+    ],
+    "exitCode": 0,
+    "seconds": 1.1074502999836113,
+    "stdout": "fmt-check.stdout.log",
+    "stderr": "fmt-check.stderr.log"
+  },
+  {
+    "name": "check-all",
+    "command": [
+      "moon",
+      "check",
+      "--target",
+      "all",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 1.8884401000104845,
+    "stdout": "check-all.stdout.log",
+    "stderr": "check-all.stderr.log"
+  },
+  {
+    "name": "gain_band_test.mbt-js",
+    "command": [
+      "moon",
+      "test",
+      "gain_band_test.mbt",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 1.4401329999964219,
+    "stdout": "gain_band_test.mbt-js.stdout.log",
+    "stderr": "gain_band_test.mbt-js.stderr.log"
+  },
+  {
+    "name": "gain_band_test.mbt-wasm-gc",
+    "command": [
+      "moon",
+      "test",
+      "gain_band_test.mbt",
+      "--target",
+      "wasm-gc",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 1.2804661999980453,
+    "stdout": "gain_band_test.mbt-wasm-gc.stdout.log",
+    "stderr": "gain_band_test.mbt-wasm-gc.stderr.log"
+  },
+  {
+    "name": "gain_band_test.mbt-native",
+    "command": [
+      "moon",
+      "test",
+      "gain_band_test.mbt",
+      "--target",
+      "native",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 1.9990241999912541,
+    "stdout": "gain_band_test.mbt-native.stdout.log",
+    "stderr": "gain_band_test.mbt-native.stderr.log"
+  },
+  {
+    "name": "consumer-js",
+    "command": [
+      "moon",
+      "run",
+      "examples/gain_check",
+      "--target",
+      "js"
+    ],
+    "exitCode": 0,
+    "seconds": 1.005472600023495,
+    "stdout": "consumer-js.stdout.log",
+    "stderr": "consumer-js.stderr.log"
+  },
+  {
+    "name": "consumer-wasm-gc",
+    "command": [
+      "moon",
+      "run",
+      "examples/gain_check",
+      "--target",
+      "wasm-gc"
+    ],
+    "exitCode": 0,
+    "seconds": 0.9444906999997329,
+    "stdout": "consumer-wasm-gc.stdout.log",
+    "stderr": "consumer-wasm-gc.stderr.log"
+  }
+]

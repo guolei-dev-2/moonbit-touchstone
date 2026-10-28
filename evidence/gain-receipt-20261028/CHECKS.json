@@ -1,0 +1,89 @@
+[
+  {
+    "name": "fmt-before-demo",
+    "command": [
+      "moon",
+      "fmt"
+    ],
+    "exitCode": 0,
+    "provenance": "completed console result before demo-first"
+  },
+  {
+    "name": "release-before-demo",
+    "command": [
+      "moon",
+      "build",
+      "--target",
+      "js",
+      "--release",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "provenance": "completed console result before demo-first"
+  },
+  {
+    "name": "actual-file-demo",
+    "command": [
+      "node",
+      "examples/gain_receipt_demo.mjs",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\demo-first"
+    ],
+    "exitCode": 0,
+    "provenance": "completed console result; artifacts read back, not executed again",
+    "receiptSHA256": "77fbc555aad99de8d844829ead44c5fc17eace4612f5b9e4dd4563f5227bf223",
+    "reviewSHA256": "3422541e01c08f534a064c35ca32fd6052d95f10e4c57905ed774178f50c64ec"
+  },
+  {
+    "name": "independent-workflow",
+    "command": [
+      "python",
+      "tools/verify-gain-receipt.py",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-12-max-20261028\\workflow-first.json",
+      "--vendor-input",
+      "private-pinned-NXP-input"
+    ],
+    "exitCode": 0,
+    "receipt": "workflow-first.json",
+    "CLIProcesses": 41,
+    "workflowChecks": 30
+  },
+  {
+    "name": "fmt-check",
+    "command": [
+      "moon",
+      "fmt",
+      "--check"
+    ],
+    "exitCode": 0,
+    "seconds": 2.7694888999976683,
+    "stdout": "fmt-check.stdout.log",
+    "stderr": "fmt-check.stderr.log"
+  },
+  {
+    "name": "check-all",
+    "command": [
+      "moon",
+      "check",
+      "--target",
+      "all",
+      "--deny-warn"
+    ],
+    "exitCode": 0,
+    "seconds": 1.6207505999773275,
+    "stdout": "check-all.stdout.log",
+    "stderr": "check-all.stderr.log"
+  },
+  {
+    "name": "review-output-workflow",
+    "command": [
+      "python",
+      "verify-review-output.py"
+    ],
+    "exitCode": 0,
+    "receipt": "review-output-check.json",
+    "CLIProcesses": 2,
+    "workflowChecks": 2,
+    "provenance": "Completed targeted OUTPUT branch check; evidence read back, not executed again"
+  }
+]

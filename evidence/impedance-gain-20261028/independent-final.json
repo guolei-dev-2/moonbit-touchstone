@@ -1,0 +1,2023 @@
+{
+  "complete": true,
+  "failure": null,
+  "requests": 55,
+  "pointChecks": 52,
+  "checks": [
+    {
+      "label": "matched unequal",
+      "state": "finite",
+      "referenceGain": 4.0,
+      "actualGain": 4,
+      "referenceDB": 6.020599913279624,
+      "actualDB": 6.020599913279623,
+      "exactRationalSHA256": "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a"
+    },
+    {
+      "label": "rational unequal",
+      "state": "finite",
+      "referenceGain": 3.484310018903592,
+      "actualGain": 3.484310018903592,
+      "referenceDB": 5.4211678970793225,
+      "actualDB": 5.421167897079323,
+      "exactRationalSHA256": "e3856906c987f4d3d27e91494fd0634d574dfb6e5481a5097cb8de6acba5283c"
+    },
+    {
+      "label": "ordinary complex",
+      "state": "finite",
+      "referenceGain": 3.5586534358495014,
+      "actualGain": 3.558653435849501,
+      "referenceDB": 5.512856957232052,
+      "actualDB": 5.512856957232051,
+      "exactRationalSHA256": "d542352a8dc13f855aeca1b32ff9478e19ef39804aeb3c5484ed62bce1f11919"
+    },
+    {
+      "label": "wire huge",
+      "state": "finite",
+      "referenceGain": 1.0,
+      "actualGain": 1,
+      "referenceDB": 0.0,
+      "actualDB": 0,
+      "exactRationalSHA256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "label": "wire minimum",
+      "state": "finite",
+      "referenceGain": 1.0,
+      "actualGain": 1,
+      "referenceDB": 0.0,
+      "actualDB": 0,
+      "exactRationalSHA256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "label": "wire conjugate",
+      "state": "finite",
+      "referenceGain": 1.0,
+      "actualGain": 1,
+      "referenceDB": 0.0,
+      "actualDB": 0,
+      "exactRationalSHA256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "label": "huge network reference",
+      "state": "finite",
+      "referenceGain": 1.0,
+      "actualGain": 1,
+      "referenceDB": 0.0,
+      "actualDB": 0,
+      "exactRationalSHA256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "label": "tiny network reference",
+      "state": "finite",
+      "referenceGain": 1.0,
+      "actualGain": 1,
+      "referenceDB": 0.0,
+      "actualDB": 0,
+      "exactRationalSHA256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "label": "unlike network references",
+      "state": "finite",
+      "referenceGain": 1.0,
+      "actualGain": 1,
+      "referenceDB": 0.0,
+      "actualDB": 0,
+      "exactRationalSHA256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "label": "reverse unlike references",
+      "state": "finite",
+      "referenceGain": 1.0,
+      "actualGain": 1,
+      "referenceDB": 0.0,
+      "actualDB": 0,
+      "exactRationalSHA256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "label": "overflow amplitude",
+      "state": "overflow",
+      "referenceGain": null,
+      "actualGain": null,
+      "referenceDB": 4000.0,
+      "actualDB": 4000,
+      "exactRationalSHA256": "de21e575a00ad7c39aa418a1ca7908f8aa72960523dc940c75cdb41cc36ff302"
+    },
+    {
+      "label": "underflow amplitude",
+      "state": "underflow",
+      "referenceGain": 0.0,
+      "actualGain": 0,
+      "referenceDB": -4000.0,
+      "actualDB": -4000,
+      "exactRationalSHA256": "43acce616cc3c787e223d58970f0111a1ee04460fc4b5e96c8a17dccc2661940"
+    },
+    {
+      "label": "positive large source",
+      "state": "finite",
+      "referenceGain": 2e-306,
+      "actualGain": 2e-306,
+      "referenceDB": -3056.9897000433602,
+      "actualDB": -3056.9897000433602,
+      "exactRationalSHA256": "0fa4e90e46b5532e48085e3e56762018c47d5ef3dba1178bf933ae2a1abe785c"
+    },
+    {
+      "label": "positive tiny source",
+      "state": "finite",
+      "referenceGain": 8e-310,
+      "actualGain": 8e-310,
+      "referenceDB": -3090.9691001300807,
+      "actualDB": -3090.9691001300807,
+      "exactRationalSHA256": "3a94fb66ef20a32af4f874594aaf33a4e67e8970f60e81e4e9d1be8c378106c1"
+    },
+    {
+      "label": "zero short",
+      "state": "zero"
+    },
+    {
+      "label": "zero reactive",
+      "state": "zero"
+    },
+    {
+      "label": "positive source pole",
+      "state": "singular"
+    },
+    {
+      "label": "zero singular priority",
+      "state": "singular"
+    },
+    {
+      "label": "matched rank one large",
+      "state": "finite",
+      "referenceGain": 1e+200,
+      "actualGain": 1e+200,
+      "referenceDB": 2000.0,
+      "actualDB": 2000,
+      "exactRationalSHA256": "3b4ce65693fbf058b1ee257111993c2a5ac4aaad2454087f90c6a5d0a77b4b87"
+    },
+    {
+      "label": "matched rank one overflow",
+      "state": "overflow",
+      "referenceGain": null,
+      "actualGain": null,
+      "referenceDB": 4000.0,
+      "actualDB": 4000,
+      "exactRationalSHA256": "de21e575a00ad7c39aa418a1ca7908f8aa72960523dc940c75cdb41cc36ff302"
+    },
+    {
+      "label": "ordinary physical wave 0",
+      "state": "finite",
+      "referenceGain": 0.26858993851817187,
+      "actualGain": 0.26858993851817187,
+      "referenceDB": -5.709102601999953,
+      "actualDB": -5.709102601999952,
+      "exactRationalSHA256": "ff9c610fc42e286bd72a8f204f07c0fc4f73648fea52c24c46e4a04b8a2fe768"
+    },
+    {
+      "label": "ordinary physical wave 1",
+      "state": "finite",
+      "referenceGain": 0.023203483713379065,
+      "actualGain": 0.023203483713379065,
+      "referenceDB": -16.344468063196377,
+      "actualDB": -16.344468063196373,
+      "exactRationalSHA256": "2ebd81e9392755677a5b4576fdf0feb320e90352d7c3a6399ea455304c59dd03"
+    },
+    {
+      "label": "ordinary physical wave 2",
+      "state": "finite",
+      "referenceGain": 0.0020870489606642337,
+      "actualGain": 0.002087048960664234,
+      "referenceDB": -26.804673625795417,
+      "actualDB": -26.804673625795417,
+      "exactRationalSHA256": "f05942fc27ca7161c3ebd5eaaed3fedf69f63774221339d70e4973e66fba7c39"
+    },
+    {
+      "label": "ordinary physical wave 3",
+      "state": "finite",
+      "referenceGain": 0.9367165422312698,
+      "actualGain": 0.9367165422312698,
+      "referenceDB": -0.2839181014645148,
+      "actualDB": -0.2839181014645149,
+      "exactRationalSHA256": "0808318d5d9532ad8ba0f586306dcca3fd93799dae38d5db7aa0678ef7e838ad"
+    },
+    {
+      "label": "ordinary physical wave 4",
+      "state": "finite",
+      "referenceGain": 0.0021242779957762825,
+      "actualGain": 0.0021242779957762825,
+      "referenceDB": -26.727886494872596,
+      "actualDB": -26.7278864948726,
+      "exactRationalSHA256": "e4966274ea6cd9081c584933c1e61ae614a3c4fd8614367121fddd133372512d"
+    },
+    {
+      "label": "ordinary physical wave 5",
+      "state": "finite",
+      "referenceGain": 2.067774889821333e-06,
+      "actualGain": 2.067774889821333e-06,
+      "referenceDB": -56.84496742865238,
+      "actualDB": -56.844967428652375,
+      "exactRationalSHA256": "5edbc5563f7f61a72d0569bdf5afdec2d918c310151480e84e3ebb7a3a48cb8b"
+    },
+    {
+      "label": "ordinary physical wave 6",
+      "state": "finite",
+      "referenceGain": 0.5162230025146114,
+      "actualGain": 0.5162230025146114,
+      "referenceDB": -2.8716264752056566,
+      "actualDB": -2.8716264752056566,
+      "exactRationalSHA256": "da1b4eed6142eeebeb4a2a50773e7ec592990d81a42ed323d777811f96dcccd2"
+    },
+    {
+      "label": "ordinary physical wave 7",
+      "state": "finite",
+      "referenceGain": 0.030460053746033826,
+      "actualGain": 0.030460053746033822,
+      "referenceDB": -15.162693346971094,
+      "actualDB": -15.162693346971096,
+      "exactRationalSHA256": "4e2a45838ee253243e1e5161d32f9ca51232de69a527a910689a16f461b575d4"
+    },
+    {
+      "label": "ordinary physical wave 8",
+      "state": "finite",
+      "referenceGain": 0.773546546704879,
+      "actualGain": 0.773546546704879,
+      "referenceDB": -1.115135483267747,
+      "actualDB": -1.1151354832677471,
+      "exactRationalSHA256": "03a0eb12ea28f6d2a22348dd29ce7b35dd3eebce83bd0b694f15f7e412b28120"
+    },
+    {
+      "label": "ordinary physical wave 9",
+      "state": "finite",
+      "referenceGain": 0.020406555817567996,
+      "actualGain": 0.020406555817567996,
+      "referenceDB": -16.902302885541957,
+      "actualDB": -16.902302885541957,
+      "exactRationalSHA256": "ab16a377af2744ae0f791c01b4e1965a2eb71dd93f46d70e9d5f0d10705e981c"
+    },
+    {
+      "label": "ordinary physical wave 10",
+      "state": "finite",
+      "referenceGain": 0.00020544691910510637,
+      "actualGain": 0.0002054469191051064,
+      "referenceDB": -36.87300367060587,
+      "actualDB": -36.87300367060587,
+      "exactRationalSHA256": "64a43f514ff6d9fe70a04b671c27a198a3ea0e37ee55df30a12d4dde2f75f9d5"
+    },
+    {
+      "label": "ordinary physical wave 11",
+      "state": "finite",
+      "referenceGain": 0.009295837134116232,
+      "actualGain": 0.009295837134116232,
+      "referenceDB": -20.31711493858029,
+      "actualDB": -20.31711493858029,
+      "exactRationalSHA256": "c48d7f5fb9ba3d896aeb211dc42c9062c4339bd73ee46c90539b11e1330f401a"
+    },
+    {
+      "label": "ordinary physical wave 12",
+      "state": "finite",
+      "referenceGain": 0.29644707441567364,
+      "actualGain": 0.29644707441567364,
+      "referenceDB": -5.28052831274149,
+      "actualDB": -5.28052831274149,
+      "exactRationalSHA256": "9b5be1a9b09bc53ce715e1a35c2b4a0ff6daab55667edb5b13a579ca4432a6e2"
+    },
+    {
+      "label": "ordinary physical wave 13",
+      "state": "finite",
+      "referenceGain": 3.9842517724980913,
+      "actualGain": 3.984251772498091,
+      "referenceDB": 6.003467745186626,
+      "actualDB": 6.003467745186625,
+      "exactRationalSHA256": "ccd781d8393c4a63143fe7798494ba8016e8bab10027d53006b0d784571aaa85"
+    },
+    {
+      "label": "ordinary physical wave 14",
+      "state": "finite",
+      "referenceGain": 1.6520372331696898e-05,
+      "actualGain": 1.6520372331696895e-05,
+      "referenceDB": -47.81980168893409,
+      "actualDB": -47.8198016889341,
+      "exactRationalSHA256": "4019cd340d872a6eb095c5baaccaad7d450931ceb7867ab967b78cf490a3693b"
+    },
+    {
+      "label": "ordinary physical wave 15",
+      "state": "finite",
+      "referenceGain": 2.3063795509434946,
+      "actualGain": 2.3063795509434946,
+      "referenceDB": 3.6293077881139886,
+      "actualDB": 3.629307788113989,
+      "exactRationalSHA256": "c4d177f69eb288fef7826dc278a12978a590bea7451c4c43f8fd868f9027ea38"
+    },
+    {
+      "label": "ordinary physical wave 16",
+      "state": "finite",
+      "referenceGain": 0.6512782200466155,
+      "actualGain": 0.6512782200466156,
+      "referenceDB": -1.8623344519722265,
+      "actualDB": -1.8623344519722262,
+      "exactRationalSHA256": "d8727c2d1b09fe91180af05d68da5541d4bb206ca9b3c88dc6264156f5fb3d25"
+    },
+    {
+      "label": "ordinary physical wave 17",
+      "state": "finite",
+      "referenceGain": 0.0022118882309840144,
+      "actualGain": 0.0022118882309840144,
+      "referenceDB": -26.55236822165384,
+      "actualDB": -26.55236822165384,
+      "exactRationalSHA256": "58cae615e76e3e1bd98234bfc744339795c74fe17b6604842cba6432721aafac"
+    },
+    {
+      "label": "ordinary physical wave 18",
+      "state": "finite",
+      "referenceGain": 0.19489342529839823,
+      "actualGain": 0.1948934252983982,
+      "referenceDB": -7.102028114969901,
+      "actualDB": -7.102028114969901,
+      "exactRationalSHA256": "dbe254724950d4401ea45fc446d3298b22ca3b12a434194e4731fdf47e33386c"
+    },
+    {
+      "label": "ordinary physical wave 19",
+      "state": "finite",
+      "referenceGain": 0.0011533016034572842,
+      "actualGain": 0.0011533016034572842,
+      "referenceDB": -29.380571041635665,
+      "actualDB": -29.380571041635665,
+      "exactRationalSHA256": "1f470797f3fc2b88438444b5f1fca0a5eed6f73749e5f2ce22f13b00c9c7c88c"
+    },
+    {
+      "label": "ordinary physical wave 20",
+      "state": "finite",
+      "referenceGain": 0.007413177165141414,
+      "actualGain": 0.007413177165141414,
+      "referenceDB": -21.2999562068982,
+      "actualDB": -21.299956206898205,
+      "exactRationalSHA256": "216c7f44b38922f87833b52559c9479cf3472740b71230a226266b16426b5817"
+    },
+    {
+      "label": "ordinary physical wave 21",
+      "state": "finite",
+      "referenceGain": 0.021502124192998982,
+      "actualGain": 0.021502124192998982,
+      "referenceDB": -16.675186340505174,
+      "actualDB": -16.675186340505178,
+      "exactRationalSHA256": "942b20da7c29257e96620d997600a3baaff9a1f5f7ecd6d7543a6650d6ade414"
+    },
+    {
+      "label": "ordinary physical wave 22",
+      "state": "finite",
+      "referenceGain": 0.15333661133501217,
+      "actualGain": 0.15333661133501217,
+      "referenceDB": -8.143541386718464,
+      "actualDB": -8.143541386718464,
+      "exactRationalSHA256": "3d3838e4b01aa92875a0b326a3cbf590078c62c3e51b5a0898694f2502dd194d"
+    },
+    {
+      "label": "ordinary physical wave 23",
+      "state": "finite",
+      "referenceGain": 0.08583519248619673,
+      "actualGain": 0.08583519248619673,
+      "referenceDB": -10.663346146113613,
+      "actualDB": -10.663346146113613,
+      "exactRationalSHA256": "9fd31963c9ef8f26e00d6e7fb59e3c836d481e1b8d5d0fc09c031e00a91d1afd"
+    },
+    {
+      "label": "batch 0",
+      "state": "finite",
+      "referenceGain": 0.75,
+      "actualGain": 0.75,
+      "referenceDB": -1.2493873660829995,
+      "actualDB": -1.2493873660829993,
+      "exactRationalSHA256": "5132a20379415fe98f3a0700afc2a901e9b01af839b5454a8659152f0782c223"
+    },
+    {
+      "label": "batch 1",
+      "state": "singular"
+    },
+    {
+      "label": "batch 2",
+      "state": "finite",
+      "referenceGain": 3.9183673469387754,
+      "actualGain": 3.918367346938776,
+      "referenceDB": 5.931051486750359,
+      "actualDB": 5.93105148675036,
+      "exactRationalSHA256": "41e8ef5c05dce496161422fb06530be60f84ef3b9a0eeb5532875794779142ec"
+    },
+    {
+      "label": "physical file 0",
+      "state": "finite",
+      "referenceGain": 4.070696145688784,
+      "actualGain": 4.070696145688784,
+      "referenceDB": 6.0966868597663435,
+      "actualDB": 6.0966868597663435,
+      "exactRationalSHA256": "99b1eade7d5b203233b338e544fa55324ea9f38e0795ae2def2b34700638408b"
+    },
+    {
+      "label": "physical file 1",
+      "state": "finite",
+      "referenceGain": 2.1806456499737945,
+      "actualGain": 2.1806456499737945,
+      "referenceDB": 3.3858509943292323,
+      "actualDB": 3.3858509943292328,
+      "exactRationalSHA256": "a61a0295a999987bd1d1df18a92f3499c3bb1d7f150a217d222745bc34512d84"
+    },
+    {
+      "label": "NXP selected 0",
+      "state": "finite",
+      "referenceGain": 11.836123653647958,
+      "actualGain": 11.83612365364796,
+      "referenceDB": 10.732094936478095,
+      "actualDB": 10.732094936478095,
+      "exactRationalSHA256": "8aa16c31197dce0929d0dcba8a851a806df26fb0851d10a591ebf0f441981f18"
+    },
+    {
+      "label": "NXP selected 49",
+      "state": "finite",
+      "referenceGain": 1.628381600034335,
+      "actualGain": 1.6283816000343345,
+      "referenceDB": 2.1175618640651277,
+      "actualDB": 2.117561864065127,
+      "exactRationalSHA256": "87791170d32b1805c487dfde4769da3f72d61cf214cc3e9522fbfe02da26948d"
+    },
+    {
+      "label": "NXP selected 97",
+      "state": "finite",
+      "referenceGain": 0.4692205805158616,
+      "actualGain": 0.4692205805158615,
+      "referenceDB": -3.2862294751887977,
+      "actualDB": -3.286229475188799,
+      "exactRationalSHA256": "8b7f32bcf165639dae73496770317df3c82ac12b6bc3c4dafafad5b25f5757bd"
+    }
+  ],
+  "raw": [
+    {
+      "label": "matched unequal",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            50.0,
+            0.0
+          ],
+          "load_ohms": [
+            75.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 4,
+            "gain_db": 6.020599913279623,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "rational unequal",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            150.0,
+            0.0
+          ],
+          "load_ohms": [
+            125.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 3.484310018903592,
+            "gain_db": 5.421167897079323,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary complex",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 0.10000000000000001 0.125 -0.050000000000000003 2 -0.20000000000000001 -0.25 0.02\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            100.0,
+            20.0
+          ],
+          "load_ohms": [
+            25.0,
+            -10.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 3.558653435849501,
+            "gain_db": 5.512856957232051,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "wire huge",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 1 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            1e+308,
+            0.0
+          ],
+          "load_ohms": [
+            1e+308,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1,
+            "gain_db": 0,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "wire minimum",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 1 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            5e-324,
+            0.0
+          ],
+          "load_ohms": [
+            5e-324,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1,
+            "gain_db": 0,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "wire conjugate",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 1 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            5e-324,
+            1e+308
+          ],
+          "load_ohms": [
+            5e-324,
+            -1e+308
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1,
+            "gain_db": 0,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "huge network reference",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 1e+308 1e+308\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 1 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            1e+308,
+            0.0
+          ],
+          "load_ohms": [
+            1e+308,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1,
+            "gain_db": 0,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "tiny network reference",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 4.9406564584124654e-324 4.9406564584124654e-324\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 1 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            5e-324,
+            0.0
+          ],
+          "load_ohms": [
+            5e-324,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1,
+            "gain_db": 0,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "unlike network references",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 4.9406564584124654e-324 1e+308\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 1 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            5e-324,
+            0.0
+          ],
+          "load_ohms": [
+            1e+308,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1,
+            "gain_db": 0,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "reverse unlike references",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 1e+308 4.9406564584124654e-324\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 1 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            1e+308,
+            0.0
+          ],
+          "load_ohms": [
+            5e-324,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1,
+            "gain_db": 0,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "overflow amplitude",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 9.9999999999999997e+199 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            50.0,
+            0.0
+          ],
+          "load_ohms": [
+            50.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain_db": 4000,
+            "state": "overflow"
+          }
+        ]
+      }
+    },
+    {
+      "label": "underflow amplitude",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 9.9999999999999998e-201 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            50.0,
+            0.0
+          ],
+          "load_ohms": [
+            50.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0,
+            "gain_db": -4000,
+            "state": "underflow"
+          }
+        ]
+      }
+    },
+    {
+      "label": "positive large source",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            1e+308,
+            0.0
+          ],
+          "load_ohms": [
+            50.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 2e-306,
+            "gain_db": -3056.9897000433602,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "positive tiny source",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            1e-308,
+            0.0
+          ],
+          "load_ohms": [
+            50.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 8e-310,
+            "gain_db": -3090.9691001300807,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "zero short",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            50.0,
+            0.0
+          ],
+          "load_ohms": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0,
+            "state": "zero"
+          }
+        ]
+      }
+    },
+    {
+      "label": "zero reactive",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            50.0,
+            0.0
+          ],
+          "load_ohms": [
+            0.0,
+            50.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0,
+            "state": "zero"
+          }
+        ]
+      }
+    },
+    {
+      "label": "positive source pole",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 2 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            150.0,
+            0.0
+          ],
+          "load_ohms": [
+            50.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "state": "singular"
+          }
+        ]
+      }
+    },
+    {
+      "label": "zero singular priority",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 -1 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            50.0,
+            0.0
+          ],
+          "load_ohms": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "state": "singular"
+          }
+        ]
+      }
+    },
+    {
+      "label": "matched rank one large",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 1e+100 0 1e+100 0 1e+100 0 1e+100 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            50.0,
+            0.0
+          ],
+          "load_ohms": [
+            50.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1e+200,
+            "gain_db": 2000,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "matched rank one overflow",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 9.9999999999999997e+199 0 9.9999999999999997e+199 0 9.9999999999999997e+199 0 9.9999999999999997e+199 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            50.0,
+            0.0
+          ],
+          "load_ohms": [
+            50.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain_db": 4000,
+            "state": "overflow"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 0",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.1875 0.125 -0.25 -0.0625 -1.75 1.9375 0.125 -0.25\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            1.0,
+            -49.5
+          ],
+          "load_ohms": [
+            64.0,
+            -20.5
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.26858993851817187,
+            "gain_db": -5.709102601999952,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 1",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.1875 -0.1875 -0.25 -0.25 -0.3125 1.625 0 -0.0625\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            0.25,
+            -23.0
+          ],
+          "load_ohms": [
+            64.0,
+            -39.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.023203483713379065,
+            "gain_db": -16.344468063196373,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 2",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.1875 -0.1875 -0.25 -0.1875 -0.4375 1.875 -0.375 0.25\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            8.0,
+            -30.5
+          ],
+          "load_ohms": [
+            0.0625,
+            46.5
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.002087048960664234,
+            "gain_db": -26.804673625795417,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 3",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 -0.25 0.375 0.125 -0.125 -0.0625 1.9375 -0.25 -0.1875\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            2.0,
+            -1.0
+          ],
+          "load_ohms": [
+            32.0,
+            -11.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.9367165422312698,
+            "gain_db": -0.2839181014645149,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 4",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.3125 -0.0625 -0.125 -0.0625 0.625 -1.25 -0.0625 0.0625\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            32.0,
+            45.5
+          ],
+          "load_ohms": [
+            0.03125,
+            -41.5
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.0021242779957762825,
+            "gain_db": -26.7278864948726,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 5",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.0625 0.125 0.25 0 -0.9375 -1.625 0.25 0.375\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            0.00390625,
+            -12.0
+          ],
+          "load_ohms": [
+            0.125,
+            17.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 2.067774889821333e-06,
+            "gain_db": -56.844967428652375,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 6",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 -0.0625 -0.25 0 -0.25 -1.125 0.0625 0 0.3125\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            32.0,
+            -8.0
+          ],
+          "load_ohms": [
+            16.0,
+            19.5
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.5162230025146114,
+            "gain_db": -2.8716264752056566,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 7",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 -0.125 0.1875 -0.0625 0.0625 -0.8125 -1.9375 -0.0625 0.375\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            0.0625,
+            1.0
+          ],
+          "load_ohms": [
+            64.0,
+            -35.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.030460053746033822,
+            "gain_db": -15.162693346971096,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 8",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 -0.125 0.1875 -0.25 -0.25 -1.1875 -1.5 -0.1875 0.1875\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            16.0,
+            -24.0
+          ],
+          "load_ohms": [
+            8.0,
+            30.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.773546546704879,
+            "gain_db": -1.1151354832677471,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 9",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.3125 -0.125 0.125 0 1.5625 0.0625 -0.25 0.125\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            16.0,
+            -20.0
+          ],
+          "load_ohms": [
+            0.25,
+            -36.5
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.020406555817567996,
+            "gain_db": -16.902302885541957,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 10",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 -0.1875 -0.0625 -0.1875 0.25 -2 1.0625 -0.3125 -0.125\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            0.0625,
+            -23.5
+          ],
+          "load_ohms": [
+            0.015625,
+            -16.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.0002054469191051064,
+            "gain_db": -36.87300367060587,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 11",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.0625 0.3125 -0.0625 -0.25 -2 -1.25 -0.3125 -0.125\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            0.0625,
+            24.5
+          ],
+          "load_ohms": [
+            128.0,
+            7.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.009295837134116232,
+            "gain_db": -20.31711493858029,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 12",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.1875 -0.125 0.25 -0.0625 -0.1875 -1.375 -0.25 0.125\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            4.0,
+            34.5
+          ],
+          "load_ohms": [
+            256.0,
+            7.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.29644707441567364,
+            "gain_db": -5.28052831274149,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 13",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.0625 -0.1875 -0.25 -0.125 -1.9375 0.8125 0.0625 0.3125\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            64.0,
+            -27.5
+          ],
+          "load_ohms": [
+            64.0,
+            -27.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 3.984251772498091,
+            "gain_db": 6.003467745186625,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 14",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.0625 0.375 0.0625 -0.25 1.75 2 -0.375 0.25\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            0.0625,
+            14.5
+          ],
+          "load_ohms": [
+            0.0078125,
+            -8.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 1.6520372331696895e-05,
+            "gain_db": -47.8198016889341,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 15",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0.375 0.0625 0.1875 -1.875 1.3125 0.0625 0.125\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            4.0,
+            -15.5
+          ],
+          "load_ohms": [
+            128.0,
+            -42.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 2.3063795509434946,
+            "gain_db": 3.629307788113989,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 16",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.0625 -0.3125 0 -0.1875 -0.5 -1.25 -0.25 -0.3125\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            16.0,
+            0.0
+          ],
+          "load_ohms": [
+            16.0,
+            -13.5
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.6512782200466156,
+            "gain_db": -1.8623344519722262,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 17",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0.1875 -0.1875 -0.1875 -1.6875 0.875 0.125 0.375\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            0.0625,
+            -26.0
+          ],
+          "load_ohms": [
+            2.0,
+            -8.5
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.0022118882309840144,
+            "gain_db": -26.55236822165384,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 18",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 -0.0625 0.0625 -0.1875 0.0625 1.6875 1.375 0.125 0.25\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            1.0,
+            42.5
+          ],
+          "load_ohms": [
+            256.0,
+            15.5
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.1948934252983982,
+            "gain_db": -7.102028114969901,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 19",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.25 -0.375 0.25 -0.125 0.75 0.5625 0.0625 0.1875\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            4.0,
+            -6.5
+          ],
+          "load_ohms": [
+            0.25,
+            49.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.0011533016034572842,
+            "gain_db": -29.380571041635665,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 20",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 -0.125 -0.125 0.25 -0.75 0.6875 -0.375 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            2.0,
+            -17.0
+          ],
+          "load_ohms": [
+            1.0,
+            24.5
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.007413177165141414,
+            "gain_db": -21.299956206898205,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 21",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0.3125 -0.1875 -0.125 0.1875 -1.9375 0.75 -0.25 0.25\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            0.125,
+            22.0
+          ],
+          "load_ohms": [
+            16.0,
+            -12.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.021502124192998982,
+            "gain_db": -16.675186340505178,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 22",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0.375 -0.25 0 0.5625 -0.125 0.25 -0.375\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            8.0,
+            -36.0
+          ],
+          "load_ohms": [
+            32.0,
+            16.5
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.15333661133501217,
+            "gain_db": -8.143541386718464,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "ordinary physical wave 23",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 75\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 -0.375 0.0625 -0.0625 0 0.3125 0.1875 0.375 0.1875\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            64.0,
+            -36.0
+          ],
+          "load_ohms": [
+            64.0,
+            40.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.08583519248619673,
+            "gain_db": -10.663346146113613,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "batched report",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 3\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n2000000000.0 2 0 0 0 1 0 0 0\n3000000000.0 0.25 0 0.125 0 2 0 -0.25 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            150.0,
+            0.0
+          ],
+          "load_ohms": [
+            50.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": true,
+        "result": [
+          {
+            "frequency_hz": 1000000000,
+            "gain": 0.75,
+            "gain_db": -1.2493873660829993,
+            "state": "finite"
+          },
+          {
+            "frequency_hz": 2000000000,
+            "state": "singular"
+          },
+          {
+            "frequency_hz": 3000000000,
+            "gain": 3.918367346938776,
+            "gain_db": 5.93105148675036,
+            "state": "finite"
+          }
+        ]
+      }
+    },
+    {
+      "label": "invalid input",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance"
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"missing option: source_ohms\")"
+      }
+    },
+    {
+      "label": "invalid input",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            50.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"missing option: load_ohms\")"
+      }
+    },
+    {
+      "label": "invalid input",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source": [
+            0.0,
+            0.0
+          ],
+          "load": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"unknown impedance gain option: source\")"
+      }
+    },
+    {
+      "label": "invalid input",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            50.0,
+            0.0
+          ],
+          "load_ohms": [
+            50.0,
+            0.0
+          ],
+          "left_file": "unknown.txt"
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"unknown impedance gain option: left_file\")"
+      }
+    },
+    {
+      "label": "invalid input",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            50.0,
+            0.0
+          ],
+          "load_ohms": [
+            50.0,
+            0.0
+          ],
+          "source": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"unknown impedance gain option: source\")"
+      }
+    },
+    {
+      "label": "invalid input",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            50.0
+          ],
+          "load_ohms": [
+            50.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"expected [real,imag] for source_ohms\")"
+      }
+    },
+    {
+      "label": "invalid input",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            50.0,
+            0.0
+          ],
+          "load_ohms": null
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "JsonDecodeError((Root, \"Array::from_json: expected array\"))"
+      }
+    },
+    {
+      "label": "invalid input",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            0.0,
+            0.0
+          ],
+          "load_ohms": [
+            50.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"impedance gain requires Re(source)>0 and Re(load)>=0 ohm\")"
+      }
+    },
+    {
+      "label": "invalid input",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            -1.0,
+            0.0
+          ],
+          "load_ohms": [
+            50.0,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"impedance gain requires Re(source)>0 and Re(load)>=0 ohm\")"
+      }
+    },
+    {
+      "label": "invalid input",
+      "query": {
+        "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Reference] 50 50\n[Two-Port Data Order] 12_21\n[Network Data]\n1000000000.0 0 0 0 0 1 0 0 0\n[End]\n",
+        "options": {
+          "command": "transducer-gain-impedance",
+          "source_ohms": [
+            50.0,
+            0.0
+          ],
+          "load_ohms": [
+            -5e-324,
+            0.0
+          ]
+        }
+      },
+      "response": {
+        "ok": false,
+        "error": "Failure(\"impedance gain requires Re(source)>0 and Re(load)>=0 ohm\")"
+      }
+    }
+  ],
+  "fileConsumers": [
+    {
+      "label": "physical file",
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "transducer-gain-impedance",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain-ohms.json"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    },
+    {
+      "label": "physical CLI rejection",
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "transducer-gain-impedance",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{}"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"missing option: source_ohms\")\n"
+    },
+    {
+      "label": "physical CLI rejection",
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "transducer-gain-impedance",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"source\": [0.0, 0.0], \"load\": [0.0, 0.0]}"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"unknown impedance gain option: source\")\n"
+    },
+    {
+      "label": "physical CLI rejection",
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "transducer-gain-impedance",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"source_ohms\": [0.0, 0.0], \"load_ohms\": [50.0, 0.0]}"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"impedance gain requires Re(source)>0 and Re(load)>=0 ohm\")\n"
+    },
+    {
+      "label": "physical CLI rejection",
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "transducer-gain-impedance",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\power-gain.s2p",
+        "{\"source_ohms\": [50.0, 0.0], \"load_ohms\": [50.0, 0.0], \"left_file\": \"D:\\\\CodexLocal\\\\ban\\\\work\\\\isolated14-20261027\\\\projects\\\\moonbit-touchstone\\\\examples\\\\power-gain-ohms.json\"}"
+      ],
+      "exitCode": 2,
+      "expectedExitCode": 2,
+      "stderr": "touchstone: Failure(\"unknown impedance gain option: left_file\")\n"
+    },
+    {
+      "label": "NXP selected physical-terminal query",
+      "command": [
+        "node",
+        "tools/touchstone.mjs",
+        "transducer-gain-impedance",
+        "D:\\CodexLocal\\ban\\work\\portfolio-progress-20261027\\private-reference-inputs\\touchstone-breadth-20261027\\BFU530W_03V3_001mA_SP.s2p",
+        "{\"source_ohms\": [100.0, 20.0], \"load_ohms\": [25.0, -10.0]}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": ""
+    }
+  ],
+  "vendor": {
+    "sha256": "d4a56bc6b099544c63ddbe25e9a1366935daf1a76bf0e47b0b269bb600ff2a95",
+    "bytes": 9544,
+    "returnedPoints": 98,
+    "validatedIndices": [
+      0,
+      49,
+      97
+    ],
+    "skrfVersion": "2.1.0",
+    "policy": "No original model, S matrix or complete output stored; three selected scalar gain comparisons only."
+  },
+  "gammaControlsSkipped": true,
+  "oracle": "Fraction exact four-wave solve with physical Thevenin voltage/current terminal conditions; Decimal160 dB. No Gamma or polynomial oracle.",
+  "primaryReferences": [
+    "https://qucs.sourceforge.net/tech/node6.html",
+    "https://scikit-rf.readthedocs.io/en/v2.1.0/tutorials/Circuit.html"
+  ],
+  "sourceSHA256": {
+    "gain.mbt": "f0ab0b6522ba1a372d3c2ede72b0d76f6e655e0cfb1f8e42af1ce27781e5284a",
+    "gain_impedance.mbt": "70166a5f530805e1ca1b7b74ba096d00e4f9512b5e741e06d3c9a55ca317f662",
+    "gain_impedance_test.mbt": "ea33211d622596b195b8054dbd6a59c70ac07693d7e38a1c604c2e65dac5c521",
+    "cmd/bridge/main.mbt": "e3cfa6b9de25f7b2bd9e816f264d8db9a48fc12f26f0d5a1d2df5b944812ecba",
+    "tools/touchstone.mjs": "d97445f75473e6b1e4a3499b125ac9722b682bc55d4a42725510c1255f112948",
+    "tools/verify-gain-impedance.py": "cf82d9c522f2ccb249c8c44e42c1cfa6a3ef4c40e3233e947ea421d5b0cf0399",
+    "examples/power-gain-ohms.json": "c6ec5f9840150109b99f66464f9f658a55c4429a54d2247d4445980632549672",
+    "examples/power_gain_ohms/main.mbt": "f4b8cd0eeff0f0e7c326fb43c03cb1a790867f1156f7f14160eaf78e756ca867",
+    "examples/power_gain_ohms/moon.pkg": "35982d8af91d30473fb1a09057fd5dd0d165d452a136fb938db53bfe04a4f7d0"
+  }
+}

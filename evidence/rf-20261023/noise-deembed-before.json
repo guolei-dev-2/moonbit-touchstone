@@ -1,0 +1,28 @@
+{
+  "input": {
+    "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Two-Port Data Order] 12_21\n[Number of Noise Frequencies] 1\n[Network Data]\n1 0 0 1 0 1 0 0 0\n[Noise Data]\n1 3.6067428079351496 0.6345120047368864 0 100\n[End]\n",
+    "left": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Two-Port Data Order] 12_21\n[Number of Noise Frequencies] 1\n[Network Data]\n1 0 0 1 0 1 0 0 0\n[Noise Data]\n1 2.0411998265592479 0.53846153846153844 0 50\n[End]\n",
+    "right": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Number of Frequencies] 1\n[Two-Port Data Order] 12_21\n[Network Data]\n1 0 0 1 0 1 0 0 0\n[End]\n",
+    "options": {
+      "command": "deembed"
+    }
+  },
+  "actual": {
+    "ok": true,
+    "result": {
+      "text": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Two-Port Data Order] 12_21\n[Number of Frequencies] 1\n[Reference] 50 50\n[Matrix Format] Full\n[Number of Noise Frequencies] 1\n[Network Data]\n1 0 0 1 0 1 0 0 0\n[Noise Data]\n1 2.0411998265592466 0.8181818181818185 0 50\n[End]\n"
+    }
+  },
+  "normalizedRecoveredCovariance": [
+    [
+      1,
+      0.2
+    ],
+    [
+      0.2,
+      0.01
+    ]
+  ],
+  "determinant": -0.03,
+  "expected": "reject negative eigenvalue, despite positive Rn and Fmin"
+}

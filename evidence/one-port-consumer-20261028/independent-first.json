@@ -1,0 +1,136 @@
+{
+  "complete": true,
+  "failure": null,
+  "sourceSHA256": {
+    "examples/one_port_metrics/main.mbt": "7352f6bea825a988617d37b2e314358f8ead1d543405efda094a71acb552a4ce",
+    "examples/one_port_metrics/moon.pkg": "35982d8af91d30473fb1a09057fd5dd0d165d452a136fb938db53bfe04a4f7d0",
+    "analysis.mbt": "c67936328db5fbbe0d0ab4098697003908ee41a8422c3c7286503827bae56dfd",
+    "conversion.mbt": "a9bba63395d0fd56157f8e16f815308719a99126f077a0397fe60db274a938e8",
+    "versioned.mbt": "069ae06b33d7c0b2c0d4db1dce34a2ad3df2f135088ce7d35bec1a128961fe11",
+    "cmd/bridge/main.mbt": "f1041a83ed8830974a24b5f05afbe9f38e483bf203b33d3f850b3f3f35dddf93",
+    "tools/touchstone.mjs": "2ead8ae7d516ccdc6e92c9f2b08b8df4662fe505342cebaea263aa313ad852b6",
+    "tools/verify-one-port-consumer.py": "126febe182c36142a1daf50005c78f0629f8d24df19464595134e25ed7e8fe46"
+  },
+  "bridgeSHA256": "51c12b88f2ac16027fd339cbaa5f917c61021ef49bde49261b5e84ceeadd014f",
+  "commands": [
+    {
+      "name": "module",
+      "command": [
+        "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+        "run",
+        "examples/one_port_metrics",
+        "--target",
+        "js"
+      ],
+      "exitCode": 0,
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-22-max-20261028\\independent-first.cases\\module.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-22-max-20261028\\independent-first.cases\\module.stderr.log"
+    },
+    {
+      "name": "file-cli",
+      "command": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "metrics",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-22-max-20261028\\independent-first.cases\\same-input.s1p",
+        "{\"input\":0,\"output\":0}"
+      ],
+      "exitCode": 0,
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-22-max-20261028\\independent-first.cases\\file-cli.stdout.log",
+      "stderr": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-22-max-20261028\\independent-first.cases\\file-cli.stderr.log"
+    }
+  ],
+  "checks": [
+    "Public-module example imports, parses and executes metrics(0,0) on JS",
+    "The file CLI receives the exact ASCII input emitted by the module consumer",
+    "Complete parsed metric JSON arrays match, including omitted Option fields and all states",
+    "All five physical-ohm reflection magnitudes and sample frequencies match independent scalar relations",
+    "Finite dB and infinite-loss flags/omitted fields match independent expected values",
+    "Finite, unit-circle infinite and active undefined VSWR values/states/omitted fields remain distinct"
+  ],
+  "moduleRuntimeExecutions": 1,
+  "fileCLINodeProcesses": 1,
+  "pairedSamples": 5,
+  "oldCollectionsRerun": false,
+  "newManufacturerInputs": 0,
+  "oracle": "Independent scalar Gamma=(Z-50)/(Z+50), input physical ohms; magnitude/log and documented finite/infinite/active state conventions",
+  "tolerance": {
+    "relative": 2e-12,
+    "absolute": 2e-12
+  },
+  "inputSHA256": "88807565cd6e580817d8dcea78a53a033e9e82a7f24bd8b291d1896761955b48",
+  "inputBytes": 179,
+  "independentExpected": [
+    {
+      "frequency_hz": 1000000000.0,
+      "impedance_ohms": [
+        0.0,
+        0.0
+      ],
+      "gamma": [
+        -1.0,
+        0.0
+      ],
+      "magnitude": 1.0,
+      "infiniteLoss": false,
+      "vswrState": "infinite"
+    },
+    {
+      "frequency_hz": 2000000000.0,
+      "impedance_ohms": [
+        50.0,
+        0.0
+      ],
+      "gamma": [
+        0.0,
+        0.0
+      ],
+      "magnitude": 0.0,
+      "infiniteLoss": true,
+      "vswrState": "finite"
+    },
+    {
+      "frequency_hz": 3000000000.0,
+      "impedance_ohms": [
+        150.0,
+        0.0
+      ],
+      "gamma": [
+        0.5,
+        0.0
+      ],
+      "magnitude": 0.5,
+      "infiniteLoss": false,
+      "vswrState": "finite"
+    },
+    {
+      "frequency_hz": 4000000000.0,
+      "impedance_ohms": [
+        -150.0,
+        0.0
+      ],
+      "gamma": [
+        2.0,
+        -0.0
+      ],
+      "magnitude": 2.0,
+      "infiniteLoss": false,
+      "vswrState": "active"
+    },
+    {
+      "frequency_hz": 5000000000.0,
+      "impedance_ohms": [
+        50.0,
+        50.0
+      ],
+      "gamma": [
+        0.2,
+        0.4
+      ],
+      "magnitude": 0.447213595499958,
+      "infiniteLoss": false,
+      "vswrState": "finite"
+    }
+  ],
+  "consumerChecks": 6
+}

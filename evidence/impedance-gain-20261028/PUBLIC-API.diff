@@ -1,0 +1,10 @@
+--- round09/pkg.generated.mbti
++++ round10/pkg.generated.mbti
+@@ -167,6 +167,7 @@
+ pub fn Network::terminate_ports(Self, Array[(Int, Complex)], impedance? : Bool) -> Self raise
+ pub fn Network::to_mixed_mode(Self, Array[(Int, Int)]) -> Document raise
+ pub fn Network::transducer_gain(Self, source? : Complex, load? : Complex) -> Array[TransducerGainPoint] raise
++pub fn Network::transducer_gain_impedance(Self, Complex, Complex) -> Array[TransducerGainPoint] raise
+ pub fn Network::write_legacy(Self, format? : String, unit? : String) -> String raise
+ 
+ pub(all) struct NoisePoint {

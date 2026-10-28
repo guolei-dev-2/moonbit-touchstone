@@ -1,0 +1,31 @@
+{
+  "baselineHarness": {
+    "initialProcesses": 3,
+    "failedAssertion": "Expected phrase division by zero, actual zero complex denominator",
+    "originalRawLogsPreserved": true,
+    "successfulControlsNotReplayed": true,
+    "focusedFailedEntryRetry": 1,
+    "totalBaselineProcesses": 4,
+    "details": "BASELINE.json"
+  },
+  "newTestCompilation": {
+    "name": "deembed-zero-js",
+    "exitCode": 1,
+    "cause": "opaque is a reserved future MoonBit keyword under deny-warn",
+    "correction": "Rename local test variable to zero_dut; no production correction required",
+    "actualTestsExecutedBeforeCorrection": false,
+    "rawLog": "deembed-zero-js.stderr.log"
+  },
+  "finalizationReadEncoding": {
+    "stage": "Pre-package read-only finalization guard",
+    "observedFailure": "UnicodeDecodeError: 'gbk' codec can't decode byte 0xad in position 21: illegal multibyte sequence",
+    "file": "deembed-zero-js.stderr.log",
+    "cause": "The control script used Windows default GBK to read an existing UTF-8 diagnostic log.",
+    "correction": "Explicit encoding='utf-8' for diagnostic/stdout reads in the finalizer.",
+    "productSourceChanged": false,
+    "productTestsOrConsumersReplayed": false,
+    "packageHadRunAtFailure": false,
+    "originalLogsRetained": true
+  },
+  "firstActualBackendRunsAndFileConsumerPassed": true
+}

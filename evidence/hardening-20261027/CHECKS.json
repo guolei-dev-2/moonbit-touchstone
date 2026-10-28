@@ -1,0 +1,114 @@
+[
+  {
+    "name": "toolchain",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "version",
+      "--all"
+    ],
+    "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone",
+    "exitCode": 0,
+    "seconds": 0.6972114000091096,
+    "stdout": "toolchain.stdout.log",
+    "stderr": "toolchain.stderr.log"
+  },
+  {
+    "name": "fmt",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "fmt"
+    ],
+    "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone",
+    "exitCode": 0,
+    "seconds": 1.7777936000056798,
+    "stdout": "fmt.stdout.log",
+    "stderr": "fmt.stderr.log"
+  },
+  {
+    "name": "info",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "info"
+    ],
+    "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone",
+    "exitCode": 0,
+    "seconds": 1.5457294000079855,
+    "stdout": "info.stdout.log",
+    "stderr": "info.stderr.log"
+  },
+  {
+    "name": "check-all",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "check",
+      "--target",
+      "all",
+      "--deny-warn"
+    ],
+    "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone",
+    "exitCode": 0,
+    "seconds": 1.3809547999990173,
+    "stdout": "check-all.stdout.log",
+    "stderr": "check-all.stderr.log"
+  },
+  {
+    "name": "test-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "--target",
+      "js",
+      "--deny-warn"
+    ],
+    "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone",
+    "exitCode": 0,
+    "seconds": 2.2488024000049336,
+    "stdout": "test-js.stdout.log",
+    "stderr": "test-js.stderr.log"
+  },
+  {
+    "name": "test-wasm-gc",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "test",
+      "--target",
+      "wasm-gc",
+      "--deny-warn"
+    ],
+    "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone",
+    "exitCode": 0,
+    "seconds": 1.998221800007741,
+    "stdout": "test-wasm-gc.stdout.log",
+    "stderr": "test-wasm-gc.stderr.log"
+  },
+  {
+    "name": "build-js",
+    "command": [
+      "D:\\CodexLocal\\ban\\work\\acceptance-20260928\\moon\\bin\\moon.exe",
+      "build",
+      "--target",
+      "js",
+      "--release",
+      "--deny-warn"
+    ],
+    "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone",
+    "exitCode": 0,
+    "seconds": 1.134161199996015,
+    "stdout": "build-js.stdout.log",
+    "stderr": "build-js.stderr.log"
+  },
+  {
+    "name": "independent-boundaries",
+    "command": [
+      "D:/CodexLocal/ban/work/touchstone-tcl-20261021/rf-venv/Scripts/python.exe",
+      "tools/verify-boundaries.py",
+      "--evidence",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\boundaries-first.json"
+    ],
+    "cwd": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone",
+    "exitCode": 0,
+    "seconds": 3.5797332000074675,
+    "stdout": "independent-boundaries.stdout.log",
+    "stderr": "independent-boundaries.stderr.log"
+  }
+]

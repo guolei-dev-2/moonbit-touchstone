@@ -1,0 +1,363 @@
+{
+  "complete": false,
+  "failure": "AssertionError()",
+  "actualCLIProcesses": 13,
+  "consumerChecks": 5,
+  "independentGTPointComparisons": 4,
+  "commands": [
+    {
+      "label": "physical-file-export",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "terminate-file",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\loaded-four-port.ts",
+        "{\"terminations\": [[1, 75, 15], [2, 25, -10]], \"impedance\": true}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\physical reduced.ts"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\physical-file-export.stdout.txt"
+    },
+    {
+      "label": "physical-readback-metadata",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "inspect",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\physical reduced.ts",
+        "{}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\physical-readback-metadata.stdout.txt"
+    },
+    {
+      "label": "physical-readback-network",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "dump",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\physical reduced.ts",
+        "{}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\physical-readback-network.stdout.txt"
+    },
+    {
+      "label": "physical-loaded-GT",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "transducer-gain-impedance",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\physical reduced.ts",
+        "{\"source_ohms\": [100.0, 20.0], \"load_ohms\": [30.0, -12.0]}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\physical-loaded-GT.stdout.txt"
+    },
+    {
+      "label": "reduced-file-gain-record",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-record",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\physical reduced.ts",
+        "{\"terminal_mode\": \"impedance\", \"source_ohms\": [100.0, 20.0], \"load_ohms\": [30.0, -12.0], \"start_hz\": 900000000.0, \"end_hz\": 1100000000.0, \"minimum_db\": 3.0, \"maximum_db\": 10.0}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\reduced-gain-receipt.json"
+      ],
+      "exitCode": 3,
+      "expectedExitCode": 3,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\reduced-file-gain-record.stdout.txt"
+    },
+    {
+      "label": "reduced-file-gain-review",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "gain-review",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\physical reduced.ts",
+        "{\"schema\": \"touchstone.gain-receipt.v1\", \"input\": {\"sha256\": \"c8269a9dc9a9484ae09dd20678a540aa34132f0aeba8b88f91e7715dd5b1ddb4\", \"bytes\": 605}, \"request\": {\"command\": \"gain-check\", \"terminal_mode\": \"impedance\", \"start_hz\": 900000000, \"end_hz\": 1100000000, \"source_ohms\": [100, 20], \"load_ohms\": [30, -12], \"minimum_db\": 3, \"maximum_db\": 10}, \"result\": {\"status\": \"fail\", \"terminal_mode\": \"impedance\", \"reference_ohms\": [50, 75], \"matching\": {\"source_ohms\": [100, 20], \"load_ohms\": [30, -12]}, \"report\": {\"scope\": \"sampled_points_only\", \"status\": \"fail\", \"start_hz\": 900000000, \"end_hz\": 1100000000, \"minimum_db\": 3, \"maximum_db\": 10, \"sample_count\": 2, \"state_counts\": {\"finite\": 2, \"zero\": 0, \"singular\": 0, \"overflow\": 0, \"underflow\": 0}, \"below_minimum_count\": 1, \"above_maximum_count\": 0, \"range_covered\": true, \"start_sampled\": true, \"end_sampled\": true, \"lowest\": {\"point\": 1, \"frequency_hz\": 1100000000, \"gain\": 1.0221030814374115, \"gain_db\": 0.09494697600960089, \"state\": \"finite\"}, \"highest\": {\"point\": 0, \"frequency_hz\": 900000000, \"gain\": 2.6655600001573374, \"gain_db\": 4.257884626793923, \"state\": \"finite\"}, \"reasons\": [\"below_minimum\"]}}}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\reduced-file-gain-review.stdout.txt"
+    },
+    {
+      "label": "Gamma-active-load-stdout",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "terminate-file",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\loaded-four-port.ts",
+        "{\"terminations\": [[1, 1.25, 0.0], [2, 0.25, -0.1]]}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\Gamma-active-load-stdout.stdout.txt"
+    },
+    {
+      "label": "Gamma-loaded-GT",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "transducer-gain-impedance",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\Gamma-reduced.ts",
+        "{\"source_ohms\": [100.0, 20.0], \"load_ohms\": [30.0, -12.0]}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\Gamma-loaded-GT.stdout.txt"
+    },
+    {
+      "label": "empty-load-list",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "terminate-file",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\loaded-four-port.ts",
+        "{\"terminations\": []}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\identity.ts"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\empty-load-list.stdout.txt"
+    },
+    {
+      "label": "identity-readback",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "dump",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\identity.ts",
+        "{}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\identity-readback.stdout.txt"
+    },
+    {
+      "label": "prepare-mixed-input",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "mixed",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\examples\\loaded-four-port.ts",
+        "{\"pairs\": [[0, 1]]}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\mixed-source.ts"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\prepare-mixed-input.stdout.txt"
+    },
+    {
+      "label": "mixed-input-file-export",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "terminate-file",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\mixed-source.ts",
+        "{\"terminations\": [[1, 75, 15], [2, 25, -10]], \"impedance\": true}",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\mixed-reduced.ts"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\mixed-input-file-export.stdout.txt"
+    },
+    {
+      "label": "mixed-export-is-single-ended",
+      "argv": [
+        "node",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+        "inspect",
+        "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\mixed-reduced.ts",
+        "{}"
+      ],
+      "exitCode": 0,
+      "expectedExitCode": 0,
+      "stderr": "",
+      "stdout": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\mixed-export-is-single-ended.stdout.txt"
+    }
+  ],
+  "checks": [
+    {
+      "label": "file-roundtrip-original-port-order-0-3-and-information",
+      "oldJSONNetworkReadbackEqual": true
+    },
+    {
+      "label": "physical-loaded-GT",
+      "pointComparisons": 2,
+      "reference": [
+        {
+          "gain": 2.665560000157338,
+          "gain_db": 4.257884626793924
+        },
+        {
+          "gain": 1.022103081437412,
+          "gain_db": 0.09494697600960293
+        }
+      ],
+      "actual": [
+        {
+          "frequency_hz": 900000000,
+          "gain": 2.6655600001573374,
+          "gain_db": 4.257884626793923,
+          "state": "finite"
+        },
+        {
+          "frequency_hz": 1100000000,
+          "gain": 1.0221030814374115,
+          "gain_db": 0.09494697600960089,
+          "state": "finite"
+        }
+      ],
+      "oracle": "Full original four-port incident-wave linear equations with every attached load, source and output termination"
+    },
+    {
+      "label": "exported-file-to-existing-band-receipt-review",
+      "boundInput": "reduced file only",
+      "analysisStatus": "fail",
+      "reviewStatus": "reproduced"
+    },
+    {
+      "label": "Gamma-loaded-GT",
+      "pointComparisons": 2,
+      "reference": [
+        {
+          "gain": 2.7338876535798917,
+          "gain_db": 4.367806636945618
+        },
+        {
+          "gain": 1.0307063335038151,
+          "gain_db": 0.13134944715166996
+        }
+      ],
+      "actual": [
+        {
+          "frequency_hz": 900000000,
+          "gain": 2.7338876535798904,
+          "gain_db": 4.367806636945616,
+          "state": "finite"
+        },
+        {
+          "frequency_hz": 1100000000,
+          "gain": 1.0307063335038151,
+          "gain_db": 0.13134944715167007,
+          "state": "finite"
+        }
+      ],
+      "oracle": "Full original four-port incident-wave linear equations with every attached load, source and output termination"
+    },
+    {
+      "label": "empty-termination-identity-retains-entire-network",
+      "ports": 4
+    }
+  ],
+  "oldNumericalOrReceiptCollectionsRerun": false,
+  "newManufacturerInputs": 0,
+  "artifacts": [
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\physical-file-export.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\physical reduced.ts",
+      "sha256": "c8269a9dc9a9484ae09dd20678a540aa34132f0aeba8b88f91e7715dd5b1ddb4"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\physical-readback-metadata.stdout.txt",
+      "sha256": "45fd2284e797ab5745320adb55523c71c8973f3ddad158128e20a42e3952ba7e"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\physical-readback-network.stdout.txt",
+      "sha256": "bc6e713bab8bbacc0795d99136daf71b939d05ba76be1819e2329ee9fd413fc0"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\physical-loaded-GT.stdout.txt",
+      "sha256": "faf48678150c883b30cc34325f640dccae311a34b41b3541689f602de0905f42"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\reduced-file-gain-record.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\reduced-gain-receipt.json",
+      "sha256": "71172f99a50b2913788261ded59185e842c5f694c20bd0cdc655537a0d33ca86"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\reduced-file-gain-review.stdout.txt",
+      "sha256": "34744ab4a1109b1f7f0fc3879a61227cb05c8d25d2cd43f215d12d3e96aa3bcc"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\Gamma-active-load-stdout.stdout.txt",
+      "sha256": "6162ad07187af1b2313aa4778798670576eb7f658acef39a428e3b0dc268af83"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\Gamma-reduced.ts",
+      "sha256": "6162ad07187af1b2313aa4778798670576eb7f658acef39a428e3b0dc268af83"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\Gamma-loaded-GT.stdout.txt",
+      "sha256": "305a2ce761dc462b487137c2a1aab474a9cbce6f2ebd7a0666fa990bb80a6b22"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\empty-load-list.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\identity.ts",
+      "sha256": "97c38945a891b08775745d505c536b47169d3f60e94050bd5cd9b8ac10128974"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\identity-readback.stdout.txt",
+      "sha256": "de3a437685c6cee000fed91ad1a0da58c886923f68af95a4ad47a7b569d42914"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\prepare-mixed-input.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\mixed-source.ts",
+      "sha256": "9cfccdf57777e172a7071064073599f2190a76a54dfca878544f4883335898a9"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\mixed-input-file-export.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\mixed-reduced.ts",
+      "sha256": "ed60433ef02265cf065110e75d78fdf0cff9fc8fe8e46037077ffcee875eef25"
+    },
+    {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-16-max-20261028\\independent-first-cases\\mixed-export-is-single-ended.stdout.txt",
+      "sha256": "c42b44a8658be63ec4225ebbede3609f20a739bde0fbf01efe0cc59c924e735e"
+    }
+  ],
+  "sourceSHA256": {
+    "cmd/bridge/main.mbt": "e9915281ec2a53bc52e3ec97aead1bd4660bb68716fc2db064105b6eb953dd6c",
+    "tools/touchstone.mjs": "2ead8ae7d516ccdc6e92c9f2b08b8df4662fe505342cebaea263aa313ad852b6",
+    "tools/verify-terminate-file.py": "5a5ff514a5349e02cec390794beabfb7870835ed34bb29dfe7ae2b98ae13861b",
+    "examples/loaded-four-port.ts": "e35d7a948747708a054e0a0c660f10ca0a214fd943047fe8a410a978206acb10",
+    "examples/terminate-four-port.json": "168b2279bd0fc8fe7ca7f2b9d14de694749be55a41fcbe07668f577ce7cfb3d6",
+    "examples/terminated-gain-check.json": "4aba76e20d8090588a3da4d55d96818b7d12887403cd683a076f1e2a6f5a081c",
+    "examples/terminate_file_demo.mjs": "27ada236c99683419f9aec562c7f389f5ec7c8d8b36d6775c184a528a89260a7",
+    "amplifier.mbt": "61572fe6cb3c204392bf43f839e009544afc233cf583ddff26cc7f5e78417d38",
+    "gain.mbt": "f0ab0b6522ba1a372d3c2ede72b0d76f6e655e0cfb1f8e42af1ce27781e5284a",
+    "gain_impedance.mbt": "70166a5f530805e1ca1b7b74ba096d00e4f9512b5e741e06d3c9a55ca317f662",
+    "gain_band.mbt": "ff2e678edfb400fbae34643fede9f735aa6fccb84a232ddcbe70e98d8d0453a3"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "before": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "a7e2d9f561f6e65c133f67cc04579d77f4e14129ceacb03e188065e35650b954",
+    "provenance": "observed at start of round12"
+  },
+  "after": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "95ccf94bfcc09343eb75575eff334c1424de0a67c8374aa0b6b82ed90af77bfe",
+    "provenance": "Release JS build before actual demo/workflow; production sources remain equal to execution evidence"
+  },
+  "executedSourceSHA256": {
+    "cmd/bridge/main.mbt": "56c3f1d1a54ca8f518ebe167abca2b1dc914196e5f102f7e0231fbd5165f2109",
+    "tools/touchstone.mjs": "72ef7b916ff69aa51322a77cc523e2c75705ab9cf6f8ea0f342d757d3b8870c3",
+    "examples/gain_receipt_demo.mjs": "1be6cde05ddbc7dbfc3a43960c8d327514d1cb60db090cc71d876758b9d18357",
+    "tools/verify-gain-receipt.py": "460f87a11199a24cfdc7239dcf8a97704741ff7961e200ee0cf165cc0cf1be01",
+    "gain.mbt": "f0ab0b6522ba1a372d3c2ede72b0d76f6e655e0cfb1f8e42af1ce27781e5284a",
+    "gain_impedance.mbt": "70166a5f530805e1ca1b7b74ba096d00e4f9512b5e741e06d3c9a55ca317f662",
+    "gain_band.mbt": "ff2e678edfb400fbae34643fede9f735aa6fccb84a232ddcbe70e98d8d0453a3"
+  },
+  "oldPublicLibraryAPIUnchanged": true,
+  "oldNumericalAndReportSourceUnchanged": true,
+  "oldBridgeSetupAndCommandsPreservedAroundOptInDispatch": true
+}

@@ -1,0 +1,24 @@
+{
+  "before": {
+    "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+    "sha256": "1780ac9b7bd457028c6d973491fcbcbccb724f3da645ddcd450764975a0068c1",
+    "provenance": "observed at start of round11"
+  },
+  "after": {
+    "_build/js/release/build/cmd/bridge/bridge.js": {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\release\\build\\cmd\\bridge\\bridge.js",
+      "sha256": "a7e2d9f561f6e65c133f67cc04579d77f4e14129ceacb03e188065e35650b954"
+    },
+    "_build/js/debug/build/examples/gain_check/gain_check.js": {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\js\\debug\\build\\examples\\gain_check\\gain_check.js",
+      "sha256": "d63c7fab3124acc827e5dbda265a60bd39aec98bc847043c7d0a73ed3fa796ac"
+    },
+    "_build/wasm-gc/debug/build/examples/gain_check/gain_check.wasm": {
+      "path": "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\_build\\wasm-gc\\debug\\build\\examples\\gain_check\\gain_check.wasm",
+      "sha256": "61f39f362e3fc40d672c1fd66940a775b0c0b10b9cccf0d17f404c09b00abca6"
+    }
+  },
+  "oldPublicSignaturesRetained": true,
+  "old05to10NumericalSourceUnchanged": true,
+  "oldBridgePreservedAroundAddedBranch": true
+}

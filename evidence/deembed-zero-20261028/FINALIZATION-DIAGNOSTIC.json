@@ -1,0 +1,11 @@
+{
+  "stage": "Pre-package read-only finalization guard",
+  "observedFailure": "UnicodeDecodeError: 'gbk' codec can't decode byte 0xad in position 21: illegal multibyte sequence",
+  "file": "deembed-zero-js.stderr.log",
+  "cause": "The control script used Windows default GBK to read an existing UTF-8 diagnostic log.",
+  "correction": "Explicit encoding='utf-8' for diagnostic/stdout reads in the finalizer.",
+  "productSourceChanged": false,
+  "productTestsOrConsumersReplayed": false,
+  "packageHadRunAtFailure": false,
+  "originalLogsRetained": true
+}

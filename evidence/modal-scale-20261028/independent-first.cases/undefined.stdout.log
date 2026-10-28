@@ -1,0 +1,23 @@
+[
+  {
+    "frequency_hz": 1000000000,
+    "sdd": {
+      "re": 0,
+      "im": 0
+    },
+    "sdc": {
+      "re": 0,
+      "im": 0
+    },
+    "scd": {
+      "re": 0,
+      "im": 0
+    },
+    "scc": {
+      "re": 0,
+      "im": 0
+    },
+    "cmrr_state": "undefined",
+    "cmrr_definition": "balanced"
+  }
+]

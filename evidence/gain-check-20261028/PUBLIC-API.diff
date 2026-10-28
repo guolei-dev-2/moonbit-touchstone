@@ -1,0 +1,54 @@
+--- round10/pkg.generated.mbti
++++ round11/pkg.generated.mbti
+@@ -3,6 +3,8 @@
+ 
+ // Values
+ pub fn band_limit(BandMetric, Double, Double, input~ : Int, output~ : Int, minimum? : Double, maximum? : Double) -> BandLimit raise
++
++pub fn check_transducer_gain(Array[TransducerGainPoint], Double, Double, minimum_db? : Double, maximum_db? : Double) -> TransducerGainBandReport raise
+ 
+ pub fn complex(Double, im? : Double) -> Complex
+ 
+@@ -235,12 +237,41 @@
+ } derive(ToJson)
+ pub fn StabilityPoint::to_json(Self) -> Json
+ 
+-pub(all) struct TransducerGainPoint {
++pub(all) struct TransducerGainBandReport {
++  scope : String
++  status : String
++  start_hz : Double
++  end_hz : Double
++  minimum_db : Double?
++  maximum_db : Double?
++  sample_count : Int
++  state_counts : Map[String, Int]
++  below_minimum_count : Int
++  above_maximum_count : Int
++  range_covered : Bool
++  start_sampled : Bool
++  end_sampled : Bool
++  lowest : TransducerGainObservation?
++  highest : TransducerGainObservation?
++  reasons : Array[String]
++} derive(ToJson)
++pub fn TransducerGainBandReport::to_json(Self) -> Json
++
++pub(all) struct TransducerGainObservation {
++  point : Int
+   frequency_hz : Double
+   gain : Double?
+   gain_db : Double?
+   state : String
+ } derive(ToJson)
++pub fn TransducerGainObservation::to_json(Self) -> Json
++
++pub(all) struct TransducerGainPoint {
++  frequency_hz : Double
++  gain : Double?
++  gain_db : Double?
++  state : String
++} derive(ToJson)
+ pub fn TransducerGainPoint::to_json(Self) -> Json
+ 
+ // Type aliases

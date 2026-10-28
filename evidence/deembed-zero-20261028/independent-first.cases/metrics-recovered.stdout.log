@@ -1,0 +1,32 @@
+[
+  {
+    "frequency_hz": 1000000000,
+    "reflection_magnitude": 0,
+    "transmission_magnitude": 0,
+    "return_loss_infinite": true,
+    "insertion_loss_infinite": true,
+    "vswr": 1,
+    "vswr_state": "finite"
+  },
+  {
+    "frequency_hz": 2000000000,
+    "reflection_magnitude": 0.25,
+    "transmission_magnitude": 0,
+    "return_loss_db": 12.041199826559248,
+    "return_loss_infinite": false,
+    "insertion_loss_infinite": true,
+    "vswr": 1.6666666666666667,
+    "vswr_state": "finite"
+  },
+  {
+    "frequency_hz": 3000000000,
+    "reflection_magnitude": 0.24999999999999992,
+    "transmission_magnitude": 0.4000000000000001,
+    "return_loss_db": 12.04119982655925,
+    "return_loss_infinite": false,
+    "insertion_loss_db": 7.95880017344075,
+    "insertion_loss_infinite": false,
+    "vswr": 1.6666666666666665,
+    "vswr_state": "finite"
+  }
+]

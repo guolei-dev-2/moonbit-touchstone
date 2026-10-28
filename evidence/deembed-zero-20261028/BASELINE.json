@@ -1,0 +1,34 @@
+{
+  "status": "reproduced",
+  "initialActualFileCLINodeProcesses": 3,
+  "focusedDiagnosticRecoveryProcesses": 1,
+  "actualFileCLINodeProcesses": 4,
+  "initialHarnessFailure": "After three processes, the diagnostic assertion expected division by zero; actual message is zero complex denominator. Exit-code list was not serialized before that assertion. Existing success controls are not rerun.",
+  "initialControls": {
+    "parseExitCode": 0,
+    "ordinaryExitCode": 0,
+    "exitProvenance": "Both established by the original harness assertion preceding its diagnostic failure",
+    "ordinaryStdout": "[Version] 2.1\n# Hz S RI R 50\n[Number of Ports] 2\n[Two-Port Data Order] 12_21\n[Number of Frequencies] 1\n[Reference] 50 50\n[Matrix Format] Full\n[Begin Information]\nKnown fixture identity control\n[End Information]\n[Network Data]\n1000000000 0.1 0 0.2 0 0.3 0 0.1 0\n[End]\n"
+  },
+  "confirmedDefect": {
+    "command": [
+      "C:/Program Files/nodejs/node.exe",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\projects\\moonbit-touchstone\\tools\\touchstone.mjs",
+      "deembed",
+      "D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\opaque.s2p",
+      "@D:\\CodexLocal\\ban\\work\\isolated14-20261027\\reports\\touchstone\\deep-repair-25-max-20261028\\options.json"
+    ],
+    "exitCode": 2,
+    "stdout": "",
+    "stderr": "touchstone: Failure(\"zero complex denominator\")\n"
+  },
+  "bridgeSHA256": "fd62a50ff38a0718bbb86f8056fc23d1be22839ddb2e732c1fc4baff23b7c576",
+  "inputSHA256": {
+    "opaque.s2p": "5fd1da6a96d1d695773cd6510bb604dac88a38d08ab67208063a60b3675137f3",
+    "ordinary.s2p": "ed8532a8018e42c88ea37b70831a5e5107d95ee9b7b20c509de65d4f1925c91c",
+    "thru.s2p": "5e62e80a7b0e6ec29800110dab392e3cc5053dc125c95df721c0dbf894682f18"
+  },
+  "independentExpected": "Ideal through fixtures must leave a finite opaque passive DUT S=0 unchanged; the fixture chain matrices are invertible. No measured T representation is needed to define this physical deembedding.",
+  "nodeCompileCacheDisabled": true,
+  "sdkToolsExecuted": 0
+}

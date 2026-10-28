@@ -1,0 +1,4 @@
+[guolei-dev/touchstone] test format_extreme_test.mbt:2 ("legacy admittance normalization preserves finite tiny-over-tiny input") failed: non-finite complex result
+[guolei-dev/touchstone] test format_extreme_test.mbt:11 ("legacy impedance writer avoids overflowing reciprocal normalization") failed: non-finite complex result
+[guolei-dev/touchstone] test format_extreme_test.mbt:22 ("MA degree periodicity is applied before conversion to radians") failed: format_extreme_test.mbt:27:5-27:46@guolei-dev/touchstone FAILED: `false` is not true
+Total tests: 3, passed: 0, failed: 3.

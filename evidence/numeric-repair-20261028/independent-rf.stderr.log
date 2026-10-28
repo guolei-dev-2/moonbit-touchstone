@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\tools\verify-repair05.py", line 81, in <module>
+    if failure:raise failure
+               ^^^^^^^^^^^^^
+  File "D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\tools\verify-repair05.py", line 47, in <module>
+    out=ask(text(left),'cascade',right=text(dut))
+  File "D:\CodexLocal\ban\work\isolated14-20261027\projects\moonbit-touchstone\tools\verify-repair05.py", line 25, in ask
+    r=json.loads(line);raw.append(dict(query=q,response=r));assert r['ok']!=reject,r
+                                                                   ^^^^^^^^^^^^^^^
+AssertionError: {'ok': False, 'error': 'Failure("connected port references differ; renormalize explicitly")'}

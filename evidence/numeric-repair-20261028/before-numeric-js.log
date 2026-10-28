@@ -1,0 +1,3 @@
+[guolei-dev/touchstone] test numeric_scale_test.mbt:2 ("finite complex quotient avoids intermediate range overflow") failed: non-finite complex result
+[guolei-dev/touchstone] test numeric_scale_test.mbt:24 ("finite component matrix pivot is valid even if its norm overflows") failed: singular or numerically unsafe matrix
+Total tests: 3, passed: 1, failed: 2.

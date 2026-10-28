@@ -1,0 +1,14 @@
+{
+  "method": "Exact complete generated public declaration blocks with multiplicity; not line-diff alignment",
+  "oldDeclarations": 93,
+  "newDeclarations": 98,
+  "removed": [],
+  "addedDeclarations": [
+    "pub fn check_transducer_gain(Array[TransducerGainPoint], Double, Double, minimum_db? : Double, maximum_db? : Double) -> TransducerGainBandReport raise",
+    "pub(all) struct TransducerGainBandReport {\n  scope : String\n  status : String\n  start_hz : Double\n  end_hz : Double\n  minimum_db : Double?\n  maximum_db : Double?\n  sample_count : Int\n  state_counts : Map[String, Int]\n  below_minimum_count : Int\n  above_maximum_count : Int\n  range_covered : Bool\n  start_sampled : Bool\n  end_sampled : Bool\n  lowest : TransducerGainObservation?\n  highest : TransducerGainObservation?\n  reasons : Array[String]\n} derive(ToJson)",
+    "pub fn TransducerGainBandReport::to_json(Self) -> Json",
+    "pub(all) struct TransducerGainObservation {\n  point : Int\n  frequency_hz : Double\n  gain : Double?\n  gain_db : Double?\n  state : String\n} derive(ToJson)",
+    "pub fn TransducerGainObservation::to_json(Self) -> Json"
+  ],
+  "oldTransducerGainPointPreserved": true
+}
