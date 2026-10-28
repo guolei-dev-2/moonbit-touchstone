@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--evidence', type=Path, required=True)
 args = parser.parse_args()
+args.evidence = args.evidence.resolve()
 assert not args.evidence.exists(), 'Use fresh evidence'
 args.evidence.parent.mkdir(parents=True, exist_ok=True)
 WORK = args.evidence.with_name(args.evidence.stem + '-cases')
