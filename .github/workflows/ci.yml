@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     env:
-      MOON_HOME: ${{ runner.temp }}/moonbit
       PYTHONDONTWRITEBYTECODE: '1'
       PIP_DISABLE_PIP_VERSION_CHECK: '1'
     steps:
@@ -28,12 +27,15 @@ jobs:
           python-version: '3.14'
       - name: Install pinned MoonBit from official installer
         shell: bash
+        env:
+          MOON_HOME: ${{ runner.temp }}/moonbit
         run: |
           curl --fail --silent --show-error --location --retry 3 \
             https://cli.moonbitlang.com/install/unix.sh --output "$RUNNER_TEMP/install-moonbit.sh"
           printf '%s  %s\n' '46495f8cdc0050f79b6cb195d66478d101cb3601d68506568fbe377fcdf2a9fe' \
             "$RUNNER_TEMP/install-moonbit.sh" | sha256sum --check --strict -
           bash "$RUNNER_TEMP/install-moonbit.sh" "$(cat .moonbit-version)"
+          echo "MOON_HOME=$MOON_HOME" >> "$GITHUB_ENV"
           echo "$MOON_HOME/bin" >> "$GITHUB_PATH"
       - name: Record and verify actual compiler and source identity
         run: python tools/ci-identity.py --output _build/ci/identity.json
