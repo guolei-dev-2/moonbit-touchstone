@@ -10,6 +10,8 @@ checkout、setup-node、setup-python 和 upload-artifact 使用经官方仓库�
 
 新回执统一写入 `_build/ci/`，不覆盖源码附带的历史证据。`tools/verify-rf.py --evidence PATH` 可以指定本次输出，省略参数仍保留旧默认位置；其内部固定的案例日期属于历史 fixture 元数据，实际执行时点以 GitHub run 和 identity 回执为准。
 
+`tools/verify-gain-file-chain.py --evidence _build/ci/gain-file-chain.json`专门验收新鲜输入的GT文件审计链，不引用历史数值payload。它按独立有理数功率公式检查四点的GT/CSV值、零与奇点空值，真实保存失败回执并成功复现，再核等长非法输入/换行字节变化、结果/源条件篡改及已有输出保护。业务fail的退出3、复现成功的退出0和身份/结果不一致的退出5分别断言，不用忽略退出码吞掉失败。
+
 `verification-<commit SHA>` artifact 保留7天，含提交/树身份、各源文件 SHA256、实际工具/依赖版本和独立验值 JSON。GitHub run 的终态及每个必要 job 才证明该次远端验证完成；README 或旧证据里的日期、数字都不能替代它。artifact 到期后可在同一提交重现，不把重复跑绿计为新的功能轮次。
 
 后续有内容的改动应先给出实际场景与预期，完成必要代码、独立回归及文档，再核同一仓库同一提交的真实 CI。首次完整导入为阶段0，不计后续11轮；没有有价值的候选时如实记录，不拆分文件或空提交凑数。

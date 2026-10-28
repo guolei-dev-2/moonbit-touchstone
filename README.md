@@ -44,6 +44,8 @@ MoonBit 原生 Touchstone 1.0/1.1/2.0/2.1 射频网络变换、混合模/噪声�
 
 远端验证的命令、固定版本与回执约定见[CI说明](docs/CI.md)；历史本地回执不代替同一提交的实际 GitHub run。
 
+[GT文件审计链持续验收](tools/verify-gain-file-chain.py)在CI中新生成四点网络，以独立功率真值贯通`gain-record`、`gain-review`与`gain-csv`，核对原始字节、零/奇点、篡改拒绝和输出占用保留。它补齐实际文件消费保证的自动验收，不增加RF能力或改变协议。
+
 ## 构建与运行
 
 工具链固定在 [.moonbit-version](.moonbit-version)，Node.js 24 用于文件 CLI。
