@@ -374,6 +374,9 @@ fn execute(
   if command == "gain-review" {
     return gain_review(text, o).stringify()
   }
+  if command == "s-compare" {
+    return s_compare(text, left, o).stringify()
+  }
   let doc = read_document(text, o, "ports")
   let raw = doc.raw_network()
   let result : Json = match command {

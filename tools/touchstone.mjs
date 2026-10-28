@@ -9,7 +9,7 @@ Commands: inspect validate dump normalize legacy convert renormalize select
           rf-convert mixed single modal modal-metrics terminate terminate-file stability noise transducer-gain
           transducer-gain-impedance
           gain-check gain-csv
-          gain-record gain-review
+          gain-record gain-review s-compare
 Legacy INPUT.sNp supplies its port count; otherwise OPTIONS needs "ports".
 Options: parameter, reference_ohms, selection, frequency_hz, input/output (ports),
          tolerance, format, unit, left_file/right_file (fixtures).
@@ -23,6 +23,9 @@ Delay check: start_hz/end_hz/input/output, minimum_seconds/maximum_seconds (at l
 Gain CSV: same query; every selected original sample with state and limit disposition.
 Gain record: same query options, output a byte-bound receipt; exits 0/3/4.
 Gain review: INPUT @RECEIPT [OUTPUT]; exits 0 reproduced, 5 mismatch, 2 error.
+S compare: baseline INPUT, candidate_file, required maximum_absolute_s_delta;
+           physical_alignment_declared:true asserts corresponding ports/planes (unverified).
+           exits 0 within, 3 exceeds, 4 incompatible, 2 error; deterministic S only.
 OPTIONS-JSON may be @path/to/options.json (ASCII, <=1 MB).
 Sampled checks exit: 0 pass, 3 fail, 4 inconclusive; input/IO errors: 2.
 Output files are created exclusively: existing files are never overwritten.
@@ -72,6 +75,23 @@ try {
       if (output!==undefined) fs.writeFileSync(output,content,{encoding:'utf8',flag:'wx'});
       else process.stdout.write(content);
       process.exitCode=result.status==='reproduced' ? 0 : 5;
+    } else if (command==='s-compare') {
+      const candidateFile=options.candidate_file;
+      if (typeof candidateFile!=='string' || !candidateFile.length) throw new Error('candidate_file must be a nonempty path');
+      const request={...options};
+      delete request.candidate_file;
+      infer(input,request,'ports');
+      infer(candidateFile,request,'candidate_ports');
+      const baselineText=read(input);
+      const candidateText=read(candidateFile);
+      const baselineIdentity=identity(baselineText), candidateIdentity=identity(candidateText);
+      const result=JSON.parse(run(baselineText,JSON.stringify({command:'s-compare',request,
+        baseline_sha256:baselineIdentity.actual_input_sha256,baseline_bytes:baselineIdentity.actual_input_bytes,
+        candidate_sha256:candidateIdentity.actual_input_sha256,candidate_bytes:candidateIdentity.actual_input_bytes}),candidateText,''));
+      const content=JSON.stringify(result,null,2)+'\n';
+      if (output!==undefined) fs.writeFileSync(output,content,{encoding:'utf8',flag:'wx'});
+      else process.stdout.write(content);
+      process.exitCode=result.status==='exceeds' ? 3 : result.status==='incompatible' ? 4 : 0;
     } else {
     options.command = command==='gain-record' ? 'gain-check' : command;
     infer(input,options,'ports');

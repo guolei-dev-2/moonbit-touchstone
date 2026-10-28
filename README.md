@@ -9,6 +9,8 @@ MoonBit 原生 Touchstone 1.0/1.1/2.0/2.1 射频网络变换、混合模/噪声�
 2026-10-27 [上限端口与边界加固](docs/HARDENING-20261027.md)：31/32端口混合模及无源性独立回归55次请求通过，JS/Wasm-GC各31项通过；数学实现和公共API保持不变。历史厂商样本及368/1103回执未重跑。
 ## 0.3.0 新增
 
+新增[双原始S文件严格对照](docs/S-COMPARE.md)：`s-compare`记录baseline/candidate实际字节身份，在原始single-ended S、端口/完整Hz网格/有序参考严格一致且调用方显式声明物理对应后，给出相位敏感复差限值、完整计数及原坐标见证。声明为unverified；不兼容不给部分判定，噪声明确不比较，不转换/对齐，也不改变旧gain-review同源身份门。
+
 新增[群时延采样限值](docs/GROUP-DELAY-CHECK.md)：`Network::check_group_delay`与`delay-check`按Hz闭区间、SI秒界限给出采样判定、原点极值和全部估计的实际差分孔径。复用旧`group_delay`定义，全迹线至少两点且所选S全程非零；0与负秒限有效，fail优先于覆盖不足。没有新增解缠、平滑、插值或连续频带认证，旧`delay`输出不变。
 
 2026-10-29 本地拓展：[单并联理想短截线匹配](docs/SHUNT-STUB.md)。`synthesize_shunt_stub` 在单设计点、共同正实 Z0 下显式选择开路或短路，返回主周期内两条电长度解或精确已匹配的连续距离族，并区分纯无功无解、非法输入及数值限制。`moon run examples/shunt_stub_match --target js`（或 `wasm-gc`）用当前 Network 的 ABCD、级联和 Ω 端接实际消费结果；独立解析 ABCD 核对手算及复负载。只给弧度/导波波长比例，不提供微带毫米、双短截线、Q/带宽优化或性能承诺。
