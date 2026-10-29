@@ -55,3 +55,5 @@
 2026-10-29 后续逻辑第8轮增加[无噪声原频段文档/文件导出](CROP-FREQUENCIES.md)：Document::crop及crop命令按有限非负Hz闭区间保留原始完整记录和原基底/参数/参考/信息，交由现有writer与下游分析消费。无插值、最近点或连续频段认证；空选区和实际噪声明确拒绝。旧合法输入、接口和噪声模型保持，没有新格式、校准或RF科学模型。
 
 2026-10-29 后续逻辑第9轮增加[还原单端文档的文件出口](SINGLE-ENDED-FILE.md)：single-file复用原single_ended_network与Document writer，恢复完整原单端矩阵/参考并保留Information/文档参考，所有频点保留。已单端噪声直接规范保留，混合模噪声在新出口明确拒绝；旧single JSON和所有库API/科学模型不变，没有新格式或频段裁剪变体。
+
+2026-10-29 后续逻辑第10轮增加[源相关NF采样上限判定](NOISE-CHECK.md)：Document::check_noise_figure与noise-check在原Γ/物理Ω NF完整网格结果上选取闭Hz原样本，返回源/双参考条件、超限原点、覆盖和pass/fail/inconclusive。新入口要求单端二端口实际噪声，不把无噪声记录当作零，保留旧物理与插值拒绝；旧NF/协方差/格式/模型保持，不作连续频段、测量不确定度或校准认证。

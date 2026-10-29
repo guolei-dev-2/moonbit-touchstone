@@ -1,0 +1,10 @@
+{
+  "start_hz": 2000000,
+  "end_hz": 4000000,
+  "maximum_db": 2,
+  "source_mode": "impedance",
+  "source_ohms": [
+    100,
+    0
+  ]
+}

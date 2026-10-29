@@ -14,6 +14,7 @@
 | 指定混合模对 | `network.to_mixed_mode([(0,1),(2,3)])` | 零基不重叠配对，返回Document；同对参考相等，剩余端口保留S |
 | 无源/互易诊断 | `network.diagnostics(tolerance=1e-9)` | 返回每个采样点的诊断；三态定义见RF约定 |
 | 回损/VSWR | `network.metrics(output,input)` | 零基端口；无穷损耗用标志，VSWR区分finite/infinite/active；[一端口示例](ONE-PORT-METRICS.md)展示公开模块与相同文本的文件消费 |
+| NF采样上限 | `document.check_noise_figure(start_hz,end_hz,source,maximum_db=...,impedance=true)` | 默认Γ模式；显式true为物理Ω，单端实际带噪二端口，原网格NF/采样判定；[完整约定](NOISE-CHECK.md) |
 | 已知夹具去嵌入 | `measured.deembed(left,right)` | Network或Document的方法；需要匹配频点和参考、可逆夹具链，不提取未知夹具 |
 
 这里的“document”“network”是变量名。库使用MoonBit的 `raise`，错误带原因；CLI将输入/数学失败报告到stderr并退出2。不要依赖不存在的 `Touchstone::from_string`、`to_z_params`、`ZParams` 或 `RfError::SingularMatrix` 接口。

@@ -1,0 +1,27 @@
+{
+  "source_mode": "impedance",
+  "source_ohms": [
+    100,
+    0
+  ],
+  "noise_reference_ohms": 50,
+  "network_reference_ohms": [
+    75,
+    100
+  ],
+  "frequency_hz": [
+    1000000,
+    2000000,
+    4000000,
+    5000000
+  ],
+  "figure_db": [
+    0.9691001300805642,
+    1.7609125905568124,
+    3.010299956639813,
+    3.5218251811136247
+  ],
+  "quantity": "source_noise_figure",
+  "source_units": "ohm",
+  "figure_units": "dB"
+}

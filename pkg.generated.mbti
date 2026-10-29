@@ -114,6 +114,7 @@ pub struct Document {
   // private fields
 }
 pub fn Document::cascade(Self, Self) -> Self raise
+pub fn Document::check_noise_figure(Self, Double, Double, Complex, maximum_db~ : Double, impedance? : Bool) -> NoiseFigureBandReport raise
 pub fn Document::crop(Self, Double, Double) -> Self raise
 pub fn Document::deembed(Self, Self, Self) -> Self raise
 pub fn Document::information_lines(Self) -> Array[String]
@@ -215,6 +216,41 @@ pub fn Network::to_mixed_mode(Self, Array[(Int, Int)]) -> Document raise
 pub fn Network::transducer_gain(Self, source? : Complex, load? : Complex) -> Array[TransducerGainPoint] raise
 pub fn Network::transducer_gain_impedance(Self, Complex, Complex) -> Array[TransducerGainPoint] raise
 pub fn Network::write_legacy(Self, format? : String, unit? : String) -> String raise
+
+pub struct NoiseFigureBandReport {
+  scope : String
+  figure_units : String
+  status : String
+  start_hz : Double
+  end_hz : Double
+  maximum_db : Double
+  source_mode : String
+  source : Complex
+  source_units : String
+  network_reference_ohms : Array[Double]
+  noise_reference_ohms : Double
+  noise_records : Int
+  available_start_hz : Double
+  available_end_hz : Double
+  range_covered : Bool
+  start_sampled : Bool
+  end_sampled : Bool
+  sample_count : Int
+  failed_count : Int
+  highest : NoiseFigureSample?
+  samples : Array[NoiseFigureSample]
+}
+pub fn NoiseFigureBandReport::to_json(Self) -> Json
+pub impl ToJson for NoiseFigureBandReport
+
+pub struct NoiseFigureSample {
+  point : Int
+  frequency_hz : Double
+  figure_db : Double
+  above_maximum : Bool
+  status : String
+} derive(ToJson)
+pub fn NoiseFigureSample::to_json(Self) -> Json
 
 pub(all) struct NoisePoint {
   frequency_hz : Double

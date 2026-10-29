@@ -79,6 +79,7 @@ node tools/touchstone.mjs stability examples/attenuator.s2p
 | stability | 可选 `{"gain":1.0}`，返回稳定性、源/负载稳定圆及可用/工作增益圆 |
 | noise | `{"source":[0.2,0.1],"figure_db":3}`，返回 A/S 相关矩阵、噪声系数和噪声圆 |
 | noise物理源模式 | `{"source_mode":"impedance","source_ohms":[150,0]}`，返回NF dB曲线及物理源/独立噪声参考条件，不请求A/S或圆 |
+| noise-check | start_hz/end_hz/maximum_db及Γ或Ω源条件；完整采样上限报告，exit0/3/4为pass/fail/inconclusive；[约定](NOISE-CHECK.md) |
 | cascade / deembed / interpolate | 原有参数接口，现在通过 Document 同时传播网络与噪声 |
 
 纯 Network JSON 是明确的确定性网络视图，不声称输出了完整带噪文档。CLI 的 noisy `mixed`、noisy `select` 与 noisy `legacy` 会明确拒绝：这些输出没有实现对应的噪声模态/端口重排传播，不能静默丢弃或保留错误方向的参数。`convert`/`renormalize` 保留同一物理噪声相关矩阵及独立 noise_reference；带噪的插值、级联和双夹具去嵌入均有 Document 接口。

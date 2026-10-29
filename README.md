@@ -9,6 +9,8 @@ MoonBit 原生 Touchstone 1.0/1.1/2.0/2.1 射频网络变换、混合模/噪声�
 2026-10-27 [上限端口与边界加固](docs/HARDENING-20261027.md)：31/32端口混合模及无源性独立回归55次请求通过，JS/Wasm-GC各31项通过；数学实现和公共API保持不变。历史厂商样本及368/1103回执未重跑。
 ## 0.3.0 新增
 
+新增[NF采样上限判定](docs/NOISE-CHECK.md)：`Document::check_noise_figure`与`noise-check`复用原Γ/物理Ω NF计算，输出闭Hz频段的源/参考条件、全部原点、超限见证及覆盖状态；CLI区分pass/fail/inconclusive。没有新增噪声或校准模型，旧NF数组输出保持。
+
 新增[单端文档文件出口](docs/SINGLE-ENDED-FILE.md)：`single-file`复用已有变换，把混合模完整矩阵和原单端参考还原后导出Touchstone，保留Information/文档参考。旧`single` JSON保持；已单端输入连同原噪声规范写出，混合模噪声明确拒绝。公开包/文件接收实际衔接旧指标，没有新RF模型或库API。
 
 新增[无噪声文档的原频段导出](docs/CROP-FREQUENCIES.md)：`Document::crop`与`crop`按Hz闭区间保留原始完整记录，保留参数/参考/模态/信息并写出可继续分析的文件。无插值或最近点替代；空选区和实际噪声明确拒绝，原输入与旧接口保持。公开包/文件例程实际衔接旧指标；[CI计划](CI-PLAN.md)列出必要接收门。

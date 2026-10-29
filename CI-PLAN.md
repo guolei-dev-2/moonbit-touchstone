@@ -21,6 +21,16 @@ python tools/verify-crop.py --evidence _build/ci/crop.json
 
 ## 本地与远端证据分开
 
+### 源相关NF采样上限
+
+```sh
+moon run examples/noise_check --target js --release > _build/ci/noise-check-example-js.json
+moon run examples/noise_check --target wasm-gc --release > _build/ci/noise-check-example-wasm-gc.json
+python tools/verify-noise-check.py --evidence _build/ci/noise-check.json
+```
+
+必要步骤`Consume sampled source-dependent noise figure acceptance`使用固定完整噪声文件，独立分数因子5/4、3/2、2、9/4取dB，核所有报告条件/原索引/数值/状态和实际JSON文件接收。Γ/Ω共一完整工作流；原NF数学及旧门不改，不重复本地旧参考生成器。
+
 ### 单端文档文件出口
 
 ```sh

@@ -625,6 +625,42 @@ fn execute(
       }
       doc.network_only().transducer_gain(source~, load~).to_json()
     }
+    "noise-check" => {
+      let mode : String = optional(o, "source_mode", "gamma")
+      if mode != "gamma" && mode != "impedance" {
+        raise Failure("unknown noise check source_mode")
+      }
+      let source_key = if mode == "impedance" {
+        "source_ohms"
+      } else {
+        "source"
+      }
+      for key in o.keys() {
+        if !(key == "command" ||
+          key == "ports" ||
+          key == "start_hz" ||
+          key == "end_hz" ||
+          key == "maximum_db" ||
+          key == "source_mode" ||
+          key == source_key) {
+          raise Failure("unknown noise check option: " + key)
+        }
+      }
+      let source = if mode == "gamma" && !o.contains("source") {
+        @lib.complex(0.0)
+      } else {
+        complex_option(o, source_key)
+      }
+      doc
+      .check_noise_figure(
+        required(o, "start_hz"),
+        required(o, "end_hz"),
+        source,
+        maximum_db=required(o, "maximum_db"),
+        impedance=mode == "impedance",
+      )
+      .to_json()
+    }
     "noise" => {
       let mode : String = optional(o, "source_mode", "gamma")
       match mode {
