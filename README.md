@@ -9,6 +9,8 @@ MoonBit 原生 Touchstone 1.0/1.1/2.0/2.1 射频网络变换、混合模/噪声�
 2026-10-27 [上限端口与边界加固](docs/HARDENING-20261027.md)：31/32端口混合模及无源性独立回归55次请求通过，JS/Wasm-GC各31项通过；数学实现和公共API保持不变。历史厂商样本及368/1103回执未重跑。
 ## 0.3.0 新增
 
+修复[群时延有限秒值的中间溢出](docs/GROUP-DELAY-SCALE-REPAIR.md)：合法有限Hz网格的相位/Hz商溢出时，先完成角频率单位换算，返回本可表示的秒值及完整`delay-check`报告。普通路径、原解缠/割线/孔径、真实最终溢出与零传输错误保持；没有新API、模型或格式。
+
 修复[有限复分量的DB读写](docs/DB-CARTESIAN-REPAIR.md)：`6168 dB/45°`及有限`1.6e308+j1.6e308`不再因径向模长中间溢出而误拒绝。现有公开包与文件路径实际消费完整结果，普通DB输出、真实分量溢出、MA及零DB边界保持；没有新API、格式或RF模型。
 
 新增[物理源Ω的NF接收方](docs/NOISE-IMPEDANCE.md)：`Document::noise_figure_impedance`及noise的显式`source_mode:"impedance"`接收有限复源且Re(Zs)>0，返回原Hz顺序的NF dB与源/独立噪声参考条件。直接复用原协方差/插值与缩放运算，避免先舍入Γ；旧Γ入口及noise默认四项输出保持。没有新校准、参考波或噪声模型。

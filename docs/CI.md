@@ -22,6 +22,8 @@ checkout、setup-node、setup-python 和 upload-artifact 使用经官方仓库�
 
 `Consume finite Cartesian DB input and output`运行`examples/db_cartesian`的JS/Wasm-GC公开包接收者，再由`tools/verify-db-cartesian.py`以90位Decimal原始预期核全部DB字段、复矩阵、单位/参考/信息及真实文件消费。保留普通输出、真正分量溢出、MA/零DB及独占输出错误；未改变旧科学门或公共接口，也不将类型检查当作native运行。
 
+`Consume finite group-delay seconds from package and files`实际运行JS/Wasm-GC公开包，再以`tools/verify-delay-finite-seconds.py`的100位Decimal atan级数/数学π及手算割线核完整秒值与限值报告。真实文件接收覆盖正/负/零、原点/孔径、首个极值、fail/覆盖/空选区、真溢出和独占输出；普通完整旧输出兼容控制保留，没有改变旧科学生成器或将检查当作native运行。
+
 `verification-<commit SHA>` artifact 保留7天，含提交/树身份、各源文件 SHA256、实际工具/依赖版本和独立验值 JSON。GitHub run 的终态及每个必要 job 才证明该次远端验证完成；README 或旧证据里的日期、数字都不能替代它。artifact 到期后可在同一提交重现，不把重复跑绿计为新的功能轮次。
 
 后续有内容的改动应先给出实际场景与预期，完成必要代码、独立回归及文档，再核同一仓库同一提交的真实 CI。首次完整导入为阶段0，不计后续11轮；没有有价值的候选时如实记录，不拆分文件或空提交凑数。

@@ -1,0 +1,8 @@
+{
+  "start_hz": 0,
+  "end_hz": 5e-324,
+  "input": 0,
+  "output": 1,
+  "minimum_seconds": -5e307,
+  "maximum_seconds": 0
+}

@@ -196,9 +196,17 @@ pub fn Network::group_delay(
   Array::makei(phases.length(), i => {
     let lo = (i - 1).max(0)
     let hi = (i + 1).min(phases.length() - 1)
-    let delay = -(phases[hi] - phases[lo]) /
-      (s.frequencies[hi] - s.frequencies[lo]) /
-      (2.0 * @math.PI)
+    let phase_difference = -(phases[hi] - phases[lo])
+    let span_hz = s.frequencies[hi] - s.frequencies[lo]
+    let phase_per_hz = phase_difference / span_hz
+    // SI seconds divide phase by angular frequency, not Hz alone. The
+    // intermediate phase/Hz quotient can overflow while seconds still fit.
+    // On that path apply 2pi first; ordinary finite quotients stay unchanged.
+    let delay = if phase_per_hz.is_inf() {
+      phase_difference / (2.0 * @math.PI) / span_hz
+    } else {
+      phase_per_hz / (2.0 * @math.PI)
+    }
     if !finite(delay) {
       raise Failure("group delay overflow")
     }
