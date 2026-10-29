@@ -1,6 +1,6 @@
 # MoonTouchstone 复审说明 · 2026-10-22
 
-本轮仓库是射频网络库。用户提供的反馈称附件出现 DataFrame/MoonFrame 内容；本地原有两份申报已是 Touchstone，无法反推出报名系统当时上传的文件。现将 [申报书](PROPOSAL.md) 和 [同名附件](guolei-dev-touchstone-申报书.md) 逐字统一，申请人须核实并替换实际表单附件。
+本轮仓库是射频网络库。用户提供的反馈称附件出现 DataFrame/MoonFrame 内容；本地原有两份申报已是 Touchstone，无法反推出报名系统当时上传的文件。现将 [申报书](PROPOSAL.md) 和 [同名附件](guolei-dev-2-touchstone-申报书.md) 逐字统一，申请人须核实并替换实际表单附件。
 
 与表格 DataFrame 的区别：本库以频率、参考阻抗和复数网络矩阵为模型，实现 S/Y/Z/H/G/ABCD/T、模态基变换、复负载端接、噪声相关矩阵与放大器稳定性；不申报列式存储、表格查询或 MoonFrame 功能。
 

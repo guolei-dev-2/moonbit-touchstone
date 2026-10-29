@@ -5,6 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 import platform
+import re
 import subprocess
 import sys
 
@@ -24,7 +25,14 @@ assert compiler.split()[0] == 'v' + pinned, (compiler, pinned)
 paths = subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode('utf-8').split('\0')
 sources = {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest()
            for name in paths if name}
+manifest_path = ROOT / 'moon.mod'
+manifest_text = manifest_path.read_text(encoding='utf-8')
+module_name = re.search(r'^name\s*=\s*"([^"]+)"', manifest_text, re.MULTILINE).group(1)
+module_repository = re.search(r'^repository\s*=\s*"([^"]+)"', manifest_text, re.MULTILINE).group(1)
 result = {
+    'moduleName': module_name,
+    'moduleRepository': module_repository,
+    'moduleManifestSha256': hashlib.sha256(manifest_path.read_bytes()).hexdigest(),
     'recordedAtUtc': datetime.datetime.now(datetime.timezone.utc).isoformat(),
     'commit': command('git', 'rev-parse', 'HEAD'),
     'gitTree': command('git', 'rev-parse', 'HEAD^{tree}'),

@@ -1,5 +1,5 @@
 import {
-  "guolei-dev/touchstone" @rf,
+  "guolei-dev-2/touchstone" @rf,
 }
 
 pkgtype(kind: "executable")

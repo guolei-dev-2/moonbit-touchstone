@@ -1,5 +1,5 @@
 import {
-  "guolei-dev/touchstone" @lib,
+  "guolei-dev-2/touchstone" @lib,
   "moonbitlang/core/json",
   "moonbitlang/core/debug",
 }

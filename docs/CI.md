@@ -33,3 +33,5 @@ checkout、setup-node、setup-python 和 upload-artifact 使用经官方仓库�
 `verification-<commit SHA>` artifact 保留7天，含提交/树身份、各源文件 SHA256、实际工具/依赖版本和独立验值 JSON。GitHub run 的终态及每个必要 job 才证明该次远端验证完成；README 或旧证据里的日期、数字都不能替代它。artifact 到期后可在同一提交重现，不把重复跑绿计为新的功能轮次。
 
 后续有内容的改动应先给出实际场景与预期，完成必要代码、独立回归及文档，再核同一仓库同一提交的真实 CI。首次完整导入为阶段0，不计后续11轮；没有有价值的候选时如实记录，不拆分文件或空提交凑数。
+
+当前模块`guolei-dev-2/touchstone`与仓库账号一致。CI身份记录`moduleName`、`moduleRepository`和`moduleManifestSha256`；构建/公开包/文件路径及模块封包均消费此提交源码，历史旧名仅用于旧回执或原实现来源。

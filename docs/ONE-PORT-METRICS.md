@@ -8,7 +8,7 @@
 moon run examples/one_port_metrics --target js
 ```
 
-示例只导入`guolei-dev/touchstone`，调用`parse(text).network_only().metrics(0,0)`，输出`input_text`及`metrics`数组。`input_text/metrics`外层是这个示例的包装，不是新增库或CLI协议。合成输入为Touchstone2.1 Z RI、50Ω正实参考、5个频点；Z数值是物理ohm。没有厂家模型或测量数据。
+示例只导入`guolei-dev-2/touchstone`，调用`parse(text).network_only().metrics(0,0)`，输出`input_text`及`metrics`数组。`input_text/metrics`外层是这个示例的包装，不是新增库或CLI协议。合成输入为Touchstone2.1 Z RI、50Ω正实参考、5个频点；Z数值是物理ohm。没有厂家模型或测量数据。
 
 | Z（Ω） | Γ=(Z−50)/(Z+50) | 回损 | VSWR |
 | --- | --- | --- | --- |

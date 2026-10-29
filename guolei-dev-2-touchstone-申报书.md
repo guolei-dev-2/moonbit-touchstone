@@ -1,6 +1,6 @@
 # MoonTouchstone：MoonBit射频网络数据处理与匹配分析库
 
-MoonTouchstone将Touchstone文件转换为可计算的网络模型，完成参数处理、差分链路、采样指标分析与理想单频匹配，输出可定位、可复算的结果。模块名为`guolei-dev/touchstone`。
+MoonTouchstone将Touchstone文件转为频域网络，提供参数处理、差分链路、采样分析与理想单频匹配，输出可定位、可复算的结果。模块为`guolei-dev-2/touchstone`；当前维护与申报账号为`guolei-dev-2`。
 
 面向射频工程师、差分互连开发者和教学工具作者，用于整理仿真或测量文件、移除已知夹具影响、比较终端条件、检查工作频段和学习短截线匹配，减少格式与单位转换错误。
 
@@ -23,8 +23,8 @@ moon run examples/shunt_stub_match --target js
 ```
 输出开/短端的电长度、退化状态，以及通过ABCD、级联和Ω端接得到的S11与原有指标；可换wasm-gc后端，无需Python运行环境。
 
-**完成度。**保留定向回归、独立数值与匹配正向证据；频段/单端导出、尺度修复有双后端接收。GT审计与文件链独立验值并纳入CI。验证覆盖有限样例，不承诺数值全域；GitHub验证见实际run；未发布注册表或提交赛事。
+**交付与验证。**源码、双后端模块/文件消费者和独立数值证据纳入GitHub CI，按实际提交记录。验证限于有限样例，不承诺数值全域；注册表发布与赛事受理分别记录。
 
 **适用边界。**有限double和固定正实参考，预算10万频点、200万复数及64MB文本；差分对内参考相同。采样判定不保证连续频带，群时延受相位混叠限制，无源boundary态不等于严格合格。不含复参考功率波、主动负阻GT、未知夹具提取、多端口噪声降维、微带毫米、双短截线、Q/带宽优化或器件认证。
 
-**仓库与许可。**[guolei-dev/moonbit-touchstone](https://github.com/guolei-dev-2/moonbit-touchstone)，MIT。scikit-rf、NumPy、SciPy开发参考为BSD-3-Clause并保留许可；IBIS规范和厂家数据依原授权，未确认再分发权的厂家原件不附送，见THIRD-PARTY.md。
+**仓库与许可。**[guolei-dev-2/moonbit-touchstone](https://github.com/guolei-dev-2/moonbit-touchstone)，MIT，保留原版权及贡献历史。scikit-rf、NumPy、SciPy开发参考为BSD-3-Clause并保留许可；IBIS规范和厂家数据依原授权，未确认再分发权的厂家原件不附送，见THIRD-PARTY.md。

@@ -4,6 +4,10 @@
 
 保持现有格式、严格all-target检查、完整JS/Wasm-GC单测、release JS、公共接口再生成、原Node CLI、全部既有独立科学/文件消费者、双后端例程、模块封包和源码未改写门。新增原频点裁剪门不替换或跳过这些旧门。
 
+## 当前模块与账号归属
+
+当前模块为`guolei-dev-2/touchstone`，仓库/维护与申报账号为`guolei-dev-2`。`Record and verify actual compiler and source identity`记录实际模块名、仓库声明及manifest SHA；后续严格检查、全部新命名空间公开包消费者、Node相对桥接和`moon package --frozen`覆盖真实产品路径。`moon info`只允许重新生成包限定名，原函数/类型成员与行为保持。原42步workflow全部保留，历史回执中的旧名按原日期/来源保留，不作为当前归属。
+
 ## 原频点文件导出的必要接收门
 
 ```sh
@@ -43,4 +47,4 @@ python tools/verify-single-file.py --evidence _build/ci/single-file.json
 
 本地只执行本轮相关的一次干净检查，不重跑未改的旧科学生成器。完整旧门在最终head的必要CI运行，失败在同轮修正并保留原失败证据。all-target检查不等于native运行。
 
-交付报告记录具体runId/URL/jobs/新门及各状态、独立预期、真实输出和未支持边界。最终head源码ZIP必须逐成员读回；Git blob、原工作、实际测试复制件、实际编译/输出各有独立身份。云artifact元数据和本地bundle不能冒充下载云binary或二进制相等。根独立ACCEPT前不增加有效轮数。
+交付报告记录具体runId/URL/jobs/新门及各状态、独立预期、真实输出和未支持边界。最终head源码ZIP必须逐成员读回；Git blob、原工作、实际测试复制件、实际编译/输出各有独立身份。云artifact元数据和本地bundle不能冒充下载云binary或二进制相等。

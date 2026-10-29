@@ -1,6 +1,6 @@
 # 公共API与证据约定
 
-当前模块为 `guolei-dev/touchstone@0.3.0`，源仓库为 [guolei-dev/moonbit-touchstone](https://github.com/guolei-dev/moonbit-touchstone)。完整签名以 [pkg.generated.mbti](../pkg.generated.mbti) 为准。数学实现留在MoonBit，Node仅承担文件/CLI/桥接；Python只参与开发验证。
+当前模块为 `guolei-dev-2/touchstone@0.3.0`，源仓库为 [guolei-dev-2/moonbit-touchstone](https://github.com/guolei-dev-2/moonbit-touchstone)。完整签名以 [pkg.generated.mbti](../pkg.generated.mbti) 为准。数学实现留在MoonBit，Node仅承担文件/CLI/桥接；Python只参与开发验证。
 
 ## 实际消费入口
 

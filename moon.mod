@@ -1,4 +1,4 @@
-name = "guolei-dev/touchstone"
+name = "guolei-dev-2/touchstone"
 
 version = "0.3.0"
 

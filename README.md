@@ -1,136 +1,97 @@
 # MoonTouchstone
 
-[项目仓库](https://github.com/guolei-dev-2/moonbit-touchstone) · `guolei-dev/touchstone@0.3.0` · MIT
+[项目仓库](https://github.com/guolei-dev-2/moonbit-touchstone) · `guolei-dev-2/touchstone@0.3.0` · MIT
 
-MoonBit 原生 Touchstone 1.0/1.1/2.0/2.1 射频网络变换、混合模/噪声级联与采样频段分析库。输入是带频率、参考阻抗和物理单位的复数矩阵；计算核心包括参数互转、模态变换、噪声与射频稳定性。
+MoonTouchstone 是 MoonBit 原生射频网络数据处理库。它把 Touchstone 文件中的频率、参考阻抗和复数矩阵变成可计算的网络，提供参数变换、差分链路、噪声分析、采样频段判定与理想单频匹配，供射频工程、互连开发和教学工具使用。
 
+当前仓库维护与申报账号为 **guolei-dev-2**。原实现来源 **guolei-dev**、贡献者版权及 Git 作者历史继续保留；当前仓库归属不改变原实现的作者归属。
 
-2026-10-23 复核修复见 [复核记录](REVIEW-20261023.md)，包含上一轮漏检的反例和本轮验证入口。
-2026-10-27 [上限端口与边界加固](docs/HARDENING-20261027.md)：31/32端口混合模及无源性独立回归55次请求通过，JS/Wasm-GC各31项通过；数学实现和公共API保持不变。历史厂商样本及368/1103回执未重跑。
-## 0.3.0 新增
+## 功能
 
-新增[NF采样上限判定](docs/NOISE-CHECK.md)：`Document::check_noise_figure`与`noise-check`复用原Γ/物理Ω NF计算，输出闭Hz频段的源/参考条件、全部原点、超限见证及覆盖状态；CLI区分pass/fail/inconclusive。没有新增噪声或校准模型，旧NF数组输出保持。
+| 任务 | 已实现能力 |
+| --- | --- |
+| 文件读写 | Touchstone 1.0/1.1/2.0/2.1，RI/MA/DB，Hz–GHz，1–32 端口，全/上下三角及二端口顺序；保存 Information、噪声和模态元数据 |
+| 网络变换 | S/Y/Z 及适用二端口 H/G/ABCD/T 互转，正实参考重归一化，端口选择、级联、已知左右夹具去嵌入和复 Γ/Ω 负载端接降维 |
+| 混合模 | 指定不重叠差分对，S/Y/Z 单端与模态互转，成对 D/C 及未配对 S 端口，SDD/SDC/SCD/SCC 与三种功率波 CMRR |
+| 带噪网络 | 二端口噪声参数与 Haus-Adler 相关矩阵互转、插值、级联、双侧去嵌入，Γ/物理复 Ω 源的 NF 及噪声圆 |
+| 射频指标 | 回损、插损、VSWR、群时延，互易/无源诊断，K、μ/μ′、MSG/MAG、稳定圆/增益圆及实际终端传输功率增益 GT |
+| 采样判定 | 多频段限值、通带波动、群时延与 NF 上限，保留原点、极值、覆盖和无法判定状态；GT 有逐点 CSV、字节/条件回执与复核 |
+| 文件互操作 | 原频点闭 Hz 频段导出、完整单端文件导出、端接后的 S 文件；双原始 S 文件严格对照并保留双方输入身份和复差见证 |
+| 匹配综合 | 单设计点理想无损单并联开/短路短截线，主周期内两条电长度解或已匹配连续距离族，并由现有 Network 正向消费 |
 
-新增[单端文档文件出口](docs/SINGLE-ENDED-FILE.md)：`single-file`复用已有变换，把混合模完整矩阵和原单端参考还原后导出Touchstone，保留Information/文档参考。旧`single` JSON保持；已单端输入连同原噪声规范写出，混合模噪声明确拒绝。公开包/文件接收实际衔接旧指标，没有新RF模型或库API。
+格式解析、矩阵和 RF 计算均在 MoonBit 中实现。Node.js 只负责文件、参数、散列和编译桥接；Python 用于开发期独立验值，库运行不依赖 Python。
 
-新增[无噪声文档的原频段导出](docs/CROP-FREQUENCIES.md)：`Document::crop`与`crop`按Hz闭区间保留原始完整记录，保留参数/参考/模态/信息并写出可继续分析的文件。无插值或最近点替代；空选区和实际噪声明确拒绝，原输入与旧接口保持。公开包/文件例程实际衔接旧指标；[CI计划](CI-PLAN.md)列出必要接收门。
+## 从源码运行
 
-修复[群时延有限秒值的中间溢出](docs/GROUP-DELAY-SCALE-REPAIR.md)：合法有限Hz网格的相位/Hz商溢出时，先完成角频率单位换算，返回本可表示的秒值及完整`delay-check`报告。普通路径、原解缠/割线/孔径、真实最终溢出与零传输错误保持；没有新API、模型或格式。
-
-修复[有限复分量的DB读写](docs/DB-CARTESIAN-REPAIR.md)：`6168 dB/45°`及有限`1.6e308+j1.6e308`不再因径向模长中间溢出而误拒绝。现有公开包与文件路径实际消费完整结果，普通DB输出、真实分量溢出、MA及零DB边界保持；没有新API、格式或RF模型。
-
-新增[物理源Ω的NF接收方](docs/NOISE-IMPEDANCE.md)：`Document::noise_figure_impedance`及noise的显式`source_mode:"impedance"`接收有限复源且Re(Zs)>0，返回原Hz顺序的NF dB与源/独立噪声参考条件。直接复用原协方差/插值与缩放运算，避免先舍入Γ；旧Γ入口及noise默认四项输出保持。没有新校准、参考波或噪声模型。
-
-新增[双原始S文件严格对照](docs/S-COMPARE.md)：`s-compare`记录baseline/candidate实际字节身份，在原始single-ended S、端口/完整Hz网格/有序参考严格一致且调用方显式声明物理对应后，给出相位敏感复差限值、完整计数及原坐标见证。声明为unverified；不兼容不给部分判定，噪声明确不比较，不转换/对齐，也不改变旧gain-review同源身份门。
-
-新增[群时延采样限值](docs/GROUP-DELAY-CHECK.md)：`Network::check_group_delay`与`delay-check`按Hz闭区间、SI秒界限给出采样判定、原点极值和全部估计的实际差分孔径。复用旧`group_delay`定义，全迹线至少两点且所选S全程非零；0与负秒限有效，fail优先于覆盖不足。没有新增解缠、平滑、插值或连续频带认证，旧`delay`输出不变。
-
-2026-10-29 本地拓展：[单并联理想短截线匹配](docs/SHUNT-STUB.md)。`synthesize_shunt_stub` 在单设计点、共同正实 Z0 下显式选择开路或短路，返回主周期内两条电长度解或精确已匹配的连续距离族，并区分纯无功无解、非法输入及数值限制。`moon run examples/shunt_stub_match --target js`（或 `wasm-gc`）用当前 Network 的 ABCD、级联和 Ω 端接实际消费结果；独立解析 ABCD 核对手算及复负载。只给弧度/导波波长比例，不提供微带毫米、双短截线、Q/带宽优化或性能承诺。
-
-20轮[噪声源功率余量修复](docs/NOISE-SOURCE-REPAIR-20261028.md)：`noise_figure`复用既有精确复分量余量，修复近单位圆合法源的噪声系数严重偏差及相邻域外源误接受。独立高精度公式核对320.34118/164.77469 dB反例；新3项测试三后端各通过，6次实际文件CLI/5项检查通过，普通匹配源完整输出保持。公共API、噪声相关矩阵/插值/圆及其余RF算法不变。
-
-17轮[混合模信息行修复](docs/MIXED-INFORMATION-REPAIR-20261028.md)：修复`mixed`文件转换漏传合法Information信息行的问题。3行信息的实际反例已复现，修复后8个Node进程/6项定向检查通过；网络/模态顺序和无信息输入文本保持，公共API及RF算法不变。第16轮相邻项已在本轮闭环，旧回执不改写。
-
-16轮本地拓展：[显式端接后导出Touchstone](docs/TERMINATE-FILE.md)。独立`terminate-file`把带复Γ/Ω负载的多端口降维结果写成可继续消费的单端S文件，保留信息行，明确拒绝无法传播的噪声记录。提供四端口→二端口→GT回执的可运行文件示例；主验收27个CLI用例/19项检查、6个独立全四端口方程GT对照通过。旧`terminate` JSON、数值算法和公共API保持。
-
-13轮本地拓展：[GT逐点CSV审阅](docs/GAIN-CSV.md)。`transducer_gain_samples_csv`与`gain-csv`导出闭频段内每个原始采样点，保留五种GT状态、限值标志和逐点/整段判定。新7项测试三后端各通过，27个实际CLI进程/29项消费者检查通过；旧数值、报告及回执协议保持。
-
-12轮本地拓展：[GT回执与复核](docs/GAIN-RECEIPTS.md)。可选`gain-record`把实际输入字节、有效Γ/Ω条件和采样报告存为回执，`gain-review`检查输入身份并重新计算比较；成功复现fail仍是指标失败。43个实际CLI进程、32项工作流检查通过，旧数值/报告算法与公共库API不变。
-
-11轮本地拓展：[实际终端GT采样限值报告](docs/GAIN-CHECK.md)。`gain-check`同时支持Γ/Ω条件，给出通过/失败/无法判定、状态计数、最差原始频点和覆盖说明；正确区分零功率、正功率上/下溢与奇点。新测试三后端各8项、独立39次请求/27份报告比对通过，05—10数值实现不变。
-
-10轮本地拓展：[直接以复阻抗Ω查询GT](docs/IMPEDANCE-GAIN.md)。新增`transducer_gain_impedance`及独立CLI命令，接收物理源/负载Ω，保留转换为Γ时可能丢掉的小正电阻信息；附文件/纯MoonBit示例。新功能三后端各8项、最终独立55次请求/52点通过，原Γ接口及05—09实现保持。
-
-本地拓展：[实际源/负载传输功率增益GT](docs/TRANSDUCER-GAIN.md)。`Network::transducer_gain`与`transducer-gain` CLI消费复Γs/Γl，区分有限、精确零、奇点及正功率的上/下溢，并保留可表示的dB值。提供合成文件与纯MoonBit示例；这是实际终端增益分析，不替代稳定性判据。
-
-09轮[匹配边界修复](docs/MATCHING-REPAIR-20261028.md)直接从复分量保留近单位圆的正功率裕量，修复错误增益与域外负载误接受，公共API不变。相关GT测试三后端各10/10；66次新边界请求、41个有效点及3次实际文件CLI消费通过，厂家模型只新增两组各3点的GT核对。
-
-2026-10-28 [格式极值修复](docs/FORMAT-REPAIR-20261028.md)修复旧版Y/Z/H/G归一化中间溢出及巨大度数周期丢失。相关解析/写出测试JS/Wasm-GC/native各10/10，独立Fraction与元数据消费者70次请求通过；公共API保持兼容。
-
-2026-10-28 [RF极值修复](docs/RF-EXTREME-REPAIR-20261028.md)修复极大K下MAG误归零、复阻抗端接的溢出/Γ极点误拒绝及小Rn被抹零。相关RF回归在JS/Wasm-GC/native各8/8通过，另有60次独立消费者请求；没有重复历史全套或厂商输入。
-
-2026-10-28 [数值尺度修复](docs/NUMERIC-REPAIR-20261028.md)修复有限复数商的中间溢出、复数主元误判及大尺度消元误拒绝，公共API保持兼容。JS/Wasm-GC各38/38、新增native数值回归及独立Fraction/scikit-rf定向检查通过；历史31/55及厂商输入未重跑。
-
-- 指定差分对的单端 ↔ 混合模 S/Y/Z，支持成对 D/C 和保留单端 S，正确计算差分/共模参考阻抗；文档模态顺序还原及 SDD/SDC/SCD/SCC/CMRR。
-- Haus-Adler 噪声相关矩阵，带噪文档频率插值、级联、左右夹具去嵌入、任意合法源反射的噪声系数与噪声圆；网络和噪声同时变换。
-- ABCD/T 链参数、任意复反射或复阻抗负载端接降维，Rollett K/|Δ|、μ/μ′、MSG/MAG、稳定圆和增益圆。
-- 保留阻抗重归一化、互易/无源诊断、群时延、损耗/VSWR、多频段采样限值与通带波动；不静默抛弃文件元数据。
-
-全部格式与数学运算在 MoonBit，Node 仅做文件/参数/文件散列及桥接；库运行不依赖 Python。完整约定、CLI 和独立对照见 [RF 0.3](docs/RF-0.3.md)。
-
-远端验证的命令、固定版本与回执约定见[CI说明](docs/CI.md)；历史本地回执不代替同一提交的实际 GitHub run。
-
-[GT文件审计链持续验收](tools/verify-gain-file-chain.py)在CI中新生成四点网络，以独立功率真值贯通`gain-record`、`gain-review`与`gain-csv`，核对原始字节、零/奇点、篡改拒绝和输出占用保留。它补齐实际文件消费保证的自动验收，不增加RF能力或改变协议。
-
-[五端口导出文件链](tools/verify-termination-chain.py)另以新鲜有理数网络、完整原端口波方程和独立字节解码，持续核验非相邻端口保留顺序、信息/参考、再消费GT，以及原有主动端接、噪声拒绝和IO保护；没有新增端接算法或格式。
-
-## 构建与运行
-
-工具链固定在 [.moonbit-version](.moonbit-version)，Node.js 24 用于文件 CLI。
+工具链版本见 [.moonbit-version](.moonbit-version)，文件 CLI 使用 Node.js 24。
 
 ```sh
-moon update
+git clone https://github.com/guolei-dev-2/moonbit-touchstone
+cd moonbit-touchstone
 moon build --target js --release --deny-warn
 node tools/touchstone.mjs inspect examples/attenuator.s2p
 node tools/touchstone.mjs rf-convert examples/attenuator.s2p '{"parameter":"ABCD"}'
-node tools/touchstone.mjs stability examples/attenuator.s2p
-node tools/touchstone.mjs noise examples/noise-source.s2p '@examples/noise-source-options.json'
-node tools/touchstone.mjs mixed examples/mixed-information.ts '@examples/mixed-information-options.json' NEW-MIXED.ts
-moon run examples/rf_03 --target js
-moon run examples/rf_03 --target wasm-gc
-node tools/touchstone.mjs transducer-gain examples/power-gain.s2p '@examples/power-gain-options.json'
-node tools/touchstone.mjs transducer-gain examples/power-gain.s2p '@examples/power-gain-near-circle.json'
-node tools/touchstone.mjs transducer-gain-impedance examples/power-gain.s2p '@examples/power-gain-ohms.json'
-moon run examples/power_gain_ohms --target js
-node tools/touchstone.mjs gain-check examples/power-gain.s2p '@examples/gain-check-gamma.json'
-node tools/touchstone.mjs terminate-file examples/loaded-four-port.ts '@examples/terminate-four-port.json' NEW-TWO-PORT.ts
-node examples/terminate_file_demo.mjs NEW-OUTPUT-DIRECTORY
-node tools/touchstone.mjs gain-csv examples/power-gain.s2p '@examples/gain-check-ohms.json'
-moon run examples/gain_csv --target js
-node tools/touchstone.mjs gain-review examples/power-gain.s2p '@evidence/gain-receipt-20261028/receipt-fail.json'
-moon run examples/gain_check --target js
-moon run examples/power_gain --target js
+moon run examples/rf_03 --target js --release
+moon run examples/rf_03 --target wasm-gc --release
 ```
 
-纯 MoonBit `rf_03` 示例展示新接口，不依赖 Python/文件宿主。已有频段用法：`moon run examples/band_check --target js`；故意设置不通过的回损规则会输出 fail，这是有效判定而非崩溃。
+自有公开包导入路径：
 
-## API 与物理约定
+```moonbit
+import {
+  "guolei-dev-2/touchstone" @rf,
+}
+```
 
-公共接口见 [pkg.generated.mbti](pkg.generated.mbti)。根包导入 `"guolei-dev/touchstone"`；`parse(text, ports=2)` 返回 Document，`network_only()` 返回单端网络视图；噪声继续保留在 Document，带噪运算应调用 Document 的接口。`raw_network()` 仅表示文件原始矩阵，不应将它当成单端矩阵。
+`parse(text, ports=2)` 返回 `Document`。`network_only()` 返回还原的单端确定性 `Network`；带噪处理使用 `Document` 方法传播噪声。`raw_network()` 是文件原始矩阵，混合模输入的原始坐标仍按模式描述符解释。完整签名见 [生成接口](pkg.generated.mbti)，调用约定见 [API 指南](docs/API.md)。
 
-查看一端口阻抗扫频的回损与VSWR，可运行`moon run examples/one_port_metrics --target js`。这个[公开模块示例](examples/one_port_metrics/main.mbt)读取有限Z参数，展示匹配、全反射、主动反射和复阻抗；`vswr_state`与无穷标志帮助应用区分没有有限数值的原因。相同文本可交给现有`metrics`文件入口；用法、解析公式和独立消费者核对见[一端口指标](docs/ONE-PORT-METRICS.md)。
+## 文件消费与报告
 
-实际调用、错误和验证分工见 [API与证据约定](docs/API.md)：转阻抗使用 `network.convert("Z")`，失败通过 `raise` 传播；理想短路可以表示为零阻抗，理想开路转有限Z则遇奇点。可运行的纯MoonBit消费示例为 [rf_03](examples/rf_03/main.mbt)。
+```sh
+node tools/touchstone.mjs metrics examples/attenuator.s2p '{"input":0,"output":1}'
+node tools/touchstone.mjs noise examples/noise-limits.ts '{"source_mode":"impedance","source_ohms":[100,0]}'
+node tools/touchstone.mjs noise-check examples/noise-limits.ts @examples/noise-limit-query.json
+node tools/touchstone.mjs single-file examples/single-file-source.ts '{}' NEW-SINGLE.ts
+node tools/touchstone.mjs --help
+```
 
-频率 Hz、阻抗 ohm、Y 为 siemens，行优先 `S[out,in]`。ABCD 为 `[V1,I1]ᵀ = A[V2,-I2]ᵀ`，T 为 `[b1,a1]ᵀ = T[a2,b2]ᵀ`。ABCD/T 是 API/JSON 分析表示，不是合法 Touchstone option line 参数。
+上面 NF 采样例在 4 MHz 超过 2 dB 上限，输出有效的 `fail` 报告并退出 3。采样判定的退出码为 pass=0、fail=3、inconclusive=4；输入/数学/IO 错误为 2。`gain-review` 的不匹配为 5；`s-compare` 的超限/不兼容分别为 3/4。文件变换输出 Touchstone，分析命令输出 JSON；有输出路径时独占创建文件，保留已有输出和源文件。
 
-差分对内两端单端参考阻抗必须相同，跨差分对可不同；例如 50/50 与 75/75。D 参考为 2Z0、C 为 Z0/2；不等阻抗对先显式 renormalize。文件 Reference 与有效模态参考的区别及变换顺序见 RF 指南。
+| 工作流 | 说明与可运行入口 |
+| --- | --- |
+| 单端与频段文件 | [single-file](docs/SINGLE-ENDED-FILE.md)、[crop](docs/CROP-FREQUENCIES.md) |
+| 端接文件与增益 | [terminate-file](docs/TERMINATE-FILE.md)、[GT 条件与报告](docs/GAIN-CHECK.md)、[回执复核](docs/GAIN-RECEIPTS.md) |
+| 源相关噪声系数 | [物理 Ω 源 NF](docs/NOISE-IMPEDANCE.md)、[NF 采样上限](docs/NOISE-CHECK.md) |
+| 延时与矩阵对照 | [群时延限值](docs/GROUP-DELAY-CHECK.md)、[双 S 文件对照](docs/S-COMPARE.md) |
+| 匹配与显示 | [理想短截线](docs/SHUNT-STUB.md)、[一端口指标](docs/ONE-PORT-METRICS.md) |
 
-混合模指标的CMRR可选择balanced/input/output三种功率波幅度比；零比值分别给出undefined、positive_infinity或negative_infinity，有限值为数值dB。对于复分量有限、线性模长中间溢出而dB仍可表示的输入，CMRR和模态损耗使用稳定对数计算。可运行的`modal-metrics`文件例程及适用边界见[混合模dB计算](docs/MODAL-SCALE-REPAIR-20261028.md)。
+所有 [examples](examples) 下的公开包例程都导入当前命名空间。例程覆盖单端/模态、噪声、GT、限值、文件导出和匹配；既可运行 JS，也可运行 Wasm-GC。确定性 Network JSON 与保留噪声/模态/Information 的完整文件是不同表示，按各命令约定使用。
 
-已知可逆左右夹具的去嵌入支持无噪声记录、S21精确为零的有限DUT，例如截止点或隔离网络；输出仍可交给`metrics`区分无限插损。非零传输保留原计算路径，夹具奇异和真正恢复极点仍报错。可运行文件用法及噪声/链表示边界见[截止频点去嵌入](docs/DEEMBED-ZERO-20261028.md)。
+## 单位与适用边界
 
-1–32 端口、有限 double、正实且频率不变的参考阻抗；复负载端接不等于复参考阻抗功率波定义。奇异/病态矩阵、失稳端接和不可实现噪声明确报告；不靠任意扰动伪造结果。数据预算与完整验收条件见 [SCOPE](docs/SCOPE.md)。
+频率为 Hz，阻抗为 ohm，Y 为 siemens，矩阵行优先 `S[out,in]`。ABCD 满足 `[V1,I1]ᵀ = A[V2,-I2]ᵀ`，T 满足 `[b1,a1]ᵀ = T[a2,b2]ᵀ`；ABCD/T 是分析表示，写 Touchstone 前须转回合法文件参数。
 
-无源性沿用既有 `I−SᴴS` 的移位Cholesky严格正定测试，默认绝对容差ε=1e-9。`boundary` 包括无损边界及容差带内的轻微负特征值，不能自动算严格无源合格；完整三态条件见 [RF约定](docs/RF-0.3.md#无源性与容差)。
+差分对内参考须相等，跨对可不同；D、C 有效参考分别为 2Z0 和 Z0/2，文件 Reference 仍保存原单端参考。balanced/input/output CMRR 是三种功率波幅度比，不能直接当作差分放大器电压增益 CMRR。NF 的源 Γ 使用独立 `noise_reference_ohms`，与网络端口参考分别记录。
 
-## 独立验证与证据
+当前模型使用有限 double、频率不变的正实参考，预算 10 万频点、200 万复数值和 64 MB 文本。奇异/病态矩阵、不可实现噪声或域外源明确失败；无穷损耗、无定义 VSWR 和 GT 特殊状态由字段/标志表示。噪声单记录按常量处理，多记录不外推；没有噪声记录的夹具表示零附加噪声，不自动推断热噪声。
+
+采样判定只约束原始离散点，不能认证点间连续频带。无源 `boundary` 包含无损及容差边界，不能视为严格合格。理想单频匹配不提供微带毫米、双短截线、Q/带宽优化；本库不提供复参考功率波、未知夹具提取、仪器校准、全频因果性或器件认证。完整约定见 [RF 0.3](docs/RF-0.3.md) 和 [范围](docs/SCOPE.md)。
+
+## 验证与来源
 
 ```sh
 moon fmt --check
-moon info
 moon check --target all --deny-warn
+moon info
 moon test --target js --deny-warn
 moon test --target wasm-gc --deny-warn
-moon package
+moon package --frozen
 ```
 
-2026-10-23历史回执以scikit-rf/NumPy独立对照混合模、噪声级联/去嵌入、参数、复负载和稳定性；其368请求/1103断言保持原日期。随后55请求的上限端口回归包括30个无源案例、9组混合模正反向（18请求）和7个预期拒绝，参考职责与S/Y/Z误差单位见 [API与证据约定](docs/API.md#验证职责与历史记录)。后续数值/RF/格式修复和GT拓展各自的定向证据见上方记录，没有重跑这些历史集合。编译后端数量不等于操作系统数量或全部数值输入均已验证。
+[verify 工作流](.github/workflows/ci.yml)运行严格检查、两个后端的测试与公开包消费者、实际文件链、独立数值参考及模块封包。CI 身份回执记录实际模块、仓库、工具链与源码散列；某次远端结果以同仓库、同一提交的真实 run 为准，见 [CI 说明](docs/CI.md) 与 [CI 计划](CI-PLAN.md)。
 
-既有 [Johanson 厂家公开 S2P 案例](docs/PUBLIC-SAMPLE.md) 包含 1551 频点，历史回执保留日期；2026-10-27 另补 [NXP BFU530W 第一方输入](evidence/public-breadth-20261027/README.md)，仅选 3.3V/1mA 一份文件的98频点，对当前0.3.0 CLI 的 S 参数、S→Y及写出重读逐点独立核对。由此有两家器件厂商的有限输入证据，不把测量仪器品牌计为厂商，也不声称全部偏置、全部厂商或新测量通过。未确认再分发权的原包、原文件和完整数值导出不随包附送。离散采样限值不代表连续频带保证、器件认证或客户采用。
+历史科学回执按原日期、输入与适用范围保留，职责和误差单位见 [验证记录](docs/API.md#验证职责与历史记录)。Johanson 与 NXP 的有限厂家文件案例不代表全部偏置、器件认证或客户采用；未确认再分发授权的厂家原件及完整数值导出不随包分发。
 
-标准与参考：[IBIS Touchstone 2.1](https://www.ibis.org/touchstone_ver2.1/touchstone_ver2_1.pdf)、[scikit-rf](https://scikit-rf.readthedocs.io/)，许可及来源见 [THIRD-PARTY](THIRD-PARTY.md) 和 [SOURCES](docs/SOURCES.md)。不主张射频算法原创或全网唯一。
+项目使用 MIT，版权声明见 [LICENSE](LICENSE)，原作者与贡献者历史保留。标准及参考包括 [IBIS Touchstone 2.1](https://www.ibis.org/touchstone_ver2.1/touchstone_ver2_1.pdf) 与 [scikit-rf](https://scikit-rf.readthedocs.io/)；第三方授权和来源见 [THIRD-PARTY](THIRD-PARTY.md) 与 [SOURCES](docs/SOURCES.md)。不主张经典 RF 算法原创或生态唯一。
 
-## 复审交付
-
-本轮 0.3.0 仅本地完成，没有推送、发布或修改报名表。旧版公开 CI 不能证明新代码的远端状态。[申报书](PROPOSAL.md) 与 [同名附件](guolei-dev-touchstone-申报书.md) 已统一；原上传附件是否误传须由报名记录核实，说明见 [REVIEW](REVIEW.md)。
+正式项目介绍见 [PROPOSAL](PROPOSAL.md) 与 [账号对应附件](guolei-dev-2-touchstone-申报书.md)，当前维护/申报元数据见 [SUBMISSION](SUBMISSION.json)。
