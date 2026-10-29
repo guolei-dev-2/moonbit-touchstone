@@ -604,13 +604,48 @@ fn execute(
       }
       doc.network_only().transducer_gain(source~, load~).to_json()
     }
-    "noise" =>
-      {
-        "a": doc.noise_correlation().to_json(),
-        "s": doc.noise_correlation(representation="S").to_json(),
-        "figure_db": doc.noise_figure(complex_option(o, "source")).to_json(),
-        "circles": doc.noise_circles(optional(o, "figure_db", 3.0)).to_json(),
+    "noise" => {
+      let mode : String = optional(o, "source_mode", "gamma")
+      match mode {
+        "gamma" =>
+          {
+            "a": doc.noise_correlation().to_json(),
+            "s": doc.noise_correlation(representation="S").to_json(),
+            "figure_db": doc.noise_figure(complex_option(o, "source")).to_json(),
+            "circles": doc
+            .noise_circles(optional(o, "figure_db", 3.0))
+            .to_json(),
+          }
+        "impedance" => {
+          for key in o.keys() {
+            if !(key == "command" ||
+              key == "ports" ||
+              key == "source_mode" ||
+              key == "source_ohms") {
+              raise Failure("unknown impedance noise option: " + key)
+            }
+          }
+          let source = complex_option(o, "source_ohms")
+          // NF needs the supplied noise model, not an unrelated S-covariance
+          // conversion/circle request. Leave the original Gamma schema intact.
+          {
+            "source_mode": "impedance",
+            "source_ohms": [source.re, source.im].to_json(),
+            "noise_reference_ohms": doc.noise_reference_ohms().to_json(),
+            "network_reference_ohms": doc
+            .raw_network()
+            .reference_ohms()
+            .to_json(),
+            "frequency_hz": doc.raw_network().frequency_hz().to_json(),
+            "figure_db": doc.noise_figure_impedance(source).to_json(),
+            "quantity": "source_noise_figure",
+            "source_units": "ohm",
+            "figure_units": "dB",
+          }
+        }
+        _ => raise Failure("unknown noise source_mode")
       }
+    }
     "cascade" =>
       {
         "text": doc

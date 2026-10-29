@@ -26,6 +26,8 @@ Gain review: INPUT @RECEIPT [OUTPUT]; exits 0 reproduced, 5 mismatch, 2 error.
 S compare: baseline INPUT, candidate_file, required maximum_absolute_s_delta;
            physical_alignment_declared:true asserts corresponding ports/planes (unverified).
            exits 0 within, 3 exceeds, 4 incompatible, 2 error; deterministic S only.
+Noise: source is Gamma relative to noise_reference_ohms (original mode).
+       source_mode:impedance plus source_ohms:[R,X], R>0, returns NF dB/conditions only.
 OPTIONS-JSON may be @path/to/options.json (ASCII, <=1 MB).
 Sampled checks exit: 0 pass, 3 fail, 4 inconclusive; input/IO errors: 2.
 Output files are created exclusively: existing files are never overwritten.
@@ -99,7 +101,7 @@ try {
     for (const side of ['left','right']) {
       // These commands have no fixture-file inputs; keep unknown options visible
       // to MoonBit validation instead of consuming and deleting them here.
-      if (command==='transducer-gain' || command==='transducer-gain-impedance' || command==='gain-check' || command==='gain-csv' || command==='gain-record' || command==='terminate-file' || command==='delay-check') continue;
+      if (command==='transducer-gain' || command==='transducer-gain-impedance' || command==='gain-check' || command==='gain-csv' || command==='gain-record' || command==='terminate-file' || command==='delay-check' || (command==='noise' && options.source_mode==='impedance')) continue;
       const file=options[`${side}_file`];
       if (file!==undefined) {
         if (typeof file!=='string') throw new Error(`${side}_file must be a path`);

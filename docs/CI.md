@@ -18,6 +18,8 @@ checkout、setup-node、setup-python 和 upload-artifact 使用经官方仓库�
 
 `tools/verify-s-compare.py`使用冻结的两频两端口分数案例，真实消费两份原始文件，核相位翻转delta1和3-4-5比例delta5/16、8元素计数、原坐标/全局及每Sij见证、双源字节身份和read-once。严格条件不兼容、声明不足、噪声排除、不可表示运算和文件错误均有真实CLI；旧gain-review改字节仍input_mismatch。此桥接消费者在JS执行，不把all-target检查记为新Wasm/native运行。
 
+物理源NF公开包例程在JS/Wasm-GC实际输出曲线与参考条件，`tools/verify-noise-source-impedance.py`以独立手写因子和Decimal实阻公式核对，再经真实文件消费。覆盖S参考变更/独立噪声参考、稀疏协方差插值、复最优源符号、极端正源/不可表示因子、旧Γ完整输出和输入/输出保护。新API黑盒测试随两后端全套执行，没有重写或移除旧科学门。
+
 `verification-<commit SHA>` artifact 保留7天，含提交/树身份、各源文件 SHA256、实际工具/依赖版本和独立验值 JSON。GitHub run 的终态及每个必要 job 才证明该次远端验证完成；README 或旧证据里的日期、数字都不能替代它。artifact 到期后可在同一提交重现，不把重复跑绿计为新的功能轮次。
 
 后续有内容的改动应先给出实际场景与预期，完成必要代码、独立回归及文档，再核同一仓库同一提交的真实 CI。首次完整导入为阶段0，不计后续11轮；没有有价值的候选时如实记录，不拆分文件或空提交凑数。

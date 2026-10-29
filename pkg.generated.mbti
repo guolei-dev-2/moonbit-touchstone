@@ -125,6 +125,7 @@ pub fn Document::noise_circles(Self, Double) -> Array[RfCircle] raise
 pub fn Document::noise_correlation(Self, representation? : String) -> Array[Array[Complex]] raise
 pub fn Document::noise_data(Self) -> Array[NoisePoint]
 pub fn Document::noise_figure(Self, Complex) -> Array[Double] raise
+pub fn Document::noise_figure_impedance(Self, Complex) -> Array[Double] raise
 pub fn Document::noise_reference_ohms(Self) -> Double
 pub fn Document::raw_network(Self) -> Network
 pub fn Document::single_ended_network(Self) -> Network raise
