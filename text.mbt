@@ -179,12 +179,25 @@ fn pair(a : Double, b : Double, format : String) -> Complex raise {
     return checked(complex(a, im=b))
   }
   let magnitude = if format == "DB" { @math.pow(10.0, a / 20.0) } else { a }
-  if magnitude < 0.0 || !finite(magnitude) {
-    raise Failure("invalid magnitude")
-  }
   // Touchstone angles are degrees: reduce the period in that unit before
   // converting to radians, where a huge argument has already lost the phase.
   let angle = b % 360.0 / 180.0 * @math.PI
+  if format == "DB" && magnitude.is_inf() {
+    // IBIS 2.1 p6 defines DB as 20log10(|z|). The radial magnitude may
+    // exceed binary64 while both Cartesian components still fit. 6160dB
+    // is exactly the decimal exponent of 1e308; subtract before division
+    // and restore that scale only after projecting each component.
+    let scaled = @math.pow(10.0, (a - 6160.0) / 20.0)
+    let re = scaled * @math.cos(angle) * 1.0e308
+    let im = scaled * @math.sin(angle) * 1.0e308
+    if !finite(re) || !finite(im) {
+      raise Failure("invalid magnitude")
+    }
+    return complex(re, im~)
+  }
+  if magnitude < 0.0 || !finite(magnitude) {
+    raise Failure("invalid magnitude")
+  }
   checked(
     complex(magnitude * @math.cos(angle), im=magnitude * @math.sin(angle)),
   )
@@ -253,7 +266,18 @@ fn write_pair(
         "zero magnitude cannot be encoded as finite DB; use RI or MA",
       )
     }
-    let a = if format == "DB" { 20.0 * @math.log10(mag) } else { mag }
+    let a = if format == "DB" && mag.is_inf() {
+      // Keep finite component scale outside the squared norm and its log.
+      // Ordinary finite magnitudes retain their existing formatting path.
+      let scale = value.re.abs().max(value.im.abs())
+      let re = value.re / scale
+      let im = value.im / scale
+      20.0 * @math.log10(scale) + 10.0 * @math.log10(re * re + im * im)
+    } else if format == "DB" {
+      20.0 * @math.log10(mag)
+    } else {
+      mag
+    }
     let b = value.phase() * 180.0 / @math.PI
     if !finite(a) || !finite(b) {
       raise Failure("non-finite formatted value")

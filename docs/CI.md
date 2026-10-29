@@ -20,6 +20,8 @@ checkout、setup-node、setup-python 和 upload-artifact 使用经官方仓库�
 
 物理源NF公开包例程在JS/Wasm-GC实际输出曲线与参考条件，`tools/verify-noise-source-impedance.py`以独立手写因子和Decimal实阻公式核对，再经真实文件消费。覆盖S参考变更/独立噪声参考、稀疏协方差插值、复最优源符号、极端正源/不可表示因子、旧Γ完整输出和输入/输出保护。新API黑盒测试随两后端全套执行，没有重写或移除旧科学门。
 
+`Consume finite Cartesian DB input and output`运行`examples/db_cartesian`的JS/Wasm-GC公开包接收者，再由`tools/verify-db-cartesian.py`以90位Decimal原始预期核全部DB字段、复矩阵、单位/参考/信息及真实文件消费。保留普通输出、真正分量溢出、MA/零DB及独占输出错误；未改变旧科学门或公共接口，也不将类型检查当作native运行。
+
 `verification-<commit SHA>` artifact 保留7天，含提交/树身份、各源文件 SHA256、实际工具/依赖版本和独立验值 JSON。GitHub run 的终态及每个必要 job 才证明该次远端验证完成；README 或旧证据里的日期、数字都不能替代它。artifact 到期后可在同一提交重现，不把重复跑绿计为新的功能轮次。
 
 后续有内容的改动应先给出实际场景与预期，完成必要代码、独立回归及文档，再核同一仓库同一提交的真实 CI。首次完整导入为阶段0，不计后续11轮；没有有价值的候选时如实记录，不拆分文件或空提交凑数。
