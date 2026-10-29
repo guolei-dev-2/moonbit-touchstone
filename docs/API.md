@@ -8,6 +8,7 @@
 |---|---|---|
 | 读取 | `parse(text, ports=2)` | 返回Document；旧版文件可显式给端口数；语法或预算不合法时raise |
 | 单端网络视图 | `document.network_only()` | 返回Network；带噪运算使用Document方法以传播噪声 |
+| 原频段文件导出 | `document.crop(start_hz,end_hz)` | 无噪声；Hz闭区间原始点，新Document保留原始基底/参考/信息，空选区报错；[完整约定](CROP-FREQUENCIES.md) |
 | 参数互转 | `network.convert("Z")` | 返回Network，目标Z单位ohm；数学不可表示或数值不安全时raise |
 | 参考重归一化 | `network.renormalize([75.0,75.0])` | 有限、正实且频率不变的端口参考 |
 | 指定混合模对 | `network.to_mixed_mode([(0,1),(2,3)])` | 零基不重叠配对，返回Document；同对参考相等，剩余端口保留S |

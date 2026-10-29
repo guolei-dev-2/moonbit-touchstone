@@ -114,6 +114,7 @@ pub struct Document {
   // private fields
 }
 pub fn Document::cascade(Self, Self) -> Self raise
+pub fn Document::crop(Self, Double, Double) -> Self raise
 pub fn Document::deembed(Self, Self, Self) -> Self raise
 pub fn Document::information_lines(Self) -> Array[String]
 pub fn Document::interpolate(Self, Array[Double]) -> Self raise

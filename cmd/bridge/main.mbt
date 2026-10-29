@@ -665,6 +665,22 @@ fn execute(
       }
     "interpolate" =>
       { "text": doc.interpolate(required(o, "frequency_hz")).write().to_json() }
+    "crop" => {
+      for key in o.keys() {
+        if !(key == "command" ||
+          key == "ports" ||
+          key == "start_hz" ||
+          key == "end_hz") {
+          raise Failure("unknown crop option: " + key)
+        }
+      }
+      {
+        "text": doc
+        .crop(required(o, "start_hz"), required(o, "end_hz"))
+        .write()
+        .to_json(),
+      }
+    }
     "inspect" | "validate" =>
       {
         "ports": raw.ports().to_json(),

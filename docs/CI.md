@@ -24,6 +24,8 @@ checkout、setup-node、setup-python 和 upload-artifact 使用经官方仓库�
 
 `Consume finite group-delay seconds from package and files`实际运行JS/Wasm-GC公开包，再以`tools/verify-delay-finite-seconds.py`的100位Decimal atan级数/数学π及手算割线核完整秒值与限值报告。真实文件接收覆盖正/负/零、原点/孔径、首个极值、fail/覆盖/空选区、真溢出和独占输出；普通完整旧输出兼容控制保留，没有改变旧科学生成器或将检查当作native运行。
 
+原频点导出的双后端公开包及`tools/verify-crop.py`实际写出、独立解码、文件读回并计算旧指标，核原始整数/分数矩阵、完整元数据及独立反射/VSWR/dB。新门和错误/身份边界见[CI-PLAN](../CI-PLAN.md)；原门全部保留，手工显式频率组合仍是兼容控制，不被冒充缺陷。
+
 `verification-<commit SHA>` artifact 保留7天，含提交/树身份、各源文件 SHA256、实际工具/依赖版本和独立验值 JSON。GitHub run 的终态及每个必要 job 才证明该次远端验证完成；README 或旧证据里的日期、数字都不能替代它。artifact 到期后可在同一提交重现，不把重复跑绿计为新的功能轮次。
 
 后续有内容的改动应先给出实际场景与预期，完成必要代码、独立回归及文档，再核同一仓库同一提交的真实 CI。首次完整导入为阶段0，不计后续11轮；没有有价值的候选时如实记录，不拆分文件或空提交凑数。
