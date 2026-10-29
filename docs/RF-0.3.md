@@ -73,6 +73,7 @@ node tools/touchstone.mjs stability examples/attenuator.s2p
 | rf-convert | `{"parameter":"ABCD"}` 或 `"T"`，返回网络 JSON |
 | mixed | `{"pairs":[[0,1],[2,3]]}`，返回保留原Information信息行、带模态顺序的文档；输出路径写Touchstone，17轮修复说明见[记录](MIXED-INFORMATION-REPAIR-20261028.md) |
 | single / modal | 无必需附加选项；分别返回单端/有效模态网络 JSON |
+| single-file | 无必需附加选项；还原单端基底并写完整文档，保留信息/参考；已单端噪声保留，混合模噪声明确拒绝；[完整约定](SINGLE-ENDED-FILE.md) |
 | modal-metrics | `{"output_pair":1,"input_pair":0,"cmrr":"balanced"}`，返回所选差分对指标 |
 | terminate | `{"terminations":[[1,0.2,0.1]],"impedance":false}`；true 时复数为 ohm，返回降维网络 JSON |
 | stability | 可选 `{"gain":1.0}`，返回稳定性、源/负载稳定圆及可用/工作增益圆 |

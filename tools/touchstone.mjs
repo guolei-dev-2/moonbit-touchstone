@@ -6,7 +6,7 @@ import {run} from '../_build/js/release/build/cmd/bridge/bridge.js';
 const usage = `Usage: node tools/touchstone.mjs COMMAND INPUT [OPTIONS-JSON] [OUTPUT]
 Commands: inspect validate dump normalize legacy convert renormalize select
           interpolate crop cascade deembed diagnostics metrics delay delay-check band-check band-csv ripple-check
-          rf-convert mixed single modal modal-metrics terminate terminate-file stability noise transducer-gain
+          rf-convert mixed single single-file modal modal-metrics terminate terminate-file stability noise transducer-gain
           transducer-gain-impedance
           gain-check gain-csv
           gain-record gain-review s-compare
@@ -21,6 +21,7 @@ Terminate file: terminations as [original port,re,im], impedance false Gamma/tru
 Gain check: start_hz/end_hz, minimum_db/maximum_db, terminal_mode gamma/impedance.
 Delay check: start_hz/end_hz/input/output, minimum_seconds/maximum_seconds (at least one).
 Crop: required start_hz/end_hz; keep original points, preserve metadata, noise-free only.
+Single file: restore single-ended basis and write a document; mixed-mode noise is rejected.
 Gain CSV: same query; every selected original sample with state and limit disposition.
 Gain record: same query options, output a byte-bound receipt; exits 0/3/4.
 Gain review: INPUT @RECEIPT [OUTPUT]; exits 0 reproduced, 5 mismatch, 2 error.
@@ -102,7 +103,7 @@ try {
     for (const side of ['left','right']) {
       // These commands have no fixture-file inputs; keep unknown options visible
       // to MoonBit validation instead of consuming and deleting them here.
-      if (command==='transducer-gain' || command==='transducer-gain-impedance' || command==='gain-check' || command==='gain-csv' || command==='gain-record' || command==='terminate-file' || command==='delay-check' || command==='crop' || (command==='noise' && options.source_mode==='impedance')) continue;
+      if (command==='transducer-gain' || command==='transducer-gain-impedance' || command==='gain-check' || command==='gain-csv' || command==='gain-record' || command==='terminate-file' || command==='delay-check' || command==='crop' || command==='single-file' || (command==='noise' && options.source_mode==='impedance')) continue;
       const file=options[`${side}_file`];
       if (file!==undefined) {
         if (typeof file!=='string') throw new Error(`${side}_file must be a path`);

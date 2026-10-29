@@ -80,6 +80,11 @@ jobs:
           moon run examples/crop_document --target js --release > _build/ci/crop-example-js.json
           moon run examples/crop_document --target wasm-gc --release > _build/ci/crop-example-wasm-gc.json
           python tools/verify-crop.py --evidence _build/ci/crop.json
+      - name: Consume restored single-ended document files
+        run: |
+          moon run examples/single_file --target js --release > _build/ci/single-file-example-js.json
+          moon run examples/single_file --target wasm-gc --release > _build/ci/single-file-example-wasm-gc.json
+          python tools/verify-single-file.py --evidence _build/ci/single-file.json
       - name: Install and record independent reference versions
         run: |
           python -m pip install --requirement tools/requirements.txt

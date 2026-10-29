@@ -26,6 +26,8 @@ checkout、setup-node、setup-python 和 upload-artifact 使用经官方仓库�
 
 原频点导出的双后端公开包及`tools/verify-crop.py`实际写出、独立解码、文件读回并计算旧指标，核原始整数/分数矩阵、完整元数据及独立反射/VSWR/dB。新门和错误/身份边界见[CI-PLAN](../CI-PLAN.md)；原门全部保留，手工显式频率组合仍是兼容控制，不被冒充缺陷。
 
+`Consume restored single-ended document files`执行双后端公开API组合和`tools/verify-single-file.py`。独立Fraction波基变换核全部矩阵，再实际文件读回/旧指标；非顺序模式、未配对端口、Y/Z单位、单端噪声保留/混合噪声拒绝、完整旧JSON/规范化字节及IO错误均独立验收。没有新库数学/API，旧科学套件仅在必要完整CI执行，不在本地重复跑。
+
 `verification-<commit SHA>` artifact 保留7天，含提交/树身份、各源文件 SHA256、实际工具/依赖版本和独立验值 JSON。GitHub run 的终态及每个必要 job 才证明该次远端验证完成；README 或旧证据里的日期、数字都不能替代它。artifact 到期后可在同一提交重现，不把重复跑绿计为新的功能轮次。
 
 后续有内容的改动应先给出实际场景与预期，完成必要代码、独立回归及文档，再核同一仓库同一提交的真实 CI。首次完整导入为阶段0，不计后续11轮；没有有价值的候选时如实记录，不拆分文件或空提交凑数。

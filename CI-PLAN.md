@@ -21,6 +21,16 @@ python tools/verify-crop.py --evidence _build/ci/crop.json
 
 ## 本地与远端证据分开
 
+### 单端文档文件出口
+
+```sh
+moon run examples/single_file --target js --release > _build/ci/single-file-example-js.json
+moon run examples/single_file --target wasm-gc --release > _build/ci/single-file-example-wasm-gc.json
+python tools/verify-single-file.py --evidence _build/ci/single-file.json
+```
+
+必要步骤`Consume restored single-ended document files`使用固定非顺序模态原始输入。独立Fraction按IBIS归一化波基核全部32个复系数，有限解码规范文件并由实际CLI/旧指标消费。保留所有频点和文档条件；检查未配对端口/Y/Z单位/已单端/幂等/噪声新旧边界、旧JSON黄金字节及实际错误IO。原库接口和变换未改，不为此重复本地旧科学验证。
+
 本地只执行本轮相关的一次干净检查，不重跑未改的旧科学生成器。完整旧门在最终head的必要CI运行，失败在同轮修正并保留原失败证据。all-target检查不等于native运行。
 
 交付报告记录具体runId/URL/jobs/新门及各状态、独立预期、真实输出和未支持边界。最终head源码ZIP必须逐成员读回；Git blob、原工作、实际测试复制件、实际编译/输出各有独立身份。云artifact元数据和本地bundle不能冒充下载云binary或二进制相等。根独立ACCEPT前不增加有效轮数。

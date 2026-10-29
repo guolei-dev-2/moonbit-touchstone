@@ -20,6 +20,8 @@
 
 既有`network.terminate_ports(...)`可由调用方封装为Document写出；16轮增加独立文件命令[terminate-file](TERMINATE-FILE.md)，避免把原`terminate`分析JSON误当成Touchstone。它不增加公共库接口，也不改原JSON或回执协议。
 
+既有`document.single_ended_network()`可封装为Document写出；[single-file](SINGLE-ENDED-FILE.md)提供完整单端文件出口，保留源信息/参考，旧`single`仍为Network JSON。没有新增库API或改变现有模式变换。
+
 文件格式与分析表示分开：Touchstone 1.0/1.1/2.0/2.1按标准接受S/Y/Z及适用二端口H/G；ABCD/T仅作为二端口API/JSON分析表示，写Touchstone前须显式转回合法文件参数。参考定义及资源边界完整保留于 [SCOPE](SCOPE.md) 与 [RF-0.3](RF-0.3.md)。
 
 理想一端口短路S=−1可转换成Z=0；理想开路S=1的I−S为零，无法用有限Z表示，必须失败。这是目标表示的奇点，不能笼统把短路/开路都叫坏输入，也不能加扰动伪造有限解。

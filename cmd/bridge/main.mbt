@@ -383,6 +383,27 @@ fn execute(
     "rf-convert" =>
       net_json(doc.network_only().convert(required(o, "parameter")))
     "single" => net_json(doc.single_ended_network())
+    "single-file" => {
+      for key in o.keys() {
+        if !(key == "command" || key == "ports") {
+          raise Failure("unknown single-file option: " + key)
+        }
+      }
+      let output = if doc.mixed_mode_order().is_empty() {
+        // No basis change: preserve the original document, including noise.
+        doc
+      } else {
+        if !doc.noise_data().is_empty() {
+          raise Failure("single-file cannot transform mixed-mode noise data")
+        }
+        @lib.document(
+          doc.single_ended_network(),
+          noise_reference_ohms=doc.noise_reference_ohms(),
+          information=doc.information_lines(),
+        )
+      }
+      { "text": output.write().to_json() }
+    }
     "modal" => net_json(doc.modal_network())
     "mixed" => {
       if !doc.noise_data().is_empty() {
